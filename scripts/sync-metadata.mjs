@@ -90,13 +90,11 @@ function explicitContinuation(root,entry){
   if(titleSimilarity(root,entry)<0.72) return false;
   const roots=namesFor(root).map(norm).sort((a,b)=>b.length-a.length);
   const names=namesFor(entry).map(norm);
-  for(const r of roots){
-    for(const n of names){
-      if(!r||!n.startsWith(r)||n===r) continue;
-      const suffix=n.slice(r.length).trim();
-      if(/^(season\s*\d+|\d+(st|nd|rd|th)\s+season|part\s*\d+|cour\s*\d+|ii|iii|iv|v|vi|2|3|4|5|6|second season|third season|fourth season|final season)(\b|$)/i.test(suffix)) return true;
-    }
-  }
+  for(const r of roots){for(const n of names){
+    if(!r||!n.startsWith(r)||n===r) continue;
+    const suffix=n.slice(r.length).trim();
+    if(/^(season\s*\d+|\d+(st|nd|rd|th)\s+season|part\s*\d+|cour\s*\d+|ii|iii|iv|v|vi|2|3|4|5|6|second season|third season|fourth season|final season)(\b|$)/i.test(suffix)) return true;
+  }}
   return false;
 }
 
@@ -135,6 +133,7 @@ for(const match of matches){
 
   if(!match.entry){
     a.latestEpisodeYear=(Number.isFinite(oldLatest)&&oldLatest<=CURRENT_YEAR)?oldLatest:(Number.isFinite(a.year)&&a.year<=CURRENT_YEAR?a.year:null);
+    if(a.episodes!=null&&a.watchedEpisodes!=null&&a.watchedEpisodes>a.episodes)a.watchedEpisodes=a.episodes;
     report.unmatched.push({id:a.id,title:a.title});
     continue;
   }
@@ -143,8 +142,7 @@ for(const match of matches){
   const chain=episodeChain(match);
   const rootStarted=hasStarted(root);
   const knownEpisodes=chain.map(x=>x.episodes).filter(n=>Number.isFinite(n)&&n>0);
-  const canAggregate=SERIES_TYPES.has(root.type)&&chain.length>0&&knownEpisodes.length===chain.length;
-  const totalEpisodes=canAggregate?knownEpisodes.reduce((s,n)=>s+n,0):(rootStarted&&root.episodes>0?root.episodes:(previousEpisodes??null));
+  const totalEpisodes=SERIES_TYPES.has(root.type)&&knownEpisodes.length?knownEpisodes.reduce((s,n)=>s+n,0):(rootStarted&&root.episodes>0?root.episodes:(previousEpisodes??null));
   const years=chain.map(x=>x.animeSeason?.year).filter(y=>Number.isFinite(y)&&y<=CURRENT_YEAR);
   let latestEpisodeYear=years.length?Math.max(...years):null;
   if(latestEpisodeYear==null&&rootStarted&&Number.isFinite(root.animeSeason?.year)&&root.animeSeason.year<=CURRENT_YEAR)latestEpisodeYear=root.animeSeason.year;
@@ -153,7 +151,8 @@ for(const match of matches){
   const before={episodes:previousEpisodes,latestEpisodeYear:oldLatest,year:a.year??null,watchedEpisodes:a.watchedEpisodes??null,newEpisodes:a.newEpisodes};
 
   if(totalEpisodes!=null){
-    // Only signal genuinely new episodes when the new total is larger than a sane prior baseline.
+    // Correct stale inflated progress before deciding whether an increase is genuinely new.
+    if(a.watchedEpisodes!=null&&a.watchedEpisodes>totalEpisodes)a.watchedEpisodes=totalEpisodes;
     if(previousEpisodes!=null&&totalEpisodes>previousEpisodes&&previousEpisodes>0){
       a.newEpisodes+=(totalEpisodes-previousEpisodes);
       a.newEpisodeDetectedAt=new Date().toISOString();
