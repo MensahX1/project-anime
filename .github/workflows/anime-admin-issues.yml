@@ -70,18 +70,15 @@ jobs:
               genre:String(a.genre||''),
               studio:String(a.studio||''),
               year:a.year==null?null:Number(a.year),
-              seasons:a.seasons==null?(existing.seasons??null):Number(a.seasons),
-              latestSeasonYear:a.latestSeasonYear==null?(existing.latestSeasonYear??null):Number(a.latestSeasonYear),
+              latestEpisodeYear:a.latestEpisodeYear==null?(existing.latestEpisodeYear??existing.latestSeasonYear??null):Number(a.latestEpisodeYear),
               synopsis:String(a.synopsis||''),
               image:'',
-              ...(existing.metadataSource?{metadataSource:existing.metadataSource}:{}),
-              ...(existing.malId?{malId:existing.malId}:{})
+              ...(existing.metadataSource?{metadataSource:existing.metadataSource}:{})
             };
             if(clean.score!=null&&(!Number.isInteger(clean.score)||clean.score<1||clean.score>5)) throw new Error('Score must be 1-5 or null');
             if(clean.episodes!=null&&(!Number.isFinite(clean.episodes)||clean.episodes<0)) throw new Error('Episodes must be non-negative or null');
             if(clean.year!=null&&(!Number.isFinite(clean.year)||clean.year<1900||clean.year>2100)) throw new Error('Year out of range');
-            if(clean.seasons!=null&&(!Number.isInteger(clean.seasons)||clean.seasons<1)) throw new Error('Seasons must be a positive integer or null');
-            if(clean.latestSeasonYear!=null&&(!Number.isInteger(clean.latestSeasonYear)||clean.latestSeasonYear<1900||clean.latestSeasonYear>2100)) throw new Error('Latest season year out of range');
+            if(clean.latestEpisodeYear!=null&&(!Number.isInteger(clean.latestEpisodeYear)||clean.latestEpisodeYear<1900||clean.latestEpisodeYear>2100)) throw new Error('Latest episode year out of range');
             const duplicate=anime.find(x=>x.id!==clean.id&&x.title.toLowerCase()===clean.title.toLowerCase());
             if(duplicate) throw new Error(`Duplicate title: ${clean.title}`);
             if(i>=0) anime[i]=clean; else anime.push(clean);
