@@ -2604,5 +2604,20 @@
     "latestEpisodeYear": 2008,
     "synopsis": "Dan and his friends become Bakugan Battle Brawlers and are drawn into a conflict that links Earth to the world of Vestroia.",
     "image": ""
+  },
+  {
+    "id": "anime-bakugan-new-vestroia",
+    "title": "Bakugan Battle Brawlers: New Vestroia",
+    "status": "Completed",
+    "episodes": 52,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 1,
+    "genre": "Action, Adventure, Fantasy, Game",
+    "studio": "TMS Entertainment",
+    "year": 2009,
+    "latestEpisodeYear": 2011,
+    "synopsis": "Dan and the Battle Brawlers return to New Vestroia to fight the Vestals and free the captured Bakugan.",
+    "image": ""
   }
 ]
