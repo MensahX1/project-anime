@@ -4,9 +4,8 @@ const args = process.argv.slice(2);
 const checkOnly = args.includes('--check-only');
 const dbPath = args.find(x => !x.startsWith('--'));
 
-const titles = JSON.parse(await fs.readFile(new URL('../src/allTitles.json', import.meta.url), 'utf8'));
-const seedFiles = ['seed1.json','seed2.json','seed3.json','seed4.json'];
-const seeds = (await Promise.all(seedFiles.map(f => fs.readFile(new URL(`../src/${f}`, import.meta.url), 'utf8').then(JSON.parse)))).flat();
+const seeds = JSON.parse(await fs.readFile(new URL('../src/anime.json', import.meta.url), 'utf8'));
+const titles = seeds.map(x => x.title);
 const meta = new Map(seeds.map(x => [x.title, x]));
 const coverDir = new URL('../public/covers/', import.meta.url);
 const generatedFile = new URL('../src/generatedCovers.json', import.meta.url);
@@ -28,16 +27,21 @@ const dice = (a,b) => {
 };
 const fileIsGood = async url => { try { return (await fs.stat(url)).size > 1000; } catch { return false; } };
 
+const expectedFiles=new Set(titles.map(title=>`${slug(title)}.jpg`));
+for(const file of await fs.readdir(coverDir)){
+  if(file.endsWith('.jpg')&&!expectedFiles.has(file)){
+    if(!checkOnly) await fs.unlink(new URL(file,coverDir));
+    console.log(`${checkOnly?'Stale':'Removed stale'} cover: ${file}`);
+  }
+}
+
 const missing=[];
 for(const title of titles){
   const name=`${slug(title)}.jpg`;
   const file=new URL(name,coverDir);
   const expected=`/project-anime/covers/${name}`;
-  if(await fileIsGood(file)) {
-    generated[title]=expected;
-  } else {
-    missing.push(title);
-  }
+  if(await fileIsGood(file)) generated[title]=expected;
+  else missing.push(title);
 }
 
 for(const title of Object.keys(generated)) if(!titles.includes(title)) delete generated[title];
@@ -138,15 +142,7 @@ const workers=Array.from({length:Math.min(12,missing.length)},async()=>{
     }
     if(!ok) throw new Error(`${title}: ${last?.message||last}`);
     generated[title]=`/project-anime/covers/${name}`;
-    sources[title]={
-      url,
-      matchedTitle:entry.title,
-      type:entry.type||null,
-      year:entry.animeSeason?.year||null,
-      matchScore:score,
-      providers:entry.sources||[],
-      dataset:'manami-project/anime-offline-database 2026-27'
-    };
+    sources[title]={url,matchedTitle:entry.title,type:entry.type||null,year:entry.animeSeason?.year||null,matchScore:score,providers:entry.sources||[],dataset:'manami-project/anime-offline-database 2026-27'};
     console.log(`${i+1}/${missing.length} ✓ ${title} -> ${entry.title}`);
   }
 });
