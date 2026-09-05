@@ -3876,5 +3876,25 @@
       "https://simkl.com/anime/2125716"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Jujutsu Kaisen 0": {
+    "url": "https://cdn.myanimelist.net/images/anime/1121/119044.jpg",
+    "matchedTitle": "Jujutsu Kaisen 0 Movie",
+    "type": "MOVIE",
+    "year": 2021,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/16169",
+      "https://anilist.co/anime/131573",
+      "https://anime-planet.com/anime/jujutsu-kaisen-0-the-movie",
+      "https://animecountdown.com/1578599",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=24193",
+      "https://anisearch.com/anime/16092",
+      "https://kitsu.app/anime/44212",
+      "https://livechart.me/anime/10491",
+      "https://myanimelist.net/anime/48561",
+      "https://simkl.com/anime/1578599"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
