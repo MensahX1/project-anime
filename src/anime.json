@@ -2724,5 +2724,20 @@
     "latestEpisodeYear": 2006,
     "synopsis": "The Lagoon Company returns for another run of violent criminal jobs and conflicts in Roanapur.",
     "image": ""
+  },
+  {
+    "id": "anime-inuyasha-the-final-act",
+    "title": "Inuyasha: The Final Act",
+    "status": "Completed",
+    "episodes": 26,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 3,
+    "genre": "Action, Adventure, Fantasy, Romance",
+    "studio": "Sunrise",
+    "year": 2009,
+    "latestEpisodeYear": 2010,
+    "synopsis": "Inuyasha and his companions return for the final battles against Naraku, bringing the long-running quest for the Shikon Jewel toward its conclusion.",
+    "image": ""
   }
 ]
