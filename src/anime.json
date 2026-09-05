@@ -2649,5 +2649,20 @@
     "latestEpisodeYear": 2006,
     "synopsis": "Ash travels through Hoenn and the Battle Frontier with new companions, new Pokémon, and new regional challenges.",
     "image": ""
+  },
+  {
+    "id": "anime-pokemon-ranger-temple-of-the-sea",
+    "title": "Pokémon Ranger and the Temple of the Sea",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 2,
+    "genre": "Adventure, Fantasy",
+    "studio": "OLM",
+    "year": 2006,
+    "latestEpisodeYear": 2006,
+    "synopsis": "Ash and friends join a Pokémon Ranger to protect Manaphy and find the mysterious Sea Temple.",
+    "image": ""
   }
 ]
