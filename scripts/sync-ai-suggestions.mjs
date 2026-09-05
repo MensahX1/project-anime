@@ -18,58 +18,95 @@ const libraryNames=new Set(anime.map(a=>norm(a.title)));
 const previousNames=new Set(previous.map(a=>norm(a.title)));
 const currentYear=new Date().getUTCFullYear();
 
-// Curated around the strongest patterns in the user's 5-star library:
-// psychological pressure, manipulation, mysteries, strategy, dark stakes and unusual premises.
-const curated=[
-  {title:'Kaiji: Ultimate Survivor',aliases:['Kaiji: Ultimate Survivor','Gyakkyou Burai Kaiji: Ultimate Survivor']},
-  {title:'One Outs',aliases:['One Outs']},
-  {title:'Monster',aliases:['Monster']},
-  {title:'ID: INVADED',aliases:['ID: INVADED','Id:Invaded']},
-  {title:'Babylon',aliases:['Babylon']},
-  {title:'The Perfect Insider',aliases:['The Perfect Insider','Subete ga F ni Naru: The Perfect Insider']},
-  {title:'Paranoia Agent',aliases:['Paranoia Agent','Mousou Dairinin']},
-  {title:'Moriarty the Patriot',aliases:['Moriarty the Patriot','Yuukoku no Moriarty']},
-  {title:'Odd Taxi',aliases:['Odd Taxi','ODDTAXI']},
-  {title:'ACCA: 13-Territory Inspection Dept.',aliases:['ACCA: 13-Territory Inspection Dept.','ACCA: 13-ku Kansatsu-ka']},
-  {title:'B: The Beginning',aliases:['B: The Beginning']},
-  {title:'Gankutsuou: The Count of Monte Cristo',aliases:['Gankutsuou: The Count of Monte Cristo','Gankutsuou']},
-  {title:'Blast of Tempest',aliases:['Blast of Tempest','Zetsuen no Tempest']},
-  {title:'From the New World',aliases:['From the New World','Shinsekai yori']},
-  {title:'Ajin: Demi-Human',aliases:['Ajin: Demi-Human','Ajin']},
-  {title:'Boogiepop and Others',aliases:['Boogiepop and Others','Boogiepop wa Warawanai']},
-  {title:'Serial Experiments Lain',aliases:['Serial Experiments Lain']},
-  {title:'Texhnolyze',aliases:['Texhnolyze']},
-  {title:'Rainbow',aliases:['Rainbow: Nisha Rokubou no Shichinin','Rainbow']},
-  {title:'Inuyashiki: Last Hero',aliases:['Inuyashiki: Last Hero','Inuyashiki']}
+// Each Friday choose one title from five different facets of the user's 5-star taste.
+// This intentionally prevents all five recommendations from collapsing into one genre.
+const buckets=[
+  {
+    name:'Mind Games',
+    genre:'Mind Games, Strategy, Suspense',
+    reason:'For the Classroom of the Elite / Death Note side of your taste: manipulation, gambits and pressure.',
+    picks:[
+      {title:'Kaiji: Ultimate Survivor',aliases:['Kaiji: Ultimate Survivor','Gyakkyou Burai Kaiji: Ultimate Survivor']},
+      {title:'One Outs',aliases:['One Outs']},
+      {title:'Moriarty the Patriot',aliases:['Moriarty the Patriot','Yuukoku no Moriarty']},
+      {title:'ACCA: 13-Territory Inspection Dept.',aliases:['ACCA: 13-Territory Inspection Dept.','ACCA: 13-ku Kansatsu-ka']},
+      {title:'No Game No Life',aliases:['No Game No Life']}
+    ]
+  },
+  {
+    name:'Dark Action',
+    genre:'Dark Action, Sci-Fi, Drama',
+    reason:'For the Akame ga Kill / Jujutsu Kaisen side of your taste: stylish action with real consequences.',
+    picks:[
+      {title:'Cyberpunk: Edgerunners',aliases:['Cyberpunk: Edgerunners']},
+      {title:'Btooom!',aliases:['Btooom!']},
+      {title:'Kabaneri of the Iron Fortress',aliases:['Kabaneri of the Iron Fortress','Koutetsujou no Kabaneri']},
+      {title:'Claymore',aliases:['Claymore']},
+      {title:'Dorohedoro',aliases:['Dorohedoro']}
+    ]
+  },
+  {
+    name:'Supernatural Mystery',
+    genre:'Supernatural, Mystery, Suspense',
+    reason:'For the DAN DA DAN / Future Diary side of your taste: weird supernatural rules wrapped in mystery.',
+    picks:[
+      {title:'The Case Study of Vanitas',aliases:['The Case Study of Vanitas','Vanitas no Karte']},
+      {title:'ID: INVADED',aliases:['ID: INVADED','Id:Invaded']},
+      {title:'Mononoke',aliases:['Mononoke']},
+      {title:'Boogiepop and Others',aliases:['Boogiepop and Others','Boogiepop wa Warawanai']},
+      {title:'From the New World',aliases:['From the New World','Shinsekai yori']}
+    ]
+  },
+  {
+    name:'Character / Romance',
+    genre:'Romance, Character Drama, Comedy',
+    reason:'A change of pace based on the romance and character-driven shows you rate well, without going pure slice-of-life.',
+    picks:[
+      {title:'Call of the Night',aliases:['Call of the Night','Yofukashi no Uta']},
+      {title:"Scum's Wish",aliases:["Scum's Wish",'Kuzu no Honkai']},
+      {title:'Insomniacs After School',aliases:['Insomniacs After School','Kimi wa Houkago Insomnia']},
+      {title:'ReLIFE',aliases:['ReLIFE']},
+      {title:'Golden Time',aliases:['Golden Time']}
+    ]
+  },
+  {
+    name:'Wildcard',
+    genre:'Fantasy, Comedy, Adventure',
+    reason:'For the Eminence in Shadow side of your taste: high-concept worlds, personality and fun rather than another grim thriller.',
+    picks:[
+      {title:'The Devil Is a Part-Timer!',aliases:['The Devil Is a Part-Timer!','Hataraku Maou-sama!']},
+      {title:'Cautious Hero: The Hero Is Overpowered but Overly Cautious',aliases:['Cautious Hero: The Hero Is Overpowered but Overly Cautious','Shinchou Yuusha: Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru']},
+      {title:'Princess Connect! Re:Dive',aliases:['Princess Connect! Re:Dive']},
+      {title:'Combatants Will Be Dispatched!',aliases:['Combatants Will Be Dispatched!','Sentouin, Hakenshimasu!']},
+      {title:'The Dungeon of Black Company',aliases:['The Dungeon of Black Company','Meikyuu Black Company']}
+    ]
+  }
 ];
 
 const nameIndex=new Map();
 for(const e of entries) for(const n of namesFor(e)) if(!nameIndex.has(norm(n))) nameIndex.set(norm(n),e);
-const available=[];
-for(const pick of curated){
-  if([pick.title,...pick.aliases].some(x=>libraryNames.has(norm(x)))) continue;
-  const e=pick.aliases.map(a=>nameIndex.get(norm(a))).find(Boolean);
-  if(!e) continue;
-  if(!['TV','ONA'].includes(e.type)) continue;
-  if(String(e.status||'').toUpperCase()==='UPCOMING') continue;
-  if(!Number.isFinite(e.episodes)||e.episodes<=0) continue;
-  if(Number.isFinite(e.animeSeason?.year)&&e.animeSeason.year>currentYear) continue;
-  available.push({pick,e});
-}
-if(available.length<5) throw new Error(`Only ${available.length} curated recommendation candidates matched the database`);
 
-let start=0;
-if(previousNames.size){
-  const indexes=available.map((x,i)=>previousNames.has(norm(x.pick.title))?i:-1).filter(i=>i>=0);
-  if(indexes.length) start=(Math.max(...indexes)+1)%available.length;
+function usable(pick){
+  if([pick.title,...pick.aliases].some(x=>libraryNames.has(norm(x)))) return null;
+  const e=pick.aliases.map(a=>nameIndex.get(norm(a))).find(Boolean);
+  if(!e) return null;
+  if(!['TV','ONA'].includes(e.type)) return null;
+  if(String(e.status||'').toUpperCase()==='UPCOMING') return null;
+  if(!Number.isFinite(e.episodes)||e.episodes<=0) return null;
+  if(Number.isFinite(e.animeSeason?.year)&&e.animeSeason.year>currentYear) return null;
+  return e;
 }
+
+const week=Math.floor(Date.now()/(7*24*60*60*1000));
 const selected=[];
-for(let i=0;i<available.length&&selected.length<5;i++){
-  const x=available[(start+i)%available.length];
-  if(!previousNames.has(norm(x.pick.title))) selected.push(x);
-}
-if(selected.length<5){
-  for(const x of available) if(!selected.includes(x)&&selected.length<5) selected.push(x);
+for(let b=0;b<buckets.length;b++){
+  const bucket=buckets[b];
+  const available=bucket.picks.map(pick=>({pick,e:usable(pick)})).filter(x=>x.e);
+  if(!available.length) throw new Error(`No usable recommendations in ${bucket.name}`);
+  const fresh=available.filter(x=>!previousNames.has(norm(x.pick.title)));
+  const pool=fresh.length?fresh:available;
+  const choice=pool[(week+b)%pool.length];
+  selected.push({...choice,bucket});
 }
 
 const detectExt=bytes=>{
@@ -86,7 +123,7 @@ for(const old of previous){
 }
 
 const suggestions=[];
-for(const {pick,e} of selected){
+for(const {pick,e,bucket} of selected){
   const title=pick.title;
   if(e.picture){
     try{
@@ -101,7 +138,6 @@ for(const {pick,e} of selected){
       }
     }catch(err){console.warn(`Cover failed for ${title}: ${err.message}`)}
   }
-  const tags=(e.tags||[]).filter(t=>/psych|thrill|myst|crime|gambl|strategy|detect|drama|suspense|horror|supernatural/i.test(String(t))).slice(0,4);
   const year=Number.isFinite(e.animeSeason?.year)?e.animeSeason.year:null;
   suggestions.push({
     id:`ai-${slug(title)}`,
@@ -109,15 +145,15 @@ for(const {pick,e} of selected){
     status:'AI Suggested',
     episodes:e.episodes||null,
     score:null,
-    genre:tags.length?tags.join(', '):'Psychological, Thriller, Mystery',
+    genre:bucket.genre,
     studio:'',
     year,
     latestEpisodeYear:year,
-    synopsis:'',
+    synopsis:bucket.reason,
     image:''
   });
 }
 
 await fs.writeFile('src/aiSuggestions.json',JSON.stringify(suggestions,null,2)+'\n');
 await fs.writeFile('src/generatedCovers.json',JSON.stringify(generated,null,2)+'\n');
-console.log('AI Suggested:',suggestions.map(x=>x.title).join(' | '));
+console.log('AI Suggested:',suggestions.map(x=>`${x.title} [${x.genre}]`).join(' | '));
