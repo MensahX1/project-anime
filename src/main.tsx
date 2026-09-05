@@ -1,4 +1,4 @@
-import React,{useEffect,useMemo,useState} from "react";
+import React,{useMemo,useState} from "react";
 import {createRoot} from "react-dom/client";
 import animeData from "./anime.json";
 import covers from "./generatedCovers.json";
@@ -9,29 +9,24 @@ registerSW({immediate:true});
 
 type Anime={id:string,title:string,status:string,episodes:number|null,score:number|null,genre:string,studio:string,year:number|null,synopsis:string,image:string};
 type SortKey="score-desc"|"score-asc"|"title-asc"|"year-desc"|"year-asc"|"studio-asc";
-type AdminUser={id:number,login:string};
 
 const repoAnime=animeData as Anime[];
 const coverMap=covers as Record<string,string>;
-const ADMIN_API=String((import.meta as any).env.VITE_ADMIN_API_URL||"").replace(/\/$/,"");
-const TOKEN_KEY="le-anime-admin-token";
+const REPO="MensahX1/project-anime";
+const EDIT_KEY="le-anime-edit-mode";
 
 const splitTags=(value:string)=>String(value||"").split(/[,/;|]+/).map(x=>x.trim()).filter(Boolean);
 const stars=(n:number|null)=>n?"★".repeat(n):"—";
 const withCover=(a:Anime):Anime=>({...a,image:coverMap[a.title]||a.image||""});
 const initialAnime=()=>repoAnime.map(withCover);
 
-async function adminFetch(path:string,options:RequestInit={}){
-  const token=sessionStorage.getItem(TOKEN_KEY);
-  if(!token) throw new Error("Admin session expired. Sign in again.");
-  const r=await fetch(`${ADMIN_API}${path}`,{...options,headers:{"Content-Type":"application/json",Authorization:`Bearer ${token}`,...(options.headers||{})}});
-  const data=await r.json().catch(()=>({}));
-  if(!r.ok) throw new Error(data.error||`Request failed (${r.status})`);
-  return data;
+function issueUrl(title:string,payload:unknown){
+  const body=`<!-- LE_ANIME_ADMIN_V1 -->\nThis request was created by Lè Anime. Only the authorized GitHub account can apply it.\n\n\`\`\`json\n${JSON.stringify(payload,null,2)}\n\`\`\``;
+  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`[anime-admin] ${title}`)}&body=${encodeURIComponent(body)}`;
 }
 
 function App(){
-  const[items,setItems]=useState<Anime[]>(initialAnime);
+  const[items]=useState<Anime[]>(initialAnime);
   const[q,setQ]=useState("");
   const[filter,setFilter]=useState("All");
   const[genreFilter,setGenreFilter]=useState("All");
@@ -40,24 +35,8 @@ function App(){
   const[sort,setSort]=useState<SortKey>("score-desc");
   const[selected,setSelected]=useState<Anime|null>(null);
   const[edit,setEdit]=useState<Anime|null>(null);
-  const[admin,setAdmin]=useState<AdminUser|null>(null);
-  const[adminChecking,setAdminChecking]=useState(false);
-  const[saving,setSaving]=useState(false);
+  const[editMode,setEditMode]=useState(()=>localStorage.getItem(EDIT_KEY)==="1");
   const[notice,setNotice]=useState("");
-
-  useEffect(()=>{
-    const hash=new URLSearchParams(location.hash.replace(/^#/,""));
-    const incoming=hash.get("admin_token");
-    if(incoming){
-      sessionStorage.setItem(TOKEN_KEY,incoming);
-      history.replaceState(null,"",location.pathname+location.search);
-    }
-    const token=sessionStorage.getItem(TOKEN_KEY);
-    if(token&&ADMIN_API){
-      setAdminChecking(true);
-      adminFetch("/session").then(x=>setAdmin(x.user)).catch(()=>sessionStorage.removeItem(TOKEN_KEY)).finally(()=>setAdminChecking(false));
-    }
-  },[]);
 
   const genres=useMemo(()=>Array.from(new Set(items.flatMap(a=>splitTags(a.genre)))).sort((a,b)=>a.localeCompare(b)),[items]);
   const studios=useMemo(()=>Array.from(new Set(items.flatMap(a=>splitTags(a.studio)))).sort((a,b)=>a.localeCompare(b)),[items]);
@@ -83,34 +62,22 @@ function App(){
 
   const hasFilters=q||filter!=="All"||genreFilter!=="All"||studioFilter!=="All"||scoreFilter!=="All"||sort!=="score-desc";
   const resetFilters=()=>{setQ("");setFilter("All");setGenreFilter("All");setStudioFilter("All");setScoreFilter("All");setSort("score-desc")};
-  const login=()=>{
-    if(!ADMIN_API){alert("Admin backend is not configured yet.");return;}
-    location.href=`${ADMIN_API}/auth/github?return_to=${encodeURIComponent(location.href.split("#")[0])}`;
-  };
-  const logout=()=>{sessionStorage.removeItem(TOKEN_KEY);setAdmin(null);setEdit(null);setNotice("Signed out")};
+  const toggleEdit=()=>{const next=!editMode;setEditMode(next);localStorage.setItem(EDIT_KEY,next?"1":"0");setEdit(null);setNotice(next?"Edit mode enabled · GitHub will verify you when you submit":"Edit mode disabled")};
   const newAnime=():Anime=>({id:`anime-${crypto.randomUUID()}`,title:"",status:"Planned",episodes:null,score:null,genre:"",studio:"",year:new Date().getFullYear(),synopsis:"",image:""});
-  const commit=async(a:Anime)=>{
-    if(!admin)return;
-    setSaving(true);setNotice("");
-    try{
-      await adminFetch("/anime/upsert",{method:"POST",body:JSON.stringify({anime:{...a,image:""}})});
-      const updated=withCover(a);
-      setItems(x=>{const i=x.findIndex(v=>v.id===a.id);return i<0?[...x,updated]:x.map(v=>v.id===a.id?updated:v)});
-      setSelected(updated);setEdit(null);setNotice("Saved to GitHub · deployment started");
-    }catch(e:any){alert(e.message||String(e))}finally{setSaving(false)}
+  const commit=(a:Anime)=>{
+    const clean={...a,image:""};
+    window.open(issueUrl(`upsert ${a.title||"anime"}`,{action:"upsert",anime:clean}),"_blank","noopener,noreferrer");
+    setEdit(null);setNotice("GitHub opened. Submit the prefilled issue to publish this change.");
   };
-  const remove=async(a:Anime)=>{
-    if(!admin||!confirm(`Delete ${a.title} from the repo?`))return;
-    setSaving(true);setNotice("");
-    try{
-      await adminFetch(`/anime/${encodeURIComponent(a.id)}`,{method:"DELETE"});
-      setItems(x=>x.filter(v=>v.id!==a.id));setSelected(null);setEdit(null);setNotice("Deleted from GitHub · deployment started");
-    }catch(e:any){alert(e.message||String(e))}finally{setSaving(false)}
+  const remove=(a:Anime)=>{
+    if(!confirm(`Create a GitHub request to delete ${a.title}?`))return;
+    window.open(issueUrl(`delete ${a.title}`,{action:"delete",id:a.id,title:a.title}),"_blank","noopener,noreferrer");
+    setSelected(null);setNotice("GitHub opened. Submit the prefilled issue to publish this deletion.");
   };
   const backup=()=>{const b=new Blob([JSON.stringify(items.map(a=>({...a,image:""})),null,2)],{type:"application/json"});const u=URL.createObjectURL(b),x=document.createElement("a");x.href=u;x.download="le-anime-backup.json";x.click();URL.revokeObjectURL(u)};
 
   return <main>
-    <header><div><div className="eyebrow">MY LIBRARY</div><h1>Lè Anime</h1><p>{items.length} titles · GitHub is the source of truth</p></div><div className="headerActions">{admin?<><button className="adminPill" onClick={logout}>@{admin.login}</button><button className="add" onClick={()=>setEdit(newAnime())}>＋</button></>:<button className="adminPill" disabled={adminChecking} onClick={login}>{adminChecking?"Checking…":"Admin"}</button>}</div></header>
+    <header><div><div className="eyebrow">MY LIBRARY</div><h1>Lè Anime</h1><p>{items.length} titles · GitHub is the source of truth</p></div><div className="headerActions"><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setEdit(newAnime())}>＋</button>}</div></header>
     {notice&&<div className="notice">{notice}</div>}
     <div className="search"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search anime, genre, studio…"/></div>
     <nav>{["All","Completed","Paused","Planned"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</nav>
@@ -128,9 +95,9 @@ function App(){
     <section className="grid">{shown.map(a=><article key={a.id} onClick={()=>setSelected(a)}><div className="poster">{a.image?<img loading="lazy" src={a.image} alt={`${a.title} cover`}/>:<div className="fallback"><b>{a.title.slice(0,1)}</b><span>{a.title}</span></div>}<span className="badge">{a.status||"Uncategorized"}</span></div><h3>{a.title}</h3><div className="rating">{stars(a.score)}</div><small>{a.year||""}{a.episodes?` · ${a.episodes} eps`:""}</small></article>)}</section>
     <footer><button onClick={backup}>Export repo data</button></footer>
 
-    {selected&&!edit&&<div className="sheet" onClick={()=>setSelected(null)}><div className="panel" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setSelected(null)}>×</button><div className="hero">{selected.image?<img src={selected.image} alt={`${selected.title} cover`}/>:<div className="heroFallback">{selected.title}</div>}</div><h2>{selected.title}</h2><div className="rating big">{stars(selected.score)}</div><p className="meta">{selected.status||"Uncategorized"} · {selected.year||"—"} · {selected.episodes||"—"} episodes</p><p>{selected.synopsis||"No synopsis yet."}</p><p className="muted">{selected.genre}<br/>{selected.studio}</p>{admin&&<div className="actions"><button onClick={()=>setEdit(selected)}>Edit</button><button className="danger" disabled={saving} onClick={()=>remove(selected)}>Delete</button></div>}</div></div>}
+    {selected&&!edit&&<div className="sheet" onClick={()=>setSelected(null)}><div className="panel" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setSelected(null)}>×</button><div className="hero">{selected.image?<img src={selected.image} alt={`${selected.title} cover`}/>:<div className="heroFallback">{selected.title}</div>}</div><h2>{selected.title}</h2><div className="rating big">{stars(selected.score)}</div><p className="meta">{selected.status||"Uncategorized"} · {selected.year||"—"} · {selected.episodes||"—"} episodes</p><p>{selected.synopsis||"No synopsis yet."}</p><p className="muted">{selected.genre}<br/>{selected.studio}</p>{editMode&&<div className="actions"><button onClick={()=>setEdit(selected)}>Edit</button><button className="danger" onClick={()=>remove(selected)}>Delete</button></div>}</div></div>}
 
-    {edit&&admin&&<div className="sheet"><form className="panel form" onSubmit={e=>{e.preventDefault();commit(edit)}}><button type="button" className="close" onClick={()=>setEdit(null)}>×</button><h2>{items.some(x=>x.id===edit.id)?"Edit anime":"Add anime"}</h2>{["title","genre","studio","synopsis"].map(k=><label key={k}>{k[0].toUpperCase()+k.slice(1)}{k==="synopsis"?<textarea value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>:<input required={k==="title"} value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>}</label>)}<div className="row"><label>Status<select value={edit.status} onChange={e=>setEdit({...edit,status:e.target.value})}><option value="">Uncategorized</option>{["Completed","Paused","Planned"].map(x=><option key={x}>{x}</option>)}</select></label><label>Score<select value={edit.score??""} onChange={e=>setEdit({...edit,score:e.target.value?+e.target.value:null})}><option value="">—</option>{[1,2,3,4,5].map(x=><option key={x} value={x}>{x} ★</option>)}</select></label></div><div className="row"><label>Episodes<input type="number" min="0" value={edit.episodes??""} onChange={e=>setEdit({...edit,episodes:e.target.value?+e.target.value:null})}/></label><label>Year<input type="number" min="1900" max="2100" value={edit.year??""} onChange={e=>setEdit({...edit,year:e.target.value?+e.target.value:null})}/></label></div><button className="save" disabled={saving}>{saving?"Publishing…":"Save to GitHub"}</button></form></div>}
+    {edit&&editMode&&<div className="sheet"><form className="panel form" onSubmit={e=>{e.preventDefault();commit(edit)}}><button type="button" className="close" onClick={()=>setEdit(null)}>×</button><h2>{items.some(x=>x.id===edit.id)?"Edit anime":"Add anime"}</h2>{["title","genre","studio","synopsis"].map(k=><label key={k}>{k[0].toUpperCase()+k.slice(1)}{k==="synopsis"?<textarea value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>:<input required={k==="title"} value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>}</label>)}<div className="row"><label>Status<select value={edit.status} onChange={e=>setEdit({...edit,status:e.target.value})}><option value="">Uncategorized</option>{["Completed","Paused","Planned"].map(x=><option key={x}>{x}</option>)}</select></label><label>Score<select value={edit.score??""} onChange={e=>setEdit({...edit,score:e.target.value?+e.target.value:null})}><option value="">—</option>{[1,2,3,4,5].map(x=><option key={x} value={x}>{x} ★</option>)}</select></label></div><div className="row"><label>Episodes<input type="number" min="0" value={edit.episodes??""} onChange={e=>setEdit({...edit,episodes:e.target.value?+e.target.value:null})}/></label><label>Year<input type="number" min="1900" max="2100" value={edit.year??""} onChange={e=>setEdit({...edit,year:e.target.value?+e.target.value:null})}/></label></div><button className="save">Continue in GitHub</button></form></div>}
   </main>
 }
 
