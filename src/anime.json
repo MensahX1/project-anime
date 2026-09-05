@@ -2859,5 +2859,20 @@
     "latestEpisodeYear": 2019,
     "synopsis": "Class 1-A takes on hero work on Nabu Island and must defend its residents when powerful villains attack.",
     "image": ""
+  },
+  {
+    "id": "anime-my-hero-academia-world-heroes-mission",
+    "title": "My Hero Academia: World Heroes' Mission",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 2,
+    "genre": "Action, Superhero",
+    "studio": "Bones",
+    "year": 2021,
+    "latestEpisodeYear": 2021,
+    "synopsis": "Deku, Bakugo, and Todoroki join an international mission to stop a terrorist organization plotting to eliminate people with Quirks.",
+    "image": ""
   }
 ]
