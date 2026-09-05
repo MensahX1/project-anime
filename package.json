@@ -1,6 +1,6 @@
 {
   "name":"project-anime","private":true,"version":"1.0.0","type":"module",
-  "scripts":{"dev":"vite --host 0.0.0.0","covers":"node scripts/enrich-covers.mjs","build":"vite build","preview":"vite preview --host 0.0.0.0"},
+  "scripts":{"dev":"vite --host 0.0.0.0","covers:check":"node scripts/export-covers-bulk.mjs --check-only","build":"vite build","preview":"vite preview --host 0.0.0.0"},
   "dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","typescript":"latest","react":"latest","react-dom":"latest","idb":"latest","vite-plugin-pwa":"latest"},
   "devDependencies":{}
 }
