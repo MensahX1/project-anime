@@ -2739,5 +2739,20 @@
     "latestEpisodeYear": 2010,
     "synopsis": "Inuyasha and his companions return for the final battles against Naraku, bringing the long-running quest for the Shikon Jewel toward its conclusion.",
     "image": ""
+  },
+  {
+    "id": "anime-blue-lock-episode-nagi",
+    "title": "Blue Lock: Episode Nagi",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 3,
+    "genre": "Sports, Drama",
+    "studio": "8bit",
+    "year": 2024,
+    "latestEpisodeYear": 2024,
+    "synopsis": "A feature-film retelling of Blue Lock from Seishiro Nagi's perspective, following his path into the Blue Lock program and rivalry-driven growth.",
+    "image": ""
   }
 ]
