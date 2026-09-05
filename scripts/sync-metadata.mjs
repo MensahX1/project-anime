@@ -125,15 +125,15 @@ const report={generatedAt:new Date().toISOString(),datasetLastUpdate:database.la
 for(const match of matches){
   const a=match.item;
   const previousEpisodes=Number.isFinite(a.episodes)?a.episodes:null;
-  if(a.watchedEpisodes==null&&a.status==='Completed'&&previousEpisodes!=null)a.watchedEpisodes=previousEpisodes;
-  a.newEpisodes=Number.isInteger(a.newEpisodes)&&a.newEpisodes>0?a.newEpisodes:0;
   const oldLatest=a.latestEpisodeYear??a.latestSeasonYear??null;
   delete a.seasons;
   delete a.latestSeasonYear;
+  delete a.watchedEpisodes;
+  delete a.newEpisodes;
+  delete a.newEpisodeDetectedAt;
 
   if(!match.entry){
     a.latestEpisodeYear=(Number.isFinite(oldLatest)&&oldLatest<=CURRENT_YEAR)?oldLatest:(Number.isFinite(a.year)&&a.year<=CURRENT_YEAR?a.year:null);
-    if(a.episodes!=null&&a.watchedEpisodes!=null&&a.watchedEpisodes>a.episodes)a.watchedEpisodes=a.episodes;
     report.unmatched.push({id:a.id,title:a.title});
     continue;
   }
@@ -148,27 +148,18 @@ for(const match of matches){
   if(latestEpisodeYear==null&&rootStarted&&Number.isFinite(root.animeSeason?.year)&&root.animeSeason.year<=CURRENT_YEAR)latestEpisodeYear=root.animeSeason.year;
   if(latestEpisodeYear==null&&Number.isFinite(a.year)&&a.year<=CURRENT_YEAR)latestEpisodeYear=a.year;
   const firstYear=root.animeSeason?.year??a.year??null;
-  const before={episodes:previousEpisodes,latestEpisodeYear:oldLatest,year:a.year??null,watchedEpisodes:a.watchedEpisodes??null,newEpisodes:a.newEpisodes};
+  const before={episodes:previousEpisodes,latestEpisodeYear:oldLatest,year:a.year??null};
 
-  if(totalEpisodes!=null){
-    // Correct stale inflated progress before deciding whether an increase is genuinely new.
-    if(a.watchedEpisodes!=null&&a.watchedEpisodes>totalEpisodes)a.watchedEpisodes=totalEpisodes;
-    if(previousEpisodes!=null&&totalEpisodes>previousEpisodes&&previousEpisodes>0){
-      a.newEpisodes+=(totalEpisodes-previousEpisodes);
-      a.newEpisodeDetectedAt=new Date().toISOString();
-    }
-    a.episodes=totalEpisodes;
-  }
+  if(totalEpisodes!=null)a.episodes=totalEpisodes;
   a.latestEpisodeYear=latestEpisodeYear;
   if(a.year==null&&firstYear!=null)a.year=firstYear;
-  if(a.episodes!=null&&a.watchedEpisodes!=null&&a.watchedEpisodes>=a.episodes){
-    a.newEpisodes=0;
-    delete a.newEpisodeDetectedAt;
-  }
   a.metadataSource='manami-project/anime-offline-database';
 
-  const after={episodes:a.episodes??null,latestEpisodeYear:a.latestEpisodeYear??null,year:a.year??null,watchedEpisodes:a.watchedEpisodes??null,newEpisodes:a.newEpisodes};
-  const row={id:a.id,title:a.title,matchedTitle:root.title,matchScore:match.score,via:match.via,before,after,chain:chain.map(x=>({title:x.title,type:x.type,status:x.status||null,episodes:x.episodes,year:x.animeSeason?.year??null,season:x.animeSeason?.season??null}))};
+  const after={episodes:a.episodes??null,latestEpisodeYear:a.latestEpisodeYear??null,year:a.year??null};
+  if(before.episodes!==after.episodes||before.latestEpisodeYear!==after.latestEpisodeYear){
+    a.metadataUpdatedAt=new Date().toISOString();
+  }
+  const row={id:a.id,title:a.title,matchedTitle:root.title,matchScore:match.score,via:match.via,before,after,metadataUpdatedAt:a.metadataUpdatedAt??null,chain:chain.map(x=>({title:x.title,type:x.type,status:x.status||null,episodes:x.episodes,year:x.animeSeason?.year??null,season:x.animeSeason?.season??null}))};
   (JSON.stringify(before)!==JSON.stringify(after)?report.updated:report.unchanged).push(row);
   if(!rootStarted||chain.length===0)report.review.push(row);
 }
