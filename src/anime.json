@@ -2874,5 +2874,20 @@
     "latestEpisodeYear": 2021,
     "synopsis": "Deku, Bakugo, and Todoroki join an international mission to stop a terrorist organization plotting to eliminate people with Quirks.",
     "image": ""
+  },
+  {
+    "id": "anime-dragon-ball-super-broly",
+    "title": "Dragon Ball Super: Broly",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 4,
+    "genre": "Action, Adventure, Fantasy",
+    "studio": "Toei Animation",
+    "year": 2018,
+    "latestEpisodeYear": 2018,
+    "synopsis": "Goku and Vegeta encounter Broly, a tremendously powerful Saiyan whose arrival leads to an explosive battle that reveals more of the Saiyans' shared past.",
+    "image": ""
   }
 ]
