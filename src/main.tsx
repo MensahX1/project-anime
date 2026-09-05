@@ -21,7 +21,7 @@ const withCover=(a:Anime):Anime=>({...a,image:coverMap[a.title]||a.image||""});
 const initialAnime=()=>repoAnime.map(withCover);
 
 function issueUrl(title:string,payload:unknown){
-  const body=`<!-- LE_ANIME_ADMIN_V1 -->\nThis request was created by Lè Anime. Only the authorized GitHub account can apply it.\n\n\`\`\`json\n${JSON.stringify(payload,null,2)}\n\`\`\``;
+  const body=`<!-- LE_ANIME_ADMIN_V1 -->\nThis request was created by The Watchlist. Only the authorized GitHub account can apply it.\n\n\`\`\`json\n${JSON.stringify(payload,null,2)}\n\`\`\``;
   return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`[anime-admin] ${title}`)}&body=${encodeURIComponent(body)}`;
 }
 
@@ -74,10 +74,10 @@ function App(){
     window.open(issueUrl(`delete ${a.title}`,{action:"delete",id:a.id,title:a.title}),"_blank","noopener,noreferrer");
     setSelected(null);setNotice("GitHub opened. Submit the prefilled issue to publish this deletion.");
   };
-  const backup=()=>{const b=new Blob([JSON.stringify(items.map(a=>({...a,image:""})),null,2)],{type:"application/json"});const u=URL.createObjectURL(b),x=document.createElement("a");x.href=u;x.download="le-anime-backup.json";x.click();URL.revokeObjectURL(u)};
+  const backup=()=>{const b=new Blob([JSON.stringify(items.map(a=>({...a,image:""})),null,2)],{type:"application/json"});const u=URL.createObjectURL(b),x=document.createElement("a");x.href=u;x.download="the-watchlist-backup.json";x.click();URL.revokeObjectURL(u)};
 
   return <main>
-    <header><div><div className="eyebrow">MY LIBRARY</div><h1>Lè Anime</h1><p>{items.length} titles · GitHub is the source of truth</p></div><div className="headerActions"><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setEdit(newAnime())}>＋</button>}</div></header>
+    <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>The Watchlist</h1><p>{items.length} titles · GitHub is the source of truth</p></div><div className="headerActions"><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setEdit(newAnime())}>＋</button>}</div></header>
     {notice&&<div className="notice">{notice}</div>}
     <div className="search"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search anime, genre, studio…"/></div>
     <nav>{["All","Completed","Paused","Planned"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</nav>
