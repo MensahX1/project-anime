@@ -15,90 +15,24 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  batch:
-    name: Covers ${{ matrix.start }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 12
-    strategy:
-      fail-fast: false
-      max-parallel: 12
-      matrix:
-        start: [0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150,155,160,165,170,175,180]
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: npm install
-      - name: Resolve and download this batch
-        run: npm run covers -- --start=${{ matrix.start }} --count=5
-      - name: Preserve batch manifests
-        shell: bash
-        run: |
-          mkdir -p batch-meta/${{ matrix.start }}
-          cp src/generatedCovers.json batch-meta/${{ matrix.start }}/generated.json
-          cp src/coverSources.json batch-meta/${{ matrix.start }}/sources.json
-      - uses: actions/upload-artifact@v4
-        with:
-          name: cover-batch-${{ matrix.start }}
-          if-no-files-found: error
-          retention-days: 1
-          path: |
-            public/covers
-            batch-meta
-
-  merge:
+  export:
     name: Build iPhone ZIP
-    needs: batch
-    if: always() && !cancelled()
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm install
-      - uses: actions/download-artifact@v4
-        with:
-          pattern: cover-batch-*
-          path: gathered
-          merge-multiple: true
-      - name: Merge covers and manifests
+      - name: Download bulk anime metadata database
         shell: bash
         run: |
-          mkdir -p public/covers src
-          if [[ -d gathered/public/covers ]]; then cp -f gathered/public/covers/* public/covers/ 2>/dev/null || true; fi
-          node <<'NODE'
-          const fs=require('fs'),path=require('path');
-          const out={},sources={};
-          const root='gathered/batch-meta';
-          if(fs.existsSync(root)) for(const d of fs.readdirSync(root)){
-            const g=path.join(root,d,'generated.json'),s=path.join(root,d,'sources.json');
-            if(fs.existsSync(g)) Object.assign(out,JSON.parse(fs.readFileSync(g,'utf8')));
-            if(fs.existsSync(s)) Object.assign(sources,JSON.parse(fs.readFileSync(s,'utf8')));
-          }
-          fs.writeFileSync('src/generatedCovers.json',JSON.stringify(out,null,2)+'\n');
-          fs.writeFileSync('src/coverSources.json',JSON.stringify(sources,null,2)+'\n');
-          console.log(`Merged ${Object.keys(out).length} generated mappings and ${Object.keys(sources).length} source records.`);
-          NODE
-      - name: Retry any missing covers one at a time
-        shell: bash
-        run: |
-          node <<'NODE' > /tmp/missing.txt
-          const fs=require('fs');
-          const titles=JSON.parse(fs.readFileSync('src/allTitles.json','utf8'));
-          const slug=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,' ').trim().replace(/ /g,'-');
-          const missing=[];
-          titles.forEach((t,i)=>{const p=`public/covers/${slug(t)}.jpg`;if(!fs.existsSync(p)||fs.statSync(p).size<=1000)missing.push(i)});
-          process.stdout.write(missing.join(' '));
-          NODE
-          echo "Missing indices: $(cat /tmp/missing.txt)"
-          for i in $(cat /tmp/missing.txt); do
-            npm run covers -- --start=$i --count=1
-          done
-      - name: Verify all 183 covers
-        run: npm run covers -- --verify
+          curl -L --fail --retry 4 --retry-delay 2 \
+            'https://github.com/manami-project/anime-offline-database/releases/download/2026-27/anime-offline-database-minified.json' \
+            -o /tmp/anime-db.json
+          echo "Database size: $(du -h /tmp/anime-db.json | cut -f1)"
+      - name: Match all titles and download covers
+        run: node scripts/export-covers-bulk.mjs /tmp/anime-db.json
       - name: Prepare iPhone upload folder
         shell: bash
         run: |
@@ -116,9 +50,9 @@ jobs:
           Commit message suggestion:
             Store all anime cover artwork
 
-          After that commit, the normal Vite Pages workflow can deploy without downloading covers again.
+          After that commit, normal Vite Pages deployments do not need to download covers again.
           TXT
-          echo "JPG count: $(find iphone-upload/public/covers -type f -name '*.jpg' | wc -l)"
+          test "$(find iphone-upload/public/covers -type f -name '*.jpg' | wc -l)" -eq 183
       - uses: actions/upload-artifact@v4
         with:
           name: le-anime-covers-iphone
