@@ -3616,5 +3616,25 @@
       "https://animenewsnetwork.com/encyclopedia/anime.php?id=16595"
     ],
     "dataset": "manami-project/anime-offline-database 2026-27"
+  },
+  "Death Parade": {
+    "url": "https://cdn.myanimelist.net/images/anime/5/71553.jpg",
+    "matchedTitle": "Death Parade",
+    "type": "TV",
+    "year": 2015,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/10905",
+      "https://anilist.co/anime/20931",
+      "https://anime-planet.com/anime/death-parade",
+      "https://animecountdown.com/428814",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=16375",
+      "https://anisearch.com/anime/9941",
+      "https://kitsu.app/anime/9969",
+      "https://livechart.me/anime/1280",
+      "https://myanimelist.net/anime/28223",
+      "https://simkl.com/anime/428814"
+    ],
+    "dataset": "manami-project/anime-offline-database 2026-27"
   }
 }
