@@ -34,7 +34,6 @@ function App(){
   const[genreFilter,setGenreFilter]=useState("All");
   const[studioFilter,setStudioFilter]=useState("All");
   const[scoreFilter,setScoreFilter]=useState("All");
-  const[updateFilter,setUpdateFilter]=useState("All");
   const[sort,setSort]=useState<SortKey>("score-desc");
   const[selected,setSelected]=useState<Anime|null>(null);
   const[edit,setEdit]=useState<Anime|null>(null);
@@ -51,8 +50,7 @@ function App(){
       const matchesGenre=genreFilter==="All"||splitTags(a.genre).includes(genreFilter);
       const matchesStudio=studioFilter==="All"||splitTags(a.studio).includes(studioFilter);
       const matchesScore=scoreFilter==="All"||(scoreFilter==="Unrated"?a.score==null:a.score===Number(scoreFilter));
-      const matchesUpdate=updateFilter==="All"||isRecentlyUpdated(a);
-      return matchesStatus&&matchesSearch&&matchesGenre&&matchesStudio&&matchesScore&&matchesUpdate;
+      return matchesStatus&&matchesSearch&&matchesGenre&&matchesStudio&&matchesScore;
     });
     return result.sort((a,b)=>{
       if(sort==="score-desc") return (b.score??-1)-(a.score??-1)||a.title.localeCompare(b.title);
@@ -62,10 +60,10 @@ function App(){
       if(sort==="year-asc") return (a.year??9999)-(b.year??9999)||a.title.localeCompare(b.title);
       return (a.studio||"zzz").localeCompare(b.studio||"zzz")||a.title.localeCompare(b.title);
     });
-  },[items,q,filter,genreFilter,studioFilter,scoreFilter,updateFilter,sort]);
+  },[items,q,filter,genreFilter,studioFilter,scoreFilter,sort]);
 
-  const hasFilters=q||filter!=="All"||genreFilter!=="All"||studioFilter!=="All"||scoreFilter!=="All"||updateFilter!=="All"||sort!=="score-desc";
-  const resetFilters=()=>{setQ("");setFilter("All");setGenreFilter("All");setStudioFilter("All");setScoreFilter("All");setUpdateFilter("All");setSort("score-desc")};
+  const hasFilters=q||filter!=="All"||genreFilter!=="All"||studioFilter!=="All"||scoreFilter!=="All"||sort!=="score-desc";
+  const resetFilters=()=>{setQ("");setFilter("All");setGenreFilter("All");setStudioFilter("All");setScoreFilter("All");setSort("score-desc")};
   const toggleEdit=()=>{const next=!editMode;setEditMode(next);localStorage.setItem(EDIT_KEY,next?"1":"0");setEdit(null);setNotice(next?"Edit mode enabled · GitHub will verify you when you submit":"Edit mode disabled")};
   const newAnime=():Anime=>({id:`anime-${crypto.randomUUID()}`,title:"",status:"Planned",episodes:null,score:null,genre:"",studio:"",year:new Date().getFullYear(),latestEpisodeYear:new Date().getFullYear(),synopsis:"",image:""});
   const commit=(a:Anime)=>{const clean={...a,image:""};window.open(issueUrl(`upsert ${a.title||"anime"}`,{action:"upsert",anime:clean}),"_blank","noopener,noreferrer");setEdit(null);setNotice("GitHub opened. Submit the prefilled issue to publish this change.");};
@@ -76,12 +74,11 @@ function App(){
     <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>The Watchlist</h1><p>{items.length} titles · GitHub is the source of truth</p></div><div className="headerActions"><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setEdit(newAnime())}>＋</button>}</div></header>
     {notice&&<div className="notice">{notice}</div>}
     <div className="search"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search anime, genre, studio…"/></div>
-    <nav>{["All","Completed","Paused","Planned"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</nav>
+    <nav>{["All","Completed","Paused","Planned","AI Suggested"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</nav>
     <section className="filterPanel"><div className="filterGrid">
       <label><span>Genre</span><select value={genreFilter} onChange={e=>setGenreFilter(e.target.value)}><option value="All">All genres</option>{genres.map(x=><option key={x}>{x}</option>)}</select></label>
       <label><span>Studio</span><select value={studioFilter} onChange={e=>setStudioFilter(e.target.value)}><option value="All">All studios</option>{studios.map(x=><option key={x}>{x}</option>)}</select></label>
       <label><span>Stars</span><select value={scoreFilter} onChange={e=>setScoreFilter(e.target.value)}><option value="All">All ratings</option>{[5,4,3,2,1].map(x=><option key={x} value={x}>{x} ★</option>)}<option value="Unrated">Unrated</option></select></label>
-      <label><span>Updates</span><select value={updateFilter} onChange={e=>setUpdateFilter(e.target.value)}><option value="All">All titles</option><option value="Recent">Recently updated</option></select></label>
       <label><span>Sort</span><select value={sort} onChange={e=>setSort(e.target.value as SortKey)}><option value="score-desc">Rating: high to low</option><option value="score-asc">Rating: low to high</option><option value="title-asc">Title: A to Z</option><option value="year-desc">Latest episode: newest</option><option value="year-asc">Original year: oldest</option><option value="studio-asc">Studio: A to Z</option></select></label>
     </div><div className="filterSummary"><span>{shown.length} of {items.length} titles</span>{hasFilters&&<button onClick={resetFilters}>Reset</button>}</div></section>
 
@@ -90,7 +87,7 @@ function App(){
 
     {selected&&!edit&&<div className="sheet" onClick={()=>setSelected(null)}><div className="panel" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setSelected(null)}>×</button><div className="hero">{selected.image?<img src={selected.image} alt={`${selected.title} cover`}/>:<div className="heroFallback">{selected.title}</div>}</div><h2>{selected.title}</h2>{isRecentlyUpdated(selected)&&<div className="newNotice">NEW · metadata updated recently</div>}<div className="rating big">{stars(selected.score)}</div><p className="meta">{selected.status||"Uncategorized"} · {selected.episodes||"—"} episodes · latest {selected.latestEpisodeYear||selected.year||"—"}</p>{selected.year&&selected.latestEpisodeYear&&selected.latestEpisodeYear!==selected.year&&<p className="meta">Started: {selected.year}</p>}<p>{selected.synopsis||"No synopsis yet."}</p><p className="muted">{selected.genre}<br/>{selected.studio}</p>{editMode&&<div className="actions"><button onClick={()=>setEdit(selected)}>Edit</button><button className="danger" onClick={()=>remove(selected)}>Delete</button></div>}</div></div>}
 
-    {edit&&editMode&&<div className="sheet"><form className="panel form" onSubmit={e=>{e.preventDefault();commit(edit)}}><button type="button" className="close" onClick={()=>setEdit(null)}>×</button><h2>{items.some(x=>x.id===edit.id)?"Edit anime":"Add anime"}</h2>{["title","genre","studio","synopsis"].map(k=><label key={k}>{k[0].toUpperCase()+k.slice(1)}{k==="synopsis"?<textarea value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>:<input required={k==="title"} value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>}</label>)}<div className="row"><label>Status<select value={edit.status} onChange={e=>setEdit({...edit,status:e.target.value})}><option value="">Uncategorized</option>{["Completed","Paused","Planned"].map(x=><option key={x}>{x}</option>)}</select></label><label>Score<select value={edit.score??""} onChange={e=>setEdit({...edit,score:e.target.value?+e.target.value:null})}><option value="">—</option>{[1,2,3,4,5].map(x=><option key={x} value={x}>{x} ★</option>)}</select></label></div><div className="row"><label>Total episodes<input type="number" min="0" value={edit.episodes??""} onChange={e=>setEdit({...edit,episodes:e.target.value?+e.target.value:null})}/></label><label>Latest episode year<input type="number" min="1900" max="2100" value={edit.latestEpisodeYear??""} onChange={e=>setEdit({...edit,latestEpisodeYear:e.target.value?+e.target.value:null})}/></label></div><label>Original year<input type="number" min="1900" max="2100" value={edit.year??""} onChange={e=>setEdit({...edit,year:e.target.value?+e.target.value:null})}/></label><button className="save">Continue in GitHub</button></form></div>}
+    {edit&&editMode&&<div className="sheet"><form className="panel form" onSubmit={e=>{e.preventDefault();commit(edit)}}><button type="button" className="close" onClick={()=>setEdit(null)}>×</button><h2>{items.some(x=>x.id===edit.id)?"Edit anime":"Add anime"}</h2>{["title","genre","studio","synopsis"].map(k=><label key={k}>{k[0].toUpperCase()+k.slice(1)}{k==="synopsis"?<textarea value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>:<input required={k==="title"} value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>}</label>)}<div className="row"><label>Status<select value={edit.status} onChange={e=>setEdit({...edit,status:e.target.value})}><option value="">Uncategorized</option>{["Completed","Paused","Planned","AI Suggested"].map(x=><option key={x}>{x}</option>)}</select></label><label>Score<select value={edit.score??""} onChange={e=>setEdit({...edit,score:e.target.value?+e.target.value:null})}><option value="">—</option>{[1,2,3,4,5].map(x=><option key={x} value={x}>{x} ★</option>)}</select></label></div><div className="row"><label>Total episodes<input type="number" min="0" value={edit.episodes??""} onChange={e=>setEdit({...edit,episodes:e.target.value?+e.target.value:null})}/></label><label>Latest episode year<input type="number" min="1900" max="2100" value={edit.latestEpisodeYear??""} onChange={e=>setEdit({...edit,latestEpisodeYear:e.target.value?+e.target.value:null})}/></label></div><label>Original year<input type="number" min="1900" max="2100" value={edit.year??""} onChange={e=>setEdit({...edit,year:e.target.value?+e.target.value:null})}/></label><button className="save">Continue in GitHub</button></form></div>}
   </main>
 }
 
