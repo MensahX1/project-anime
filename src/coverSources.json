@@ -3736,5 +3736,25 @@
       "https://simkl.com/anime/40184"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Pokémon Ranger and the Temple of the Sea": {
+    "url": "https://cdn.myanimelist.net/images/anime/10/23168.jpg",
+    "matchedTitle": "Pokemon Movie 09: Pokemon Ranger to Umi no Ouji Manaphy",
+    "type": "MOVIE",
+    "year": 2006,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/4199",
+      "https://anilist.co/anime/2201",
+      "https://anime-planet.com/anime/pokemon-ranger-and-the-temple-of-the-sea",
+      "https://animecountdown.com/37742",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=6667",
+      "https://anisearch.com/anime/109",
+      "https://kitsu.app/anime/1992",
+      "https://livechart.me/anime/4663",
+      "https://myanimelist.net/anime/2201",
+      "https://simkl.com/anime/37742"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
