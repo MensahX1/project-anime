@@ -2619,5 +2619,20 @@
     "latestEpisodeYear": 2011,
     "synopsis": "Dan and the Battle Brawlers return to New Vestroia to fight the Vestals and free the captured Bakugan.",
     "image": ""
+  },
+  {
+    "id": "anime-pokemon",
+    "title": "Pokémon",
+    "status": "Completed",
+    "episodes": 276,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 1,
+    "genre": "Adventure, Fantasy, Comedy",
+    "studio": "OLM",
+    "year": 1997,
+    "latestEpisodeYear": 2002,
+    "synopsis": "Ash Ketchum begins his journey with Pikachu, traveling through multiple regions while collecting badges and competing in Pokémon battles.",
+    "image": ""
   }
 ]
