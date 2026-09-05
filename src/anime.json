@@ -2829,5 +2829,20 @@
     "latestEpisodeYear": 2022,
     "synopsis": "Futaro and the Nakano quintuplets approach the school festival and the conclusion of their intertwined high-school romance.",
     "image": ""
+  },
+  {
+    "id": "anime-yu-gi-oh-the-dark-side-of-dimensions",
+    "title": "Yu-Gi-Oh!: The Dark Side of Dimensions",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 2,
+    "genre": "Action, Fantasy, Game",
+    "studio": "Gallop",
+    "year": 2016,
+    "latestEpisodeYear": 2016,
+    "synopsis": "Yugi and Kaiba face a new threat as Kaiba pursues one final duel with the Pharaoh and a mysterious classmate wields the power of the Millennium Items.",
+    "image": ""
   }
 ]
