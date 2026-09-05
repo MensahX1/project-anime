@@ -3676,5 +3676,45 @@
       "https://simkl.com/anime/36544"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Bakugan Battle Brawlers: New Vestroia": {
+    "url": "https://cdn.myanimelist.net/images/anime/1894/133816.jpg",
+    "matchedTitle": "Bakugan Battle Brawlers: New Vestroia",
+    "type": "TV",
+    "year": 2010,
+    "matchScore": 1095,
+    "providers": [
+      "https://anidb.net/anime/7401",
+      "https://anilist.co/anime/5337",
+      "https://anime-planet.com/anime/bakugan-battle-brawlers-new-vestroia",
+      "https://animecountdown.com/37973",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=11248",
+      "https://anisearch.com/anime/5758",
+      "https://kitsu.app/anime/4062",
+      "https://livechart.me/anime/4692",
+      "https://myanimelist.net/anime/5337",
+      "https://simkl.com/anime/37973"
+    ],
+    "dataset": "manami-project/anime-offline-database"
+  },
+  "Pokémon": {
+    "url": "https://cdn.myanimelist.net/images/anime/1787/140239.jpg",
+    "matchedTitle": "Pokemon",
+    "type": "TV",
+    "year": 1997,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/230",
+      "https://anilist.co/anime/527",
+      "https://anime-planet.com/anime/pokemon",
+      "https://animecountdown.com/37468",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=270",
+      "https://anisearch.com/anime/3139",
+      "https://kitsu.app/anime/486",
+      "https://livechart.me/anime/3702",
+      "https://myanimelist.net/anime/527",
+      "https://simkl.com/anime/37468"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
