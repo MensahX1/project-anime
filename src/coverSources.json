@@ -3956,5 +3956,24 @@
       "https://simkl.com/anime/1767731"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "The Quintessential Quintuplets Movie": {
+    "url": "https://cdn.myanimelist.net/images/anime/1037/122516.jpg",
+    "matchedTitle": "5-toubun no Hanayome Movie",
+    "type": "MOVIE",
+    "year": 2022,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/16165",
+      "https://anilist.co/anime/131520",
+      "https://anime-planet.com/anime/the-quintessential-quintuplets-movie",
+      "https://animecountdown.com/1577789",
+      "https://anisearch.com/anime/16091",
+      "https://kitsu.app/anime/44229",
+      "https://livechart.me/anime/10488",
+      "https://myanimelist.net/anime/48548",
+      "https://simkl.com/anime/1577789"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
