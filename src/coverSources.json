@@ -3896,5 +3896,25 @@
       "https://simkl.com/anime/1578599"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Sword Art Online the Movie: Ordinal Scale": {
+    "url": "https://cdn.myanimelist.net/images/anime/1557/123313.jpg",
+    "matchedTitle": "Sword Art Online Movie: Ordinal Scale",
+    "type": "MOVIE",
+    "year": 2017,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/11681",
+      "https://anilist.co/anime/21403",
+      "https://anime-planet.com/anime/sword-art-online-movie-ordinal-scale",
+      "https://animecountdown.com/527702",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=18141",
+      "https://anisearch.com/anime/10913",
+      "https://kitsu.app/anime/11423",
+      "https://livechart.me/anime/1859",
+      "https://myanimelist.net/anime/31765",
+      "https://simkl.com/anime/527702"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
