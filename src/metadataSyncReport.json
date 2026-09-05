@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T21:06:16.433Z",
+  "generatedAt": "2026-09-05T21:07:51.830Z",
   "datasetLastUpdate": "2026-07-04",
   "source": "manami-project/anime-offline-database",
   "currentSeason": "SUMMER 2026",
@@ -11,7 +11,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 48,
+        "episodes": 24,
         "latestEpisodeYear": 2014,
         "year": 2014,
         "watchedEpisodes": 48,
@@ -21,7 +21,7 @@
         "episodes": 24,
         "latestEpisodeYear": 2014,
         "year": 2014,
-        "watchedEpisodes": 48,
+        "watchedEpisodes": 24,
         "newEpisodes": 0
       },
       "chain": [
@@ -36,13 +36,76 @@
       ]
     },
     {
+      "id": "sheet-classroom-of-the-elite",
+      "title": "Classroom of the Elite",
+      "matchedTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2026,
+        "year": 2017,
+        "watchedEpisodes": 12,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 54,
+        "latestEpisodeYear": 2026,
+        "year": 2017,
+        "watchedEpisodes": 12,
+        "newEpisodes": 42
+      },
+      "chain": [
+        {
+          "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2017,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2022,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2024,
+          "season": "WINTER"
+        },
+        {
+          "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 16,
+          "year": 2026,
+          "season": "SPRING"
+        },
+        {
+          "title": "Classroom of the Elite",
+          "type": "TV",
+          "status": "UNKNOWN",
+          "episodes": 0,
+          "year": null,
+          "season": "UNDEFINED"
+        }
+      ]
+    },
+    {
       "id": "sheet-the-eminence-in-shadow",
       "title": "The Eminence in Shadow",
       "matchedTitle": "Kage no Jitsuryokusha ni Naritakute!",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 49,
+        "episodes": 32,
         "latestEpisodeYear": 2023,
         "year": 2022,
         "watchedEpisodes": 49,
@@ -52,7 +115,7 @@
         "episodes": 32,
         "latestEpisodeYear": 2023,
         "year": 2022,
-        "watchedEpisodes": 49,
+        "watchedEpisodes": 32,
         "newEpisodes": 0
       },
       "chain": [
@@ -81,8 +144,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 25,
-        "latestEpisodeYear": 2027,
+        "episodes": 24,
+        "latestEpisodeYear": 2025,
         "year": 2024,
         "watchedEpisodes": 25,
         "newEpisodes": 0
@@ -91,7 +154,7 @@
         "episodes": 24,
         "latestEpisodeYear": 2025,
         "year": 2024,
-        "watchedEpisodes": 25,
+        "watchedEpisodes": 24,
         "newEpisodes": 0
       },
       "chain": [
@@ -120,8 +183,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 37,
-        "latestEpisodeYear": 2027,
+        "episodes": 24,
+        "latestEpisodeYear": 2024,
         "year": 2023,
         "watchedEpisodes": 37,
         "newEpisodes": 0
@@ -130,7 +193,7 @@
         "episodes": 24,
         "latestEpisodeYear": 2024,
         "year": 2023,
-        "watchedEpisodes": 37,
+        "watchedEpisodes": 24,
         "newEpisodes": 0
       },
       "chain": [
@@ -153,53 +216,14 @@
       ]
     },
     {
-      "id": "sheet-wistoria-wand-and-sword",
-      "title": "Wistoria: Wand and Sword",
-      "matchedTitle": "Tsue to Tsurugi no Wistoria",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "latestEpisodeYear": 2026,
-        "year": 2024,
-        "watchedEpisodes": 12,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 24,
-        "latestEpisodeYear": 2026,
-        "year": 2024,
-        "watchedEpisodes": 12,
-        "newEpisodes": 12
-      },
-      "chain": [
-        {
-          "title": "Tsue to Tsurugi no Wistoria",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2024,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Tsue to Tsurugi no Wistoria Season 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2026,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
       "id": "sheet-dragon-ball",
       "title": "Dragon Ball",
       "matchedTitle": "Dragon Ball",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 436,
-        "latestEpisodeYear": 2018,
+        "episodes": 153,
+        "latestEpisodeYear": 1986,
         "year": 1986,
         "watchedEpisodes": 436,
         "newEpisodes": 0
@@ -208,7 +232,7 @@
         "episodes": 153,
         "latestEpisodeYear": 1986,
         "year": 1986,
-        "watchedEpisodes": 436,
+        "watchedEpisodes": 153,
         "newEpisodes": 0
       },
       "chain": [
@@ -229,8 +253,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 518,
-        "latestEpisodeYear": 2014,
+        "episodes": 291,
+        "latestEpisodeYear": 1989,
         "year": 1989,
         "watchedEpisodes": 518,
         "newEpisodes": 0
@@ -239,7 +263,7 @@
         "episodes": 291,
         "latestEpisodeYear": 1989,
         "year": 1989,
-        "watchedEpisodes": 518,
+        "watchedEpisodes": 291,
         "newEpisodes": 0
       },
       "chain": [
@@ -260,8 +284,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 161,
-        "latestEpisodeYear": 2009,
+        "episodes": 64,
+        "latestEpisodeYear": 1996,
         "year": 1996,
         "watchedEpisodes": 161,
         "newEpisodes": 0
@@ -270,7 +294,7 @@
         "episodes": 64,
         "latestEpisodeYear": 1996,
         "year": 1996,
-        "watchedEpisodes": 161,
+        "watchedEpisodes": 64,
         "newEpisodes": 0
       },
       "chain": [
@@ -291,8 +315,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 297,
-        "latestEpisodeYear": 2026,
+        "episodes": 131,
+        "latestEpisodeYear": 2015,
         "year": 2015,
         "watchedEpisodes": 297,
         "newEpisodes": 0
@@ -301,7 +325,7 @@
         "episodes": 131,
         "latestEpisodeYear": 2015,
         "year": 2015,
-        "watchedEpisodes": 297,
+        "watchedEpisodes": 131,
         "newEpisodes": 0
       },
       "chain": [
@@ -316,300 +340,67 @@
       ]
     },
     {
-      "id": "sheet-yu-gi-oh",
-      "title": "Yu-Gi-Oh!",
-      "matchedTitle": "Yu☆Gi☆Oh! Duel Monsters",
+      "id": "sheet-the-rising-of-the-shield-hero",
+      "title": "The Rising of the Shield Hero",
+      "matchedTitle": "Tate no Yuusha no Nariagari",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 224,
-        "latestEpisodeYear": 2000,
-        "year": 2000,
-        "watchedEpisodes": 224,
+        "episodes": 25,
+        "latestEpisodeYear": 2025,
+        "year": 2019,
+        "watchedEpisodes": 25,
         "newEpisodes": 0
       },
       "after": {
-        "episodes": 251,
-        "latestEpisodeYear": 2000,
-        "year": 2000,
-        "watchedEpisodes": 224,
-        "newEpisodes": 27
+        "episodes": 62,
+        "latestEpisodeYear": 2025,
+        "year": 2019,
+        "watchedEpisodes": 25,
+        "newEpisodes": 37
       },
       "chain": [
         {
-          "title": "Yu☆Gi☆Oh!",
+          "title": "Tate no Yuusha no Nariagari",
           "type": "TV",
           "status": "FINISHED",
-          "episodes": 27,
-          "year": 1998,
-          "season": "SPRING"
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Duel Monsters",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 224,
-          "year": 2000,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
-      "id": "sheet-yu-gi-oh-5d-s",
-      "title": "Yu-Gi-Oh! 5D's",
-      "matchedTitle": "Yu☆Gi☆Oh! 5D's",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 154,
-        "latestEpisodeYear": 2021,
-        "year": 2008,
-        "watchedEpisodes": 154,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 154,
-        "latestEpisodeYear": 2008,
-        "year": 2008,
-        "watchedEpisodes": 154,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Yu☆Gi☆Oh! 5D's",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 154,
-          "year": 2008,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
-      "id": "sheet-yu-gi-oh-zexal",
-      "title": "Yu-Gi-Oh! ZEXAL",
-      "matchedTitle": "Yu☆Gi☆Oh! Zexal",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 73,
-        "latestEpisodeYear": 2021,
-        "year": 2011,
-        "watchedEpisodes": 73,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 146,
-        "latestEpisodeYear": 2012,
-        "year": 2011,
-        "watchedEpisodes": 73,
-        "newEpisodes": 73
-      },
-      "chain": [
-        {
-          "title": "Yu☆Gi☆Oh! Zexal",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 73,
-          "year": 2011,
-          "season": "SPRING"
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Zexal Second",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 73,
-          "year": 2012,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "sheet-psycho-pass",
-      "title": "Psycho-Pass",
-      "matchedTitle": "Psycho-Pass",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 52,
-        "latestEpisodeYear": 2019,
-        "year": 2012,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 41,
-        "latestEpisodeYear": 2019,
-        "year": 2012,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Psycho-Pass",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 22,
-          "year": 2012,
-          "season": "FALL"
-        },
-        {
-          "title": "Psycho-Pass 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 11,
-          "year": 2014,
-          "season": "FALL"
-        },
-        {
-          "title": "Psycho-Pass 3",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 8,
-          "year": 2019,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "sheet-date-a-live",
-      "title": "Date A Live",
-      "matchedTitle": "Date A Live",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "latestEpisodeYear": 2024,
-        "year": 2013,
-        "watchedEpisodes": 12,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 58,
-        "latestEpisodeYear": 2024,
-        "year": 2013,
-        "watchedEpisodes": 12,
-        "newEpisodes": 46
-      },
-      "chain": [
-        {
-          "title": "Date A Live",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2013,
-          "season": "SPRING"
-        },
-        {
-          "title": "Date A Live II",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 10,
-          "year": 2014,
-          "season": "SPRING"
-        },
-        {
-          "title": "Date A Live III",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
+          "episodes": 25,
           "year": 2019,
           "season": "WINTER"
         },
         {
-          "title": "Date A Live IV",
+          "title": "Tate no Yuusha no Nariagari Season 2",
           "type": "TV",
           "status": "FINISHED",
-          "episodes": 12,
+          "episodes": 13,
           "year": 2022,
           "season": "SPRING"
         },
         {
-          "title": "Date A Live V",
+          "title": "Tate no Yuusha no Nariagari Season 3",
           "type": "TV",
           "status": "FINISHED",
           "episodes": 12,
-          "year": 2024,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
-      "id": "sheet-fire-force",
-      "title": "Fire Force",
-      "matchedTitle": "Enen no Shouboutai",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2026,
-        "year": 2019,
-        "watchedEpisodes": 24,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 73,
-        "latestEpisodeYear": 2026,
-        "year": 2019,
-        "watchedEpisodes": 24,
-        "newEpisodes": 49
-      },
-      "chain": [
-        {
-          "title": "Enen no Shouboutai",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2019,
-          "season": "SUMMER"
+          "year": 2023,
+          "season": "FALL"
         },
         {
-          "title": "Enen no Shouboutai: Ni no Shou",
+          "title": "The Rising of the Shield Hero Season 3",
           "type": "TV",
           "status": "FINISHED",
-          "episodes": 24,
-          "year": 2020,
-          "season": "SUMMER"
+          "episodes": 0,
+          "year": 2023,
+          "season": "FALL"
         },
         {
-          "title": "Enen no Shouboutai: San no Shou",
+          "title": "Tate no Yuusha no Nariagari Season 4",
           "type": "TV",
           "status": "FINISHED",
           "episodes": 12,
           "year": 2025,
-          "season": "SPRING"
-        },
-        {
-          "title": "Enen no Shouboutai: San no Shou Part 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2026,
-          "season": "WINTER"
+          "season": "SUMMER"
         }
       ]
-    },
-    {
-      "id": "sheet-fate-strange-fake",
-      "title": "Fate/strange Fake",
-      "matchedTitle": "Fate/strange Fake (Zoku-hen)",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 1,
-        "latestEpisodeYear": 2026,
-        "year": 2023,
-        "watchedEpisodes": 1,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 1,
-        "latestEpisodeYear": 2023,
-        "year": 2023,
-        "watchedEpisodes": 1,
-        "newEpisodes": 0
-      },
-      "chain": []
     },
     {
       "id": "sheet-fate-stay-night-unlimited-blade-works",
@@ -618,7 +409,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 49,
+        "episodes": 25,
         "latestEpisodeYear": 2015,
         "year": 2014,
         "watchedEpisodes": 49,
@@ -628,7 +419,7 @@
         "episodes": 25,
         "latestEpisodeYear": 2015,
         "year": 2014,
-        "watchedEpisodes": 49,
+        "watchedEpisodes": 25,
         "newEpisodes": 0
       },
       "chain": [
@@ -657,7 +448,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 99,
+        "episodes": 87,
         "latestEpisodeYear": 2022,
         "year": 2013,
         "watchedEpisodes": 99,
@@ -667,7 +458,7 @@
         "episodes": 87,
         "latestEpisodeYear": 2022,
         "year": 2013,
-        "watchedEpisodes": 99,
+        "watchedEpisodes": 87,
         "newEpisodes": 0
       },
       "chain": [
@@ -722,61 +513,14 @@
       ]
     },
     {
-      "id": "sheet-fairy-tail",
-      "title": "Fairy Tail",
-      "matchedTitle": "Fairy Tail",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 175,
-        "latestEpisodeYear": 2018,
-        "year": 2009,
-        "watchedEpisodes": 175,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 328,
-        "latestEpisodeYear": 2018,
-        "year": 2009,
-        "watchedEpisodes": 175,
-        "newEpisodes": 153
-      },
-      "chain": [
-        {
-          "title": "Fairy Tail",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 175,
-          "year": 2009,
-          "season": "FALL"
-        },
-        {
-          "title": "Fairy Tail (2014)",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 102,
-          "year": 2014,
-          "season": "SPRING"
-        },
-        {
-          "title": "Fairy Tail: Final Series",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 51,
-          "year": 2018,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
       "id": "sheet-shangri-la-frontier",
       "title": "Shangri-La Frontier",
       "matchedTitle": "Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 72,
-        "latestEpisodeYear": 2027,
+        "episodes": 50,
+        "latestEpisodeYear": 2024,
         "year": 2023,
         "watchedEpisodes": 72,
         "newEpisodes": 0
@@ -785,7 +529,7 @@
         "episodes": 50,
         "latestEpisodeYear": 2024,
         "year": 2023,
-        "watchedEpisodes": 72,
+        "watchedEpisodes": 50,
         "newEpisodes": 0
       },
       "chain": [
@@ -814,8 +558,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 232,
-        "latestEpisodeYear": 2026,
+        "episodes": 220,
+        "latestEpisodeYear": 2002,
         "year": 2002,
         "watchedEpisodes": 232,
         "newEpisodes": 0
@@ -824,7 +568,7 @@
         "episodes": 220,
         "latestEpisodeYear": 2002,
         "year": 2002,
-        "watchedEpisodes": 232,
+        "watchedEpisodes": 220,
         "newEpisodes": 0
       },
       "chain": [
@@ -845,8 +589,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 512,
-        "latestEpisodeYear": 2026,
+        "episodes": 500,
+        "latestEpisodeYear": 2007,
         "year": 2007,
         "watchedEpisodes": 512,
         "newEpisodes": 0
@@ -855,7 +599,7 @@
         "episodes": 500,
         "latestEpisodeYear": 2007,
         "year": 2007,
-        "watchedEpisodes": 512,
+        "watchedEpisodes": 500,
         "newEpisodes": 0
       },
       "chain": [
@@ -870,92 +614,14 @@
       ]
     },
     {
-      "id": "sheet-hell-s-paradise",
-      "title": "Hell's Paradise",
-      "matchedTitle": "Jigokuraku",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 39,
-        "latestEpisodeYear": 2026,
-        "year": 2023,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 25,
-        "latestEpisodeYear": 2026,
-        "year": 2023,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Jigokuraku",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2023,
-          "season": "SPRING"
-        },
-        {
-          "title": "Jigokuraku 2nd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2026,
-          "season": "WINTER"
-        }
-      ]
-    },
-    {
-      "id": "sheet-kaiju-no-8",
-      "title": "Kaiju No. 8",
-      "matchedTitle": "Kaijuu 8-gou",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "latestEpisodeYear": 2025,
-        "year": 2024,
-        "watchedEpisodes": 12,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 23,
-        "latestEpisodeYear": 2025,
-        "year": 2024,
-        "watchedEpisodes": 12,
-        "newEpisodes": 11
-      },
-      "chain": [
-        {
-          "title": "Kaijuu 8-gou",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2024,
-          "season": "SPRING"
-        },
-        {
-          "title": "Kaijuu 8-gou 2nd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 11,
-          "year": 2025,
-          "season": "SUMMER"
-        }
-      ]
-    },
-    {
       "id": "sheet-chainsaw-man",
       "title": "Chainsaw Man",
       "matchedTitle": "Chainsaw Man",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 15,
-        "latestEpisodeYear": 2025,
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
         "year": 2022,
         "watchedEpisodes": 15,
         "newEpisodes": 0
@@ -964,7 +630,7 @@
         "episodes": 12,
         "latestEpisodeYear": 2022,
         "year": 2022,
-        "watchedEpisodes": 15,
+        "watchedEpisodes": 12,
         "newEpisodes": 0
       },
       "chain": [
@@ -985,8 +651,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 26,
-        "latestEpisodeYear": 2023,
+        "episodes": 13,
+        "latestEpisodeYear": 2021,
         "year": 2021,
         "watchedEpisodes": 26,
         "newEpisodes": 0
@@ -995,7 +661,7 @@
         "episodes": 13,
         "latestEpisodeYear": 2021,
         "year": 2021,
-        "watchedEpisodes": 26,
+        "watchedEpisodes": 13,
         "newEpisodes": 0
       },
       "chain": [
@@ -1016,7 +682,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 69,
+        "episodes": 47,
         "latestEpisodeYear": 2016,
         "year": 2015,
         "watchedEpisodes": 69,
@@ -1026,7 +692,7 @@
         "episodes": 47,
         "latestEpisodeYear": 2016,
         "year": 2015,
-        "watchedEpisodes": 69,
+        "watchedEpisodes": 47,
         "newEpisodes": 0
       },
       "chain": [
@@ -1049,148 +715,14 @@
       ]
     },
     {
-      "id": "sheet-fruits-basket",
-      "title": "Fruits Basket",
-      "matchedTitle": "Fruits Basket 1st Season",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 89,
-        "latestEpisodeYear": 2021,
-        "year": 2019,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 63,
-        "latestEpisodeYear": 2021,
-        "year": 2019,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Fruits Basket 1st Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2019,
-          "season": "SPRING"
-        },
-        {
-          "title": "Fruits Basket 2nd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2020,
-          "season": "SPRING"
-        },
-        {
-          "title": "Fruits Basket: The Final",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2021,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
-      "id": "sheet-my-hero-academia",
-      "title": "My Hero Academia",
-      "matchedTitle": "Boku no Hero Academia",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "latestEpisodeYear": 2016,
-        "year": 2016,
-        "watchedEpisodes": 13,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 142,
-        "latestEpisodeYear": 2022,
-        "year": 2016,
-        "watchedEpisodes": 13,
-        "newEpisodes": 129
-      },
-      "chain": [
-        {
-          "title": "Boku no Hero Academia",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2016,
-          "season": "SPRING"
-        },
-        {
-          "title": "Boku no Hero Academia 2nd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2017,
-          "season": "SPRING"
-        },
-        {
-          "title": "Boku no Hero Academia 3rd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2018,
-          "season": "SPRING"
-        },
-        {
-          "title": "Boku no Hero Academia 4th Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2019,
-          "season": "FALL"
-        },
-        {
-          "title": "Boku no Hero Academia: Ikinokore! Kesshi no Survival Kunren",
-          "type": "ONA",
-          "status": "FINISHED",
-          "episodes": 2,
-          "year": 2020,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Boku no Hero Academia 5th Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2021,
-          "season": "SPRING"
-        },
-        {
-          "title": "Boku no Hero Academia 6th Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2022,
-          "season": "FALL"
-        },
-        {
-          "title": "Boku no Hero Academia (ONA)",
-          "type": "ONA",
-          "status": "FINISHED",
-          "episodes": 2,
-          "year": 2022,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
       "id": "sheet-alya-sometimes-hides-her-feelings-in-russian",
       "title": "Alya Sometimes Hides Her Feelings in Russian",
       "matchedTitle": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2027,
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
         "year": 2024,
         "watchedEpisodes": 24,
         "newEpisodes": 0
@@ -1199,7 +731,7 @@
         "episodes": 12,
         "latestEpisodeYear": 2024,
         "year": 2024,
-        "watchedEpisodes": 24,
+        "watchedEpisodes": 12,
         "newEpisodes": 0
       },
       "chain": [
@@ -1220,8 +752,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 49,
-        "latestEpisodeYear": 2026,
+        "episodes": 37,
+        "latestEpisodeYear": 2023,
         "year": 2021,
         "watchedEpisodes": 49,
         "newEpisodes": 0
@@ -1230,7 +762,7 @@
         "episodes": 37,
         "latestEpisodeYear": 2023,
         "year": 2021,
-        "watchedEpisodes": 49,
+        "watchedEpisodes": 37,
         "newEpisodes": 0
       },
       "chain": [
@@ -1259,7 +791,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 59,
+        "episodes": 36,
         "latestEpisodeYear": 2025,
         "year": 2022,
         "watchedEpisodes": 59,
@@ -1269,7 +801,7 @@
         "episodes": 36,
         "latestEpisodeYear": 2025,
         "year": 2022,
-        "watchedEpisodes": 59,
+        "watchedEpisodes": 36,
         "newEpisodes": 0
       },
       "chain": [
@@ -1292,91 +824,13 @@
       ]
     },
     {
-      "id": "sheet-the-quintessential-quintuplets",
-      "title": "The Quintessential Quintuplets",
-      "matchedTitle": "5-toubun no Hanayome",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "latestEpisodeYear": 2021,
-        "year": 2019,
-        "watchedEpisodes": 12,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 25,
-        "latestEpisodeYear": 2021,
-        "year": 2019,
-        "watchedEpisodes": 12,
-        "newEpisodes": 13
-      },
-      "chain": [
-        {
-          "title": "5-toubun no Hanayome",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2019,
-          "season": "WINTER"
-        },
-        {
-          "title": "The Quintessential Quintuplets 2 PV",
-          "type": "ONA",
-          "status": "FINISHED",
-          "episodes": 1,
-          "year": 2020,
-          "season": "UNDEFINED"
-        },
-        {
-          "title": "5-toubun no Hanayome ∬",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2021,
-          "season": "WINTER"
-        }
-      ]
-    },
-    {
-      "id": "sheet-to-be-hero-x",
-      "title": "To Be Hero X",
-      "matchedTitle": "To Be Hero X",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 92,
-        "latestEpisodeYear": 2025,
-        "year": 2025,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 24,
-        "latestEpisodeYear": 2025,
-        "year": 2025,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "To Be Hero X",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2025,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
       "id": "sheet-7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
       "title": "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy!",
       "matchedTitle": "Loop 7-kaime no Akuyaku Reijou wa, Moto Tekikoku de Jiyuu Kimama na Hanayome Seikatsu wo Mankitsu suru",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 24,
+        "episodes": 12,
         "latestEpisodeYear": 2024,
         "year": 2024,
         "watchedEpisodes": 24,
@@ -1386,7 +840,7 @@
         "episodes": 12,
         "latestEpisodeYear": 2024,
         "year": 2024,
-        "watchedEpisodes": 24,
+        "watchedEpisodes": 12,
         "newEpisodes": 0
       },
       "chain": [
@@ -1407,7 +861,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 24,
+        "episodes": 12,
         "latestEpisodeYear": 2025,
         "year": 2025,
         "watchedEpisodes": 24,
@@ -1417,7 +871,7 @@
         "episodes": 12,
         "latestEpisodeYear": 2025,
         "year": 2025,
-        "watchedEpisodes": 24,
+        "watchedEpisodes": 12,
         "newEpisodes": 0
       },
       "chain": [
@@ -1432,44 +886,83 @@
       ]
     },
     {
-      "id": "sheet-re-zero-starting-life-in-another-world",
-      "title": "Re:ZERO -Starting Life in Another World-",
-      "matchedTitle": "Re:Zero kara Hajimeru Isekai Seikatsu",
+      "id": "sheet-konosuba-god-s-blessing-on-this-wonderful-world",
+      "title": "KonoSuba: God's Blessing on This Wonderful World!",
+      "matchedTitle": "Kono Subarashii Sekai ni Shukufuku wo!",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 122,
-        "latestEpisodeYear": 2026,
+        "episodes": 10,
+        "latestEpisodeYear": 2024,
         "year": 2016,
         "watchedEpisodes": null,
         "newEpisodes": 0
       },
       "after": {
-        "episodes": 109,
-        "latestEpisodeYear": 2026,
+        "episodes": 31,
+        "latestEpisodeYear": 2024,
         "year": 2016,
         "watchedEpisodes": null,
-        "newEpisodes": 0
+        "newEpisodes": 21
       },
       "chain": [
         {
-          "title": "Re:Zero kara Hajimeru Isekai Seikatsu",
+          "title": "Kono Subarashii Sekai ni Shukufuku wo!",
           "type": "TV",
           "status": "FINISHED",
-          "episodes": 25,
+          "episodes": 10,
           "year": 2016,
+          "season": "WINTER"
+        },
+        {
+          "title": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 10,
+          "year": 2017,
+          "season": "WINTER"
+        },
+        {
+          "title": "Kono Subarashii Sekai ni Shukufuku wo! 3",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 11,
+          "year": 2024,
           "season": "SPRING"
         },
         {
-          "title": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season",
+          "title": "KonoSuba – God's blessing on this wonderful world! 4",
           "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2020,
-          "season": "SUMMER"
-        },
+          "status": "UNKNOWN",
+          "episodes": 0,
+          "year": null,
+          "season": "UNDEFINED"
+        }
+      ]
+    },
+    {
+      "id": "sheet-bottom-tier-character-tomozaki",
+      "title": "Bottom-Tier Character Tomozaki",
+      "matchedTitle": "Jaku-Chara Tomozaki-kun",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2021,
+        "watchedEpisodes": 12,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 25,
+        "latestEpisodeYear": 2024,
+        "year": 2021,
+        "watchedEpisodes": 12,
+        "newEpisodes": 13
+      },
+      "chain": [
         {
-          "title": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+          "title": "Jaku-Chara Tomozaki-kun",
           "type": "TV",
           "status": "FINISHED",
           "episodes": 12,
@@ -1477,44 +970,20 @@
           "season": "WINTER"
         },
         {
-          "title": "Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season",
+          "title": "Jaku-Chara Tomozaki-kun 2nd Stage",
           "type": "TV",
           "status": "FINISHED",
-          "episodes": 16,
+          "episodes": 13,
           "year": 2024,
-          "season": "FALL"
-        },
-        {
-          "title": "Re:ZERO -Starting Life in Another World-",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 8,
-          "year": 2024,
-          "season": "FALL"
-        },
-        {
-          "title": "Re:ZERO -Starting Life in Another World-",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 8,
-          "year": 2025,
           "season": "WINTER"
         },
         {
-          "title": "Re:ZERO: Starting Life in Another World Season 3: Part II",
+          "title": "Bottom-Tier Character Tomozaki 2nd Stage",
           "type": "TV",
           "status": "FINISHED",
-          "episodes": 8,
-          "year": 2025,
+          "episodes": 0,
+          "year": 2024,
           "season": "WINTER"
-        },
-        {
-          "title": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-          "type": "TV",
-          "status": "ONGOING",
-          "episodes": 19,
-          "year": 2026,
-          "season": "SPRING"
         }
       ]
     },
@@ -1525,7 +994,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 14,
+        "episodes": 13,
         "latestEpisodeYear": 2023,
         "year": 2023,
         "watchedEpisodes": 14,
@@ -1535,7 +1004,7 @@
         "episodes": 13,
         "latestEpisodeYear": 2023,
         "year": 2023,
-        "watchedEpisodes": 14,
+        "watchedEpisodes": 13,
         "newEpisodes": 0
       },
       "chain": [
@@ -1556,8 +1025,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 68,
-        "latestEpisodeYear": 2025,
+        "episodes": 63,
+        "latestEpisodeYear": 2024,
         "year": 2019,
         "watchedEpisodes": 68,
         "newEpisodes": 0
@@ -1566,7 +1035,7 @@
         "episodes": 63,
         "latestEpisodeYear": 2024,
         "year": 2019,
-        "watchedEpisodes": 68,
+        "watchedEpisodes": 63,
         "newEpisodes": 0
       },
       "chain": [
@@ -1619,7 +1088,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 15,
+        "episodes": 12,
         "latestEpisodeYear": 2016,
         "year": 2016,
         "watchedEpisodes": 15,
@@ -1629,7 +1098,7 @@
         "episodes": 12,
         "latestEpisodeYear": 2016,
         "year": 2016,
-        "watchedEpisodes": 15,
+        "watchedEpisodes": 12,
         "newEpisodes": 0
       },
       "chain": [
@@ -1644,52 +1113,13 @@
       ]
     },
     {
-      "id": "sheet-the-apothecary-diaries",
-      "title": "The Apothecary Diaries",
-      "matchedTitle": "Kusuriya no Hitorigoto",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2027,
-        "year": 2023,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 48,
-        "latestEpisodeYear": 2025,
-        "year": 2023,
-        "watchedEpisodes": null,
-        "newEpisodes": 24
-      },
-      "chain": [
-        {
-          "title": "Kusuriya no Hitorigoto",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2023,
-          "season": "FALL"
-        },
-        {
-          "title": "Kusuriya no Hitorigoto 2nd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2025,
-          "season": "WINTER"
-        }
-      ]
-    },
-    {
       "id": "sheet-vivy-fluorite-eye-s-song",
       "title": "Vivy: Fluorite Eye's Song",
       "matchedTitle": "Vivy: Fluorite Eye's Song",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 14,
+        "episodes": 13,
         "latestEpisodeYear": 2021,
         "year": 2021,
         "watchedEpisodes": 14,
@@ -1699,7 +1129,7 @@
         "episodes": 13,
         "latestEpisodeYear": 2021,
         "year": 2021,
-        "watchedEpisodes": 14,
+        "watchedEpisodes": 13,
         "newEpisodes": 0
       },
       "chain": [
@@ -1714,101 +1144,14 @@
       ]
     },
     {
-      "id": "sheet-is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon",
-      "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
-      "matchedTitle": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "latestEpisodeYear": 2015,
-        "year": 2015,
-        "watchedEpisodes": 13,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 76,
-        "latestEpisodeYear": 2024,
-        "year": 2015,
-        "watchedEpisodes": 13,
-        "newEpisodes": 63
-      },
-      "chain": [
-        {
-          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2015,
-          "season": "SPRING"
-        },
-        {
-          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2019,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2020,
-          "season": "FALL"
-        },
-        {
-          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka IV: Shin Shou - Meikyuu-hen",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 11,
-          "year": 2022,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka IV: Shin Shou - Yakusai-hen",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 11,
-          "year": 2023,
-          "season": "WINTER"
-        },
-        {
-          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V: Houjou no Megami-hen",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 15,
-          "year": 2024,
-          "season": "FALL"
-        },
-        {
-          "title": "Dungeon ni Deai o Motomeru no wa Machigatte Iru Darouka: Familia Myth VI",
-          "type": "TV",
-          "status": "UNKNOWN",
-          "episodes": 1,
-          "year": null,
-          "season": "UNDEFINED"
-        },
-        {
-          "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon? Season 6",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 1,
-          "year": null,
-          "season": "UNDEFINED"
-        }
-      ]
-    },
-    {
       "id": "sheet-beyblade-metal-fusion",
       "title": "Beyblade: Metal Fusion",
       "matchedTitle": "Metal Fight Beyblade",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 346,
-        "latestEpisodeYear": 2017,
+        "episodes": 154,
+        "latestEpisodeYear": 2011,
         "year": 2009,
         "watchedEpisodes": 346,
         "newEpisodes": 0
@@ -1817,7 +1160,7 @@
         "episodes": 154,
         "latestEpisodeYear": 2011,
         "year": 2009,
-        "watchedEpisodes": 346,
+        "watchedEpisodes": 154,
         "newEpisodes": 0
       },
       "chain": [
@@ -1848,77 +1191,14 @@
       ]
     },
     {
-      "id": "sheet-the-seven-deadly-sins",
-      "title": "The Seven Deadly Sins",
-      "matchedTitle": "Nanatsu no Taizai",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2014,
-        "year": 2014,
-        "watchedEpisodes": 24,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 120,
-        "latestEpisodeYear": 2023,
-        "year": 2014,
-        "watchedEpisodes": 24,
-        "newEpisodes": 96
-      },
-      "chain": [
-        {
-          "title": "Nanatsu no Taizai",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2014,
-          "season": "FALL"
-        },
-        {
-          "title": "Nanatsu no Taizai: Imashime no Fukkatsu",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2018,
-          "season": "WINTER"
-        },
-        {
-          "title": "Nanatsu no Taizai: Kamigami no Gekirin",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2019,
-          "season": "FALL"
-        },
-        {
-          "title": "Nanatsu no Taizai: Funnu no Shinpan",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2021,
-          "season": "WINTER"
-        },
-        {
-          "title": "Nanatsu no Taizai: Mokushiroku no Yonkishi",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2023,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
       "id": "sheet-kakegurui",
       "title": "Kakegurui",
       "matchedTitle": "Kakegurui",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 30,
-        "latestEpisodeYear": 2022,
+        "episodes": 24,
+        "latestEpisodeYear": 2019,
         "year": 2017,
         "watchedEpisodes": 30,
         "newEpisodes": 0
@@ -1927,7 +1207,7 @@
         "episodes": 24,
         "latestEpisodeYear": 2019,
         "year": 2017,
-        "watchedEpisodes": 30,
+        "watchedEpisodes": 24,
         "newEpisodes": 0
       },
       "chain": [
@@ -1956,7 +1236,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 24,
+        "episodes": 12,
         "latestEpisodeYear": 2025,
         "year": 2025,
         "watchedEpisodes": 24,
@@ -1966,7 +1246,7 @@
         "episodes": 12,
         "latestEpisodeYear": 2025,
         "year": 2025,
-        "watchedEpisodes": 24,
+        "watchedEpisodes": 12,
         "newEpisodes": 0
       },
       "chain": [
@@ -1981,45 +1261,14 @@
       ]
     },
     {
-      "id": "sheet-hunter-x-hunter",
-      "title": "Hunter x Hunter",
-      "matchedTitle": "Hunter x Hunter (2011)",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 210,
-        "latestEpisodeYear": 2011,
-        "year": 2011,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 148,
-        "latestEpisodeYear": 2011,
-        "year": 2011,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Hunter x Hunter (2011)",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 148,
-          "year": 2011,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
       "id": "sheet-86-eighty-six",
       "title": "86 EIGHTY-SIX",
       "matchedTitle": "86",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2022,
+        "episodes": 23,
+        "latestEpisodeYear": 2021,
         "year": 2021,
         "watchedEpisodes": 24,
         "newEpisodes": 0
@@ -2028,7 +1277,7 @@
         "episodes": 23,
         "latestEpisodeYear": 2021,
         "year": 2021,
-        "watchedEpisodes": 24,
+        "watchedEpisodes": 23,
         "newEpisodes": 0
       },
       "chain": [
@@ -2051,146 +1300,13 @@
       ]
     },
     {
-      "id": "sheet-bleach",
-      "title": "Bleach",
-      "matchedTitle": "Bleach",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 366,
-        "latestEpisodeYear": 2026,
-        "year": 2004,
-        "watchedEpisodes": 366,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 393,
-        "latestEpisodeYear": 2024,
-        "year": 2004,
-        "watchedEpisodes": 366,
-        "newEpisodes": 27
-      },
-      "chain": [
-        {
-          "title": "Bleach",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 366,
-          "year": 2004,
-          "season": "FALL"
-        },
-        {
-          "title": "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2023,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Bleach: Sennen Kessen-hen - Soukoku-tan",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 14,
-          "year": 2024,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "sheet-bleach-thousand-year-blood-war",
-      "title": "Bleach: Thousand-Year Blood War",
-      "matchedTitle": "Bleach: Sennen Kessen-hen",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "latestEpisodeYear": 2026,
-        "year": 2022,
-        "watchedEpisodes": 13,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 40,
-        "latestEpisodeYear": 2024,
-        "year": 2022,
-        "watchedEpisodes": 13,
-        "newEpisodes": 27
-      },
-      "chain": [
-        {
-          "title": "Bleach: Sennen Kessen-hen",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2022,
-          "season": "FALL"
-        },
-        {
-          "title": "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2023,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Bleach: Sennen Kessen-hen - Soukoku-tan",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 14,
-          "year": 2024,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "sheet-tonikawa-over-the-moon-for-you",
-      "title": "TONIKAWA: Over the Moon for You",
-      "matchedTitle": "Tonikaku Kawaii",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 32,
-        "latestEpisodeYear": 2023,
-        "year": 2020,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 24,
-        "latestEpisodeYear": 2023,
-        "year": 2020,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Tonikaku Kawaii",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2020,
-          "season": "FALL"
-        },
-        {
-          "title": "Tonikaku Kawaii 2nd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2023,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
       "id": "sheet-oshi-no-ko",
       "title": "Oshi no Ko",
       "matchedTitle": "[Oshi no Ko]",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 36,
+        "episodes": 35,
         "latestEpisodeYear": 2026,
         "year": 2023,
         "watchedEpisodes": 36,
@@ -2200,7 +1316,7 @@
         "episodes": 35,
         "latestEpisodeYear": 2026,
         "year": 2023,
-        "watchedEpisodes": 36,
+        "watchedEpisodes": 35,
         "newEpisodes": 0
       },
       "chain": [
@@ -2237,8 +1353,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2026,
+        "episodes": 12,
+        "latestEpisodeYear": 2025,
         "year": 2025,
         "watchedEpisodes": 24,
         "newEpisodes": 0
@@ -2247,7 +1363,7 @@
         "episodes": 12,
         "latestEpisodeYear": 2025,
         "year": 2025,
-        "watchedEpisodes": 24,
+        "watchedEpisodes": 12,
         "newEpisodes": 0
       },
       "chain": [
@@ -2268,8 +1384,8 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 190,
-        "latestEpisodeYear": 2026,
+        "episodes": 170,
+        "latestEpisodeYear": 2017,
         "year": 2017,
         "watchedEpisodes": 190,
         "newEpisodes": 0
@@ -2278,7 +1394,7 @@
         "episodes": 170,
         "latestEpisodeYear": 2017,
         "year": 2017,
-        "watchedEpisodes": 190,
+        "watchedEpisodes": 170,
         "newEpisodes": 0
       },
       "chain": [
@@ -2293,359 +1409,14 @@
       ]
     },
     {
-      "id": "sheet-berserk-of-gluttony",
-      "title": "Berserk of Gluttony",
-      "matchedTitle": "Boushoku no Berserk",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "latestEpisodeYear": 2023,
-        "year": 2023,
-        "watchedEpisodes": 12,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 13,
-        "latestEpisodeYear": 2023,
-        "year": 2023,
-        "watchedEpisodes": 12,
-        "newEpisodes": 1
-      },
-      "chain": [
-        {
-          "title": "Boushoku no Berserk",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2023,
-          "season": "FALL"
-        },
-        {
-          "title": "Boushoku no Berserk 2",
-          "type": "TV",
-          "status": "UNKNOWN",
-          "episodes": 1,
-          "year": null,
-          "season": "UNDEFINED"
-        }
-      ]
-    },
-    {
-      "id": "sheet-to-your-eternity",
-      "title": "To Your Eternity",
-      "matchedTitle": "Fumetsu no Anata e",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 20,
-        "latestEpisodeYear": 2025,
-        "year": 2021,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 62,
-        "latestEpisodeYear": 2025,
-        "year": 2021,
-        "watchedEpisodes": null,
-        "newEpisodes": 42
-      },
-      "chain": [
-        {
-          "title": "Fumetsu no Anata e",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 20,
-          "year": 2021,
-          "season": "SPRING"
-        },
-        {
-          "title": "Fumetsu no Anata e Season 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 20,
-          "year": 2022,
-          "season": "FALL"
-        },
-        {
-          "title": "Fumetsu no Anata e Season 3",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 22,
-          "year": 2025,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "sheet-that-time-i-got-reincarnated-as-a-slime",
-      "title": "That Time I Got Reincarnated as a Slime",
-      "matchedTitle": "Tensei shitara Slime Datta Ken",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2018,
-        "year": 2018,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 85,
-        "latestEpisodeYear": 2026,
-        "year": 2018,
-        "watchedEpisodes": null,
-        "newEpisodes": 61
-      },
-      "chain": [
-        {
-          "title": "Tensei shitara Slime Datta Ken",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2018,
-          "season": "FALL"
-        },
-        {
-          "title": "Tensei shitara Slime Datta Ken 2nd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2021,
-          "season": "WINTER"
-        },
-        {
-          "title": "Tensei shitara Slime Datta Ken 2nd Season Part 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2021,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Tensei shitara Slime Datta Ken 3rd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2024,
-          "season": "SPRING"
-        },
-        {
-          "title": "Tensei shitara Slime Datta Ken 4th Season",
-          "type": "TV",
-          "status": "ONGOING",
-          "episodes": 12,
-          "year": 2026,
-          "season": "SPRING"
-        },
-        {
-          "title": "Tensei Shitara Slime Datta Ken (2027)",
-          "type": "TV",
-          "status": "UNKNOWN",
-          "episodes": 1,
-          "year": null,
-          "season": "UNDEFINED"
-        }
-      ]
-    },
-    {
-      "id": "sheet-haikyu",
-      "title": "Haikyu!!",
-      "matchedTitle": "Haikyuu!!",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 95,
-        "latestEpisodeYear": 2020,
-        "year": 2014,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 85,
-        "latestEpisodeYear": 2020,
-        "year": 2014,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Haikyuu!!",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2014,
-          "season": "SPRING"
-        },
-        {
-          "title": "Haikyuu!! Second Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2015,
-          "season": "FALL"
-        },
-        {
-          "title": "Haikyuu!! Karasuno Koukou vs. Shiratorizawa Gakuen Koukou",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 10,
-          "year": 2016,
-          "season": "FALL"
-        },
-        {
-          "title": "Haikyuu!! To the Top",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2020,
-          "season": "WINTER"
-        },
-        {
-          "title": "Haikyuu!! To the Top Part 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2020,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "sheet-gachiakuta",
-      "title": "Gachiakuta",
-      "matchedTitle": "Gachiakuta",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 36,
-        "latestEpisodeYear": 2025,
-        "year": 2025,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 24,
-        "latestEpisodeYear": 2025,
-        "year": 2025,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Gachiakuta",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2025,
-          "season": "SUMMER"
-        }
-      ]
-    },
-    {
-      "id": "sheet-mushoku-tensei-jobless-reincarnation",
-      "title": "Mushoku Tensei: Jobless Reincarnation",
-      "matchedTitle": "Mushoku Tensei: Isekai Ittara Honki Dasu",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 11,
-        "latestEpisodeYear": 2026,
-        "year": 2021,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 48,
-        "latestEpisodeYear": 2024,
-        "year": 2021,
-        "watchedEpisodes": null,
-        "newEpisodes": 37
-      },
-      "chain": [
-        {
-          "title": "Mushoku Tensei: Isekai Ittara Honki Dasu",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 11,
-          "year": 2021,
-          "season": "WINTER"
-        },
-        {
-          "title": "Mushoku Tensei: Isekai Ittara Honki Dasu Part 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2021,
-          "season": "FALL"
-        },
-        {
-          "title": "Mushoku Tensei: Jobless Reincarnation 2nd Season PV",
-          "type": "ONA",
-          "status": "FINISHED",
-          "episodes": 1,
-          "year": 2022,
-          "season": "UNDEFINED"
-        },
-        {
-          "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2023,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2024,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
-      "id": "sheet-fullmetal-alchemist-brotherhood",
-      "title": "Fullmetal Alchemist: Brotherhood",
-      "matchedTitle": "Fullmetal Alchemist: Brotherhood",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 119,
-        "latestEpisodeYear": 2011,
-        "year": 2009,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 64,
-        "latestEpisodeYear": 2009,
-        "year": 2009,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Fullmetal Alchemist: Brotherhood",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 64,
-          "year": 2009,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
       "id": "sheet-medaka-kuroiwa-is-impervious-to-my-charms",
       "title": "Medaka Kuroiwa Is Impervious to My Charms",
       "matchedTitle": "Kuroiwa Medaka ni Watashi no Kawaii ga Tsuujinai",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2027,
+        "episodes": 12,
+        "latestEpisodeYear": 2025,
         "year": 2025,
         "watchedEpisodes": 24,
         "newEpisodes": 0
@@ -2654,7 +1425,7 @@
         "episodes": 12,
         "latestEpisodeYear": 2025,
         "year": 2025,
-        "watchedEpisodes": 24,
+        "watchedEpisodes": 12,
         "newEpisodes": 0
       },
       "chain": [
@@ -2669,68 +1440,13 @@
       ]
     },
     {
-      "id": "sheet-the-irregular-at-magic-high-school",
-      "title": "The Irregular at Magic High School",
-      "matchedTitle": "Mahouka Koukou no Rettousei",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 73,
-        "latestEpisodeYear": 2024,
-        "year": 2014,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 53,
-        "latestEpisodeYear": 2024,
-        "year": 2014,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Mahouka Koukou no Rettousei",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 26,
-          "year": 2014,
-          "season": "SPRING"
-        },
-        {
-          "title": "Mahouka Koukou no Rettousei: Raihousha-hen",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2020,
-          "season": "FALL"
-        },
-        {
-          "title": "Mahouka Koukou no Rettousei 3rd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2024,
-          "season": "SPRING"
-        },
-        {
-          "title": "Mahouka Koukou no Rettousei (Dai Ni Bu)",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 1,
-          "year": null,
-          "season": "UNDEFINED"
-        }
-      ]
-    },
-    {
       "id": "sheet-i-m-in-love-with-the-villainess",
       "title": "I'm in Love with the Villainess",
       "matchedTitle": "Watashi no Oshi wa Akuyaku Reijou.",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 18,
+        "episodes": 12,
         "latestEpisodeYear": 2023,
         "year": 2023,
         "watchedEpisodes": 18,
@@ -2740,7 +1456,7 @@
         "episodes": 12,
         "latestEpisodeYear": 2023,
         "year": 2023,
-        "watchedEpisodes": 18,
+        "watchedEpisodes": 12,
         "newEpisodes": 0
       },
       "chain": [
@@ -2755,307 +1471,49 @@
       ]
     },
     {
-      "id": "sheet-yashahime-princess-half-demon",
-      "title": "Yashahime: Princess Half-Demon",
-      "matchedTitle": "Hanyou no Yashahime: Sengoku Otogizoushi",
+      "id": "sheet-nier-automata-ver1-1a",
+      "title": "NieR:Automata Ver1.1a",
+      "matchedTitle": "NieR:Automata Ver1.1a",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 61,
-        "latestEpisodeYear": 2026,
-        "year": 2020,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 48,
-        "latestEpisodeYear": 2021,
-        "year": 2020,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Hanyou no Yashahime: Sengoku Otogizoushi",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2020,
-          "season": "FALL"
-        },
-        {
-          "title": "Hanyou no Yashahime: Sengoku Otogizoushi - Ni no Shou",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2021,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "sheet-fate-grand-order-absolute-demonic-front-babylonia",
-      "title": "Fate/Grand Order: Absolute Demonic Front - Babylonia",
-      "matchedTitle": "Fate/Grand Order: Zettai Majuu Sensen Babylonia",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 129,
-        "latestEpisodeYear": 2025,
-        "year": 2019,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 71,
-        "latestEpisodeYear": 2025,
-        "year": 2019,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Fate/Grand Order: Zettai Majuu Sensen Babylonia",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 21,
-          "year": 2019,
-          "season": "FALL"
-        },
-        {
-          "title": "Fate/Grand Order: Fujimaru Ritsuka wa Wakaranai Season 2",
-          "type": "ONA",
-          "status": "FINISHED",
-          "episodes": 26,
-          "year": 2024,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Fate/Grand Order: Fujimaru Ritsuka wa Wakaranai Season 3",
-          "type": "ONA",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2025,
-          "season": "SUMMER"
-        }
-      ]
-    },
-    {
-      "id": "sheet-my-stepmom-s-daughter-is-my-ex",
-      "title": "My Stepmom's Daughter Is My Ex",
-      "matchedTitle": "Mamahaha no Tsurego ga Motokano datta",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 18,
-        "latestEpisodeYear": 2022,
-        "year": 2022,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
         "episodes": 12,
-        "latestEpisodeYear": 2022,
-        "year": 2022,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Mamahaha no Tsurego ga Motokano datta",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2022,
-          "season": "SUMMER"
-        }
-      ]
-    },
-    {
-      "id": "sheet-steins-gate",
-      "title": "Steins;Gate",
-      "matchedTitle": "Steins;Gate",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 51,
-        "latestEpisodeYear": 2018,
-        "year": 2011,
+        "latestEpisodeYear": 2024,
+        "year": 2023,
         "watchedEpisodes": null,
         "newEpisodes": 0
       },
       "after": {
         "episodes": 24,
-        "latestEpisodeYear": 2011,
-        "year": 2011,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Steins;Gate",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 24,
-          "year": 2011,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
-      "id": "sheet-school-days",
-      "title": "School Days",
-      "matchedTitle": "School Days",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "latestEpisodeYear": 2007,
-        "year": 2007,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 12,
-        "latestEpisodeYear": 2007,
-        "year": 2007,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "School Days",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2007,
-          "season": "SUMMER"
-        }
-      ]
-    },
-    {
-      "id": "sheet-my-happy-marriage",
-      "title": "My Happy Marriage",
-      "matchedTitle": "Watashi no Shiawase na Kekkon",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 28,
-        "latestEpisodeYear": 2026,
+        "latestEpisodeYear": 2024,
         "year": 2023,
         "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 25,
-        "latestEpisodeYear": 2025,
-        "year": 2023,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
+        "newEpisodes": 12
       },
       "chain": [
         {
-          "title": "Watashi no Shiawase na Kekkon",
+          "title": "NieR:Automata Ver1.1a",
           "type": "TV",
           "status": "FINISHED",
           "episodes": 12,
           "year": 2023,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Watashi no Shiawase na Kekkon 2nd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2025,
           "season": "WINTER"
-        }
-      ]
-    },
-    {
-      "id": "sheet-rent-a-girlfriend",
-      "title": "Rent-A-Girlfriend",
-      "matchedTitle": "Kanojo, Okarishimasu",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "latestEpisodeYear": 2020,
-        "year": 2020,
-        "watchedEpisodes": 12,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 87,
-        "latestEpisodeYear": 2026,
-        "year": 2020,
-        "watchedEpisodes": 12,
-        "newEpisodes": 75
-      },
-      "chain": [
+        },
         {
-          "title": "Kanojo, Okarishimasu",
+          "title": "NieR:Automata Ver1.1a Part 2",
           "type": "TV",
           "status": "FINISHED",
           "episodes": 12,
-          "year": 2020,
+          "year": 2024,
           "season": "SUMMER"
         },
         {
-          "title": "Kanojo, Okarishimasu 2nd Season",
+          "title": "NieR:Automata Ver 1.1a",
           "type": "TV",
           "status": "FINISHED",
-          "episodes": 12,
-          "year": 2022,
+          "episodes": 0,
+          "year": 2024,
           "season": "SUMMER"
-        },
-        {
-          "title": "Kanojo, Okarishimasu Petit 2nd Season",
-          "type": "ONA",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2022,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Kanojo, Okarishimasu 3rd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2023,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Kanojo, Okarishimasu Petit 3rd Season",
-          "type": "ONA",
-          "status": "FINISHED",
-          "episodes": 14,
-          "year": 2023,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Kanojo, Okarishimasu 4th Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2025,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Kanojo, Okarishimasu 5th Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2026,
-          "season": "SPRING"
-        },
-        {
-          "title": "Kanojo, Okarishimasu 6",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 1,
-          "year": null,
-          "season": "UNDEFINED"
         }
       ]
     },
@@ -3066,7 +1524,7 @@
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 25,
+        "episodes": 13,
         "latestEpisodeYear": 2020,
         "year": 2020,
         "watchedEpisodes": 25,
@@ -3076,7 +1534,7 @@
         "episodes": 13,
         "latestEpisodeYear": 2020,
         "year": 2020,
-        "watchedEpisodes": 25,
+        "watchedEpisodes": 13,
         "newEpisodes": 0
       },
       "chain": [
@@ -3194,65 +1652,80 @@
       ]
     },
     {
-      "id": "sheet-classroom-of-the-elite",
-      "title": "Classroom of the Elite",
-      "matchedTitle": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+      "id": "sheet-wistoria-wand-and-sword",
+      "title": "Wistoria: Wand and Sword",
+      "matchedTitle": "Tsue to Tsurugi no Wistoria",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
-        "episodes": 12,
+        "episodes": 24,
         "latestEpisodeYear": 2026,
-        "year": 2017,
+        "year": 2024,
         "watchedEpisodes": 12,
-        "newEpisodes": 0
+        "newEpisodes": 12
       },
       "after": {
-        "episodes": 12,
+        "episodes": 24,
         "latestEpisodeYear": 2026,
-        "year": 2017,
+        "year": 2024,
         "watchedEpisodes": 12,
-        "newEpisodes": 0
+        "newEpisodes": 12
       },
       "chain": [
         {
-          "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+          "title": "Tsue to Tsurugi no Wistoria",
           "type": "TV",
           "status": "FINISHED",
           "episodes": 12,
-          "year": 2017,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2022,
-          "season": "SUMMER"
-        },
-        {
-          "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
           "year": 2024,
-          "season": "WINTER"
+          "season": "SUMMER"
         },
         {
-          "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 4th Season: 2-nensei-hen 1 Gakki",
+          "title": "Tsue to Tsurugi no Wistoria Season 2",
           "type": "TV",
           "status": "FINISHED",
-          "episodes": 16,
+          "episodes": 12,
           "year": 2026,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "sheet-yu-gi-oh",
+      "title": "Yu-Gi-Oh!",
+      "matchedTitle": "Yu☆Gi☆Oh! Duel Monsters",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 251,
+        "latestEpisodeYear": 2000,
+        "year": 2000,
+        "watchedEpisodes": 224,
+        "newEpisodes": 27
+      },
+      "after": {
+        "episodes": 251,
+        "latestEpisodeYear": 2000,
+        "year": 2000,
+        "watchedEpisodes": 224,
+        "newEpisodes": 27
+      },
+      "chain": [
+        {
+          "title": "Yu☆Gi☆Oh!",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 27,
+          "year": 1998,
           "season": "SPRING"
         },
         {
-          "title": "Classroom of the Elite",
+          "title": "Yu☆Gi☆Oh! Duel Monsters",
           "type": "TV",
-          "status": "UNKNOWN",
-          "episodes": 0,
-          "year": null,
-          "season": "UNDEFINED"
+          "status": "FINISHED",
+          "episodes": 224,
+          "year": 2000,
+          "season": "SPRING"
         }
       ]
     },
@@ -3283,6 +1756,76 @@
           "status": "FINISHED",
           "episodes": 180,
           "year": 2004,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-yu-gi-oh-5d-s",
+      "title": "Yu-Gi-Oh! 5D's",
+      "matchedTitle": "Yu☆Gi☆Oh! 5D's",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 154,
+        "latestEpisodeYear": 2008,
+        "year": 2008,
+        "watchedEpisodes": 154,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 154,
+        "latestEpisodeYear": 2008,
+        "year": 2008,
+        "watchedEpisodes": 154,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Yu☆Gi☆Oh! 5D's",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 154,
+          "year": 2008,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "sheet-yu-gi-oh-zexal",
+      "title": "Yu-Gi-Oh! ZEXAL",
+      "matchedTitle": "Yu☆Gi☆Oh! Zexal",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 146,
+        "latestEpisodeYear": 2012,
+        "year": 2011,
+        "watchedEpisodes": 73,
+        "newEpisodes": 73
+      },
+      "after": {
+        "episodes": 146,
+        "latestEpisodeYear": 2012,
+        "year": 2011,
+        "watchedEpisodes": 73,
+        "newEpisodes": 73
+      },
+      "chain": [
+        {
+          "title": "Yu☆Gi☆Oh! Zexal",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 73,
+          "year": 2011,
+          "season": "SPRING"
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Zexal Second",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 73,
+          "year": 2012,
           "season": "FALL"
         }
       ]
@@ -3451,69 +1994,6 @@
       ]
     },
     {
-      "id": "sheet-the-rising-of-the-shield-hero",
-      "title": "The Rising of the Shield Hero",
-      "matchedTitle": "Tate no Yuusha no Nariagari",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 25,
-        "latestEpisodeYear": 2025,
-        "year": 2019,
-        "watchedEpisodes": 25,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 25,
-        "latestEpisodeYear": 2025,
-        "year": 2019,
-        "watchedEpisodes": 25,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Tate no Yuusha no Nariagari",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 25,
-          "year": 2019,
-          "season": "WINTER"
-        },
-        {
-          "title": "Tate no Yuusha no Nariagari Season 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2022,
-          "season": "SPRING"
-        },
-        {
-          "title": "Tate no Yuusha no Nariagari Season 3",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2023,
-          "season": "FALL"
-        },
-        {
-          "title": "The Rising of the Shield Hero Season 3",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 0,
-          "year": 2023,
-          "season": "FALL"
-        },
-        {
-          "title": "Tate no Yuusha no Nariagari Season 4",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2025,
-          "season": "SUMMER"
-        }
-      ]
-    },
-    {
       "id": "sheet-tales-of-wedding-rings",
       "title": "Tales of Wedding Rings",
       "matchedTitle": "Kekkon Yubiwa Monogatari",
@@ -3582,6 +2062,193 @@
           "season": "FALL"
         }
       ]
+    },
+    {
+      "id": "sheet-psycho-pass",
+      "title": "Psycho-Pass",
+      "matchedTitle": "Psycho-Pass",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 41,
+        "latestEpisodeYear": 2019,
+        "year": 2012,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 41,
+        "latestEpisodeYear": 2019,
+        "year": 2012,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Psycho-Pass",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 22,
+          "year": 2012,
+          "season": "FALL"
+        },
+        {
+          "title": "Psycho-Pass 2",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 11,
+          "year": 2014,
+          "season": "FALL"
+        },
+        {
+          "title": "Psycho-Pass 3",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 8,
+          "year": 2019,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-date-a-live",
+      "title": "Date A Live",
+      "matchedTitle": "Date A Live",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 58,
+        "latestEpisodeYear": 2024,
+        "year": 2013,
+        "watchedEpisodes": 12,
+        "newEpisodes": 46
+      },
+      "after": {
+        "episodes": 58,
+        "latestEpisodeYear": 2024,
+        "year": 2013,
+        "watchedEpisodes": 12,
+        "newEpisodes": 46
+      },
+      "chain": [
+        {
+          "title": "Date A Live",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2013,
+          "season": "SPRING"
+        },
+        {
+          "title": "Date A Live II",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 10,
+          "year": 2014,
+          "season": "SPRING"
+        },
+        {
+          "title": "Date A Live III",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2019,
+          "season": "WINTER"
+        },
+        {
+          "title": "Date A Live IV",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2022,
+          "season": "SPRING"
+        },
+        {
+          "title": "Date A Live V",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2024,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "sheet-fire-force",
+      "title": "Fire Force",
+      "matchedTitle": "Enen no Shouboutai",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 73,
+        "latestEpisodeYear": 2026,
+        "year": 2019,
+        "watchedEpisodes": 24,
+        "newEpisodes": 49
+      },
+      "after": {
+        "episodes": 73,
+        "latestEpisodeYear": 2026,
+        "year": 2019,
+        "watchedEpisodes": 24,
+        "newEpisodes": 49
+      },
+      "chain": [
+        {
+          "title": "Enen no Shouboutai",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2019,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Enen no Shouboutai: Ni no Shou",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2020,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Enen no Shouboutai: San no Shou",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2025,
+          "season": "SPRING"
+        },
+        {
+          "title": "Enen no Shouboutai: San no Shou Part 2",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2026,
+          "season": "WINTER"
+        }
+      ]
+    },
+    {
+      "id": "sheet-fate-strange-fake",
+      "title": "Fate/strange Fake",
+      "matchedTitle": "Fate/strange Fake (Zoku-hen)",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2023,
+        "year": 2023,
+        "watchedEpisodes": 1,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2023,
+        "year": 2023,
+        "watchedEpisodes": 1,
+        "newEpisodes": 0
+      },
+      "chain": []
     },
     {
       "id": "sheet-fate-zero",
@@ -3798,6 +2465,131 @@
           "episodes": 14,
           "year": 2024,
           "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-fairy-tail",
+      "title": "Fairy Tail",
+      "matchedTitle": "Fairy Tail",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 328,
+        "latestEpisodeYear": 2018,
+        "year": 2009,
+        "watchedEpisodes": 175,
+        "newEpisodes": 153
+      },
+      "after": {
+        "episodes": 328,
+        "latestEpisodeYear": 2018,
+        "year": 2009,
+        "watchedEpisodes": 175,
+        "newEpisodes": 153
+      },
+      "chain": [
+        {
+          "title": "Fairy Tail",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 175,
+          "year": 2009,
+          "season": "FALL"
+        },
+        {
+          "title": "Fairy Tail (2014)",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 102,
+          "year": 2014,
+          "season": "SPRING"
+        },
+        {
+          "title": "Fairy Tail: Final Series",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 51,
+          "year": 2018,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-hell-s-paradise",
+      "title": "Hell's Paradise",
+      "matchedTitle": "Jigokuraku",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 25,
+        "latestEpisodeYear": 2026,
+        "year": 2023,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 25,
+        "latestEpisodeYear": 2026,
+        "year": 2023,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Jigokuraku",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2023,
+          "season": "SPRING"
+        },
+        {
+          "title": "Jigokuraku 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2026,
+          "season": "WINTER"
+        }
+      ]
+    },
+    {
+      "id": "sheet-kaiju-no-8",
+      "title": "Kaiju No. 8",
+      "matchedTitle": "Kaijuu 8-gou",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 23,
+        "latestEpisodeYear": 2025,
+        "year": 2024,
+        "watchedEpisodes": 12,
+        "newEpisodes": 11
+      },
+      "after": {
+        "episodes": 23,
+        "latestEpisodeYear": 2025,
+        "year": 2024,
+        "watchedEpisodes": 12,
+        "newEpisodes": 11
+      },
+      "chain": [
+        {
+          "title": "Kaijuu 8-gou",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2024,
+          "season": "SPRING"
+        },
+        {
+          "title": "Kaijuu 8-gou 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 11,
+          "year": 2025,
+          "season": "SUMMER"
         }
       ]
     },
@@ -4021,6 +2813,53 @@
       ]
     },
     {
+      "id": "sheet-fruits-basket",
+      "title": "Fruits Basket",
+      "matchedTitle": "Fruits Basket 1st Season",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 63,
+        "latestEpisodeYear": 2021,
+        "year": 2019,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 63,
+        "latestEpisodeYear": 2021,
+        "year": 2019,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Fruits Basket 1st Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2019,
+          "season": "SPRING"
+        },
+        {
+          "title": "Fruits Basket 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2020,
+          "season": "SPRING"
+        },
+        {
+          "title": "Fruits Basket: The Final",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2021,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
       "id": "sheet-kaguya-sama-love-is-war",
       "title": "Kaguya-sama: Love Is War",
       "matchedTitle": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
@@ -4062,6 +2901,93 @@
           "type": "TV",
           "status": "FINISHED",
           "episodes": 13,
+          "year": 2022,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "sheet-my-hero-academia",
+      "title": "My Hero Academia",
+      "matchedTitle": "Boku no Hero Academia",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 142,
+        "latestEpisodeYear": 2022,
+        "year": 2016,
+        "watchedEpisodes": 13,
+        "newEpisodes": 129
+      },
+      "after": {
+        "episodes": 142,
+        "latestEpisodeYear": 2022,
+        "year": 2016,
+        "watchedEpisodes": 13,
+        "newEpisodes": 129
+      },
+      "chain": [
+        {
+          "title": "Boku no Hero Academia",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2016,
+          "season": "SPRING"
+        },
+        {
+          "title": "Boku no Hero Academia 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2017,
+          "season": "SPRING"
+        },
+        {
+          "title": "Boku no Hero Academia 3rd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2018,
+          "season": "SPRING"
+        },
+        {
+          "title": "Boku no Hero Academia 4th Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2019,
+          "season": "FALL"
+        },
+        {
+          "title": "Boku no Hero Academia: Ikinokore! Kesshi no Survival Kunren",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 2,
+          "year": 2020,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Boku no Hero Academia 5th Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2021,
+          "season": "SPRING"
+        },
+        {
+          "title": "Boku no Hero Academia 6th Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2022,
+          "season": "FALL"
+        },
+        {
+          "title": "Boku no Hero Academia (ONA)",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 2,
           "year": 2022,
           "season": "SPRING"
         }
@@ -4312,6 +3238,84 @@
           "status": "FINISHED",
           "episodes": 1,
           "year": 2023,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "sheet-the-quintessential-quintuplets",
+      "title": "The Quintessential Quintuplets",
+      "matchedTitle": "5-toubun no Hanayome",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 25,
+        "latestEpisodeYear": 2021,
+        "year": 2019,
+        "watchedEpisodes": 12,
+        "newEpisodes": 13
+      },
+      "after": {
+        "episodes": 25,
+        "latestEpisodeYear": 2021,
+        "year": 2019,
+        "watchedEpisodes": 12,
+        "newEpisodes": 13
+      },
+      "chain": [
+        {
+          "title": "5-toubun no Hanayome",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2019,
+          "season": "WINTER"
+        },
+        {
+          "title": "The Quintessential Quintuplets 2 PV",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2020,
+          "season": "UNDEFINED"
+        },
+        {
+          "title": "5-toubun no Hanayome ∬",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2021,
+          "season": "WINTER"
+        }
+      ]
+    },
+    {
+      "id": "sheet-to-be-hero-x",
+      "title": "To Be Hero X",
+      "matchedTitle": "To Be Hero X",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2025,
+        "year": 2025,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2025,
+        "year": 2025,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "To Be Hero X",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2025,
           "season": "SPRING"
         }
       ]
@@ -4852,61 +3856,6 @@
       ]
     },
     {
-      "id": "sheet-konosuba-god-s-blessing-on-this-wonderful-world",
-      "title": "KonoSuba: God's Blessing on This Wonderful World!",
-      "matchedTitle": "Kono Subarashii Sekai ni Shukufuku wo!",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 10,
-        "latestEpisodeYear": 2024,
-        "year": 2016,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 10,
-        "latestEpisodeYear": 2024,
-        "year": 2016,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Kono Subarashii Sekai ni Shukufuku wo!",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 10,
-          "year": 2016,
-          "season": "WINTER"
-        },
-        {
-          "title": "Kono Subarashii Sekai ni Shukufuku wo! 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 10,
-          "year": 2017,
-          "season": "WINTER"
-        },
-        {
-          "title": "Kono Subarashii Sekai ni Shukufuku wo! 3",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 11,
-          "year": 2024,
-          "season": "SPRING"
-        },
-        {
-          "title": "KonoSuba – God's blessing on this wonderful world! 4",
-          "type": "TV",
-          "status": "UNKNOWN",
-          "episodes": 0,
-          "year": null,
-          "season": "UNDEFINED"
-        }
-      ]
-    },
-    {
       "id": "sheet-the-witch-and-the-beast",
       "title": "The Witch and the Beast",
       "matchedTitle": "Majo to Yajuu",
@@ -5027,53 +3976,6 @@
           "episodes": 12,
           "year": 2022,
           "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "sheet-bottom-tier-character-tomozaki",
-      "title": "Bottom-Tier Character Tomozaki",
-      "matchedTitle": "Jaku-Chara Tomozaki-kun",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "latestEpisodeYear": 2024,
-        "year": 2021,
-        "watchedEpisodes": 12,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 12,
-        "latestEpisodeYear": 2024,
-        "year": 2021,
-        "watchedEpisodes": 12,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "Jaku-Chara Tomozaki-kun",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2021,
-          "season": "WINTER"
-        },
-        {
-          "title": "Jaku-Chara Tomozaki-kun 2nd Stage",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 13,
-          "year": 2024,
-          "season": "WINTER"
-        },
-        {
-          "title": "Bottom-Tier Character Tomozaki 2nd Stage",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 0,
-          "year": 2024,
-          "season": "WINTER"
         }
       ]
     },
@@ -5202,6 +4104,93 @@
       ]
     },
     {
+      "id": "sheet-re-zero-starting-life-in-another-world",
+      "title": "Re:ZERO -Starting Life in Another World-",
+      "matchedTitle": "Re:Zero kara Hajimeru Isekai Seikatsu",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 109,
+        "latestEpisodeYear": 2026,
+        "year": 2016,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 109,
+        "latestEpisodeYear": 2026,
+        "year": 2016,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Re:Zero kara Hajimeru Isekai Seikatsu",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2016,
+          "season": "SPRING"
+        },
+        {
+          "title": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2020,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2021,
+          "season": "WINTER"
+        },
+        {
+          "title": "Re:Zero kara Hajimeru Isekai Seikatsu 3rd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 16,
+          "year": 2024,
+          "season": "FALL"
+        },
+        {
+          "title": "Re:ZERO -Starting Life in Another World-",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 8,
+          "year": 2024,
+          "season": "FALL"
+        },
+        {
+          "title": "Re:ZERO -Starting Life in Another World-",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 8,
+          "year": 2025,
+          "season": "WINTER"
+        },
+        {
+          "title": "Re:ZERO: Starting Life in Another World Season 3: Part II",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 8,
+          "year": 2025,
+          "season": "WINTER"
+        },
+        {
+          "title": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+          "type": "TV",
+          "status": "ONGOING",
+          "episodes": 19,
+          "year": 2026,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
       "id": "sheet-tenpuru-no-one-can-live-on-loneliness",
       "title": "TenPuru: No One Can Live on Loneliness",
       "matchedTitle": "Temple",
@@ -5295,6 +4284,45 @@
       ]
     },
     {
+      "id": "sheet-the-apothecary-diaries",
+      "title": "The Apothecary Diaries",
+      "matchedTitle": "Kusuriya no Hitorigoto",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 48,
+        "latestEpisodeYear": 2025,
+        "year": 2023,
+        "watchedEpisodes": null,
+        "newEpisodes": 24
+      },
+      "after": {
+        "episodes": 48,
+        "latestEpisodeYear": 2025,
+        "year": 2023,
+        "watchedEpisodes": null,
+        "newEpisodes": 24
+      },
+      "chain": [
+        {
+          "title": "Kusuriya no Hitorigoto",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2023,
+          "season": "FALL"
+        },
+        {
+          "title": "Kusuriya no Hitorigoto 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2025,
+          "season": "WINTER"
+        }
+      ]
+    },
+    {
       "id": "sheet-alderamin-on-the-sky",
       "title": "Alderamin on the Sky",
       "matchedTitle": "Nejimaki Seirei Senki: Tenkyou no Alderamin",
@@ -5377,6 +4405,93 @@
           "episodes": 12,
           "year": 2019,
           "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon",
+      "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+      "matchedTitle": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 76,
+        "latestEpisodeYear": 2024,
+        "year": 2015,
+        "watchedEpisodes": 13,
+        "newEpisodes": 63
+      },
+      "after": {
+        "episodes": 76,
+        "latestEpisodeYear": 2024,
+        "year": 2015,
+        "watchedEpisodes": 13,
+        "newEpisodes": 63
+      },
+      "chain": [
+        {
+          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2015,
+          "season": "SPRING"
+        },
+        {
+          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2019,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2020,
+          "season": "FALL"
+        },
+        {
+          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka IV: Shin Shou - Meikyuu-hen",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 11,
+          "year": 2022,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka IV: Shin Shou - Yakusai-hen",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 11,
+          "year": 2023,
+          "season": "WINTER"
+        },
+        {
+          "title": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka V: Houjou no Megami-hen",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 15,
+          "year": 2024,
+          "season": "FALL"
+        },
+        {
+          "title": "Dungeon ni Deai o Motomeru no wa Machigatte Iru Darouka: Familia Myth VI",
+          "type": "TV",
+          "status": "UNKNOWN",
+          "episodes": 1,
+          "year": null,
+          "season": "UNDEFINED"
+        },
+        {
+          "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon? Season 6",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": null,
+          "season": "UNDEFINED"
         }
       ]
     },
@@ -5486,6 +4601,69 @@
           "episodes": 12,
           "year": 2020,
           "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "sheet-the-seven-deadly-sins",
+      "title": "The Seven Deadly Sins",
+      "matchedTitle": "Nanatsu no Taizai",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 120,
+        "latestEpisodeYear": 2023,
+        "year": 2014,
+        "watchedEpisodes": 24,
+        "newEpisodes": 96
+      },
+      "after": {
+        "episodes": 120,
+        "latestEpisodeYear": 2023,
+        "year": 2014,
+        "watchedEpisodes": 24,
+        "newEpisodes": 96
+      },
+      "chain": [
+        {
+          "title": "Nanatsu no Taizai",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2014,
+          "season": "FALL"
+        },
+        {
+          "title": "Nanatsu no Taizai: Imashime no Fukkatsu",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2018,
+          "season": "WINTER"
+        },
+        {
+          "title": "Nanatsu no Taizai: Kamigami no Gekirin",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2019,
+          "season": "FALL"
+        },
+        {
+          "title": "Nanatsu no Taizai: Funnu no Shinpan",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2021,
+          "season": "WINTER"
+        },
+        {
+          "title": "Nanatsu no Taizai: Mokushiroku no Yonkishi",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2023,
+          "season": "FALL"
         }
       ]
     },
@@ -5700,6 +4878,37 @@
       ]
     },
     {
+      "id": "sheet-hunter-x-hunter",
+      "title": "Hunter x Hunter",
+      "matchedTitle": "Hunter x Hunter (2011)",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 148,
+        "latestEpisodeYear": 2011,
+        "year": 2011,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 148,
+        "latestEpisodeYear": 2011,
+        "year": 2011,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Hunter x Hunter (2011)",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 148,
+          "year": 2011,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
       "id": "sheet-spy-x-family",
       "title": "SPY x FAMILY",
       "matchedTitle": "Spy x Family",
@@ -5794,6 +5003,139 @@
       ]
     },
     {
+      "id": "sheet-bleach",
+      "title": "Bleach",
+      "matchedTitle": "Bleach",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 393,
+        "latestEpisodeYear": 2024,
+        "year": 2004,
+        "watchedEpisodes": 366,
+        "newEpisodes": 27
+      },
+      "after": {
+        "episodes": 393,
+        "latestEpisodeYear": 2024,
+        "year": 2004,
+        "watchedEpisodes": 366,
+        "newEpisodes": 27
+      },
+      "chain": [
+        {
+          "title": "Bleach",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 366,
+          "year": 2004,
+          "season": "FALL"
+        },
+        {
+          "title": "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2023,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Bleach: Sennen Kessen-hen - Soukoku-tan",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 14,
+          "year": 2024,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-bleach-thousand-year-blood-war",
+      "title": "Bleach: Thousand-Year Blood War",
+      "matchedTitle": "Bleach: Sennen Kessen-hen",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 40,
+        "latestEpisodeYear": 2024,
+        "year": 2022,
+        "watchedEpisodes": 13,
+        "newEpisodes": 27
+      },
+      "after": {
+        "episodes": 40,
+        "latestEpisodeYear": 2024,
+        "year": 2022,
+        "watchedEpisodes": 13,
+        "newEpisodes": 27
+      },
+      "chain": [
+        {
+          "title": "Bleach: Sennen Kessen-hen",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2022,
+          "season": "FALL"
+        },
+        {
+          "title": "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2023,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Bleach: Sennen Kessen-hen - Soukoku-tan",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 14,
+          "year": 2024,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-tonikawa-over-the-moon-for-you",
+      "title": "TONIKAWA: Over the Moon for You",
+      "matchedTitle": "Tonikaku Kawaii",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2023,
+        "year": 2020,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2023,
+        "year": 2020,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Tonikaku Kawaii",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2020,
+          "season": "FALL"
+        },
+        {
+          "title": "Tonikaku Kawaii 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2023,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
       "id": "sheet-the-testament-of-sister-new-devil",
       "title": "The Testament of Sister New Devil",
       "matchedTitle": "Shinmai Maou no Testament",
@@ -5860,6 +5202,45 @@
           "episodes": 12,
           "year": 2008,
           "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-berserk-of-gluttony",
+      "title": "Berserk of Gluttony",
+      "matchedTitle": "Boushoku no Berserk",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2023,
+        "year": 2023,
+        "watchedEpisodes": 12,
+        "newEpisodes": 1
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2023,
+        "year": 2023,
+        "watchedEpisodes": 12,
+        "newEpisodes": 1
+      },
+      "chain": [
+        {
+          "title": "Boushoku no Berserk",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2023,
+          "season": "FALL"
+        },
+        {
+          "title": "Boushoku no Berserk 2",
+          "type": "TV",
+          "status": "UNKNOWN",
+          "episodes": 1,
+          "year": null,
+          "season": "UNDEFINED"
         }
       ]
     },
@@ -6075,6 +5456,312 @@
       ]
     },
     {
+      "id": "sheet-to-your-eternity",
+      "title": "To Your Eternity",
+      "matchedTitle": "Fumetsu no Anata e",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 62,
+        "latestEpisodeYear": 2025,
+        "year": 2021,
+        "watchedEpisodes": null,
+        "newEpisodes": 42
+      },
+      "after": {
+        "episodes": 62,
+        "latestEpisodeYear": 2025,
+        "year": 2021,
+        "watchedEpisodes": null,
+        "newEpisodes": 42
+      },
+      "chain": [
+        {
+          "title": "Fumetsu no Anata e",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 20,
+          "year": 2021,
+          "season": "SPRING"
+        },
+        {
+          "title": "Fumetsu no Anata e Season 2",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 20,
+          "year": 2022,
+          "season": "FALL"
+        },
+        {
+          "title": "Fumetsu no Anata e Season 3",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 22,
+          "year": 2025,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-that-time-i-got-reincarnated-as-a-slime",
+      "title": "That Time I Got Reincarnated as a Slime",
+      "matchedTitle": "Tensei shitara Slime Datta Ken",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 85,
+        "latestEpisodeYear": 2026,
+        "year": 2018,
+        "watchedEpisodes": null,
+        "newEpisodes": 61
+      },
+      "after": {
+        "episodes": 85,
+        "latestEpisodeYear": 2026,
+        "year": 2018,
+        "watchedEpisodes": null,
+        "newEpisodes": 61
+      },
+      "chain": [
+        {
+          "title": "Tensei shitara Slime Datta Ken",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2018,
+          "season": "FALL"
+        },
+        {
+          "title": "Tensei shitara Slime Datta Ken 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2021,
+          "season": "WINTER"
+        },
+        {
+          "title": "Tensei shitara Slime Datta Ken 2nd Season Part 2",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2021,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Tensei shitara Slime Datta Ken 3rd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2024,
+          "season": "SPRING"
+        },
+        {
+          "title": "Tensei shitara Slime Datta Ken 4th Season",
+          "type": "TV",
+          "status": "ONGOING",
+          "episodes": 12,
+          "year": 2026,
+          "season": "SPRING"
+        },
+        {
+          "title": "Tensei Shitara Slime Datta Ken (2027)",
+          "type": "TV",
+          "status": "UNKNOWN",
+          "episodes": 1,
+          "year": null,
+          "season": "UNDEFINED"
+        }
+      ]
+    },
+    {
+      "id": "sheet-haikyu",
+      "title": "Haikyu!!",
+      "matchedTitle": "Haikyuu!!",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 85,
+        "latestEpisodeYear": 2020,
+        "year": 2014,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 85,
+        "latestEpisodeYear": 2020,
+        "year": 2014,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Haikyuu!!",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2014,
+          "season": "SPRING"
+        },
+        {
+          "title": "Haikyuu!! Second Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 25,
+          "year": 2015,
+          "season": "FALL"
+        },
+        {
+          "title": "Haikyuu!! Karasuno Koukou vs. Shiratorizawa Gakuen Koukou",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 10,
+          "year": 2016,
+          "season": "FALL"
+        },
+        {
+          "title": "Haikyuu!! To the Top",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2020,
+          "season": "WINTER"
+        },
+        {
+          "title": "Haikyuu!! To the Top Part 2",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2020,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-gachiakuta",
+      "title": "Gachiakuta",
+      "matchedTitle": "Gachiakuta",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2025,
+        "year": 2025,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2025,
+        "year": 2025,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Gachiakuta",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2025,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "sheet-mushoku-tensei-jobless-reincarnation",
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "matchedTitle": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 48,
+        "latestEpisodeYear": 2024,
+        "year": 2021,
+        "watchedEpisodes": null,
+        "newEpisodes": 37
+      },
+      "after": {
+        "episodes": 48,
+        "latestEpisodeYear": 2024,
+        "year": 2021,
+        "watchedEpisodes": null,
+        "newEpisodes": 37
+      },
+      "chain": [
+        {
+          "title": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 11,
+          "year": 2021,
+          "season": "WINTER"
+        },
+        {
+          "title": "Mushoku Tensei: Isekai Ittara Honki Dasu Part 2",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2021,
+          "season": "FALL"
+        },
+        {
+          "title": "Mushoku Tensei: Jobless Reincarnation 2nd Season PV",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2022,
+          "season": "UNDEFINED"
+        },
+        {
+          "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2023,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2024,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "sheet-fullmetal-alchemist-brotherhood",
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "matchedTitle": "Fullmetal Alchemist: Brotherhood",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 64,
+        "latestEpisodeYear": 2009,
+        "year": 2009,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 64,
+        "latestEpisodeYear": 2009,
+        "year": 2009,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Fullmetal Alchemist: Brotherhood",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 64,
+          "year": 2009,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
       "id": "sheet-the-lost-village",
       "title": "The Lost Village",
       "matchedTitle": "Mayoiga",
@@ -6106,6 +5793,100 @@
       ]
     },
     {
+      "id": "sheet-the-irregular-at-magic-high-school",
+      "title": "The Irregular at Magic High School",
+      "matchedTitle": "Mahouka Koukou no Rettousei",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 53,
+        "latestEpisodeYear": 2024,
+        "year": 2014,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 53,
+        "latestEpisodeYear": 2024,
+        "year": 2014,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Mahouka Koukou no Rettousei",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 26,
+          "year": 2014,
+          "season": "SPRING"
+        },
+        {
+          "title": "Mahouka Koukou no Rettousei: Raihousha-hen",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2020,
+          "season": "FALL"
+        },
+        {
+          "title": "Mahouka Koukou no Rettousei 3rd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2024,
+          "season": "SPRING"
+        },
+        {
+          "title": "Mahouka Koukou no Rettousei (Dai Ni Bu)",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": null,
+          "season": "UNDEFINED"
+        }
+      ]
+    },
+    {
+      "id": "sheet-yashahime-princess-half-demon",
+      "title": "Yashahime: Princess Half-Demon",
+      "matchedTitle": "Hanyou no Yashahime: Sengoku Otogizoushi",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 48,
+        "latestEpisodeYear": 2021,
+        "year": 2020,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 48,
+        "latestEpisodeYear": 2021,
+        "year": 2020,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Hanyou no Yashahime: Sengoku Otogizoushi",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2020,
+          "season": "FALL"
+        },
+        {
+          "title": "Hanyou no Yashahime: Sengoku Otogizoushi - Ni no Shou",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2021,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
       "id": "sheet-hokkaido-gals-are-super-adorable",
       "title": "Hokkaido Gals Are Super Adorable!",
       "matchedTitle": "Dosanko Gal wa Namara Menkoi",
@@ -6133,53 +5914,6 @@
           "episodes": 12,
           "year": 2024,
           "season": "WINTER"
-        }
-      ]
-    },
-    {
-      "id": "sheet-nier-automata-ver1-1a",
-      "title": "NieR:Automata Ver1.1a",
-      "matchedTitle": "NieR:Automata Ver1.1a",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "latestEpisodeYear": 2024,
-        "year": 2023,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "after": {
-        "episodes": 12,
-        "latestEpisodeYear": 2024,
-        "year": 2023,
-        "watchedEpisodes": null,
-        "newEpisodes": 0
-      },
-      "chain": [
-        {
-          "title": "NieR:Automata Ver1.1a",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2023,
-          "season": "WINTER"
-        },
-        {
-          "title": "NieR:Automata Ver1.1a Part 2",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2024,
-          "season": "SUMMER"
-        },
-        {
-          "title": "NieR:Automata Ver 1.1a",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 0,
-          "year": 2024,
-          "season": "SUMMER"
         }
       ]
     },
@@ -6285,6 +6019,53 @@
       ]
     },
     {
+      "id": "sheet-fate-grand-order-absolute-demonic-front-babylonia",
+      "title": "Fate/Grand Order: Absolute Demonic Front - Babylonia",
+      "matchedTitle": "Fate/Grand Order: Zettai Majuu Sensen Babylonia",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 71,
+        "latestEpisodeYear": 2025,
+        "year": 2019,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 71,
+        "latestEpisodeYear": 2025,
+        "year": 2019,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Fate/Grand Order: Zettai Majuu Sensen Babylonia",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 21,
+          "year": 2019,
+          "season": "FALL"
+        },
+        {
+          "title": "Fate/Grand Order: Fujimaru Ritsuka wa Wakaranai Season 2",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 26,
+          "year": 2024,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Fate/Grand Order: Fujimaru Ritsuka wa Wakaranai Season 3",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2025,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
       "id": "sheet-grimgar-ashes-and-illusions",
       "title": "Grimgar: Ashes and Illusions",
       "matchedTitle": "Hai to Gensou no Grimgar",
@@ -6343,6 +6124,68 @@
           "episodes": 24,
           "year": 2013,
           "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-my-stepmom-s-daughter-is-my-ex",
+      "title": "My Stepmom's Daughter Is My Ex",
+      "matchedTitle": "Mamahaha no Tsurego ga Motokano datta",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Mamahaha no Tsurego ga Motokano datta",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2022,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "sheet-steins-gate",
+      "title": "Steins;Gate",
+      "matchedTitle": "Steins;Gate",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2011,
+        "year": 2011,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2011,
+        "year": 2011,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Steins;Gate",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 24,
+          "year": 2011,
+          "season": "SPRING"
         }
       ]
     },
@@ -6572,6 +6415,76 @@
       ]
     },
     {
+      "id": "sheet-school-days",
+      "title": "School Days",
+      "matchedTitle": "School Days",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2007,
+        "year": 2007,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2007,
+        "year": 2007,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "School Days",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2007,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "sheet-my-happy-marriage",
+      "title": "My Happy Marriage",
+      "matchedTitle": "Watashi no Shiawase na Kekkon",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 25,
+        "latestEpisodeYear": 2025,
+        "year": 2023,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "after": {
+        "episodes": 25,
+        "latestEpisodeYear": 2025,
+        "year": 2023,
+        "watchedEpisodes": null,
+        "newEpisodes": 0
+      },
+      "chain": [
+        {
+          "title": "Watashi no Shiawase na Kekkon",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2023,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Watashi no Shiawase na Kekkon 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2025,
+          "season": "WINTER"
+        }
+      ]
+    },
+    {
       "id": "sheet-domestic-girlfriend",
       "title": "Domestic Girlfriend",
       "matchedTitle": "Domestic na Kanojo",
@@ -6723,6 +6636,93 @@
           "episodes": 13,
           "year": 2013,
           "season": "WINTER"
+        }
+      ]
+    },
+    {
+      "id": "sheet-rent-a-girlfriend",
+      "title": "Rent-A-Girlfriend",
+      "matchedTitle": "Kanojo, Okarishimasu",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 87,
+        "latestEpisodeYear": 2026,
+        "year": 2020,
+        "watchedEpisodes": 12,
+        "newEpisodes": 75
+      },
+      "after": {
+        "episodes": 87,
+        "latestEpisodeYear": 2026,
+        "year": 2020,
+        "watchedEpisodes": 12,
+        "newEpisodes": 75
+      },
+      "chain": [
+        {
+          "title": "Kanojo, Okarishimasu",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2020,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Kanojo, Okarishimasu 2nd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2022,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Kanojo, Okarishimasu Petit 2nd Season",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2022,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Kanojo, Okarishimasu 3rd Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2023,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Kanojo, Okarishimasu Petit 3rd Season",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 14,
+          "year": 2023,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Kanojo, Okarishimasu 4th Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2025,
+          "season": "SUMMER"
+        },
+        {
+          "title": "Kanojo, Okarishimasu 5th Season",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2026,
+          "season": "SPRING"
+        },
+        {
+          "title": "Kanojo, Okarishimasu 6",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": null,
+          "season": "UNDEFINED"
         }
       ]
     },
@@ -7096,7 +7096,7 @@
       "via": "cover-source",
       "before": {
         "episodes": 1,
-        "latestEpisodeYear": 2026,
+        "latestEpisodeYear": 2023,
         "year": 2023,
         "watchedEpisodes": 1,
         "newEpisodes": 0

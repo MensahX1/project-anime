@@ -44,7 +44,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2014,
-    "watchedEpisodes": 48,
+    "watchedEpisodes": 24,
     "newEpisodes": 0
   },
   {
@@ -67,7 +67,7 @@
     "id": "sheet-classroom-of-the-elite",
     "title": "Classroom of the Elite",
     "status": "Completed",
-    "episodes": 12,
+    "episodes": 54,
     "score": 5,
     "genre": "Psychological, School, Drama",
     "studio": "Lerche",
@@ -77,7 +77,8 @@
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2026,
     "watchedEpisodes": 12,
-    "newEpisodes": 0
+    "newEpisodes": 42,
+    "newEpisodeDetectedAt": "2026-09-05T21:07:51.870Z"
   },
   {
     "id": "sheet-the-eminence-in-shadow",
@@ -92,7 +93,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2023,
-    "watchedEpisodes": 49,
+    "watchedEpisodes": 32,
     "newEpisodes": 0
   },
   {
@@ -108,7 +109,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2025,
-    "watchedEpisodes": 25,
+    "watchedEpisodes": 24,
     "newEpisodes": 0
   },
   {
@@ -124,7 +125,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2024,
-    "watchedEpisodes": 37,
+    "watchedEpisodes": 24,
     "newEpisodes": 0
   },
   {
@@ -157,7 +158,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 1986,
-    "watchedEpisodes": 436,
+    "watchedEpisodes": 153,
     "newEpisodes": 0
   },
   {
@@ -173,7 +174,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 1989,
-    "watchedEpisodes": 518,
+    "watchedEpisodes": 291,
     "newEpisodes": 0
   },
   {
@@ -189,7 +190,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 1996,
-    "watchedEpisodes": 161,
+    "watchedEpisodes": 64,
     "newEpisodes": 0
   },
   {
@@ -205,7 +206,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2015,
-    "watchedEpisodes": 297,
+    "watchedEpisodes": 131,
     "newEpisodes": 0
   },
   {
@@ -358,7 +359,7 @@
     "id": "sheet-the-rising-of-the-shield-hero",
     "title": "The Rising of the Shield Hero",
     "status": "Completed",
-    "episodes": 25,
+    "episodes": 62,
     "score": 4,
     "genre": "Action, Fantasy, Isekai",
     "studio": "Kinema Citrus, DR Movie",
@@ -368,7 +369,8 @@
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2025,
     "watchedEpisodes": 25,
-    "newEpisodes": 0
+    "newEpisodes": 37,
+    "newEpisodeDetectedAt": "2026-09-05T21:07:51.939Z"
   },
   {
     "id": "sheet-tales-of-wedding-rings",
@@ -495,7 +497,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2015,
-    "watchedEpisodes": 49,
+    "watchedEpisodes": 25,
     "newEpisodes": 0
   },
   {
@@ -559,7 +561,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2022,
-    "watchedEpisodes": 99,
+    "watchedEpisodes": 87,
     "newEpisodes": 0
   },
   {
@@ -624,7 +626,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2024,
-    "watchedEpisodes": 72,
+    "watchedEpisodes": 50,
     "newEpisodes": 0
   },
   {
@@ -640,7 +642,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2002,
-    "watchedEpisodes": 232,
+    "watchedEpisodes": 220,
     "newEpisodes": 0
   },
   {
@@ -656,7 +658,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2007,
-    "watchedEpisodes": 512,
+    "watchedEpisodes": 500,
     "newEpisodes": 0
   },
   {
@@ -768,7 +770,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2022,
-    "watchedEpisodes": 15,
+    "watchedEpisodes": 12,
     "newEpisodes": 0
   },
   {
@@ -800,7 +802,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2021,
-    "watchedEpisodes": 26,
+    "watchedEpisodes": 13,
     "newEpisodes": 0
   },
   {
@@ -816,7 +818,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2016,
-    "watchedEpisodes": 69,
+    "watchedEpisodes": 47,
     "newEpisodes": 0
   },
   {
@@ -880,7 +882,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2024,
-    "watchedEpisodes": 24,
+    "watchedEpisodes": 12,
     "newEpisodes": 0
   },
   {
@@ -912,7 +914,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2023,
-    "watchedEpisodes": 49,
+    "watchedEpisodes": 37,
     "newEpisodes": 0
   },
   {
@@ -944,7 +946,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2025,
-    "watchedEpisodes": 59,
+    "watchedEpisodes": 36,
     "newEpisodes": 0
   },
   {
@@ -1072,7 +1074,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2024,
-    "watchedEpisodes": 24,
+    "watchedEpisodes": 12,
     "newEpisodes": 0
   },
   {
@@ -1168,7 +1170,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2025,
-    "watchedEpisodes": 24,
+    "watchedEpisodes": 12,
     "newEpisodes": 0
   },
   {
@@ -1366,7 +1368,7 @@
     "id": "sheet-konosuba-god-s-blessing-on-this-wonderful-world",
     "title": "KonoSuba: God's Blessing on This Wonderful World!",
     "status": "Paused",
-    "episodes": 10,
+    "episodes": 31,
     "score": 4,
     "genre": "Comedy, Fantasy, Isekai",
     "studio": "Studio Deen, Drive",
@@ -1375,7 +1377,8 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2024,
-    "newEpisodes": 0
+    "newEpisodes": 21,
+    "newEpisodeDetectedAt": "2026-09-05T21:07:52.333Z"
   },
   {
     "id": "sheet-the-witch-and-the-beast",
@@ -1445,7 +1448,7 @@
     "id": "sheet-bottom-tier-character-tomozaki",
     "title": "Bottom-Tier Character Tomozaki",
     "status": "Completed",
-    "episodes": 12,
+    "episodes": 25,
     "score": 3,
     "genre": "Romance, Comedy, School",
     "studio": "Project No.9",
@@ -1455,7 +1458,8 @@
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2024,
     "watchedEpisodes": 12,
-    "newEpisodes": 0
+    "newEpisodes": 13,
+    "newEpisodeDetectedAt": "2026-09-05T21:07:52.334Z"
   },
   {
     "id": "sheet-another",
@@ -1549,7 +1553,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2023,
-    "watchedEpisodes": 14,
+    "watchedEpisodes": 13,
     "newEpisodes": 0
   },
   {
@@ -1565,7 +1569,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2024,
-    "watchedEpisodes": 68,
+    "watchedEpisodes": 63,
     "newEpisodes": 0
   },
   {
@@ -1581,7 +1585,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2016,
-    "watchedEpisodes": 15,
+    "watchedEpisodes": 12,
     "newEpisodes": 0
   },
   {
@@ -1692,7 +1696,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2021,
-    "watchedEpisodes": 14,
+    "watchedEpisodes": 13,
     "newEpisodes": 0
   },
   {
@@ -1756,7 +1760,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2011,
-    "watchedEpisodes": 346,
+    "watchedEpisodes": 154,
     "newEpisodes": 0
   },
   {
@@ -1837,7 +1841,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2019,
-    "watchedEpisodes": 30,
+    "watchedEpisodes": 24,
     "newEpisodes": 0
   },
   {
@@ -1913,7 +1917,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2025,
-    "watchedEpisodes": 24,
+    "watchedEpisodes": 12,
     "newEpisodes": 0
   },
   {
@@ -1975,7 +1979,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2021,
-    "watchedEpisodes": 24,
+    "watchedEpisodes": 23,
     "newEpisodes": 0
   },
   {
@@ -2040,7 +2044,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2026,
-    "watchedEpisodes": 36,
+    "watchedEpisodes": 35,
     "newEpisodes": 0
   },
   {
@@ -2056,7 +2060,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2025,
-    "watchedEpisodes": 24,
+    "watchedEpisodes": 12,
     "newEpisodes": 0
   },
   {
@@ -2103,7 +2107,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2017,
-    "watchedEpisodes": 190,
+    "watchedEpisodes": 170,
     "newEpisodes": 0
   },
   {
@@ -2321,7 +2325,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2025,
-    "watchedEpisodes": 24,
+    "watchedEpisodes": 12,
     "newEpisodes": 0
   },
   {
@@ -2352,7 +2356,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2023,
-    "watchedEpisodes": 18,
+    "watchedEpisodes": 12,
     "newEpisodes": 0
   },
   {
@@ -2390,7 +2394,7 @@
     "id": "sheet-nier-automata-ver1-1a",
     "title": "NieR:Automata Ver1.1a",
     "status": "Planned",
-    "episodes": 12,
+    "episodes": 24,
     "score": null,
     "genre": "Action, Sci-Fi, Drama",
     "studio": "A-1 Pictures",
@@ -2399,7 +2403,8 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2024,
-    "newEpisodes": 0
+    "newEpisodes": 12,
+    "newEpisodeDetectedAt": "2026-09-05T21:07:53.077Z"
   },
   {
     "id": "sheet-mieruko-chan",
@@ -2876,7 +2881,7 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2020,
-    "watchedEpisodes": 25,
+    "watchedEpisodes": 13,
     "newEpisodes": 0
   },
   {
