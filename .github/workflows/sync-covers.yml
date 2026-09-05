@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/sync-covers.yml'
-      - 'scripts/export-covers-bulk.mjs'
+      - 'scripts/sync-covers.mjs'
       - 'src/allTitles.json'
       - 'src/seed1.json'
       - 'src/seed2.json'
@@ -40,7 +40,7 @@ jobs:
         shell: bash
         run: |
           set +e
-          node scripts/export-covers-bulk.mjs --check-only
+          node scripts/sync-covers.mjs --check-only
           status=$?
           set -e
           if [[ $status -eq 0 ]]; then
@@ -62,7 +62,7 @@ jobs:
 
       - name: Download only missing covers
         if: steps.missing.outputs.needed == 'true'
-        run: node scripts/export-covers-bulk.mjs /tmp/anime-db.json
+        run: node scripts/sync-covers.mjs /tmp/anime-db.json
 
       - name: Commit repo-hosted covers
         id: commit
