@@ -20,7 +20,7 @@ permissions:
 
 concurrency:
   group: cover-sync
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   sync-and-build:
@@ -42,12 +42,14 @@ jobs:
         shell: bash
         run: |
           set -u
-          for start in 0 25 50 75 100 125 150 175; do
-            echo "=== Cover batch starting at $start ==="
-            npm run covers -- --start=$start --count=25
+          for start in $(seq 0 5 180); do
+            end=$((start+4))
+            if (( end > 182 )); then end=182; fi
+            echo "=== Cover batch $start-$end ==="
+            npm run covers -- --start=$start --count=5
             git add public/covers src/generatedCovers.json src/coverSources.json
             if ! git diff --cached --quiet; then
-              git commit -m "Checkpoint anime covers $start-$((start+24)) [skip ci]"
+              git commit -m "Checkpoint anime covers $start-$end [skip ci]"
               git push origin HEAD:main
             fi
           done
