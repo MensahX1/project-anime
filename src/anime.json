@@ -2679,5 +2679,20 @@
     "latestEpisodeYear": 2008,
     "synopsis": "Ash and friends become involved with Giratina and Shaymin in a conflict spanning the Reverse World.",
     "image": ""
+  },
+  {
+    "id": "anime-arceus-and-the-jewel-of-life",
+    "title": "Arceus and the Jewel of Life",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 1,
+    "genre": "Adventure, Fantasy",
+    "studio": "OLM",
+    "year": 2009,
+    "latestEpisodeYear": 2009,
+    "synopsis": "Ash and friends travel through time to uncover the truth behind Arceus's anger and the ancient Jewel of Life.",
+    "image": ""
   }
 ]
