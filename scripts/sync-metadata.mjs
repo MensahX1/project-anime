@@ -11,6 +11,12 @@ const entries=database.data||[];
 let coverSources={};
 try{coverSources=JSON.parse(await fs.readFile(coverSourcesPath,'utf8'))}catch{}
 
+const now=new Date();
+const CURRENT_YEAR=now.getUTCFullYear();
+const month=now.getUTCMonth()+1;
+const CURRENT_SEASON=month<=3?'WINTER':month<=6?'SPRING':month<=9?'SUMMER':'FALL';
+const SEASON_ORDER={WINTER:1,SPRING:2,SUMMER:3,FALL:4};
+
 const norm=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,' ').trim();
 const compact=s=>norm(s).replace(/\s+/g,'');
 const tokens=s=>new Set(norm(s).split(' ').filter(Boolean));
@@ -68,30 +74,56 @@ function relatedEntries(entry){
 }
 function titleSimilarity(a,b){let best=0;for(const x of namesFor(a))for(const y of namesFor(b))best=Math.max(best,dice(x,y));return best}
 
+function hasStarted(entry){
+  if(String(entry.status||'').toUpperCase()==='UPCOMING') return false;
+  const y=entry.animeSeason?.year;
+  if(!Number.isFinite(y)) return true;
+  if(y<CURRENT_YEAR) return true;
+  if(y>CURRENT_YEAR) return false;
+  const s=String(entry.animeSeason?.season||'').toUpperCase();
+  if(!SEASON_ORDER[s]) return true;
+  return SEASON_ORDER[s]<=SEASON_ORDER[CURRENT_SEASON];
+}
+
+function explicitContinuation(root,entry){
+  if(entryKey(root)===entryKey(entry)) return true;
+  if(titleSimilarity(root,entry)<0.72) return false;
+  const roots=namesFor(root).map(norm).sort((a,b)=>b.length-a.length);
+  const names=namesFor(entry).map(norm);
+  for(const r of roots){
+    for(const n of names){
+      if(!r||!n.startsWith(r)||n===r) continue;
+      const suffix=n.slice(r.length).trim();
+      if(/^(season\s*\d+|\d+(st|nd|rd|th)\s+season|part\s*\d+|cour\s*\d+|ii|iii|iv|v|vi|2|3|4|5|6|second season|third season|fourth season|final season)(\b|$)/i.test(suffix)) return true;
+    }
+  }
+  return false;
+}
+
 function episodeChain(match){
   const root=match.entry;
   if(!root)return[];
-  if(!SERIES_TYPES.has(root.type))return[root];
+  if(!SERIES_TYPES.has(root.type))return hasStarted(root)?[root]:[];
   const out=[],seen=new Set(),q=[root];
-  while(q.length&&out.length<10){
+  while(q.length&&out.length<8){
     const current=q.shift(),key=entryKey(current);
     if(seen.has(key))continue;
     seen.add(key);
     const otherOwner=ownerByKey.get(key);
     if(key!==entryKey(root)&&otherOwner&&otherOwner!==match.item.id)continue;
-    if(SERIES_TYPES.has(current.type))out.push(current);
+    if(SERIES_TYPES.has(current.type)&&hasStarted(current)&&explicitContinuation(root,current))out.push(current);
     for(const related of relatedEntries(current)){
-      if(!SERIES_TYPES.has(related.type))continue;
+      if(!SERIES_TYPES.has(related.type)||!hasStarted(related))continue;
       const rkey=entryKey(related),boundaryOwner=ownerByKey.get(rkey);
       if(boundaryOwner&&boundaryOwner!==match.item.id)continue;
-      if(titleSimilarity(root,related)<0.72)continue;
+      if(!explicitContinuation(root,related))continue;
       if(!seen.has(rkey))q.push(related);
     }
   }
   return out.sort((a,b)=>(a.animeSeason?.year||9999)-(b.animeSeason?.year||9999));
 }
 
-const report={generatedAt:new Date().toISOString(),datasetLastUpdate:database.lastUpdate||null,source:'manami-project/anime-offline-database',updated:[],unchanged:[],unmatched:[],review:[]};
+const report={generatedAt:new Date().toISOString(),datasetLastUpdate:database.lastUpdate||null,source:'manami-project/anime-offline-database',currentSeason:`${CURRENT_SEASON} ${CURRENT_YEAR}`,updated:[],unchanged:[],unmatched:[],review:[]};
 for(const match of matches){
   const a=match.item;
   const previousEpisodes=Number.isFinite(a.episodes)?a.episodes:null;
@@ -102,24 +134,27 @@ for(const match of matches){
   delete a.latestSeasonYear;
 
   if(!match.entry){
-    a.latestEpisodeYear=oldLatest;
+    a.latestEpisodeYear=(Number.isFinite(oldLatest)&&oldLatest<=CURRENT_YEAR)?oldLatest:(Number.isFinite(a.year)&&a.year<=CURRENT_YEAR?a.year:null);
     report.unmatched.push({id:a.id,title:a.title});
     continue;
   }
 
-  const root=match.entry,chain=episodeChain(match),isSeries=SERIES_TYPES.has(root.type);
-  const similarities=chain.map(x=>titleSimilarity(root,x));
-  const suspicious=chain.length>=10||similarities.some(x=>x<0.72);
+  const root=match.entry;
+  const chain=episodeChain(match);
+  const rootStarted=hasStarted(root);
   const knownEpisodes=chain.map(x=>x.episodes).filter(n=>Number.isFinite(n)&&n>0);
-  const completeChain=isSeries&&!suspicious&&chain.length&&knownEpisodes.length===chain.length;
-  const totalEpisodes=completeChain?knownEpisodes.reduce((s,n)=>s+n,0):(root.episodes>0?root.episodes:a.episodes??null);
-  const years=chain.map(x=>x.animeSeason?.year).filter(Number.isFinite);
-  const latestEpisodeYear=!suspicious&&years.length?Math.max(...years):(root.animeSeason?.year??oldLatest??a.year??null);
+  const canAggregate=SERIES_TYPES.has(root.type)&&chain.length>0&&knownEpisodes.length===chain.length;
+  const totalEpisodes=canAggregate?knownEpisodes.reduce((s,n)=>s+n,0):(rootStarted&&root.episodes>0?root.episodes:(previousEpisodes??null));
+  const years=chain.map(x=>x.animeSeason?.year).filter(y=>Number.isFinite(y)&&y<=CURRENT_YEAR);
+  let latestEpisodeYear=years.length?Math.max(...years):null;
+  if(latestEpisodeYear==null&&rootStarted&&Number.isFinite(root.animeSeason?.year)&&root.animeSeason.year<=CURRENT_YEAR)latestEpisodeYear=root.animeSeason.year;
+  if(latestEpisodeYear==null&&Number.isFinite(a.year)&&a.year<=CURRENT_YEAR)latestEpisodeYear=a.year;
   const firstYear=root.animeSeason?.year??a.year??null;
   const before={episodes:previousEpisodes,latestEpisodeYear:oldLatest,year:a.year??null,watchedEpisodes:a.watchedEpisodes??null,newEpisodes:a.newEpisodes};
 
   if(totalEpisodes!=null){
-    if(previousEpisodes!=null&&totalEpisodes>previousEpisodes){
+    // Only signal genuinely new episodes when the new total is larger than a sane prior baseline.
+    if(previousEpisodes!=null&&totalEpisodes>previousEpisodes&&previousEpisodes>0){
       a.newEpisodes+=(totalEpisodes-previousEpisodes);
       a.newEpisodeDetectedAt=new Date().toISOString();
     }
@@ -134,9 +169,9 @@ for(const match of matches){
   a.metadataSource='manami-project/anime-offline-database';
 
   const after={episodes:a.episodes??null,latestEpisodeYear:a.latestEpisodeYear??null,year:a.year??null,watchedEpisodes:a.watchedEpisodes??null,newEpisodes:a.newEpisodes};
-  const row={id:a.id,title:a.title,matchedTitle:root.title,matchScore:match.score,via:match.via,before,after,chain:chain.map(x=>({title:x.title,type:x.type,episodes:x.episodes,year:x.animeSeason?.year??null,similarity:Number(titleSimilarity(root,x).toFixed(2))}))};
+  const row={id:a.id,title:a.title,matchedTitle:root.title,matchScore:match.score,via:match.via,before,after,chain:chain.map(x=>({title:x.title,type:x.type,status:x.status||null,episodes:x.episodes,year:x.animeSeason?.year??null,season:x.animeSeason?.season??null}))};
   (JSON.stringify(before)!==JSON.stringify(after)?report.updated:report.unchanged).push(row);
-  if(suspicious)report.review.push(row);
+  if(!rootStarted||chain.length===0)report.review.push(row);
 }
 
 await fs.writeFile(animePath,JSON.stringify(anime,null,2)+'\n');
