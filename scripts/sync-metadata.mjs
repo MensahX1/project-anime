@@ -8,8 +8,22 @@ const coverSourcesPath='src/coverSources.json';
 const anime=JSON.parse(await fs.readFile(animePath,'utf8'));
 const database=JSON.parse(await fs.readFile(dbPath,'utf8'));
 const entries=database.data||[];
-let coverSources={};
+let coverSources={},previousReport=null;
 try{coverSources=JSON.parse(await fs.readFile(coverSourcesPath,'utf8'))}catch{}
+try{previousReport=JSON.parse(await fs.readFile(reportPath,'utf8'))}catch{}
+
+// If this script is being rerun after an earlier metadata pass, restore the pre-sync
+// values first so a bad inference cannot become the new baseline.
+if(previousReport?.source?.includes('anime-offline-database')){
+  const baseline=new Map([...(previousReport.updated||[]),...(previousReport.unchanged||[])].map(r=>[r.id,r.before]));
+  for(const a of anime){
+    const b=baseline.get(a.id); if(!b) continue;
+    a.episodes=b.episodes??null;
+    a.seasons=b.seasons??null;
+    a.latestSeasonYear=b.latestSeasonYear??null;
+    a.year=b.year??a.year??null;
+  }
+}
 
 const norm=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,' ').trim();
 const compact=s=>norm(s).replace(/\s+/g,'');
@@ -66,19 +80,17 @@ function relatedEntries(entry){
   for(const url of entry.relatedAnime||[]){const e=sourceMap.get(url);if(e)out.set(entryKey(e),e)}
   return [...out.values()];
 }
+function titleSimilarity(a,b){let best=0;for(const x of namesFor(a))for(const y of namesFor(b))best=Math.max(best,dice(x,y));return best}
 
-function titleSimilarity(a,b){
-  let best=0;
-  for(const x of namesFor(a))for(const y of namesFor(b))best=Math.max(best,dice(x,y));
-  return best;
-}
-
+// relatedAnime has no relation labels, so be deliberately conservative: only traverse
+// TV/ONA entries whose aliases remain very close to the root title. Anything uncertain
+// stays as the original stored episode count and gets flagged for review.
 function chainFor(match){
   const root=match.entry;
   if(!root)return[];
   if(!SERIES_TYPES.has(root.type))return[root];
   const out=[],seen=new Set(),q=[root];
-  while(q.length&&out.length<30){
+  while(q.length&&out.length<10){
     const current=q.shift(),key=entryKey(current);
     if(seen.has(key))continue;
     seen.add(key);
@@ -87,10 +99,9 @@ function chainFor(match){
     if(SERIES_TYPES.has(current.type))out.push(current);
     for(const related of relatedEntries(current)){
       if(!SERIES_TYPES.has(related.type))continue;
-      const rkey=entryKey(related);
-      const boundaryOwner=ownerByKey.get(rkey);
+      const rkey=entryKey(related),boundaryOwner=ownerByKey.get(rkey);
       if(boundaryOwner&&boundaryOwner!==match.item.id)continue;
-      if(titleSimilarity(root,related)<0.45)continue;
+      if(titleSimilarity(root,related)<0.72)continue;
       if(!seen.has(rkey))q.push(related);
     }
   }
@@ -102,11 +113,14 @@ for(const match of matches){
   const a=match.item;
   if(!match.entry){report.unmatched.push({id:a.id,title:a.title});continue;}
   const root=match.entry,chain=chainFor(match),isSeries=SERIES_TYPES.has(root.type);
+  const similarities=chain.map(x=>titleSimilarity(root,x));
+  const suspicious=chain.length>=10||similarities.some(x=>x<0.72);
   const knownEpisodes=chain.map(x=>x.episodes).filter(n=>Number.isFinite(n)&&n>0);
-  const computedEpisodes=isSeries&&chain.length&&knownEpisodes.length===chain.length?knownEpisodes.reduce((s,n)=>s+n,0):(root.episodes>0?root.episodes:null);
-  const seasons=isSeries?Math.max(1,chain.length):null;
+  const completeChain=isSeries&&!suspicious&&chain.length&&knownEpisodes.length===chain.length;
+  const computedEpisodes=completeChain?knownEpisodes.reduce((s,n)=>s+n,0):(root.episodes>0?root.episodes:a.episodes??null);
+  const seasons=isSeries&&!suspicious?Math.max(1,chain.length):null;
   const years=chain.map(x=>x.animeSeason?.year).filter(Number.isFinite);
-  const latestSeasonYear=years.length?Math.max(...years):(root.animeSeason?.year??null);
+  const latestSeasonYear=!suspicious&&years.length?Math.max(...years):(root.animeSeason?.year??null);
   const firstYear=root.animeSeason?.year??a.year??null;
   const before={episodes:a.episodes??null,seasons:a.seasons??null,latestSeasonYear:a.latestSeasonYear??null,year:a.year??null};
   if(computedEpisodes!=null)a.episodes=computedEpisodes;
@@ -117,7 +131,7 @@ for(const match of matches){
   const after={episodes:a.episodes??null,seasons:a.seasons??null,latestSeasonYear:a.latestSeasonYear??null,year:a.year??null};
   const row={id:a.id,title:a.title,matchedTitle:root.title,matchScore:match.score,via:match.via,before,after,chain:chain.map(x=>({title:x.title,type:x.type,episodes:x.episodes,year:x.animeSeason?.year??null,similarity:Number(titleSimilarity(root,x).toFixed(2))}))};
   (JSON.stringify(before)!==JSON.stringify(after)?report.updated:report.unchanged).push(row);
-  if(chain.length>1&&chain.some(x=>titleSimilarity(root,x)<0.6))report.review.push(row);
+  if(suspicious)report.review.push(row);
 }
 
 await fs.writeFile(animePath,JSON.stringify(anime,null,2)+'\n');
