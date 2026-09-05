@@ -2194,5 +2194,17 @@
     "year": null,
     "synopsis": "",
     "image": ""
+  },
+  {
+    "id": "anime-death-parade",
+    "title": "Death Parade",
+    "status": "Planned",
+    "episodes": 12,
+    "score": null,
+    "genre": "Psychological, Mystery, Drama, Supernatural, Thriller",
+    "studio": "Madhouse",
+    "year": 2015,
+    "synopsis": "Two people who die at the same time are sent to a mysterious bar, where psychological games expose their true nature and determine their fate.",
+    "image": ""
   }
 ]
