@@ -3756,5 +3756,45 @@
       "https://simkl.com/anime/37742"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Giratina & the Sky Warrior": {
+    "url": "https://cdn.myanimelist.net/images/anime/3/21316.jpg",
+    "matchedTitle": "Pokemon Movie 11: Giratina to Sora no Hanataba Sheimi",
+    "type": "MOVIE",
+    "year": 2008,
+    "matchScore": 466.66666666666663,
+    "providers": [
+      "https://anidb.net/anime/5772",
+      "https://anilist.co/anime/4026",
+      "https://anime-planet.com/anime/pokemon-giratina-and-the-sky-warrior",
+      "https://animecountdown.com/38127",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=9201",
+      "https://anisearch.com/anime/4690",
+      "https://kitsu.app/anime/3419",
+      "https://livechart.me/anime/4383",
+      "https://myanimelist.net/anime/4026",
+      "https://simkl.com/anime/38127"
+    ],
+    "dataset": "manami-project/anime-offline-database"
+  },
+  "Arceus and the Jewel of Life": {
+    "url": "https://cdn.myanimelist.net/images/anime/8/21315.jpg",
+    "matchedTitle": "Pokemon Movie 12: Arceus Choukoku no Jikuu e",
+    "type": "MOVIE",
+    "year": 2009,
+    "matchScore": 476.92307692307696,
+    "providers": [
+      "https://anidb.net/anime/6316",
+      "https://anilist.co/anime/6178",
+      "https://anime-planet.com/anime/pokemon-movie-12-arceus-and-the-jewel-of-life",
+      "https://animecountdown.com/41077",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=10552",
+      "https://anisearch.com/anime/5197",
+      "https://kitsu.app/anime/4460",
+      "https://livechart.me/anime/4419",
+      "https://myanimelist.net/anime/6178",
+      "https://simkl.com/anime/41077"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
