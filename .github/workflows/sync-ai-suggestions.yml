@@ -1,0 +1,59 @@
+name: Refresh AI anime suggestions
+
+on:
+  schedule:
+    - cron: '0 17 * * 5'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/sync-ai-suggestions.mjs'
+      - '.github/workflows/sync-ai-suggestions.yml'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: ai-anime-suggestions
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Download latest anime database
+        shell: bash
+        run: |
+          url=$(curl -fsSL https://api.github.com/repos/manami-project/anime-offline-database/releases/latest | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{const j=JSON.parse(s);const a=j.assets.find(x=>x.name==='anime-offline-database-minified.json');if(!a)process.exit(2);process.stdout.write(a.browser_download_url)})")
+          curl -L --fail --retry 4 --retry-delay 2 "$url" -o /tmp/anime-db.json
+
+      - name: Generate five personalized suggestions
+        run: node scripts/sync-ai-suggestions.mjs /tmp/anime-db.json
+
+      - name: Commit refreshed suggestions
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/aiSuggestions.json src/generatedCovers.json public/covers
+          if git diff --cached --quiet; then
+            echo "Suggestions unchanged."
+            exit 0
+          fi
+          git commit -m "Refresh weekly AI anime suggestions"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Deploy refreshed suggestions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --repo "$GITHUB_REPOSITORY" --ref main
