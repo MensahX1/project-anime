@@ -3975,5 +3975,45 @@
       "https://simkl.com/anime/1577789"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Yu-Gi-Oh!: The Dark Side of Dimensions": {
+    "url": "https://cdn.myanimelist.net/images/anime/12/77614.jpg",
+    "matchedTitle": "Yu☆Gi☆Oh! The Dark Side of Dimensions",
+    "type": "MOVIE",
+    "year": 2016,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/10963",
+      "https://anilist.co/anime/21265",
+      "https://anime-planet.com/anime/yu-gi-oh-movie-4-the-dark-side-of-dimensions",
+      "https://animecountdown.com/445682",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=16671",
+      "https://anisearch.com/anime/10086",
+      "https://kitsu.app/anime/10092",
+      "https://livechart.me/anime/625",
+      "https://myanimelist.net/anime/28771",
+      "https://simkl.com/anime/445682"
+    ],
+    "dataset": "manami-project/anime-offline-database"
+  },
+  "My Hero Academia: Heroes Rising": {
+    "url": "https://cdn.myanimelist.net/images/anime/1019/103292.jpg",
+    "matchedTitle": "Boku no Hero Academia the Movie 2: Heroes:Rising",
+    "type": "MOVIE",
+    "year": 2019,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/14776",
+      "https://anilist.co/anime/108553",
+      "https://anime-planet.com/anime/my-hero-academia-movie-2-heroes-rising",
+      "https://animecountdown.com/1061945",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=22537",
+      "https://anisearch.com/anime/14407",
+      "https://kitsu.app/anime/42205",
+      "https://livechart.me/anime/9371",
+      "https://myanimelist.net/anime/39565",
+      "https://simkl.com/anime/1061945"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
