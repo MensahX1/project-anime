@@ -1,0 +1,49 @@
+name: Sync anime metadata
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/sync-metadata.mjs
+      - .github/workflows/sync-metadata.yml
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: anime-metadata-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Sync AniList metadata
+        run: node scripts/sync-metadata.mjs
+
+      - name: Commit metadata updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/anime.json src/metadataSyncReport.json
+          if git diff --cached --quiet; then
+            echo "No metadata changes."
+          else
+            git commit -m "Sync anime metadata from AniList"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Deploy updated library
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --repo "$GITHUB_REPOSITORY" --ref main
