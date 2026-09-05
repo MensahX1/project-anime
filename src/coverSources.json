@@ -3716,5 +3716,25 @@
       "https://simkl.com/anime/37468"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Pokémon: Advanced Generation": {
+    "url": "https://cdn.myanimelist.net/images/anime/1036/142698.jpg",
+    "matchedTitle": "Pokemon Advanced Generation",
+    "type": "TV",
+    "year": 2002,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/1041",
+      "https://anilist.co/anime/1564",
+      "https://anime-planet.com/anime/pokemon-advanced",
+      "https://animecountdown.com/40184",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=1873",
+      "https://anisearch.com/anime/2105",
+      "https://kitsu.app/anime/1404",
+      "https://livechart.me/anime/3936",
+      "https://myanimelist.net/anime/1564",
+      "https://simkl.com/anime/40184"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
