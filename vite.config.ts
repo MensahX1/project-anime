@@ -1,0 +1,2 @@
+import {defineConfig} from "vite";import react from "@vitejs/plugin-react";import {VitePWA} from "vite-plugin-pwa";
+export default defineConfig({base:"/project-anime/",plugins:[react(),VitePWA({registerType:"autoUpdate",includeAssets:[],manifest:{name:"Lè Anime",short_name:"Lè Anime",description:"Your private local anime library",theme_color:"#09090b",background_color:"#09090b",display:"standalone",start_url:"/project-anime/",scope:"/project-anime/"},workbox:{globPatterns:["**/*.{js,css,html,json}"]}})]})
