@@ -32,7 +32,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Check whether any covers are missing
         id: missing
@@ -78,4 +78,6 @@ jobs:
           fi
           count=$(git diff --cached --name-only -- 'public/covers/*.jpg' | wc -l | tr -d ' ')
           git commit -m "Store ${count} missing anime cover(s)"
+          git fetch origin main
+          git rebase origin/main
           git push origin HEAD:main
