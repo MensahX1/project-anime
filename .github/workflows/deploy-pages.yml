@@ -26,8 +26,6 @@ jobs:
       - name: Verify bundled covers
         run: npm run covers:check
       - name: Build app
-        env:
-          VITE_ADMIN_API_URL: ${{ vars.ADMIN_API_URL }}
         run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
