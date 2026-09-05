@@ -3856,5 +3856,25 @@
       "https://simkl.com/anime/37111"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Blue Lock: Episode Nagi": {
+    "url": "https://cdn.myanimelist.net/images/anime/1239/139928.jpg",
+    "matchedTitle": "Blue Lock: Episode Nagi",
+    "type": "MOVIE",
+    "year": 2024,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/17955",
+      "https://anilist.co/anime/163147",
+      "https://anime-planet.com/anime/blue-lock-movie-episode-nagi",
+      "https://animecountdown.com/2125716",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=27628",
+      "https://anisearch.com/anime/18316",
+      "https://kitsu.app/anime/47244",
+      "https://livechart.me/anime/11912",
+      "https://myanimelist.net/anime/54866",
+      "https://simkl.com/anime/2125716"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
