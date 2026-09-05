@@ -3,39 +3,30 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'scripts/enrich-covers.mjs'
+      - '.github/workflows/sync-covers.yml'
+      - 'src/coverSources.json'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm install
-      - name: Ingest missing cover artwork
-        run: npm run covers
-      - name: Commit cover artwork to repository
-        run: |
-          if [[ -n "$(git status --porcelain public/covers src/generatedCovers.json)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add public/covers src/generatedCovers.json
-            git commit -m "Store verified anime cover artwork [skip ci]"
-            git push origin HEAD:main
-          fi
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
