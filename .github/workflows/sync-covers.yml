@@ -1,0 +1,71 @@
+name: Sync anime covers
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync-covers.yml'
+      - 'scripts/enrich-covers.mjs'
+      - 'src/allTitles.json'
+      - 'src/seed1.json'
+      - 'src/seed2.json'
+      - 'src/seed3.json'
+      - 'src/seed4.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cover-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - name: Configure checkpoint commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Resolve, download, and checkpoint covers
+        shell: bash
+        run: |
+          set -u
+          for start in 0 25 50 75 100 125 150 175; do
+            echo "=== Cover batch starting at $start ==="
+            npm run covers -- --start=$start --count=25
+            git add public/covers src/generatedCovers.json src/coverSources.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Checkpoint anime covers $start-$((start+24)) [skip ci]"
+              git push origin HEAD:main
+            fi
+          done
+      - name: Verify all 183 covers are persisted
+        run: npm run covers -- --verify
+      - name: Build Vite app with local covers
+        run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: sync-and-build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
