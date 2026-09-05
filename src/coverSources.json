@@ -3916,5 +3916,25 @@
       "https://simkl.com/anime/527702"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Sword Art Online Progressive: Aria of a Starless Night": {
+    "url": "https://cdn.myanimelist.net/images/anime/1590/116274.jpg",
+    "matchedTitle": "Sword Art Online: Progressive Movie - Hoshi Naki Yoru no Aria",
+    "type": "MOVIE",
+    "year": 2021,
+    "matchScore": 470,
+    "providers": [
+      "https://anidb.net/anime/15735",
+      "https://anilist.co/anime/124140",
+      "https://anime-planet.com/anime/sword-art-online-progressive-movie-1-aria-of-a-starless-night",
+      "https://animecountdown.com/1436707",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=23784",
+      "https://anisearch.com/anime/15547",
+      "https://kitsu.app/anime/43546",
+      "https://livechart.me/anime/10159",
+      "https://myanimelist.net/anime/42916",
+      "https://simkl.com/anime/1436707"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
