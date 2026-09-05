@@ -2694,5 +2694,20 @@
     "latestEpisodeYear": 2009,
     "synopsis": "Ash and friends travel through time to uncover the truth behind Arceus's anger and the ancient Jewel of Life.",
     "image": ""
+  },
+  {
+    "id": "anime-pokemon-diamond-and-pearl",
+    "title": "Pokémon: Diamond & Pearl",
+    "status": "Completed",
+    "episodes": 191,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 3,
+    "genre": "Adventure, Fantasy, Comedy",
+    "studio": "OLM",
+    "year": 2006,
+    "latestEpisodeYear": 2010,
+    "synopsis": "Ash travels through Sinnoh with Dawn and Brock, competing in Gym battles while Dawn pursues Pokémon Contests.",
+    "image": ""
   }
 ]
