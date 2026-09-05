@@ -34,7 +34,7 @@ jobs:
       - uses: actions/setup-node@v4
         if: github.event.issue.user.id == 115842080
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Sync latest main
         if: github.event.issue.user.id == 115842080
@@ -49,7 +49,7 @@ jobs:
           import fs from 'node:fs/promises';
 
           const body=process.env.ISSUE_BODY||'';
-          if(!body.includes('<!-- LE_ANIME_ADMIN_V1 -->')) throw new Error('Missing Lè Anime admin marker');
+          if(!body.includes('<!-- LE_ANIME_ADMIN_V1 -->')) throw new Error('Missing Watchlist admin marker');
           const match=body.match(/```json\s*([\s\S]*?)```/i);
           if(!match) throw new Error('Missing JSON payload');
           const request=JSON.parse(match[1]);
@@ -59,6 +59,8 @@ jobs:
           if(request.action==='upsert'){
             const a=request.anime;
             if(!a||typeof a.id!=='string'||typeof a.title!=='string'||!a.title.trim()) throw new Error('Invalid anime payload');
+            const i=anime.findIndex(x=>x.id===a.id);
+            const existing=i>=0?anime[i]:{};
             const clean={
               id:a.id,
               title:a.title.trim(),
@@ -68,15 +70,20 @@ jobs:
               genre:String(a.genre||''),
               studio:String(a.studio||''),
               year:a.year==null?null:Number(a.year),
+              seasons:a.seasons==null?(existing.seasons??null):Number(a.seasons),
+              latestSeasonYear:a.latestSeasonYear==null?(existing.latestSeasonYear??null):Number(a.latestSeasonYear),
               synopsis:String(a.synopsis||''),
-              image:''
+              image:'',
+              ...(existing.metadataSource?{metadataSource:existing.metadataSource}:{}),
+              ...(existing.malId?{malId:existing.malId}:{})
             };
             if(clean.score!=null&&(!Number.isInteger(clean.score)||clean.score<1||clean.score>5)) throw new Error('Score must be 1-5 or null');
             if(clean.episodes!=null&&(!Number.isFinite(clean.episodes)||clean.episodes<0)) throw new Error('Episodes must be non-negative or null');
             if(clean.year!=null&&(!Number.isFinite(clean.year)||clean.year<1900||clean.year>2100)) throw new Error('Year out of range');
+            if(clean.seasons!=null&&(!Number.isInteger(clean.seasons)||clean.seasons<1)) throw new Error('Seasons must be a positive integer or null');
+            if(clean.latestSeasonYear!=null&&(!Number.isInteger(clean.latestSeasonYear)||clean.latestSeasonYear<1900||clean.latestSeasonYear>2100)) throw new Error('Latest season year out of range');
             const duplicate=anime.find(x=>x.id!==clean.id&&x.title.toLowerCase()===clean.title.toLowerCase());
             if(duplicate) throw new Error(`Duplicate title: ${clean.title}`);
-            const i=anime.findIndex(x=>x.id===clean.id);
             if(i>=0) anime[i]=clean; else anime.push(clean);
           }else if(request.action==='delete'){
             if(typeof request.id!=='string') throw new Error('Missing anime id');
