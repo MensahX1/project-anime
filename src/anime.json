@@ -2634,5 +2634,20 @@
     "latestEpisodeYear": 2002,
     "synopsis": "Ash Ketchum begins his journey with Pikachu, traveling through multiple regions while collecting badges and competing in Pokémon battles.",
     "image": ""
+  },
+  {
+    "id": "anime-pokemon-advanced-generation",
+    "title": "Pokémon: Advanced Generation",
+    "status": "Completed",
+    "episodes": 192,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 2,
+    "genre": "Adventure, Fantasy, Comedy",
+    "studio": "OLM",
+    "year": 2002,
+    "latestEpisodeYear": 2006,
+    "synopsis": "Ash travels through Hoenn and the Battle Frontier with new companions, new Pokémon, and new regional challenges.",
+    "image": ""
   }
 ]
