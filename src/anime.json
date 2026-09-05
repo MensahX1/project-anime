@@ -2754,5 +2754,20 @@
     "latestEpisodeYear": 2024,
     "synopsis": "A feature-film retelling of Blue Lock from Seishiro Nagi's perspective, following his path into the Blue Lock program and rivalry-driven growth.",
     "image": ""
+  },
+  {
+    "id": "anime-jujutsu-kaisen-0",
+    "title": "Jujutsu Kaisen 0",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 4,
+    "genre": "Action, Supernatural, Dark Fantasy",
+    "studio": "MAPPA",
+    "year": 2021,
+    "latestEpisodeYear": 2021,
+    "synopsis": "Yuta Okkotsu enrolls at Tokyo Jujutsu High and learns to control the powerful curse bound to his childhood friend Rika.",
+    "image": ""
   }
 ]
