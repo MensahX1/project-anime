@@ -2769,5 +2769,20 @@
     "latestEpisodeYear": 2021,
     "synopsis": "Yuta Okkotsu enrolls at Tokyo Jujutsu High and learns to control the powerful curse bound to his childhood friend Rika.",
     "image": ""
+  },
+  {
+    "id": "anime-sword-art-online-the-movie-ordinal-scale",
+    "title": "Sword Art Online the Movie: Ordinal Scale",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 1,
+    "genre": "Action, Adventure, Fantasy, Sci-Fi",
+    "studio": "A-1 Pictures",
+    "year": 2017,
+    "latestEpisodeYear": 2017,
+    "synopsis": "Kirito and his friends enter the augmented-reality game Ordinal Scale, where a series of strange incidents connects the new game to their past in Sword Art Online.",
+    "image": ""
   }
 ]
