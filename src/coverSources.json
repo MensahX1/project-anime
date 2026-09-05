@@ -3796,5 +3796,25 @@
       "https://simkl.com/anime/41077"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Pokémon: Diamond & Pearl": {
+    "url": "https://cdn.myanimelist.net/images/anime/1425/142699.jpg",
+    "matchedTitle": "Pokemon Diamond & Pearl",
+    "type": "TV",
+    "year": 2006,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/4728",
+      "https://anilist.co/anime/1565",
+      "https://anime-planet.com/anime/pokemon-diamond-and-pearl",
+      "https://animecountdown.com/39403",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=6836",
+      "https://anisearch.com/anime/3721",
+      "https://kitsu.app/anime/1405",
+      "https://livechart.me/anime/3964",
+      "https://myanimelist.net/anime/1565",
+      "https://simkl.com/anime/39403"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
