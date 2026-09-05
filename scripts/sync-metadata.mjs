@@ -1,143 +1,126 @@
 import fs from 'node:fs/promises';
 
-const API='https://api.jikan.moe/v4';
+const dbPath=process.argv[2];
+if(!dbPath) throw new Error('Usage: node scripts/sync-metadata.mjs <anime-offline-database.json>');
 const animePath='src/anime.json';
 const reportPath='src/metadataSyncReport.json';
+const coverSourcesPath='src/coverSources.json';
 const anime=JSON.parse(await fs.readFile(animePath,'utf8'));
+const database=JSON.parse(await fs.readFile(dbPath,'utf8'));
+const entries=database.data||[];
+let coverSources={};
+try{coverSources=JSON.parse(await fs.readFile(coverSourcesPath,'utf8'))}catch{}
 
-const norm=s=>String(s||'').normalize('NFKD').replace(/[’‘`]/g,"'").replace(/[^a-zA-Z0-9]+/g,' ').trim().toLowerCase();
-const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-let lastRequest=0;
+const norm=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,' ').trim();
+const compact=s=>norm(s).replace(/\s+/g,'');
+const tokens=s=>new Set(norm(s).split(' ').filter(Boolean));
+const dice=(a,b)=>{const A=tokens(a),B=tokens(b);if(!A.size||!B.size)return 0;let hit=0;for(const x of A)if(B.has(x))hit++;return 2*hit/(A.size+B.size)};
+const namesFor=e=>[e.title,...(e.synonyms||[])].filter(Boolean);
+const entryKey=e=>e.sources?.[0]||`${e.title}|${e.type}|${e.animeSeason?.year||''}`;
 
-async function get(path){
-  for(let attempt=0;attempt<6;attempt++){
-    const elapsed=Date.now()-lastRequest;
-    if(elapsed<420) await sleep(420-elapsed);
-    lastRequest=Date.now();
-    const res=await fetch(`${API}${path}`,{headers:{accept:'application/json','user-agent':'The-Watchlist-Metadata-Sync/1.0'}});
-    if(res.ok) return await res.json();
-    if(res.status===429||res.status>=500){await sleep(1500*(attempt+1));continue;}
-    throw new Error(`Jikan HTTP ${res.status}: ${await res.text()}`);
+const exact=new Map(),compactMap=new Map(),sourceMap=new Map();
+for(const entry of entries){
+  for(const url of entry.sources||[]) sourceMap.set(url,entry);
+  for(const name of namesFor(entry)){
+    const n=norm(name),c=compact(name);
+    if(n){if(!exact.has(n))exact.set(n,[]);exact.get(n).push(entry)}
+    if(c){if(!compactMap.has(c))compactMap.set(c,[]);compactMap.get(c).push(entry)}
   }
-  throw new Error(`Jikan request failed after retries: ${path}`);
 }
 
-function scoreCandidate(item,m){
-  const target=norm(item.title);
-  const names=[m.title,m.title_english,m.title_japanese,...(m.title_synonyms||[]),...(m.titles||[]).map(x=>x.title)].filter(Boolean).map(norm);
-  if(names.includes(target)) return 100;
-  const targetWords=new Set(target.split(' '));
+function scoreEntry(item,entry){
+  const n=norm(item.title),c=compact(item.title);let score=0;
+  const names=namesFor(entry);
+  if(names.some(v=>norm(v)===n))score+=1000;
+  else if(names.some(v=>compact(v)===c))score+=900;
+  else score+=Math.max(...names.map(v=>dice(item.title,v)),0)*300;
+  const ey=entry.animeSeason?.year;
+  if(item.year&&ey===item.year)score+=120;
+  else if(item.year&&ey&&Math.abs(ey-item.year)===1)score+=35;
+  else if(item.year&&ey)score-=Math.min(80,Math.abs(ey-item.year)*12);
+  if(item.episodes&&entry.episodes===item.episodes)score+=35;
+  const looksMovie=/movie|film|infinity castle|reze arc|suzume|dreaming girl|sister venturing out|knapsack kid/i.test(item.title)||item.episodes===1;
+  if(looksMovie&&entry.type==='MOVIE')score+=45;
+  if(!looksMovie&&entry.type==='TV')score+=25;
+  if(/recap|summary/i.test(entry.title||''))score-=100;
+  return score;
+}
+
+function choose(item){
+  const providers=coverSources[item.title]?.providers||[];
+  for(const url of providers){const found=sourceMap.get(url);if(found)return{entry:found,score:2000,via:'cover-source'}}
+  const n=norm(item.title),c=compact(item.title);
+  let pool=[...(exact.get(n)||[])];
+  if(!pool.length)pool=[...(compactMap.get(c)||[])];
+  if(!pool.length)pool=entries.filter(e=>Math.max(...namesFor(e).map(v=>dice(item.title,v)),0)>=0.6);
+  const best=pool.map(e=>({entry:e,score:scoreEntry(item,e),via:'title-match'})).sort((a,b)=>b.score-a.score)[0];
+  return best&&best.score>=220?best:null;
+}
+
+const matches=anime.map(item=>({item,...(choose(item)||{entry:null,score:0,via:'unmatched'})}));
+const ownerByKey=new Map(matches.filter(x=>x.entry).map(x=>[entryKey(x.entry),x.item.id]));
+const SERIES_TYPES=new Set(['TV','ONA']);
+
+function relatedEntries(entry){
+  const out=new Map();
+  for(const url of entry.relatedAnime||[]){const e=sourceMap.get(url);if(e)out.set(entryKey(e),e)}
+  return [...out.values()];
+}
+
+function titleSimilarity(a,b){
   let best=0;
-  for(const name of names){
-    const words=new Set(name.split(' '));
-    const common=[...targetWords].filter(x=>words.has(x)).length;
-    const union=new Set([...targetWords,...words]).size||1;
-    best=Math.max(best,Math.round(common/union*80));
-    if(name.includes(target)||target.includes(name)) best=Math.max(best,72);
-  }
+  for(const x of namesFor(a))for(const y of namesFor(b))best=Math.max(best,dice(x,y));
   return best;
 }
 
-const matches=[];
-for(const item of anime){
-  const result=await get(`/anime?q=${encodeURIComponent(item.title)}&limit=6&sfw=false`);
-  const ranked=(result.data||[]).map(m=>({m,score:scoreCandidate(item,m)})).sort((a,b)=>b.score-a.score);
-  const best=ranked[0];
-  matches.push(best&&best.score>=70?{
-    item,malId:best.m.mal_id,confidence:best.score,
-    candidates:ranked.slice(0,3).map(x=>({id:x.m.mal_id,title:x.m.title_english||x.m.title,score:x.score}))
-  }:{item,malId:null,confidence:best?.score||0,candidates:ranked.slice(0,3).map(x=>({id:x.m.mal_id,title:x.m.title_english||x.m.title,score:x.score}))});
-}
-
-const details=new Map();
-async function full(id){
-  if(details.has(id)) return details.get(id);
-  const result=await get(`/anime/${id}/full`);
-  const m=result.data;
-  details.set(id,m);
-  return m;
-}
-
-for(const m of matches) if(m.malId) await full(m.malId);
-
-const SERIES_TYPES=new Set(['TV','ONA']);
-const ownerByMalId=new Map(matches.filter(x=>x.malId).map(x=>[x.malId,x.item.id]));
-
-function relatedIds(m){
-  const ids=[];
-  for(const rel of m.relations||[]){
-    if(rel.relation!=='Prequel'&&rel.relation!=='Sequel') continue;
-    for(const entry of rel.entry||[]) if(entry.type==='anime'&&Number.isFinite(entry.mal_id)) ids.push(entry.mal_id);
-  }
-  return ids;
-}
-
-// Fetch the sequel/prequel graph once, reusing cached entries between library titles.
-let frontier=[...new Set([...details.values()].flatMap(relatedIds).filter(id=>!details.has(id)))];
-const attempted=new Set();
-while(frontier.length&&attempted.size<600){
-  const id=frontier.shift();
-  if(details.has(id)||attempted.has(id)) continue;
-  attempted.add(id);
-  try{
-    const m=await full(id);
-    for(const next of relatedIds(m)) if(!details.has(next)&&!attempted.has(next)&&!frontier.includes(next)) frontier.push(next);
-  }catch(err){console.warn(`Skipping related MAL ${id}:`,err.message)}
-}
-
-function releaseYear(m){return m.year??m.aired?.prop?.from?.year??null}
-
 function chainFor(match){
-  const root=details.get(match.malId);
-  if(!root) return [];
-  if(!SERIES_TYPES.has(root.type)) return [root];
-  const seen=new Set(); const q=[root.mal_id]; const out=[];
+  const root=match.entry;
+  if(!root)return[];
+  if(!SERIES_TYPES.has(root.type))return[root];
+  const out=[],seen=new Set(),q=[root];
   while(q.length&&out.length<30){
-    const id=q.shift();
-    if(seen.has(id)) continue;
-    seen.add(id);
-    const m=details.get(id); if(!m) continue;
-    const otherOwner=ownerByMalId.get(id);
-    if(id!==root.mal_id&&otherOwner&&otherOwner!==match.item.id) continue;
-    if(SERIES_TYPES.has(m.type)) out.push(m);
-    for(const next of relatedIds(m)){
-      const related=details.get(next);
-      if(!related||!SERIES_TYPES.has(related.type)) continue;
-      const boundaryOwner=ownerByMalId.get(next);
-      if(boundaryOwner&&boundaryOwner!==match.item.id) continue;
-      q.push(next);
+    const current=q.shift(),key=entryKey(current);
+    if(seen.has(key))continue;
+    seen.add(key);
+    const otherOwner=ownerByKey.get(key);
+    if(key!==entryKey(root)&&otherOwner&&otherOwner!==match.item.id)continue;
+    if(SERIES_TYPES.has(current.type))out.push(current);
+    for(const related of relatedEntries(current)){
+      if(!SERIES_TYPES.has(related.type))continue;
+      const rkey=entryKey(related);
+      const boundaryOwner=ownerByKey.get(rkey);
+      if(boundaryOwner&&boundaryOwner!==match.item.id)continue;
+      if(titleSimilarity(root,related)<0.45)continue;
+      if(!seen.has(rkey))q.push(related);
     }
   }
-  return out;
+  return out.sort((a,b)=>(a.animeSeason?.year||9999)-(b.animeSeason?.year||9999));
 }
 
-const report={generatedAt:new Date().toISOString(),source:'Jikan / MyAnimeList',updated:[],unchanged:[],unmatched:[]};
+const report={generatedAt:new Date().toISOString(),datasetLastUpdate:database.lastUpdate||null,source:'manami-project/anime-offline-database 2026-27',updated:[],unchanged:[],unmatched:[],review:[]};
 for(const match of matches){
   const a=match.item;
-  if(!match.malId){report.unmatched.push({id:a.id,title:a.title,confidence:match.confidence,candidates:match.candidates});continue;}
-  const root=details.get(match.malId);
-  if(!root){report.unmatched.push({id:a.id,title:a.title,confidence:match.confidence,candidates:match.candidates});continue;}
-  const chain=chainFor(match);
-  const isSeries=SERIES_TYPES.has(root.type);
-  const knownEpisodes=chain.map(x=>x.episodes).filter(Number.isFinite);
-  const computedEpisodes=isSeries&&chain.length&&knownEpisodes.length===chain.length?knownEpisodes.reduce((s,n)=>s+n,0):(Number.isFinite(root.episodes)?root.episodes:null);
-  const seasons=isSeries?chain.length:null;
-  const years=chain.map(releaseYear).filter(Number.isFinite);
-  const latestSeasonYear=years.length?Math.max(...years):releaseYear(root);
-  const firstYear=releaseYear(root)??a.year??null;
+  if(!match.entry){report.unmatched.push({id:a.id,title:a.title});continue;}
+  const root=match.entry,chain=chainFor(match),isSeries=SERIES_TYPES.has(root.type);
+  const knownEpisodes=chain.map(x=>x.episodes).filter(n=>Number.isFinite(n)&&n>0);
+  const computedEpisodes=isSeries&&chain.length&&knownEpisodes.length===chain.length?knownEpisodes.reduce((s,n)=>s+n,0):(root.episodes>0?root.episodes:null);
+  const seasons=isSeries?Math.max(1,chain.length):null;
+  const years=chain.map(x=>x.animeSeason?.year).filter(Number.isFinite);
+  const latestSeasonYear=years.length?Math.max(...years):(root.animeSeason?.year??null);
+  const firstYear=root.animeSeason?.year??a.year??null;
   const before={episodes:a.episodes??null,seasons:a.seasons??null,latestSeasonYear:a.latestSeasonYear??null,year:a.year??null};
-  if(computedEpisodes!=null) a.episodes=computedEpisodes;
+  if(computedEpisodes!=null)a.episodes=computedEpisodes;
   a.seasons=seasons;
   a.latestSeasonYear=latestSeasonYear;
-  if(a.year==null&&firstYear!=null) a.year=firstYear;
-  a.metadataSource='Jikan / MyAnimeList';
-  a.malId=root.mal_id;
+  if(a.year==null&&firstYear!=null)a.year=firstYear;
+  a.metadataSource='manami-project/anime-offline-database 2026-27';
   const after={episodes:a.episodes??null,seasons:a.seasons??null,latestSeasonYear:a.latestSeasonYear??null,year:a.year??null};
-  const row={id:a.id,title:a.title,malId:root.mal_id,confidence:match.confidence,before,after,chain:chain.map(x=>({id:x.mal_id,title:x.title_english||x.title,episodes:x.episodes,year:releaseYear(x),type:x.type}))};
+  const row={id:a.id,title:a.title,matchedTitle:root.title,matchScore:match.score,via:match.via,before,after,chain:chain.map(x=>({title:x.title,type:x.type,episodes:x.episodes,year:x.animeSeason?.year??null,similarity:Number(titleSimilarity(root,x).toFixed(2))}))};
   (JSON.stringify(before)!==JSON.stringify(after)?report.updated:report.unchanged).push(row);
+  if(chain.length>1&&chain.some(x=>titleSimilarity(root,x)<0.6))report.review.push(row);
 }
 
 await fs.writeFile(animePath,JSON.stringify(anime,null,2)+'\n');
 await fs.writeFile(reportPath,JSON.stringify(report,null,2)+'\n');
-console.log(`Jikan metadata sync: ${report.updated.length} updated, ${report.unchanged.length} unchanged, ${report.unmatched.length} unmatched.`);
-if(report.unmatched.length) console.log('Unmatched:',report.unmatched.map(x=>x.title).join(' | '));
+console.log(`Offline metadata sync: ${report.updated.length} updated, ${report.unchanged.length} unchanged, ${report.unmatched.length} unmatched, ${report.review.length} review.`);
+if(report.unmatched.length)console.log('Unmatched:',report.unmatched.map(x=>x.title).join(' | '));
