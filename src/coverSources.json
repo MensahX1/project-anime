@@ -3636,5 +3636,25 @@
       "https://simkl.com/anime/428814"
     ],
     "dataset": "manami-project/anime-offline-database 2026-27"
+  },
+  "Kakegurui Twin": {
+    "url": "https://cdn.myanimelist.net/images/anime/1851/124275.jpg",
+    "matchedTitle": "Kakegurui Twin",
+    "type": "ONA",
+    "year": 2022,
+    "matchScore": 1155,
+    "providers": [
+      "https://anidb.net/anime/16967",
+      "https://anilist.co/anime/141351",
+      "https://anime-planet.com/anime/kakegurui-twin",
+      "https://animecountdown.com/1774537",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=24957",
+      "https://anisearch.com/anime/16779",
+      "https://kitsu.app/anime/45471",
+      "https://livechart.me/anime/10866",
+      "https://myanimelist.net/anime/50339",
+      "https://simkl.com/anime/1774537"
+    ],
+    "dataset": "manami-project/anime-offline-database 2026-27"
   }
 }
