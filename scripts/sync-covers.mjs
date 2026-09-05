@@ -25,11 +25,40 @@ const dice = (a,b) => {
   let hit=0; for(const x of A) if(B.has(x)) hit++;
   return (2*hit)/(A.size+B.size);
 };
-const fileIsGood = async url => { try { return (await fs.stat(url)).size > 1000; } catch { return false; } };
 
-const expectedFiles=new Set(titles.map(title=>`${slug(title)}.jpg`));
+const detectExt = bytes => {
+  if(bytes.length>=8 && bytes[0]===0x89 && bytes[1]===0x50 && bytes[2]===0x4e && bytes[3]===0x47) return '.png';
+  if(bytes.length>=3 && bytes[0]===0xff && bytes[1]===0xd8 && bytes[2]===0xff) return '.jpg';
+  if(bytes.length>=12 && bytes.subarray(0,4).toString()==='RIFF' && bytes.subarray(8,12).toString()==='WEBP') return '.webp';
+  return null;
+};
+const candidateExts=['.jpg','.png','.webp'];
+const fileInfo = async title => {
+  const base=slug(title);
+  for(const ext of candidateExts){
+    const url=new URL(`${base}${ext}`,coverDir);
+    try{
+      const bytes=await fs.readFile(url);
+      if(bytes.length<1000) continue;
+      const actual=detectExt(bytes);
+      if(!actual) continue;
+      if(actual!==ext){
+        if(checkOnly) return {needsRepair:true};
+        const repaired=new URL(`${base}${actual}`,coverDir);
+        await fs.writeFile(repaired,bytes);
+        await fs.unlink(url).catch(()=>{});
+        return {name:`${base}${actual}`,url:repaired,ext:actual};
+      }
+      return {name:`${base}${ext}`,url,ext};
+    }catch{}
+  }
+  return null;
+};
+
+const expectedBases=new Set(titles.map(title=>slug(title)));
 for(const file of await fs.readdir(coverDir)){
-  if(file.endsWith('.jpg')&&!expectedFiles.has(file)){
+  const m=file.match(/^(.*)\.(jpg|png|webp)$/i);
+  if(m&&!expectedBases.has(m[1])){
     if(!checkOnly) await fs.unlink(new URL(file,coverDir));
     console.log(`${checkOnly?'Stale':'Removed stale'} cover: ${file}`);
   }
@@ -37,17 +66,16 @@ for(const file of await fs.readdir(coverDir)){
 
 const missing=[];
 for(const title of titles){
-  const name=`${slug(title)}.jpg`;
-  const file=new URL(name,coverDir);
-  const expected=`/project-anime/covers/${name}`;
-  if(await fileIsGood(file)) generated[title]=expected;
+  const info=await fileInfo(title);
+  if(info?.needsRepair) missing.push(title);
+  else if(info) generated[title]=`/project-anime/covers/${info.name}`;
   else missing.push(title);
 }
 
 for(const title of Object.keys(generated)) if(!titles.includes(title)) delete generated[title];
 for(const title of Object.keys(sources)) if(!titles.includes(title)) delete sources[title];
 
-console.log(`Missing covers: ${missing.length}/${titles.length}`);
+console.log(`Missing or mis-typed covers: ${missing.length}/${titles.length}`);
 if(checkOnly){
   if(missing.length) console.log(missing.join('\n'));
   process.exit(missing.length ? 10 : 0);
@@ -107,6 +135,11 @@ function choose(title) {
 const matches={};
 const unresolved=[];
 for(const title of missing){
+  const existing=await fileInfo(title);
+  if(existing&&!existing.needsRepair){
+    generated[title]=`/project-anime/covers/${existing.name}`;
+    continue;
+  }
   const best=choose(title);
   if(!best || best.score<150 || !best.e.picture){
     unresolved.push({title,best:best?.e?.title||null,score:best?.score||0});
@@ -121,14 +154,13 @@ if(unresolved.length){
   process.exit(2);
 }
 
+const downloadTitles=Object.keys(matches);
 let cursor=0;
-const workers=Array.from({length:Math.min(12,missing.length)},async()=>{
+const workers=Array.from({length:Math.min(12,downloadTitles.length)},async()=>{
   while(true){
-    const i=cursor++; if(i>=missing.length) return;
-    const title=missing[i], {entry,score}=matches[title];
+    const i=cursor++; if(i>=downloadTitles.length) return;
+    const title=downloadTitles[i], {entry,score}=matches[title];
     const url=entry.picture;
-    const name=`${slug(title)}.jpg`;
-    const file=new URL(name,coverDir);
     let ok=false,last;
     for(let attempt=1;attempt<=4 && !ok;attempt++){
       try{
@@ -136,14 +168,19 @@ const workers=Array.from({length:Math.min(12,missing.length)},async()=>{
         if(!r.ok) throw new Error(`${r.status} ${url}`);
         const bytes=Buffer.from(await r.arrayBuffer());
         if(bytes.length<1000) throw new Error(`image too small (${bytes.length} bytes)`);
-        await fs.writeFile(file,bytes);
+        const ext=detectExt(bytes);
+        if(!ext) throw new Error('unsupported image format');
+        const base=slug(title);
+        for(const oldExt of candidateExts) await fs.unlink(new URL(`${base}${oldExt}`,coverDir)).catch(()=>{});
+        const name=`${base}${ext}`;
+        await fs.writeFile(new URL(name,coverDir),bytes);
+        generated[title]=`/project-anime/covers/${name}`;
+        sources[title]={url,matchedTitle:entry.title,type:entry.type||null,year:entry.animeSeason?.year||null,matchScore:score,providers:entry.sources||[],dataset:'manami-project/anime-offline-database'};
         ok=true;
       }catch(e){last=e; await new Promise(r=>setTimeout(r,800*attempt));}
     }
     if(!ok) throw new Error(`${title}: ${last?.message||last}`);
-    generated[title]=`/project-anime/covers/${name}`;
-    sources[title]={url,matchedTitle:entry.title,type:entry.type||null,year:entry.animeSeason?.year||null,matchScore:score,providers:entry.sources||[],dataset:'manami-project/anime-offline-database 2026-27'};
-    console.log(`${i+1}/${missing.length} ✓ ${title} -> ${entry.title}`);
+    console.log(`${i+1}/${downloadTitles.length} ✓ ${title} -> ${entry.title}`);
   }
 });
 await Promise.all(workers);
@@ -153,8 +190,8 @@ await fs.writeFile(sourcesFile,JSON.stringify(sources,null,2)+'\n');
 
 const stillMissing=[];
 for(const title of titles){
-  const file=new URL(`${slug(title)}.jpg`,coverDir);
-  if(!(await fileIsGood(file)) || !generated[title]) stillMissing.push(title);
+  const info=await fileInfo(title);
+  if(!info || info.needsRepair || !generated[title]) stillMissing.push(title);
 }
 if(stillMissing.length) throw new Error(`Verification failed; still missing ${stillMissing.length}: ${stillMissing.join(' | ')}`);
-console.log(`Verified ${titles.length}/${titles.length} covers. Downloaded only ${missing.length} missing cover(s).`);
+console.log(`Verified ${titles.length}/${titles.length} covers. Downloaded/repaired ${downloadTitles.length} cover(s).`);
