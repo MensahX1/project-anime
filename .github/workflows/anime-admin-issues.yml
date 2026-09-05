@@ -1,0 +1,122 @@
+name: Apply anime admin issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: anime-admin-writes
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: startsWith(github.event.issue.title, '[anime-admin]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reject unauthorized author
+        if: github.event.issue.user.id != 115842080
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --comment "This admin request was not submitted by the authorized library owner. No repository changes were made."
+
+      - uses: actions/checkout@v4
+        if: github.event.issue.user.id == 115842080
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        if: github.event.issue.user.id == 115842080
+        with:
+          node-version: 20
+
+      - name: Apply requested anime change
+        if: github.event.issue.user.id == 115842080
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs/promises';
+
+          const body=process.env.ISSUE_BODY||'';
+          if(!body.includes('<!-- LE_ANIME_ADMIN_V1 -->')) throw new Error('Missing Lè Anime admin marker');
+          const match=body.match(/```json\s*([\s\S]*?)```/i);
+          if(!match) throw new Error('Missing JSON payload');
+          const request=JSON.parse(match[1]);
+          const path='src/anime.json';
+          const anime=JSON.parse(await fs.readFile(path,'utf8'));
+
+          if(request.action==='upsert'){
+            const a=request.anime;
+            if(!a||typeof a.id!=='string'||typeof a.title!=='string'||!a.title.trim()) throw new Error('Invalid anime payload');
+            const clean={
+              id:a.id,
+              title:a.title.trim(),
+              status:String(a.status||''),
+              episodes:a.episodes==null?null:Number(a.episodes),
+              score:a.score==null?null:Number(a.score),
+              genre:String(a.genre||''),
+              studio:String(a.studio||''),
+              year:a.year==null?null:Number(a.year),
+              synopsis:String(a.synopsis||''),
+              image:''
+            };
+            if(clean.score!=null&&(!Number.isInteger(clean.score)||clean.score<1||clean.score>5)) throw new Error('Score must be 1-5 or null');
+            if(clean.episodes!=null&&(!Number.isFinite(clean.episodes)||clean.episodes<0)) throw new Error('Episodes must be non-negative or null');
+            if(clean.year!=null&&(!Number.isFinite(clean.year)||clean.year<1900||clean.year>2100)) throw new Error('Year out of range');
+            const duplicate=anime.find(x=>x.id!==clean.id&&x.title.toLowerCase()===clean.title.toLowerCase());
+            if(duplicate) throw new Error(`Duplicate title: ${clean.title}`);
+            const i=anime.findIndex(x=>x.id===clean.id);
+            if(i>=0) anime[i]=clean; else anime.push(clean);
+          }else if(request.action==='delete'){
+            if(typeof request.id!=='string') throw new Error('Missing anime id');
+            const i=anime.findIndex(x=>x.id===request.id);
+            if(i<0) throw new Error(`Anime not found: ${request.id}`);
+            anime.splice(i,1);
+          }else{
+            throw new Error('Unknown admin action');
+          }
+
+          const ids=new Set(anime.map(x=>x.id));
+          const titles=new Set(anime.map(x=>x.title.toLowerCase()));
+          if(ids.size!==anime.length||titles.size!==anime.length) throw new Error('Duplicate id or title after update');
+          await fs.writeFile(path,JSON.stringify(anime,null,2)+'\n');
+          NODE
+
+      - name: Commit repo data
+        if: github.event.issue.user.id == 115842080
+        env:
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add src/anime.json
+          if git diff --cached --quiet; then
+            echo "No data change was needed."
+          else
+            git commit -m "Apply anime admin request #${ISSUE}"
+            git push origin HEAD:main
+          fi
+
+      - name: Start cover sync and deploy
+        if: github.event.issue.user.id == 115842080
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run sync-covers.yml --repo "$GITHUB_REPOSITORY" --ref main
+          gh workflow run deploy-pages.yml --repo "$GITHUB_REPOSITORY" --ref main
+
+      - name: Close completed request
+        if: github.event.issue.user.id == 115842080
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --comment "Applied to src/anime.json. Cover sync and Pages deployment have been started."
