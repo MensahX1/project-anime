@@ -36,6 +36,10 @@ jobs:
         with:
           node-version: 20
 
+      - name: Sync latest main
+        if: github.event.issue.user.id == 115842080
+        run: git pull --rebase origin main
+
       - name: Apply requested anime change
         if: github.event.issue.user.id == 115842080
         env:
@@ -96,7 +100,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add src/anime.json
           if git diff --cached --quiet; then
             echo "No data change was needed."
