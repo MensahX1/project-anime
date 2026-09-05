@@ -12,16 +12,14 @@ let coverSources={},previousReport=null;
 try{coverSources=JSON.parse(await fs.readFile(coverSourcesPath,'utf8'))}catch{}
 try{previousReport=JSON.parse(await fs.readFile(reportPath,'utf8'))}catch{}
 
-// If this script is being rerun after an earlier metadata pass, restore the pre-sync
-// values first so a bad inference cannot become the new baseline.
+// Restore the pre-sync episode baseline before recalculating so a bad earlier
+// franchise inference cannot become the next run's source of truth.
 if(previousReport?.source?.includes('anime-offline-database')){
   const baseline=new Map([...(previousReport.updated||[]),...(previousReport.unchanged||[])].map(r=>[r.id,r.before]));
   for(const a of anime){
     const b=baseline.get(a.id); if(!b) continue;
-    a.episodes=b.episodes??null;
-    a.seasons=b.seasons??null;
-    a.latestSeasonYear=b.latestSeasonYear??null;
-    a.year=b.year??a.year??null;
+    if(Object.hasOwn(b,'episodes')) a.episodes=b.episodes??null;
+    if(a.year==null&&b.year!=null) a.year=b.year;
   }
 }
 
@@ -82,10 +80,9 @@ function relatedEntries(entry){
 }
 function titleSimilarity(a,b){let best=0;for(const x of namesFor(a))for(const y of namesFor(b))best=Math.max(best,dice(x,y));return best}
 
-// relatedAnime has no relation labels, so be deliberately conservative: only traverse
-// TV/ONA entries whose aliases remain very close to the root title. Anything uncertain
-// stays as the original stored episode count and gets flagged for review.
-function chainFor(match){
+// Follow only strongly title-related TV/ONA entries. Movies, specials and loosely
+// related franchise entries do not count toward the series episode total.
+function episodeChain(match){
   const root=match.entry;
   if(!root)return[];
   if(!SERIES_TYPES.has(root.type))return[root];
@@ -108,27 +105,32 @@ function chainFor(match){
   return out.sort((a,b)=>(a.animeSeason?.year||9999)-(b.animeSeason?.year||9999));
 }
 
-const report={generatedAt:new Date().toISOString(),datasetLastUpdate:database.lastUpdate||null,source:'manami-project/anime-offline-database 2026-27',updated:[],unchanged:[],unmatched:[],review:[]};
+const report={generatedAt:new Date().toISOString(),datasetLastUpdate:database.lastUpdate||null,source:'manami-project/anime-offline-database',updated:[],unchanged:[],unmatched:[],review:[]};
 for(const match of matches){
   const a=match.item;
-  if(!match.entry){report.unmatched.push({id:a.id,title:a.title});continue;}
-  const root=match.entry,chain=chainFor(match),isSeries=SERIES_TYPES.has(root.type);
+  const oldLatest=a.latestEpisodeYear??a.latestSeasonYear??null;
+  delete a.seasons;
+  delete a.latestSeasonYear;
+  if(!match.entry){
+    a.latestEpisodeYear=oldLatest;
+    report.unmatched.push({id:a.id,title:a.title});
+    continue;
+  }
+  const root=match.entry,chain=episodeChain(match),isSeries=SERIES_TYPES.has(root.type);
   const similarities=chain.map(x=>titleSimilarity(root,x));
   const suspicious=chain.length>=10||similarities.some(x=>x<0.72);
   const knownEpisodes=chain.map(x=>x.episodes).filter(n=>Number.isFinite(n)&&n>0);
   const completeChain=isSeries&&!suspicious&&chain.length&&knownEpisodes.length===chain.length;
-  const computedEpisodes=completeChain?knownEpisodes.reduce((s,n)=>s+n,0):(root.episodes>0?root.episodes:a.episodes??null);
-  const seasons=isSeries&&!suspicious?Math.max(1,chain.length):null;
+  const totalEpisodes=completeChain?knownEpisodes.reduce((s,n)=>s+n,0):(root.episodes>0?root.episodes:a.episodes??null);
   const years=chain.map(x=>x.animeSeason?.year).filter(Number.isFinite);
-  const latestSeasonYear=!suspicious&&years.length?Math.max(...years):(root.animeSeason?.year??null);
+  const latestEpisodeYear=!suspicious&&years.length?Math.max(...years):(root.animeSeason?.year??oldLatest??a.year??null);
   const firstYear=root.animeSeason?.year??a.year??null;
-  const before={episodes:a.episodes??null,seasons:a.seasons??null,latestSeasonYear:a.latestSeasonYear??null,year:a.year??null};
-  if(computedEpisodes!=null)a.episodes=computedEpisodes;
-  a.seasons=seasons;
-  a.latestSeasonYear=latestSeasonYear;
+  const before={episodes:a.episodes??null,latestEpisodeYear:oldLatest,year:a.year??null};
+  if(totalEpisodes!=null)a.episodes=totalEpisodes;
+  a.latestEpisodeYear=latestEpisodeYear;
   if(a.year==null&&firstYear!=null)a.year=firstYear;
-  a.metadataSource='manami-project/anime-offline-database 2026-27';
-  const after={episodes:a.episodes??null,seasons:a.seasons??null,latestSeasonYear:a.latestSeasonYear??null,year:a.year??null};
+  a.metadataSource='manami-project/anime-offline-database';
+  const after={episodes:a.episodes??null,latestEpisodeYear:a.latestEpisodeYear??null,year:a.year??null};
   const row={id:a.id,title:a.title,matchedTitle:root.title,matchScore:match.score,via:match.via,before,after,chain:chain.map(x=>({title:x.title,type:x.type,episodes:x.episodes,year:x.animeSeason?.year??null,similarity:Number(titleSimilarity(root,x).toFixed(2))}))};
   (JSON.stringify(before)!==JSON.stringify(after)?report.updated:report.unchanged).push(row);
   if(suspicious)report.review.push(row);
@@ -136,5 +138,5 @@ for(const match of matches){
 
 await fs.writeFile(animePath,JSON.stringify(anime,null,2)+'\n');
 await fs.writeFile(reportPath,JSON.stringify(report,null,2)+'\n');
-console.log(`Offline metadata sync: ${report.updated.length} updated, ${report.unchanged.length} unchanged, ${report.unmatched.length} unmatched, ${report.review.length} review.`);
+console.log(`Episode metadata sync: ${report.updated.length} updated, ${report.unchanged.length} unchanged, ${report.unmatched.length} unmatched, ${report.review.length} review.`);
 if(report.unmatched.length)console.log('Unmatched:',report.unmatched.map(x=>x.title).join(' | '));
