@@ -1,64 +1,8 @@
 {
-  "generatedAt": "2026-09-05T20:41:26.926Z",
+  "generatedAt": "2026-09-05T20:45:02.992Z",
   "datasetLastUpdate": "2026-07-04",
-  "source": "manami-project/anime-offline-database 2026-27",
+  "source": "manami-project/anime-offline-database",
   "updated": [
-    {
-      "id": "sheet-death-note",
-      "title": "Death Note",
-      "matchedTitle": "Death Note",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 37,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2006
-      },
-      "after": {
-        "episodes": 37,
-        "seasons": 1,
-        "latestSeasonYear": 2006,
-        "year": 2006
-      },
-      "chain": [
-        {
-          "title": "Death Note",
-          "type": "TV",
-          "episodes": 37,
-          "year": 2006,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-the-future-diary",
-      "title": "The Future Diary",
-      "matchedTitle": "Mirai Nikki (TV)",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 26,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2011
-      },
-      "after": {
-        "episodes": 26,
-        "seasons": 1,
-        "latestSeasonYear": 2011,
-        "year": 2011
-      },
-      "chain": [
-        {
-          "title": "Mirai Nikki (TV)",
-          "type": "TV",
-          "episodes": 26,
-          "year": 2011,
-          "similarity": 1
-        }
-      ]
-    },
     {
       "id": "sheet-akame-ga-kill",
       "title": "Akame ga Kill!",
@@ -67,14 +11,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2014,
         "year": 2014
       },
       "after": {
         "episodes": 48,
-        "seasons": 2,
-        "latestSeasonYear": 2014,
+        "latestEpisodeYear": 2014,
         "year": 2014
       },
       "chain": [
@@ -102,14 +44,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2024
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2024
       },
       "chain": [
@@ -137,14 +77,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 38,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2017
       },
       "after": {
         "episodes": 12,
-        "seasons": 8,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2017
       },
       "chain": [
@@ -214,14 +152,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 32,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2023,
         "year": 2022
       },
       "after": {
         "episodes": 49,
-        "seasons": 3,
-        "latestSeasonYear": 2023,
+        "latestEpisodeYear": 2023,
         "year": 2022
       },
       "chain": [
@@ -256,14 +192,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2027,
         "year": 2024
       },
       "after": {
         "episodes": 25,
-        "seasons": 3,
-        "latestSeasonYear": 2027,
+        "latestEpisodeYear": 2027,
         "year": 2024
       },
       "chain": [
@@ -298,14 +232,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2027,
         "year": 2023
       },
       "after": {
         "episodes": 37,
-        "seasons": 4,
-        "latestSeasonYear": 2027,
+        "latestEpisodeYear": 2027,
         "year": 2023
       },
       "chain": [
@@ -340,55 +272,6 @@
       ]
     },
     {
-      "id": "sheet-wistoria-wand-and-sword",
-      "title": "Wistoria: Wand and Sword",
-      "matchedTitle": "Tsue to Tsurugi no Wistoria",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 4,
-        "latestSeasonYear": 2026,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Tsue to Tsurugi no Wistoria",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2024,
-          "similarity": 1
-        },
-        {
-          "title": "Tsue to Tsurugi no Wistoria Season 2",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2026,
-          "similarity": 0.91
-        },
-        {
-          "title": "Tsue to Tsurugi no Wistoria Season 3",
-          "type": "TV",
-          "episodes": 1,
-          "year": null,
-          "similarity": 0.91
-        },
-        {
-          "title": "Wistoria: Wand and Sword",
-          "type": "TV",
-          "episodes": 0,
-          "year": null,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-dragon-ball",
       "title": "Dragon Ball",
       "matchedTitle": "Dragon Ball",
@@ -396,14 +279,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 153,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2018,
         "year": 1986
       },
       "after": {
         "episodes": 436,
-        "seasons": 5,
-        "latestSeasonYear": 2018,
+        "latestEpisodeYear": 2018,
         "year": 1986
       },
       "chain": [
@@ -452,14 +333,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 291,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2014,
         "year": 1989
       },
       "after": {
         "episodes": 518,
-        "seasons": 4,
-        "latestSeasonYear": 2014,
+        "latestEpisodeYear": 2014,
         "year": 1989
       },
       "chain": [
@@ -501,14 +380,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 64,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2009,
         "year": 1996
       },
       "after": {
         "episodes": 161,
-        "seasons": 2,
-        "latestSeasonYear": 2009,
+        "latestEpisodeYear": 2009,
         "year": 1996
       },
       "chain": [
@@ -536,14 +413,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 131,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2015
       },
       "after": {
         "episodes": 297,
-        "seasons": 5,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2015
       },
       "chain": [
@@ -585,195 +460,6 @@
       ]
     },
     {
-      "id": "sheet-yu-gi-oh",
-      "title": "Yu-Gi-Oh!",
-      "matchedTitle": "Yu☆Gi☆Oh! Duel Monsters",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 224,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2000
-      },
-      "after": {
-        "episodes": 224,
-        "seasons": null,
-        "latestSeasonYear": 2000,
-        "year": 2000
-      },
-      "chain": [
-        {
-          "title": "Yu☆Gi☆Oh!",
-          "type": "TV",
-          "episodes": 27,
-          "year": 1998,
-          "similarity": 1
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Duel Monsters",
-          "type": "TV",
-          "episodes": 224,
-          "year": 2000,
-          "similarity": 1
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Duel Monsters GX",
-          "type": "TV",
-          "episodes": 180,
-          "year": 2004,
-          "similarity": 0.91
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Duel Monsters ALEX",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2006,
-          "similarity": 0.91
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Zexal Second",
-          "type": "TV",
-          "episodes": 73,
-          "year": 2012,
-          "similarity": 1
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Arc-V",
-          "type": "TV",
-          "episodes": 148,
-          "year": 2014,
-          "similarity": 1
-        },
-        {
-          "title": "Yu-Gi-Oh! Duel Monsters Battle City Hen",
-          "type": "TV",
-          "episodes": 70,
-          "year": 2015,
-          "similarity": 0.77
-        },
-        {
-          "title": "Yu☆Gi☆Oh! VRAINS",
-          "type": "TV",
-          "episodes": 120,
-          "year": 2017,
-          "similarity": 1
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Sevens",
-          "type": "TV",
-          "episodes": 92,
-          "year": 2020,
-          "similarity": 1
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Go Rush!!",
-          "type": "TV",
-          "episodes": 151,
-          "year": 2022,
-          "similarity": 0.75
-        }
-      ]
-    },
-    {
-      "id": "sheet-yu-gi-oh-gx",
-      "title": "Yu-Gi-Oh! GX",
-      "matchedTitle": "Yu-Gi-Oh! GX",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 180,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2004
-      },
-      "after": {
-        "episodes": 180,
-        "seasons": 1,
-        "latestSeasonYear": 2004,
-        "year": 2004
-      },
-      "chain": [
-        {
-          "title": "Yu-Gi-Oh! GX",
-          "type": "TV",
-          "episodes": 180,
-          "year": 2004,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-yu-gi-oh-5d-s",
-      "title": "Yu-Gi-Oh! 5D's",
-      "matchedTitle": "Yu☆Gi☆Oh! 5D's",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 154,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2008
-      },
-      "after": {
-        "episodes": 154,
-        "seasons": 7,
-        "latestSeasonYear": 2021,
-        "year": 2008
-      },
-      "chain": [
-        {
-          "title": "Yu☆Gi☆Oh!",
-          "type": "TV",
-          "episodes": 27,
-          "year": 1998,
-          "similarity": 0.86
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Duel Monsters GX",
-          "type": "TV",
-          "episodes": 180,
-          "year": 2004,
-          "similarity": 0.83
-        },
-        {
-          "title": "Yu☆Gi☆Oh! 5D's",
-          "type": "TV",
-          "episodes": 154,
-          "year": 2008,
-          "similarity": 1
-        },
-        {
-          "title": "Yu☆Gi☆Oh! VRAINS",
-          "type": "TV",
-          "episodes": 120,
-          "year": 2017,
-          "similarity": 0.75
-        },
-        {
-          "title": "Yu☆Gi☆Oh! Sevens",
-          "type": "TV",
-          "episodes": 92,
-          "year": 2020,
-          "similarity": 0.75
-        },
-        {
-          "title": "Yu-Gi-Oh! Sevens",
-          "type": "TV",
-          "episodes": 0,
-          "year": 2020,
-          "similarity": 0.75
-        },
-        {
-          "title": "Yu-Gi-Oh! Sevens",
-          "type": "TV",
-          "episodes": 0,
-          "year": 2021,
-          "similarity": 0.75
-        }
-      ]
-    },
-    {
       "id": "sheet-yu-gi-oh-zexal",
       "title": "Yu-Gi-Oh! ZEXAL",
       "matchedTitle": "Yu☆Gi☆Oh! Zexal",
@@ -781,14 +467,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 146,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2021,
         "year": 2011
       },
       "after": {
         "episodes": 73,
-        "seasons": 9,
-        "latestSeasonYear": 2021,
+        "latestEpisodeYear": 2021,
         "year": 2011
       },
       "chain": [
@@ -858,153 +542,6 @@
       ]
     },
     {
-      "id": "sheet-code-geass-lelouch-of-the-rebellion",
-      "title": "Code Geass: Lelouch of the Rebellion",
-      "matchedTitle": "Code Geass: Hangyaku no Lelouch",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 50,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2006
-      },
-      "after": {
-        "episodes": 50,
-        "seasons": 2,
-        "latestSeasonYear": 2008,
-        "year": 2006
-      },
-      "chain": [
-        {
-          "title": "Code Geass: Hangyaku no Lelouch",
-          "type": "TV",
-          "episodes": 25,
-          "year": 2006,
-          "similarity": 1
-        },
-        {
-          "title": "Code Geass: Hangyaku no Lelouch R2",
-          "type": "TV",
-          "episodes": 25,
-          "year": 2008,
-          "similarity": 0.95
-        }
-      ]
-    },
-    {
-      "id": "sheet-my-first-girlfriend-is-a-gal",
-      "title": "My First Girlfriend Is a Gal",
-      "matchedTitle": "Hajimete no Gal",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 10,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2017
-      },
-      "after": {
-        "episodes": 10,
-        "seasons": 1,
-        "latestSeasonYear": 2017,
-        "year": 2017
-      },
-      "chain": [
-        {
-          "title": "Hajimete no Gal",
-          "type": "TV",
-          "episodes": 10,
-          "year": 2017,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-more-than-a-married-couple-but-not-lovers",
-      "title": "More Than a Married Couple, But Not Lovers",
-      "matchedTitle": "Fuufu Ijou, Koibito Miman.",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2022,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Fuufu Ijou, Koibito Miman.",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2022,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-eden-of-the-east",
-      "title": "Eden of the East",
-      "matchedTitle": "Higashi no Eden",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 11,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2009
-      },
-      "after": {
-        "episodes": 11,
-        "seasons": 1,
-        "latestSeasonYear": 2009,
-        "year": 2009
-      },
-      "chain": [
-        {
-          "title": "Higashi no Eden",
-          "type": "TV",
-          "episodes": 11,
-          "year": 2009,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-terror-in-resonance",
-      "title": "Terror in Resonance",
-      "matchedTitle": "Zankyou no Terror",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 11,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2014
-      },
-      "after": {
-        "episodes": 11,
-        "seasons": 1,
-        "latestSeasonYear": 2014,
-        "year": 2014
-      },
-      "chain": [
-        {
-          "title": "Zankyou no Terror",
-          "type": "TV",
-          "episodes": 11,
-          "year": 2014,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-the-rising-of-the-shield-hero",
       "title": "The Rising of the Shield Hero",
       "matchedTitle": "Tate no Yuusha no Nariagari",
@@ -1012,14 +549,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 50,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2019
       },
       "after": {
         "episodes": 25,
-        "seasons": 7,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2019
       },
       "chain": [
@@ -1082,14 +617,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2024
       },
       "after": {
         "episodes": 25,
-        "seasons": 2,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2024
       },
       "chain": [
@@ -1110,34 +643,6 @@
       ]
     },
     {
-      "id": "sheet-dragon-ball-daima",
-      "title": "Dragon Ball Daima",
-      "matchedTitle": "Dragon Ball Daima",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 20,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 20,
-        "seasons": 1,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Dragon Ball Daima",
-          "type": "TV",
-          "episodes": 20,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-psycho-pass",
       "title": "Psycho-Pass",
       "matchedTitle": "Psycho-Pass",
@@ -1145,14 +650,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 41,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2019,
         "year": 2012
       },
       "after": {
         "episodes": 52,
-        "seasons": 4,
-        "latestSeasonYear": 2019,
+        "latestEpisodeYear": 2019,
         "year": 2012
       },
       "chain": [
@@ -1194,14 +697,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 58,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2024,
         "year": 2013
       },
       "after": {
         "episodes": 12,
-        "seasons": 6,
-        "latestSeasonYear": 2024,
+        "latestEpisodeYear": 2024,
         "year": 2013
       },
       "chain": [
@@ -1257,14 +758,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 48,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2019
       },
       "after": {
         "episodes": 24,
-        "seasons": 6,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2019
       },
       "chain": [
@@ -1313,83 +812,6 @@
       ]
     },
     {
-      "id": "sheet-fate-strange-fake",
-      "title": "Fate/strange Fake",
-      "matchedTitle": "Fate/strange Fake (Zoku-hen)",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 1,
-        "seasons": 3,
-        "latestSeasonYear": 2026,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Fate/strange Fake",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2026,
-          "similarity": 1
-        },
-        {
-          "title": "Fate/strange Fake (Zoku-hen)",
-          "type": "TV",
-          "episodes": 0,
-          "year": null,
-          "similarity": 1
-        },
-        {
-          "title": "Fate Strange Fake 2nd Season",
-          "type": "TV",
-          "episodes": 1,
-          "year": null,
-          "similarity": 0.75
-        }
-      ]
-    },
-    {
-      "id": "sheet-fate-zero",
-      "title": "Fate/Zero",
-      "matchedTitle": "Fate/Zero",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 25,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2011
-      },
-      "after": {
-        "episodes": 25,
-        "seasons": 2,
-        "latestSeasonYear": 2012,
-        "year": 2011
-      },
-      "chain": [
-        {
-          "title": "Fate/Zero",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2011,
-          "similarity": 1
-        },
-        {
-          "title": "Fate/Zero 2nd Season",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2012,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-fate-stay-night-unlimited-blade-works",
       "title": "Fate/stay night: Unlimited Blade Works",
       "matchedTitle": "Fate/stay night: Unlimited Blade Works",
@@ -1397,14 +819,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 26,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2015,
         "year": 2014
       },
       "after": {
         "episodes": 49,
-        "seasons": 3,
-        "latestSeasonYear": 2015,
+        "latestEpisodeYear": 2015,
         "year": 2014
       },
       "chain": [
@@ -1432,97 +852,6 @@
       ]
     },
     {
-      "id": "sheet-fate-apocrypha",
-      "title": "Fate/Apocrypha",
-      "matchedTitle": "Fate/Apocrypha",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 25,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2017
-      },
-      "after": {
-        "episodes": 25,
-        "seasons": 1,
-        "latestSeasonYear": 2017,
-        "year": 2017
-      },
-      "chain": [
-        {
-          "title": "Fate/Apocrypha",
-          "type": "TV",
-          "episodes": 25,
-          "year": 2017,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-rosario-vampire",
-      "title": "Rosario + Vampire",
-      "matchedTitle": "Rosario to Vampire",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 26,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2008
-      },
-      "after": {
-        "episodes": 26,
-        "seasons": 2,
-        "latestSeasonYear": 2008,
-        "year": 2008
-      },
-      "chain": [
-        {
-          "title": "Rosario to Vampire",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2008,
-          "similarity": 1
-        },
-        {
-          "title": "Rosario to Vampire Capu2",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2008,
-          "similarity": 0.86
-        }
-      ]
-    },
-    {
-      "id": "sheet-my-bride-is-a-mermaid",
-      "title": "My Bride Is a Mermaid",
-      "matchedTitle": "Seto no Hanayome",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 26,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2007
-      },
-      "after": {
-        "episodes": 26,
-        "seasons": 1,
-        "latestSeasonYear": 2007,
-        "year": 2007
-      },
-      "chain": [
-        {
-          "title": "Seto no Hanayome",
-          "type": "TV",
-          "episodes": 26,
-          "year": 2007,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-attack-on-titan",
       "title": "Attack on Titan",
       "matchedTitle": "Shingeki no Kyojin",
@@ -1530,14 +859,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 94,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2022,
         "year": 2013
       },
       "after": {
         "episodes": 99,
-        "seasons": 7,
-        "latestSeasonYear": 2022,
+        "latestEpisodeYear": 2022,
         "year": 2013
       },
       "chain": [
@@ -1593,76 +920,6 @@
       ]
     },
     {
-      "id": "sheet-solo-leveling",
-      "title": "Solo Leveling",
-      "matchedTitle": "Ore dake Level Up na Ken",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 25,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 25,
-        "seasons": 2,
-        "latestSeasonYear": 2025,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Ore dake Level Up na Ken",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2024,
-          "similarity": 1
-        },
-        {
-          "title": "Ore dake Level Up na Ken Season 2: Arise from the Shadow",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2025,
-          "similarity": 0.89
-        }
-      ]
-    },
-    {
-      "id": "sheet-blue-lock",
-      "title": "Blue Lock",
-      "matchedTitle": "Blue Lock",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 38,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 38,
-        "seasons": 2,
-        "latestSeasonYear": 2024,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Blue Lock",
-          "type": "TV",
-          "episodes": 24,
-          "year": 2022,
-          "similarity": 1
-        },
-        {
-          "title": "Blue Lock vs. U-20 Japan",
-          "type": "TV",
-          "episodes": 14,
-          "year": 2024,
-          "similarity": 0.8
-        }
-      ]
-    },
-    {
       "id": "sheet-fairy-tail",
       "title": "Fairy Tail",
       "matchedTitle": "Fairy Tail",
@@ -1670,14 +927,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 328,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2018,
         "year": 2009
       },
       "after": {
         "episodes": 175,
-        "seasons": 4,
-        "latestSeasonYear": 2018,
+        "latestEpisodeYear": 2018,
         "year": 2009
       },
       "chain": [
@@ -1719,14 +974,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 50,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2027,
         "year": 2023
       },
       "after": {
         "episodes": 72,
-        "seasons": 5,
-        "latestSeasonYear": 2027,
+        "latestEpisodeYear": 2027,
         "year": 2023
       },
       "chain": [
@@ -1775,14 +1028,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 220,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2002
       },
       "after": {
         "episodes": 232,
-        "seasons": 3,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2002
       },
       "chain": [
@@ -1817,14 +1068,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 500,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2007
       },
       "after": {
         "episodes": 512,
-        "seasons": 3,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2007
       },
       "chain": [
@@ -1859,14 +1108,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2023
       },
       "after": {
         "episodes": 39,
-        "seasons": 4,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2023
       },
       "chain": [
@@ -1901,62 +1148,6 @@
       ]
     },
     {
-      "id": "sheet-kaiju-no-8",
-      "title": "Kaiju No. 8",
-      "matchedTitle": "Kaijuu 8-gou",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 5,
-        "latestSeasonYear": 2025,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Kaijuu 8-gou",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2024,
-          "similarity": 1
-        },
-        {
-          "title": "Minute! Kaijuu 8-gou",
-          "type": "ONA",
-          "episodes": 31,
-          "year": 2024,
-          "similarity": 1
-        },
-        {
-          "title": "Kaijuu 8-gou 2nd Season",
-          "type": "TV",
-          "episodes": 11,
-          "year": 2025,
-          "similarity": 1
-        },
-        {
-          "title": "Kaijuu 8-gou The Game",
-          "type": "ONA",
-          "episodes": 9,
-          "year": 2025,
-          "similarity": 0.75
-        },
-        {
-          "title": "Kaijuu 8-gou: Narumi no Heijitsu",
-          "type": "ONA",
-          "episodes": 0,
-          "year": null,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-chained-soldier",
       "title": "Chained Soldier",
       "matchedTitle": "Mato Seihei no Slave",
@@ -1964,14 +1155,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2024
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2024
       },
       "chain": [
@@ -1999,14 +1188,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2022
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2022
       },
       "chain": [
@@ -2034,14 +1221,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 52,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2018,
         "year": 2015
       },
       "after": {
         "episodes": 39,
-        "seasons": 3,
-        "latestSeasonYear": 2018,
+        "latestEpisodeYear": 2018,
         "year": 2015
       },
       "chain": [
@@ -2069,55 +1254,6 @@
       ]
     },
     {
-      "id": "sheet-tokyo-ghoul",
-      "title": "Tokyo Ghoul",
-      "matchedTitle": "Tokyo Ghoul",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 48,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2014
-      },
-      "after": {
-        "episodes": 48,
-        "seasons": 4,
-        "latestSeasonYear": 2018,
-        "year": 2014
-      },
-      "chain": [
-        {
-          "title": "Tokyo Ghoul",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2014,
-          "similarity": 1
-        },
-        {
-          "title": "Tokyo Ghoul √A",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2015,
-          "similarity": 0.8
-        },
-        {
-          "title": "Tokyo Ghoul:re",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2018,
-          "similarity": 0.8
-        },
-        {
-          "title": "Tokyo Ghoul:re 2nd Season",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2018,
-          "similarity": 0.8
-        }
-      ]
-    },
-    {
       "id": "sheet-chainsaw-man",
       "title": "Chainsaw Man",
       "matchedTitle": "Chainsaw Man",
@@ -2125,14 +1261,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2022
       },
       "after": {
         "episodes": 15,
-        "seasons": 3,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2022
       },
       "chain": [
@@ -2167,14 +1301,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2024
       },
       "after": {
         "episodes": 25,
-        "seasons": 2,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2024
       },
       "chain": [
@@ -2202,14 +1334,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2023,
         "year": 2021
       },
       "after": {
         "episodes": 26,
-        "seasons": 2,
-        "latestSeasonYear": 2023,
+        "latestEpisodeYear": 2023,
         "year": 2021
       },
       "chain": [
@@ -2237,14 +1367,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 47,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2016,
         "year": 2015
       },
       "after": {
         "episodes": 69,
-        "seasons": 3,
-        "latestSeasonYear": 2016,
+        "latestEpisodeYear": 2016,
         "year": 2015
       },
       "chain": [
@@ -2279,14 +1407,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 63,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2021,
         "year": 2019
       },
       "after": {
         "episodes": 89,
-        "seasons": 4,
-        "latestSeasonYear": 2021,
+        "latestEpisodeYear": 2021,
         "year": 2019
       },
       "chain": [
@@ -2321,48 +1447,6 @@
       ]
     },
     {
-      "id": "sheet-kaguya-sama-love-is-war",
-      "title": "Kaguya-sama: Love Is War",
-      "matchedTitle": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 37,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2019
-      },
-      "after": {
-        "episodes": 37,
-        "seasons": 3,
-        "latestSeasonYear": 2022,
-        "year": 2019
-      },
-      "chain": [
-        {
-          "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2019,
-          "similarity": 1
-        },
-        {
-          "title": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2020,
-          "similarity": 1
-        },
-        {
-          "title": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2022,
-          "similarity": 0.95
-        }
-      ]
-    },
-    {
       "id": "sheet-my-hero-academia",
       "title": "My Hero Academia",
       "matchedTitle": "Boku no Hero Academia",
@@ -2370,14 +1454,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 159,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2016,
         "year": 2016
       },
       "after": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": 2016,
+        "latestEpisodeYear": 2016,
         "year": 2016
       },
       "chain": [
@@ -2461,14 +1543,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2027,
         "year": 2024
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2027,
+        "latestEpisodeYear": 2027,
         "year": 2024
       },
       "chain": [
@@ -2489,34 +1569,6 @@
       ]
     },
     {
-      "id": "sheet-darling-in-the-franxx",
-      "title": "Darling in the Franxx",
-      "matchedTitle": "Darling in the FranXX",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2018
-      },
-      "after": {
-        "episodes": 24,
-        "seasons": 1,
-        "latestSeasonYear": 2018,
-        "year": 2018
-      },
-      "chain": [
-        {
-          "title": "Darling in the FranXX",
-          "type": "TV",
-          "episodes": 24,
-          "year": 2018,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-tokyo-revengers",
       "title": "Tokyo Revengers",
       "matchedTitle": "Tokyo Revengers",
@@ -2524,14 +1576,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 50,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2021
       },
       "after": {
         "episodes": 49,
-        "seasons": 3,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2021
       },
       "chain": [
@@ -2566,14 +1616,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 49,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2018,
         "year": 2012
       },
       "after": {
         "episodes": 48,
-        "seasons": 4,
-        "latestSeasonYear": 2018,
+        "latestEpisodeYear": 2018,
         "year": 2012
       },
       "chain": [
@@ -2615,14 +1663,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2022
       },
       "after": {
         "episodes": 59,
-        "seasons": 4,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2022
       },
       "chain": [
@@ -2657,34 +1703,6 @@
       ]
     },
     {
-      "id": "sheet-my-love-story-with-yamada-kun-at-lv999",
-      "title": "My Love Story with Yamada-kun at Lv999",
-      "matchedTitle": "Yamada-kun to Lv999 no Koi wo Suru",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2023,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Yamada-kun to Lv999 no Koi wo Suru",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2023,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-rascal-does-not-dream-of-bunny-girl-senpai",
       "title": "Rascal Does Not Dream of Bunny Girl Senpai",
       "matchedTitle": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
@@ -2692,14 +1710,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2018
       },
       "after": {
         "episodes": 26,
-        "seasons": 2,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2018
       },
       "chain": [
@@ -2720,90 +1736,6 @@
       ]
     },
     {
-      "id": "sheet-rascal-does-not-dream-of-a-dreaming-girl",
-      "title": "Rascal Does Not Dream of a Dreaming Girl",
-      "matchedTitle": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2019
-      },
-      "after": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": 2019,
-        "year": 2019
-      },
-      "chain": [
-        {
-          "title": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
-          "type": "MOVIE",
-          "episodes": 1,
-          "year": 2019,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-rascal-does-not-dream-of-a-sister-venturing-out",
-      "title": "Rascal Does Not Dream of a Sister Venturing Out",
-      "matchedTitle": "Seishun Buta Yarou wa Odekake Sister no Yume wo Minai",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": 2023,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Seishun Buta Yarou wa Odekake Sister no Yume wo Minai",
-          "type": "MOVIE",
-          "episodes": 1,
-          "year": 2023,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-rascal-does-not-dream-of-a-knapsack-kid",
-      "title": "Rascal Does Not Dream of a Knapsack Kid",
-      "matchedTitle": "Seishun Buta Yarou wa Odekake Sister no Yume wo Minai",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": 2023,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Seishun Buta Yarou wa Odekake Sister no Yume wo Minai",
-          "type": "MOVIE",
-          "episodes": 1,
-          "year": 2023,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-the-quintessential-quintuplets",
       "title": "The Quintessential Quintuplets",
       "matchedTitle": "5-toubun no Hanayome",
@@ -2811,14 +1743,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2021,
         "year": 2019
       },
       "after": {
         "episodes": 12,
-        "seasons": 4,
-        "latestSeasonYear": 2021,
+        "latestEpisodeYear": 2021,
         "year": 2019
       },
       "chain": [
@@ -2860,14 +1790,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "after": {
         "episodes": 92,
-        "seasons": 7,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "chain": [
@@ -2930,14 +1858,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2024,
         "year": 2024
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2024,
+        "latestEpisodeYear": 2024,
         "year": 2024
       },
       "chain": [
@@ -2958,146 +1884,6 @@
       ]
     },
     {
-      "id": "sheet-chivalry-of-a-failed-knight",
-      "title": "Chivalry of a Failed Knight",
-      "matchedTitle": "Rakudai Kishi no Cavalry",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2015
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2015,
-        "year": 2015
-      },
-      "chain": [
-        {
-          "title": "Rakudai Kishi no Cavalry",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2015,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-dealing-with-mikadono-sisters-is-a-breeze",
-      "title": "Dealing with Mikadono Sisters Is a Breeze",
-      "matchedTitle": "Mikadono Sanshimai wa Angai, Choroi.",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2025
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2025,
-        "year": 2025
-      },
-      "chain": [
-        {
-          "title": "Mikadono Sanshimai wa Angai, Choroi.",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2025,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-failure-frame-i-became-the-strongest-and-annihilated-everything-with-low-level-spells",
-      "title": "Failure Frame: I Became the Strongest and Annihilated Everything With Low-Level Spells",
-      "matchedTitle": "Hazurewaku no \"Joutai Ijou Skill\" de Saikyou ni Natta Ore ga Subete wo Juurin suru made",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Hazurewaku no \"Joutai Ijou Skill\" de Saikyou ni Natta Ore ga Subete wo Juurin suru made",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-danganronpa-the-animation",
-      "title": "Danganronpa: The Animation",
-      "matchedTitle": "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei The Animation",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2013
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2013,
-        "year": 2013
-      },
-      "chain": [
-        {
-          "title": "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei The Animation",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2013,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-yakuza-fianc-raise-wa-tanin-ga-ii",
-      "title": "Yakuza Fiancé: Raise wa Tanin ga Ii",
-      "matchedTitle": "Raise wa Tanin ga Ii",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Raise wa Tanin ga Ii",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-the-shiunji-family-children",
       "title": "The Shiunji Family Children",
       "matchedTitle": "Shiunji-ke no Kodomotachi",
@@ -3105,14 +1891,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "chain": [
@@ -3133,90 +1917,6 @@
       ]
     },
     {
-      "id": "sheet-shikimori-s-not-just-a-cutie",
-      "title": "Shikimori's Not Just a Cutie",
-      "matchedTitle": "Kawaii dake ja Nai Shikimori-san",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2022,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Kawaii dake ja Nai Shikimori-san",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2022,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-tomodachi-game",
-      "title": "Tomodachi Game",
-      "matchedTitle": "Tomodachi Game",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2022,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Tomodachi Game",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2022,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-battle-game-in-5-seconds",
-      "title": "Battle Game in 5 Seconds",
-      "matchedTitle": "Deatte 5-byou de Battle",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2021
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2021,
-        "year": 2021
-      },
-      "chain": [
-        {
-          "title": "Deatte 5-byou de Battle",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2021,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-ghost-stories",
       "title": "Ghost Stories",
       "matchedTitle": "Gakkou no Kaidan",
@@ -3224,14 +1924,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 20,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2000,
         "year": 2000
       },
       "after": {
         "episodes": 19,
-        "seasons": 1,
-        "latestSeasonYear": 2000,
+        "latestEpisodeYear": 2000,
         "year": 2000
       },
       "chain": [
@@ -3245,258 +1943,6 @@
       ]
     },
     {
-      "id": "sheet-inuyasha",
-      "title": "Inuyasha",
-      "matchedTitle": "InuYasha",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 167,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2000
-      },
-      "after": {
-        "episodes": 167,
-        "seasons": 1,
-        "latestSeasonYear": 2000,
-        "year": 2000
-      },
-      "chain": [
-        {
-          "title": "InuYasha",
-          "type": "TV",
-          "episodes": 167,
-          "year": 2000,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-fairy-tail-100-years-quest",
-      "title": "Fairy Tail: 100 Years Quest",
-      "matchedTitle": "Fairy Tail: 100-nen Quest",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 25,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 25,
-        "seasons": 4,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Fairy Tail (2014)",
-          "type": "TV",
-          "episodes": 102,
-          "year": 2014,
-          "similarity": 0.8
-        },
-        {
-          "title": "Fairy Tail: Final Series",
-          "type": "TV",
-          "episodes": 51,
-          "year": 2018,
-          "similarity": 0.8
-        },
-        {
-          "title": "Fairy Tail: 100-nen Quest",
-          "type": "TV",
-          "episodes": 25,
-          "year": 2024,
-          "similarity": 1
-        },
-        {
-          "title": "Fairy Tail: 100 Years Quest",
-          "type": "TV",
-          "episodes": 0,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-our-dating-story-the-experienced-you-and-the-inexperienced-me",
-      "title": "Our Dating Story: The Experienced You and the Inexperienced Me",
-      "matchedTitle": "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2023,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2023,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-platinum-end",
-      "title": "Platinum End",
-      "matchedTitle": "Platinum End",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2021
-      },
-      "after": {
-        "episodes": 24,
-        "seasons": 1,
-        "latestSeasonYear": 2021,
-        "year": 2021
-      },
-      "chain": [
-        {
-          "title": "Platinum End",
-          "type": "TV",
-          "episodes": 24,
-          "year": 2021,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-the-caf-terrace-and-its-goddesses",
-      "title": "The Café Terrace and Its Goddesses",
-      "matchedTitle": "Megami no Café Terrace",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2024,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Megami no Café Terrace",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2023,
-          "similarity": 1
-        },
-        {
-          "title": "Megami no Café Terrace 2nd Season",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-tying-the-knot-with-an-amagami-sister",
-      "title": "Tying the Knot with an Amagami Sister",
-      "matchedTitle": "Amagami-san Chi no Enmusubi",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 24,
-        "seasons": 1,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Amagami-san Chi no Enmusubi",
-          "type": "TV",
-          "episodes": 24,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-prison-school",
-      "title": "Prison School",
-      "matchedTitle": "Prison School",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2015
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2015,
-        "year": 2015
-      },
-      "chain": [
-        {
-          "title": "Prison School",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2015,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-you-are-ms-servant",
-      "title": "You Are Ms. Servant",
-      "matchedTitle": "Kimi wa Meido-sama.",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Kimi wa Meido-sama.",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-konosuba-god-s-blessing-on-this-wonderful-world",
       "title": "KonoSuba: God's Blessing on This Wonderful World!",
       "matchedTitle": "Kono Subarashii Sekai ni Shukufuku wo!",
@@ -3504,14 +1950,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 31,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2024,
         "year": 2016
       },
       "after": {
         "episodes": 10,
-        "seasons": 7,
-        "latestSeasonYear": 2024,
+        "latestEpisodeYear": 2024,
         "year": 2016
       },
       "chain": [
@@ -3567,118 +2011,6 @@
       ]
     },
     {
-      "id": "sheet-the-witch-and-the-beast",
-      "title": "The Witch and the Beast",
-      "matchedTitle": "Majo to Yajuu",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Majo to Yajuu",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-summer-time-rendering",
-      "title": "Summer Time Rendering",
-      "matchedTitle": "Summertime Render",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 25,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 25,
-        "seasons": 1,
-        "latestSeasonYear": 2022,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Summertime Render",
-          "type": "TV",
-          "episodes": 25,
-          "year": 2022,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-citrus",
-      "title": "Citrus",
-      "matchedTitle": "Citrus",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2018
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2018,
-        "year": 2018
-      },
-      "chain": [
-        {
-          "title": "Citrus",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2018,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-shinobi-no-ittoki",
-      "title": "Shinobi no Ittoki",
-      "matchedTitle": "Shinobi no Ittoki",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2022,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Shinobi no Ittoki",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2022,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-bottom-tier-character-tomozaki",
       "title": "Bottom-Tier Character Tomozaki",
       "matchedTitle": "Jaku-Chara Tomozaki-kun",
@@ -3686,14 +2018,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 25,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2024,
         "year": 2021
       },
       "after": {
         "episodes": 12,
-        "seasons": 3,
-        "latestSeasonYear": 2024,
+        "latestEpisodeYear": 2024,
         "year": 2021
       },
       "chain": [
@@ -3721,118 +2051,6 @@
       ]
     },
     {
-      "id": "sheet-another",
-      "title": "Another",
-      "matchedTitle": "Another",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2012
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2012,
-        "year": 2012
-      },
-      "chain": [
-        {
-          "title": "Another",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2012,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-engage-kiss",
-      "title": "Engage Kiss",
-      "matchedTitle": "Engage Kiss",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2022,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Engage Kiss",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2022,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-akudama-drive",
-      "title": "Akudama Drive",
-      "matchedTitle": "Akudama Drive",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2020
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2020,
-        "year": 2020
-      },
-      "chain": [
-        {
-          "title": "Akudama Drive",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2020,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-higehiro-after-being-rejected-i-shaved-and-took-in-a-high-school-runaway",
-      "title": "Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway",
-      "matchedTitle": "Hige wo Soru. Soshite Joshikousei wo Hirou.",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2021
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2021,
-        "year": 2021
-      },
-      "chain": [
-        {
-          "title": "Hige wo Soru. Soshite Joshikousei wo Hirou.",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2021,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-re-zero-starting-life-in-another-world",
       "title": "Re:ZERO -Starting Life in Another World-",
       "matchedTitle": "Re:Zero kara Hajimeru Isekai Seikatsu",
@@ -3840,14 +2058,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 58,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2016
       },
       "after": {
         "episodes": 122,
-        "seasons": 9,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2016
       },
       "chain": [
@@ -3924,14 +2140,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2023,
         "year": 2023
       },
       "after": {
         "episodes": 14,
-        "seasons": 2,
-        "latestSeasonYear": 2023,
+        "latestEpisodeYear": 2023,
         "year": 2023
       },
       "chain": [
@@ -3959,14 +2173,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 63,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2019
       },
       "after": {
         "episodes": 68,
-        "seasons": 7,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2019
       },
       "chain": [
@@ -4029,14 +2241,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2016,
         "year": 2016
       },
       "after": {
         "episodes": 15,
-        "seasons": 3,
-        "latestSeasonYear": 2016,
+        "latestEpisodeYear": 2016,
         "year": 2016
       },
       "chain": [
@@ -4064,90 +2274,6 @@
       ]
     },
     {
-      "id": "sheet-tenpuru-no-one-can-live-on-loneliness",
-      "title": "TenPuru: No One Can Live on Loneliness",
-      "matchedTitle": "Temple",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2023,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Temple",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2023,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-plastic-memories",
-      "title": "Plastic Memories",
-      "matchedTitle": "Plastic Memories",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2015
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2015,
-        "year": 2015
-      },
-      "chain": [
-        {
-          "title": "Plastic Memories",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2015,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-deadman-wonderland",
-      "title": "Deadman Wonderland",
-      "matchedTitle": "Deadman Wonderland",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2011
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2011,
-        "year": 2011
-      },
-      "chain": [
-        {
-          "title": "Deadman Wonderland",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2011,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-the-apothecary-diaries",
       "title": "The Apothecary Diaries",
       "matchedTitle": "Kusuriya no Hitorigoto",
@@ -4155,14 +2281,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 48,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2027,
         "year": 2023
       },
       "after": {
         "episodes": 24,
-        "seasons": 6,
-        "latestSeasonYear": 2027,
+        "latestEpisodeYear": 2027,
         "year": 2023
       },
       "chain": [
@@ -4211,34 +2335,6 @@
       ]
     },
     {
-      "id": "sheet-alderamin-on-the-sky",
-      "title": "Alderamin on the Sky",
-      "matchedTitle": "Nejimaki Seirei Senki: Tenkyou no Alderamin",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2016
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2016,
-        "year": 2016
-      },
-      "chain": [
-        {
-          "title": "Nejimaki Seirei Senki: Tenkyou no Alderamin",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2016,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-sword-art-online",
       "title": "Sword Art Online",
       "matchedTitle": "Sword Art Online",
@@ -4246,14 +2342,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 96,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2019,
         "year": 2012
       },
       "after": {
         "episodes": 85,
-        "seasons": 4,
-        "latestSeasonYear": 2019,
+        "latestEpisodeYear": 2019,
         "year": 2012
       },
       "chain": [
@@ -4295,14 +2389,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2021,
         "year": 2021
       },
       "after": {
         "episodes": 14,
-        "seasons": 2,
-        "latestSeasonYear": 2021,
+        "latestEpisodeYear": 2021,
         "year": 2021
       },
       "chain": [
@@ -4330,14 +2422,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 74,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2015,
         "year": 2015
       },
       "after": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": 2015,
+        "latestEpisodeYear": 2015,
         "year": 2015
       },
       "chain": [
@@ -4414,62 +2504,6 @@
       ]
     },
     {
-      "id": "sheet-darwin-s-game",
-      "title": "Darwin's Game",
-      "matchedTitle": "Darwin's Game",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 11,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2020
-      },
-      "after": {
-        "episodes": 11,
-        "seasons": 1,
-        "latestSeasonYear": 2020,
-        "year": 2020
-      },
-      "chain": [
-        {
-          "title": "Darwin's Game",
-          "type": "TV",
-          "episodes": 11,
-          "year": 2020,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-trinity-seven",
-      "title": "Trinity Seven",
-      "matchedTitle": "Trinity Seven",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2014
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2014,
-        "year": 2014
-      },
-      "chain": [
-        {
-          "title": "Trinity Seven",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2014,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-beyblade-metal-fusion",
       "title": "Beyblade: Metal Fusion",
       "matchedTitle": "Metal Fight Beyblade",
@@ -4477,14 +2511,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 51,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2017,
         "year": 2009
       },
       "after": {
         "episodes": 346,
-        "seasons": 7,
-        "latestSeasonYear": 2017,
+        "latestEpisodeYear": 2017,
         "year": 2009
       },
       "chain": [
@@ -4540,48 +2572,6 @@
       ]
     },
     {
-      "id": "sheet-my-teen-romantic-comedy-snafu",
-      "title": "My Teen Romantic Comedy SNAFU",
-      "matchedTitle": "Yahari Ore no Seishun Love Comedy wa Machigatteiru.",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 38,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2013
-      },
-      "after": {
-        "episodes": 38,
-        "seasons": 3,
-        "latestSeasonYear": 2020,
-        "year": 2013
-      },
-      "chain": [
-        {
-          "title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru.",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2013,
-          "similarity": 1
-        },
-        {
-          "title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2015,
-          "similarity": 0.95
-        },
-        {
-          "title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2020,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-the-seven-deadly-sins",
       "title": "The Seven Deadly Sins",
       "matchedTitle": "Nanatsu no Taizai",
@@ -4589,14 +2579,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 100,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2014,
         "year": 2014
       },
       "after": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": 2014,
+        "latestEpisodeYear": 2014,
         "year": 2014
       },
       "chain": [
@@ -4673,62 +2661,6 @@
       ]
     },
     {
-      "id": "sheet-zom-100-bucket-list-of-the-dead",
-      "title": "Zom 100: Bucket List of the Dead",
-      "matchedTitle": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2023,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2023,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-high-school-of-the-dead",
-      "title": "High School of the Dead",
-      "matchedTitle": "Highschool of the Dead",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2010
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2010,
-        "year": 2010
-      },
-      "chain": [
-        {
-          "title": "Highschool of the Dead",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2010,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-kakegurui",
       "title": "Kakegurui",
       "matchedTitle": "Kakegurui",
@@ -4736,14 +2668,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2022,
         "year": 2017
       },
       "after": {
         "episodes": 30,
-        "seasons": 3,
-        "latestSeasonYear": 2022,
+        "latestEpisodeYear": 2022,
         "year": 2017
       },
       "chain": [
@@ -4771,90 +2701,6 @@
       ]
     },
     {
-      "id": "sheet-akiba-maid-war",
-      "title": "Akiba Maid War",
-      "matchedTitle": "Akiba Meido Sensou",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2022,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Akiba Meido Sensou",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2022,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-trillion-game",
-      "title": "Trillion Game",
-      "matchedTitle": "Trillion Game",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 26,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 26,
-        "seasons": 1,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Trillion Game",
-          "type": "TV",
-          "episodes": 26,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-guilty-crown",
-      "title": "Guilty Crown",
-      "matchedTitle": "Guilty Crown",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 22,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2011
-      },
-      "after": {
-        "episodes": 22,
-        "seasons": 1,
-        "latestSeasonYear": 2011,
-        "year": 2011
-      },
-      "chain": [
-        {
-          "title": "Guilty Crown",
-          "type": "TV",
-          "episodes": 22,
-          "year": 2011,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-the-world-god-only-knows",
       "title": "The World God Only Knows",
       "matchedTitle": "Kami nomi zo Shiru Sekai",
@@ -4862,14 +2708,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 36,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2013,
         "year": 2010
       },
       "after": {
         "episodes": 48,
-        "seasons": 4,
-        "latestSeasonYear": 2013,
+        "latestEpisodeYear": 2013,
         "year": 2010
       },
       "chain": [
@@ -4911,14 +2755,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "chain": [
@@ -4946,14 +2788,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 148,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2011,
         "year": 2011
       },
       "after": {
         "episodes": 210,
-        "seasons": 2,
-        "latestSeasonYear": 2011,
+        "latestEpisodeYear": 2011,
         "year": 2011
       },
       "chain": [
@@ -4981,14 +2821,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 37,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2022
       },
       "after": {
         "episodes": 50,
-        "seasons": 4,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2022
       },
       "chain": [
@@ -5023,41 +2861,6 @@
       ]
     },
     {
-      "id": "sheet-masamune-kun-s-revenge",
-      "title": "Masamune-kun's Revenge",
-      "matchedTitle": "Masamune-kun no Revenge",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2017
-      },
-      "after": {
-        "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2023,
-        "year": 2017
-      },
-      "chain": [
-        {
-          "title": "Masamune-kun no Revenge",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2017,
-          "similarity": 1
-        },
-        {
-          "title": "Masamune-kun no Revenge R",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2023,
-          "similarity": 0.89
-        }
-      ]
-    },
-    {
       "id": "sheet-86-eighty-six",
       "title": "86 EIGHTY-SIX",
       "matchedTitle": "86",
@@ -5065,14 +2868,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 23,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2022,
         "year": 2021
       },
       "after": {
         "episodes": 24,
-        "seasons": 3,
-        "latestSeasonYear": 2022,
+        "latestEpisodeYear": 2022,
         "year": 2021
       },
       "chain": [
@@ -5100,62 +2901,6 @@
       ]
     },
     {
-      "id": "sheet-bleach",
-      "title": "Bleach",
-      "matchedTitle": "Bleach",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 366,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2004
-      },
-      "after": {
-        "episodes": 366,
-        "seasons": 5,
-        "latestSeasonYear": 2026,
-        "year": 2004
-      },
-      "chain": [
-        {
-          "title": "Bleach",
-          "type": "TV",
-          "episodes": 366,
-          "year": 2004,
-          "similarity": 1
-        },
-        {
-          "title": "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2023,
-          "similarity": 1
-        },
-        {
-          "title": "Bleach: Sennen Kessen-hen - Soukoku-tan",
-          "type": "TV",
-          "episodes": 14,
-          "year": 2024,
-          "similarity": 1
-        },
-        {
-          "title": "Bleach: Sennen Kessen-hen - Kashin-tan",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2026,
-          "similarity": 1
-        },
-        {
-          "title": "Bleach: Thousand-Year Blood War - The Calamity",
-          "type": "TV",
-          "episodes": 0,
-          "year": 2026,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-bleach-thousand-year-blood-war",
       "title": "Bleach: Thousand-Year Blood War",
       "matchedTitle": "Bleach: Sennen Kessen-hen",
@@ -5163,14 +2908,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 40,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2022
       },
       "after": {
         "episodes": 13,
-        "seasons": 5,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2022
       },
       "chain": [
@@ -5219,14 +2962,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2023,
         "year": 2020
       },
       "after": {
         "episodes": 32,
-        "seasons": 4,
-        "latestSeasonYear": 2023,
+        "latestEpisodeYear": 2023,
         "year": 2020
       },
       "chain": [
@@ -5268,14 +3009,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2023
       },
       "after": {
         "episodes": 36,
-        "seasons": 4,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2023
       },
       "chain": [
@@ -5317,14 +3056,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2025
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2025
       },
       "chain": [
@@ -5345,69 +3082,6 @@
       ]
     },
     {
-      "id": "sheet-the-testament-of-sister-new-devil",
-      "title": "The Testament of Sister New Devil",
-      "matchedTitle": "Shinmai Maou no Testament",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 22,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2015
-      },
-      "after": {
-        "episodes": 22,
-        "seasons": 2,
-        "latestSeasonYear": 2015,
-        "year": 2015
-      },
-      "chain": [
-        {
-          "title": "Shinmai Maou no Testament",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2015,
-          "similarity": 1
-        },
-        {
-          "title": "Shinmai Maou no Testament Burst",
-          "type": "TV",
-          "episodes": 10,
-          "year": 2015,
-          "similarity": 0.92
-        }
-      ]
-    },
-    {
-      "id": "sheet-chaos-head",
-      "title": "Chaos;Head",
-      "matchedTitle": "ChäoS;HEAd",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2008
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2008,
-        "year": 2008
-      },
-      "chain": [
-        {
-          "title": "ChäoS;HEAd",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2008,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-black-clover",
       "title": "Black Clover",
       "matchedTitle": "Black Clover",
@@ -5415,14 +3089,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 170,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2017
       },
       "after": {
         "episodes": 190,
-        "seasons": 3,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2017
       },
       "chain": [
@@ -5450,125 +3122,6 @@
       ]
     },
     {
-      "id": "sheet-berserk-of-gluttony",
-      "title": "Berserk of Gluttony",
-      "matchedTitle": "Boushoku no Berserk",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 5,
-        "latestSeasonYear": 2023,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Boushoku no Berserk",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2023,
-          "similarity": 1
-        },
-        {
-          "title": "Mattari Kaisetsu: Boushoku no Berserk",
-          "type": "ONA",
-          "episodes": 6,
-          "year": 2023,
-          "similarity": 0.86
-        },
-        {
-          "title": "Boushoku no Berserk 2",
-          "type": "TV",
-          "episodes": 1,
-          "year": null,
-          "similarity": 0.86
-        },
-        {
-          "title": "Boushoku no Berserk 2nd Season",
-          "type": "TV",
-          "episodes": 0,
-          "year": null,
-          "similarity": 0.75
-        },
-        {
-          "title": "Boushoku no Berserk Dai 2 Ki",
-          "type": "TV",
-          "episodes": 12,
-          "year": null,
-          "similarity": 0.9
-        }
-      ]
-    },
-    {
-      "id": "sheet-tekken-bloodline",
-      "title": "Tekken: Bloodline",
-      "matchedTitle": "Tekken: Bloodline",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 6,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 6,
-        "seasons": 1,
-        "latestSeasonYear": 2022,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Tekken: Bloodline",
-          "type": "ONA",
-          "episodes": 6,
-          "year": 2022,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-jujutsu-kaisen",
-      "title": "Jujutsu Kaisen",
-      "matchedTitle": "Jujutsu Kaisen",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 47,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2020
-      },
-      "after": {
-        "episodes": 47,
-        "seasons": 2,
-        "latestSeasonYear": 2023,
-        "year": 2020
-      },
-      "chain": [
-        {
-          "title": "Jujutsu Kaisen",
-          "type": "TV",
-          "episodes": 24,
-          "year": 2020,
-          "similarity": 1
-        },
-        {
-          "title": "Jujutsu Kaisen 2nd Season",
-          "type": "TV",
-          "episodes": 23,
-          "year": 2023,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-darker-than-black",
       "title": "Darker than Black",
       "matchedTitle": "Darker than Black: Kuro no Keiyakusha",
@@ -5576,14 +3129,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 25,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2009,
         "year": 2007
       },
       "after": {
         "episodes": 37,
-        "seasons": 2,
-        "latestSeasonYear": 2009,
+        "latestEpisodeYear": 2009,
         "year": 2007
       },
       "chain": [
@@ -5611,14 +3162,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 57,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2019
       },
       "after": {
         "episodes": 82,
-        "seasons": 6,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2019
       },
       "chain": [
@@ -5667,34 +3216,6 @@
       ]
     },
     {
-      "id": "sheet-high-rise-invasion",
-      "title": "High-Rise Invasion",
-      "matchedTitle": "Tenkuu Shinpan",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2021
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2021,
-        "year": 2021
-      },
-      "chain": [
-        {
-          "title": "Tenkuu Shinpan",
-          "type": "ONA",
-          "episodes": 12,
-          "year": 2021,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-to-your-eternity",
       "title": "To Your Eternity",
       "matchedTitle": "Fumetsu no Anata e",
@@ -5702,14 +3223,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 40,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2021
       },
       "after": {
         "episodes": 20,
-        "seasons": 4,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2021
       },
       "chain": [
@@ -5751,14 +3270,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 72,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2018,
         "year": 2018
       },
       "after": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": 2018,
+        "latestEpisodeYear": 2018,
         "year": 2018
       },
       "chain": [
@@ -5842,14 +3359,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 85,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2020,
         "year": 2014
       },
       "after": {
         "episodes": 95,
-        "seasons": 6,
-        "latestSeasonYear": 2020,
+        "latestEpisodeYear": 2020,
         "year": 2014
       },
       "chain": [
@@ -5905,14 +3420,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "after": {
         "episodes": 36,
-        "seasons": 2,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "chain": [
@@ -5940,14 +3453,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 48,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2021
       },
       "after": {
         "episodes": 11,
-        "seasons": 9,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2021
       },
       "chain": [
@@ -6024,14 +3535,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 64,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2011,
         "year": 2009
       },
       "after": {
         "episodes": 119,
-        "seasons": 3,
-        "latestSeasonYear": 2011,
+        "latestEpisodeYear": 2011,
         "year": 2009
       },
       "chain": [
@@ -6059,34 +3568,6 @@
       ]
     },
     {
-      "id": "sheet-the-lost-village",
-      "title": "The Lost Village",
-      "matchedTitle": "Mayoiga",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2016
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2016,
-        "year": 2016
-      },
-      "chain": [
-        {
-          "title": "Mayoiga",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2016,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-medaka-kuroiwa-is-impervious-to-my-charms",
       "title": "Medaka Kuroiwa Is Impervious to My Charms",
       "matchedTitle": "Kuroiwa Medaka ni Watashi no Kawaii ga Tsuujinai",
@@ -6094,14 +3575,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2027,
         "year": 2025
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2027,
+        "latestEpisodeYear": 2027,
         "year": 2025
       },
       "chain": [
@@ -6129,14 +3608,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 52,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2024,
         "year": 2014
       },
       "after": {
         "episodes": 73,
-        "seasons": 7,
-        "latestSeasonYear": 2024,
+        "latestEpisodeYear": 2024,
         "year": 2014
       },
       "chain": [
@@ -6199,14 +3676,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2023,
         "year": 2023
       },
       "after": {
         "episodes": 18,
-        "seasons": 2,
-        "latestSeasonYear": 2023,
+        "latestEpisodeYear": 2023,
         "year": 2023
       },
       "chain": [
@@ -6234,14 +3709,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 48,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2020
       },
       "after": {
         "episodes": 61,
-        "seasons": 3,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2020
       },
       "chain": [
@@ -6269,34 +3742,6 @@
       ]
     },
     {
-      "id": "sheet-hokkaido-gals-are-super-adorable",
-      "title": "Hokkaido Gals Are Super Adorable!",
-      "matchedTitle": "Dosanko Gal wa Namara Menkoi",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Dosanko Gal wa Namara Menkoi",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-nier-automata-ver1-1a",
       "title": "NieR:Automata Ver1.1a",
       "matchedTitle": "NieR:Automata Ver1.1a",
@@ -6304,14 +3749,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2024,
         "year": 2023
       },
       "after": {
         "episodes": 12,
-        "seasons": 3,
-        "latestSeasonYear": 2024,
+        "latestEpisodeYear": 2024,
         "year": 2023
       },
       "chain": [
@@ -6339,97 +3782,6 @@
       ]
     },
     {
-      "id": "sheet-mieruko-chan",
-      "title": "Mieruko-chan",
-      "matchedTitle": "Mieruko-chan",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2021
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2021,
-        "year": 2021
-      },
-      "chain": [
-        {
-          "title": "Mieruko-chan",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2021,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-black-lagoon",
-      "title": "Black Lagoon",
-      "matchedTitle": "Black Lagoon",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2006
-      },
-      "after": {
-        "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2006,
-        "year": 2006
-      },
-      "chain": [
-        {
-          "title": "Black Lagoon",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2006,
-          "similarity": 1
-        },
-        {
-          "title": "Black Lagoon: The Second Barrage",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2006,
-          "similarity": 0.8
-        }
-      ]
-    },
-    {
-      "id": "sheet-kabaneri-of-the-iron-fortress",
-      "title": "Kabaneri of the Iron Fortress",
-      "matchedTitle": "Kabaneri of the Iron Fortress",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2016
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2016,
-        "year": 2016
-      },
-      "chain": [
-        {
-          "title": "Kabaneri of the Iron Fortress",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2016,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-fate-grand-order-absolute-demonic-front-babylonia",
       "title": "Fate/Grand Order: Absolute Demonic Front - Babylonia",
       "matchedTitle": "Fate/Grand Order: Zettai Majuu Sensen Babylonia",
@@ -6437,14 +3789,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 21,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2019
       },
       "after": {
         "episodes": 129,
-        "seasons": 6,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2019
       },
       "chain": [
@@ -6493,62 +3843,6 @@
       ]
     },
     {
-      "id": "sheet-grimgar-ashes-and-illusions",
-      "title": "Grimgar: Ashes and Illusions",
-      "matchedTitle": "Hai to Gensou no Grimgar",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2016
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2016,
-        "year": 2016
-      },
-      "chain": [
-        {
-          "title": "Hai to Gensou no Grimgar",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2016,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-kill-la-kill",
-      "title": "Kill la Kill",
-      "matchedTitle": "Kill la Kill",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2013
-      },
-      "after": {
-        "episodes": 24,
-        "seasons": 1,
-        "latestSeasonYear": 2013,
-        "year": 2013
-      },
-      "chain": [
-        {
-          "title": "Kill la Kill",
-          "type": "TV",
-          "episodes": 24,
-          "year": 2013,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-my-stepmom-s-daughter-is-my-ex",
       "title": "My Stepmom's Daughter Is My Ex",
       "matchedTitle": "Mamahaha no Tsurego ga Motokano datta",
@@ -6556,14 +3850,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2022,
         "year": 2022
       },
       "after": {
         "episodes": 18,
-        "seasons": 2,
-        "latestSeasonYear": 2022,
+        "latestEpisodeYear": 2022,
         "year": 2022
       },
       "chain": [
@@ -6591,14 +3883,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2018,
         "year": 2011
       },
       "after": {
         "episodes": 51,
-        "seasons": 3,
-        "latestSeasonYear": 2018,
+        "latestEpisodeYear": 2018,
         "year": 2011
       },
       "chain": [
@@ -6626,34 +3916,6 @@
       ]
     },
     {
-      "id": "sheet-juni-taisen-zodiac-war",
-      "title": "Juni Taisen: Zodiac War",
-      "matchedTitle": "Juuni Taisen",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2017
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2017,
-        "year": 2017
-      },
-      "chain": [
-        {
-          "title": "Juuni Taisen",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2017,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-k",
       "title": "K",
       "matchedTitle": "K",
@@ -6661,14 +3923,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2015,
         "year": 2012
       },
       "after": {
         "episodes": 26,
-        "seasons": 2,
-        "latestSeasonYear": 2015,
+        "latestEpisodeYear": 2015,
         "year": 2012
       },
       "chain": [
@@ -6689,146 +3949,6 @@
       ]
     },
     {
-      "id": "sheet-demon-slayer-kimetsu-no-yaiba-infinity-castle",
-      "title": "Demon Slayer: Kimetsu no Yaiba - Infinity Castle",
-      "matchedTitle": "Kimetsu no Yaiba Movie 1: Mugenjou-hen - Akaza Sairai",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2025
-      },
-      "after": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": 2025,
-        "year": 2025
-      },
-      "chain": [
-        {
-          "title": "Kimetsu no Yaiba Movie 1: Mugenjou-hen - Akaza Sairai",
-          "type": "MOVIE",
-          "episodes": 1,
-          "year": 2025,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-chainsaw-man-the-movie-reze-arc",
-      "title": "Chainsaw Man – The Movie: Reze Arc",
-      "matchedTitle": "Chainsaw Man Movie: Reze-hen",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2025
-      },
-      "after": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": 2025,
-        "year": 2025
-      },
-      "chain": [
-        {
-          "title": "Chainsaw Man Movie: Reze-hen",
-          "type": "MOVIE",
-          "episodes": 1,
-          "year": 2025,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-kiznaiver",
-      "title": "Kiznaiver",
-      "matchedTitle": "Kiznaiver",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2016
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2016,
-        "year": 2016
-      },
-      "chain": [
-        {
-          "title": "Kiznaiver",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2016,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-undead-murder-farce",
-      "title": "Undead Murder Farce",
-      "matchedTitle": "Undead Girl Murder Farce",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2023
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2023,
-        "year": 2023
-      },
-      "chain": [
-        {
-          "title": "Undead Girl Murder Farce",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2023,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-metallic-rouge",
-      "title": "Metallic Rouge",
-      "matchedTitle": "Metallic Rouge",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2024
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2024,
-        "year": 2024
-      },
-      "chain": [
-        {
-          "title": "Metallic Rouge",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2024,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-school-days",
       "title": "School Days",
       "matchedTitle": "School Days",
@@ -6836,14 +3956,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2007,
         "year": 2007
       },
       "after": {
         "episodes": 13,
-        "seasons": 2,
-        "latestSeasonYear": 2007,
+        "latestEpisodeYear": 2007,
         "year": 2007
       },
       "chain": [
@@ -6871,14 +3989,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2023
       },
       "after": {
         "episodes": 28,
-        "seasons": 3,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2023
       },
       "chain": [
@@ -6906,146 +4022,6 @@
       ]
     },
     {
-      "id": "sheet-domestic-girlfriend",
-      "title": "Domestic Girlfriend",
-      "matchedTitle": "Domestic na Kanojo",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2019
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2019,
-        "year": 2019
-      },
-      "chain": [
-        {
-          "title": "Domestic na Kanojo",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2019,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-wotakoi-love-is-hard-for-otaku",
-      "title": "Wotakoi: Love Is Hard for Otaku",
-      "matchedTitle": "Wotaku ni Koi wa Muzukashii",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 11,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2018
-      },
-      "after": {
-        "episodes": 11,
-        "seasons": 1,
-        "latestSeasonYear": 2018,
-        "year": 2018
-      },
-      "chain": [
-        {
-          "title": "Wotaku ni Koi wa Muzukashii",
-          "type": "TV",
-          "episodes": 11,
-          "year": 2018,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-91-days",
-      "title": "91 Days",
-      "matchedTitle": "91 Days",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2016
-      },
-      "after": {
-        "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2016,
-        "year": 2016
-      },
-      "chain": [
-        {
-          "title": "91 Days",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2016,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-suzume",
-      "title": "Suzume",
-      "matchedTitle": "Suzume no Tojimari",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2022
-      },
-      "after": {
-        "episodes": 1,
-        "seasons": null,
-        "latestSeasonYear": 2022,
-        "year": 2022
-      },
-      "chain": [
-        {
-          "title": "Suzume no Tojimari",
-          "type": "MOVIE",
-          "episodes": 1,
-          "year": 2022,
-          "similarity": 1
-        }
-      ]
-    },
-    {
-      "id": "sheet-oreshura",
-      "title": "Oreshura",
-      "matchedTitle": "Ore no Kanojo to Osananajimi ga Shuraba Sugiru",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2013
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2013,
-        "year": 2013
-      },
-      "chain": [
-        {
-          "title": "Ore no Kanojo to Osananajimi ga Shuraba Sugiru",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2013,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-rent-a-girlfriend",
       "title": "Rent-A-Girlfriend",
       "matchedTitle": "Kanojo, Okarishimasu",
@@ -7053,14 +4029,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 36,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2020,
         "year": 2020
       },
       "after": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": 2020,
+        "latestEpisodeYear": 2020,
         "year": 2020
       },
       "chain": [
@@ -7144,14 +4118,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2023
       },
       "after": {
         "episodes": 24,
-        "seasons": 2,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2023
       },
       "chain": [
@@ -7172,34 +4144,6 @@
       ]
     },
     {
-      "id": "sheet-charlotte",
-      "title": "Charlotte",
-      "matchedTitle": "Charlotte",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2015
-      },
-      "after": {
-        "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2015,
-        "year": 2015
-      },
-      "chain": [
-        {
-          "title": "Charlotte",
-          "type": "TV",
-          "episodes": 13,
-          "year": 2015,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-to-love-ru",
       "title": "To LOVE-Ru",
       "matchedTitle": "To LOVE-Ru",
@@ -7207,14 +4151,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 26,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2015,
         "year": 2008
       },
       "after": {
         "episodes": 62,
-        "seasons": 4,
-        "latestSeasonYear": 2015,
+        "latestEpisodeYear": 2015,
         "year": 2008
       },
       "chain": [
@@ -7249,41 +4191,6 @@
       ]
     },
     {
-      "id": "sheet-saekano-how-to-raise-a-boring-girlfriend",
-      "title": "Saekano: How to Raise a Boring Girlfriend",
-      "matchedTitle": "Saenai Heroine no Sodatekata",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 23,
-        "seasons": null,
-        "latestSeasonYear": null,
-        "year": 2015
-      },
-      "after": {
-        "episodes": 23,
-        "seasons": 2,
-        "latestSeasonYear": 2017,
-        "year": 2015
-      },
-      "chain": [
-        {
-          "title": "Saenai Heroine no Sodatekata",
-          "type": "TV",
-          "episodes": 12,
-          "year": 2015,
-          "similarity": 1
-        },
-        {
-          "title": "Saenai Heroine no Sodatekata ♭",
-          "type": "TV",
-          "episodes": 11,
-          "year": 2017,
-          "similarity": 1
-        }
-      ]
-    },
-    {
       "id": "sheet-code-geass-roz-of-the-recapture",
       "title": "Code Geass: Rozé of the Recapture",
       "matchedTitle": "Code Geass: Dakkan no Rozé",
@@ -7291,14 +4198,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2024,
         "year": 2024
       },
       "after": {
         "episodes": 37,
-        "seasons": 2,
-        "latestSeasonYear": 2024,
+        "latestEpisodeYear": 2024,
         "year": 2024
       },
       "chain": [
@@ -7326,14 +4231,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 15,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2020
       },
       "after": {
         "episodes": 63,
-        "seasons": 5,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2020
       },
       "chain": [
@@ -7382,14 +4285,12 @@
       "via": "cover-source",
       "before": {
         "episodes": null,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "after": {
         "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2025,
+        "latestEpisodeYear": 2025,
         "year": 2025
       },
       "chain": [
@@ -7410,14 +4311,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2020,
         "year": 2020
       },
       "after": {
         "episodes": 25,
-        "seasons": 2,
-        "latestSeasonYear": 2020,
+        "latestEpisodeYear": 2020,
         "year": 2020
       },
       "chain": [
@@ -7445,14 +4344,12 @@
       "via": "cover-source",
       "before": {
         "episodes": null,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2026,
         "year": 2026
       },
       "after": {
         "episodes": 13,
-        "seasons": 1,
-        "latestSeasonYear": 2026,
+        "latestEpisodeYear": 2026,
         "year": 2026
       },
       "chain": [
@@ -7461,6 +4358,2745 @@
           "type": "TV",
           "episodes": 13,
           "year": 2026,
+          "similarity": 1
+        }
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "sheet-death-note",
+      "title": "Death Note",
+      "matchedTitle": "Death Note",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 37,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "after": {
+        "episodes": 37,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "chain": [
+        {
+          "title": "Death Note",
+          "type": "TV",
+          "episodes": 37,
+          "year": 2006,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-the-future-diary",
+      "title": "The Future Diary",
+      "matchedTitle": "Mirai Nikki (TV)",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 26,
+        "latestEpisodeYear": 2011,
+        "year": 2011
+      },
+      "after": {
+        "episodes": 26,
+        "latestEpisodeYear": 2011,
+        "year": 2011
+      },
+      "chain": [
+        {
+          "title": "Mirai Nikki (TV)",
+          "type": "TV",
+          "episodes": 26,
+          "year": 2011,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-wistoria-wand-and-sword",
+      "title": "Wistoria: Wand and Sword",
+      "matchedTitle": "Tsue to Tsurugi no Wistoria",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2026,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2026,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Tsue to Tsurugi no Wistoria",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2024,
+          "similarity": 1
+        },
+        {
+          "title": "Tsue to Tsurugi no Wistoria Season 2",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2026,
+          "similarity": 0.91
+        },
+        {
+          "title": "Tsue to Tsurugi no Wistoria Season 3",
+          "type": "TV",
+          "episodes": 1,
+          "year": null,
+          "similarity": 0.91
+        },
+        {
+          "title": "Wistoria: Wand and Sword",
+          "type": "TV",
+          "episodes": 0,
+          "year": null,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-yu-gi-oh",
+      "title": "Yu-Gi-Oh!",
+      "matchedTitle": "Yu☆Gi☆Oh! Duel Monsters",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 224,
+        "latestEpisodeYear": 2000,
+        "year": 2000
+      },
+      "after": {
+        "episodes": 224,
+        "latestEpisodeYear": 2000,
+        "year": 2000
+      },
+      "chain": [
+        {
+          "title": "Yu☆Gi☆Oh!",
+          "type": "TV",
+          "episodes": 27,
+          "year": 1998,
+          "similarity": 1
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Duel Monsters",
+          "type": "TV",
+          "episodes": 224,
+          "year": 2000,
+          "similarity": 1
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Duel Monsters GX",
+          "type": "TV",
+          "episodes": 180,
+          "year": 2004,
+          "similarity": 0.91
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Duel Monsters ALEX",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2006,
+          "similarity": 0.91
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Zexal Second",
+          "type": "TV",
+          "episodes": 73,
+          "year": 2012,
+          "similarity": 1
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Arc-V",
+          "type": "TV",
+          "episodes": 148,
+          "year": 2014,
+          "similarity": 1
+        },
+        {
+          "title": "Yu-Gi-Oh! Duel Monsters Battle City Hen",
+          "type": "TV",
+          "episodes": 70,
+          "year": 2015,
+          "similarity": 0.77
+        },
+        {
+          "title": "Yu☆Gi☆Oh! VRAINS",
+          "type": "TV",
+          "episodes": 120,
+          "year": 2017,
+          "similarity": 1
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Sevens",
+          "type": "TV",
+          "episodes": 92,
+          "year": 2020,
+          "similarity": 1
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Go Rush!!",
+          "type": "TV",
+          "episodes": 151,
+          "year": 2022,
+          "similarity": 0.75
+        }
+      ]
+    },
+    {
+      "id": "sheet-yu-gi-oh-gx",
+      "title": "Yu-Gi-Oh! GX",
+      "matchedTitle": "Yu-Gi-Oh! GX",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 180,
+        "latestEpisodeYear": 2004,
+        "year": 2004
+      },
+      "after": {
+        "episodes": 180,
+        "latestEpisodeYear": 2004,
+        "year": 2004
+      },
+      "chain": [
+        {
+          "title": "Yu-Gi-Oh! GX",
+          "type": "TV",
+          "episodes": 180,
+          "year": 2004,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-yu-gi-oh-5d-s",
+      "title": "Yu-Gi-Oh! 5D's",
+      "matchedTitle": "Yu☆Gi☆Oh! 5D's",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 154,
+        "latestEpisodeYear": 2021,
+        "year": 2008
+      },
+      "after": {
+        "episodes": 154,
+        "latestEpisodeYear": 2021,
+        "year": 2008
+      },
+      "chain": [
+        {
+          "title": "Yu☆Gi☆Oh!",
+          "type": "TV",
+          "episodes": 27,
+          "year": 1998,
+          "similarity": 0.86
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Duel Monsters GX",
+          "type": "TV",
+          "episodes": 180,
+          "year": 2004,
+          "similarity": 0.83
+        },
+        {
+          "title": "Yu☆Gi☆Oh! 5D's",
+          "type": "TV",
+          "episodes": 154,
+          "year": 2008,
+          "similarity": 1
+        },
+        {
+          "title": "Yu☆Gi☆Oh! VRAINS",
+          "type": "TV",
+          "episodes": 120,
+          "year": 2017,
+          "similarity": 0.75
+        },
+        {
+          "title": "Yu☆Gi☆Oh! Sevens",
+          "type": "TV",
+          "episodes": 92,
+          "year": 2020,
+          "similarity": 0.75
+        },
+        {
+          "title": "Yu-Gi-Oh! Sevens",
+          "type": "TV",
+          "episodes": 0,
+          "year": 2020,
+          "similarity": 0.75
+        },
+        {
+          "title": "Yu-Gi-Oh! Sevens",
+          "type": "TV",
+          "episodes": 0,
+          "year": 2021,
+          "similarity": 0.75
+        }
+      ]
+    },
+    {
+      "id": "sheet-code-geass-lelouch-of-the-rebellion",
+      "title": "Code Geass: Lelouch of the Rebellion",
+      "matchedTitle": "Code Geass: Hangyaku no Lelouch",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 50,
+        "latestEpisodeYear": 2008,
+        "year": 2006
+      },
+      "after": {
+        "episodes": 50,
+        "latestEpisodeYear": 2008,
+        "year": 2006
+      },
+      "chain": [
+        {
+          "title": "Code Geass: Hangyaku no Lelouch",
+          "type": "TV",
+          "episodes": 25,
+          "year": 2006,
+          "similarity": 1
+        },
+        {
+          "title": "Code Geass: Hangyaku no Lelouch R2",
+          "type": "TV",
+          "episodes": 25,
+          "year": 2008,
+          "similarity": 0.95
+        }
+      ]
+    },
+    {
+      "id": "sheet-my-first-girlfriend-is-a-gal",
+      "title": "My First Girlfriend Is a Gal",
+      "matchedTitle": "Hajimete no Gal",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 10,
+        "latestEpisodeYear": 2017,
+        "year": 2017
+      },
+      "after": {
+        "episodes": 10,
+        "latestEpisodeYear": 2017,
+        "year": 2017
+      },
+      "chain": [
+        {
+          "title": "Hajimete no Gal",
+          "type": "TV",
+          "episodes": 10,
+          "year": 2017,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-more-than-a-married-couple-but-not-lovers",
+      "title": "More Than a Married Couple, But Not Lovers",
+      "matchedTitle": "Fuufu Ijou, Koibito Miman.",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Fuufu Ijou, Koibito Miman.",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2022,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-eden-of-the-east",
+      "title": "Eden of the East",
+      "matchedTitle": "Higashi no Eden",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 11,
+        "latestEpisodeYear": 2009,
+        "year": 2009
+      },
+      "after": {
+        "episodes": 11,
+        "latestEpisodeYear": 2009,
+        "year": 2009
+      },
+      "chain": [
+        {
+          "title": "Higashi no Eden",
+          "type": "TV",
+          "episodes": 11,
+          "year": 2009,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-terror-in-resonance",
+      "title": "Terror in Resonance",
+      "matchedTitle": "Zankyou no Terror",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 11,
+        "latestEpisodeYear": 2014,
+        "year": 2014
+      },
+      "after": {
+        "episodes": 11,
+        "latestEpisodeYear": 2014,
+        "year": 2014
+      },
+      "chain": [
+        {
+          "title": "Zankyou no Terror",
+          "type": "TV",
+          "episodes": 11,
+          "year": 2014,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-dragon-ball-daima",
+      "title": "Dragon Ball Daima",
+      "matchedTitle": "Dragon Ball Daima",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 20,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 20,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Dragon Ball Daima",
+          "type": "TV",
+          "episodes": 20,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-fate-strange-fake",
+      "title": "Fate/strange Fake",
+      "matchedTitle": "Fate/strange Fake (Zoku-hen)",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2026,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2026,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Fate/strange Fake",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2026,
+          "similarity": 1
+        },
+        {
+          "title": "Fate/strange Fake (Zoku-hen)",
+          "type": "TV",
+          "episodes": 0,
+          "year": null,
+          "similarity": 1
+        },
+        {
+          "title": "Fate Strange Fake 2nd Season",
+          "type": "TV",
+          "episodes": 1,
+          "year": null,
+          "similarity": 0.75
+        }
+      ]
+    },
+    {
+      "id": "sheet-fate-zero",
+      "title": "Fate/Zero",
+      "matchedTitle": "Fate/Zero",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 25,
+        "latestEpisodeYear": 2012,
+        "year": 2011
+      },
+      "after": {
+        "episodes": 25,
+        "latestEpisodeYear": 2012,
+        "year": 2011
+      },
+      "chain": [
+        {
+          "title": "Fate/Zero",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2011,
+          "similarity": 1
+        },
+        {
+          "title": "Fate/Zero 2nd Season",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2012,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-fate-apocrypha",
+      "title": "Fate/Apocrypha",
+      "matchedTitle": "Fate/Apocrypha",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 25,
+        "latestEpisodeYear": 2017,
+        "year": 2017
+      },
+      "after": {
+        "episodes": 25,
+        "latestEpisodeYear": 2017,
+        "year": 2017
+      },
+      "chain": [
+        {
+          "title": "Fate/Apocrypha",
+          "type": "TV",
+          "episodes": 25,
+          "year": 2017,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-rosario-vampire",
+      "title": "Rosario + Vampire",
+      "matchedTitle": "Rosario to Vampire",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 26,
+        "latestEpisodeYear": 2008,
+        "year": 2008
+      },
+      "after": {
+        "episodes": 26,
+        "latestEpisodeYear": 2008,
+        "year": 2008
+      },
+      "chain": [
+        {
+          "title": "Rosario to Vampire",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2008,
+          "similarity": 1
+        },
+        {
+          "title": "Rosario to Vampire Capu2",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2008,
+          "similarity": 0.86
+        }
+      ]
+    },
+    {
+      "id": "sheet-my-bride-is-a-mermaid",
+      "title": "My Bride Is a Mermaid",
+      "matchedTitle": "Seto no Hanayome",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 26,
+        "latestEpisodeYear": 2007,
+        "year": 2007
+      },
+      "after": {
+        "episodes": 26,
+        "latestEpisodeYear": 2007,
+        "year": 2007
+      },
+      "chain": [
+        {
+          "title": "Seto no Hanayome",
+          "type": "TV",
+          "episodes": 26,
+          "year": 2007,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-solo-leveling",
+      "title": "Solo Leveling",
+      "matchedTitle": "Ore dake Level Up na Ken",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 25,
+        "latestEpisodeYear": 2025,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 25,
+        "latestEpisodeYear": 2025,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Ore dake Level Up na Ken",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2024,
+          "similarity": 1
+        },
+        {
+          "title": "Ore dake Level Up na Ken Season 2: Arise from the Shadow",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2025,
+          "similarity": 0.89
+        }
+      ]
+    },
+    {
+      "id": "sheet-blue-lock",
+      "title": "Blue Lock",
+      "matchedTitle": "Blue Lock",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 38,
+        "latestEpisodeYear": 2024,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 38,
+        "latestEpisodeYear": 2024,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Blue Lock",
+          "type": "TV",
+          "episodes": 24,
+          "year": 2022,
+          "similarity": 1
+        },
+        {
+          "title": "Blue Lock vs. U-20 Japan",
+          "type": "TV",
+          "episodes": 14,
+          "year": 2024,
+          "similarity": 0.8
+        }
+      ]
+    },
+    {
+      "id": "sheet-kaiju-no-8",
+      "title": "Kaiju No. 8",
+      "matchedTitle": "Kaijuu 8-gou",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2025,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2025,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Kaijuu 8-gou",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2024,
+          "similarity": 1
+        },
+        {
+          "title": "Minute! Kaijuu 8-gou",
+          "type": "ONA",
+          "episodes": 31,
+          "year": 2024,
+          "similarity": 1
+        },
+        {
+          "title": "Kaijuu 8-gou 2nd Season",
+          "type": "TV",
+          "episodes": 11,
+          "year": 2025,
+          "similarity": 1
+        },
+        {
+          "title": "Kaijuu 8-gou The Game",
+          "type": "ONA",
+          "episodes": 9,
+          "year": 2025,
+          "similarity": 0.75
+        },
+        {
+          "title": "Kaijuu 8-gou: Narumi no Heijitsu",
+          "type": "ONA",
+          "episodes": 0,
+          "year": null,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-tokyo-ghoul",
+      "title": "Tokyo Ghoul",
+      "matchedTitle": "Tokyo Ghoul",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 48,
+        "latestEpisodeYear": 2018,
+        "year": 2014
+      },
+      "after": {
+        "episodes": 48,
+        "latestEpisodeYear": 2018,
+        "year": 2014
+      },
+      "chain": [
+        {
+          "title": "Tokyo Ghoul",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2014,
+          "similarity": 1
+        },
+        {
+          "title": "Tokyo Ghoul √A",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2015,
+          "similarity": 0.8
+        },
+        {
+          "title": "Tokyo Ghoul:re",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2018,
+          "similarity": 0.8
+        },
+        {
+          "title": "Tokyo Ghoul:re 2nd Season",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2018,
+          "similarity": 0.8
+        }
+      ]
+    },
+    {
+      "id": "sheet-kaguya-sama-love-is-war",
+      "title": "Kaguya-sama: Love Is War",
+      "matchedTitle": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 37,
+        "latestEpisodeYear": 2022,
+        "year": 2019
+      },
+      "after": {
+        "episodes": 37,
+        "latestEpisodeYear": 2022,
+        "year": 2019
+      },
+      "chain": [
+        {
+          "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2019,
+          "similarity": 1
+        },
+        {
+          "title": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2020,
+          "similarity": 1
+        },
+        {
+          "title": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2022,
+          "similarity": 0.95
+        }
+      ]
+    },
+    {
+      "id": "sheet-darling-in-the-franxx",
+      "title": "Darling in the Franxx",
+      "matchedTitle": "Darling in the FranXX",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "chain": [
+        {
+          "title": "Darling in the FranXX",
+          "type": "TV",
+          "episodes": 24,
+          "year": 2018,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-my-love-story-with-yamada-kun-at-lv999",
+      "title": "My Love Story with Yamada-kun at Lv999",
+      "matchedTitle": "Yamada-kun to Lv999 no Koi wo Suru",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Yamada-kun to Lv999 no Koi wo Suru",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2023,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-rascal-does-not-dream-of-a-dreaming-girl",
+      "title": "Rascal Does Not Dream of a Dreaming Girl",
+      "matchedTitle": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2019,
+        "year": 2019
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2019,
+        "year": 2019
+      },
+      "chain": [
+        {
+          "title": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+          "type": "MOVIE",
+          "episodes": 1,
+          "year": 2019,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-rascal-does-not-dream-of-a-sister-venturing-out",
+      "title": "Rascal Does Not Dream of a Sister Venturing Out",
+      "matchedTitle": "Seishun Buta Yarou wa Odekake Sister no Yume wo Minai",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Seishun Buta Yarou wa Odekake Sister no Yume wo Minai",
+          "type": "MOVIE",
+          "episodes": 1,
+          "year": 2023,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-rascal-does-not-dream-of-a-knapsack-kid",
+      "title": "Rascal Does Not Dream of a Knapsack Kid",
+      "matchedTitle": "Seishun Buta Yarou wa Odekake Sister no Yume wo Minai",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Seishun Buta Yarou wa Odekake Sister no Yume wo Minai",
+          "type": "MOVIE",
+          "episodes": 1,
+          "year": 2023,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-chivalry-of-a-failed-knight",
+      "title": "Chivalry of a Failed Knight",
+      "matchedTitle": "Rakudai Kishi no Cavalry",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "chain": [
+        {
+          "title": "Rakudai Kishi no Cavalry",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2015,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-dealing-with-mikadono-sisters-is-a-breeze",
+      "title": "Dealing with Mikadono Sisters Is a Breeze",
+      "matchedTitle": "Mikadono Sanshimai wa Angai, Choroi.",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2025,
+        "year": 2025
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2025,
+        "year": 2025
+      },
+      "chain": [
+        {
+          "title": "Mikadono Sanshimai wa Angai, Choroi.",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2025,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-failure-frame-i-became-the-strongest-and-annihilated-everything-with-low-level-spells",
+      "title": "Failure Frame: I Became the Strongest and Annihilated Everything With Low-Level Spells",
+      "matchedTitle": "Hazurewaku no \"Joutai Ijou Skill\" de Saikyou ni Natta Ore ga Subete wo Juurin suru made",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Hazurewaku no \"Joutai Ijou Skill\" de Saikyou ni Natta Ore ga Subete wo Juurin suru made",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-danganronpa-the-animation",
+      "title": "Danganronpa: The Animation",
+      "matchedTitle": "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei The Animation",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2013,
+        "year": 2013
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2013,
+        "year": 2013
+      },
+      "chain": [
+        {
+          "title": "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei The Animation",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2013,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-yakuza-fianc-raise-wa-tanin-ga-ii",
+      "title": "Yakuza Fiancé: Raise wa Tanin ga Ii",
+      "matchedTitle": "Raise wa Tanin ga Ii",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Raise wa Tanin ga Ii",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-shikimori-s-not-just-a-cutie",
+      "title": "Shikimori's Not Just a Cutie",
+      "matchedTitle": "Kawaii dake ja Nai Shikimori-san",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Kawaii dake ja Nai Shikimori-san",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2022,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-tomodachi-game",
+      "title": "Tomodachi Game",
+      "matchedTitle": "Tomodachi Game",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Tomodachi Game",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2022,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-battle-game-in-5-seconds",
+      "title": "Battle Game in 5 Seconds",
+      "matchedTitle": "Deatte 5-byou de Battle",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "chain": [
+        {
+          "title": "Deatte 5-byou de Battle",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2021,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-inuyasha",
+      "title": "Inuyasha",
+      "matchedTitle": "InuYasha",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 167,
+        "latestEpisodeYear": 2000,
+        "year": 2000
+      },
+      "after": {
+        "episodes": 167,
+        "latestEpisodeYear": 2000,
+        "year": 2000
+      },
+      "chain": [
+        {
+          "title": "InuYasha",
+          "type": "TV",
+          "episodes": 167,
+          "year": 2000,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-fairy-tail-100-years-quest",
+      "title": "Fairy Tail: 100 Years Quest",
+      "matchedTitle": "Fairy Tail: 100-nen Quest",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 25,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 25,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Fairy Tail (2014)",
+          "type": "TV",
+          "episodes": 102,
+          "year": 2014,
+          "similarity": 0.8
+        },
+        {
+          "title": "Fairy Tail: Final Series",
+          "type": "TV",
+          "episodes": 51,
+          "year": 2018,
+          "similarity": 0.8
+        },
+        {
+          "title": "Fairy Tail: 100-nen Quest",
+          "type": "TV",
+          "episodes": 25,
+          "year": 2024,
+          "similarity": 1
+        },
+        {
+          "title": "Fairy Tail: 100 Years Quest",
+          "type": "TV",
+          "episodes": 0,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-our-dating-story-the-experienced-you-and-the-inexperienced-me",
+      "title": "Our Dating Story: The Experienced You and the Inexperienced Me",
+      "matchedTitle": "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2023,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-platinum-end",
+      "title": "Platinum End",
+      "matchedTitle": "Platinum End",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "chain": [
+        {
+          "title": "Platinum End",
+          "type": "TV",
+          "episodes": 24,
+          "year": 2021,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-the-caf-terrace-and-its-goddesses",
+      "title": "The Café Terrace and Its Goddesses",
+      "matchedTitle": "Megami no Café Terrace",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2024,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2024,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Megami no Café Terrace",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2023,
+          "similarity": 1
+        },
+        {
+          "title": "Megami no Café Terrace 2nd Season",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-tying-the-knot-with-an-amagami-sister",
+      "title": "Tying the Knot with an Amagami Sister",
+      "matchedTitle": "Amagami-san Chi no Enmusubi",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Amagami-san Chi no Enmusubi",
+          "type": "TV",
+          "episodes": 24,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-prison-school",
+      "title": "Prison School",
+      "matchedTitle": "Prison School",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "chain": [
+        {
+          "title": "Prison School",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2015,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-you-are-ms-servant",
+      "title": "You Are Ms. Servant",
+      "matchedTitle": "Kimi wa Meido-sama.",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Kimi wa Meido-sama.",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-the-witch-and-the-beast",
+      "title": "The Witch and the Beast",
+      "matchedTitle": "Majo to Yajuu",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Majo to Yajuu",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-summer-time-rendering",
+      "title": "Summer Time Rendering",
+      "matchedTitle": "Summertime Render",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 25,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 25,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Summertime Render",
+          "type": "TV",
+          "episodes": 25,
+          "year": 2022,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-citrus",
+      "title": "Citrus",
+      "matchedTitle": "Citrus",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "chain": [
+        {
+          "title": "Citrus",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2018,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-shinobi-no-ittoki",
+      "title": "Shinobi no Ittoki",
+      "matchedTitle": "Shinobi no Ittoki",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Shinobi no Ittoki",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2022,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-another",
+      "title": "Another",
+      "matchedTitle": "Another",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2012,
+        "year": 2012
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2012,
+        "year": 2012
+      },
+      "chain": [
+        {
+          "title": "Another",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2012,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-engage-kiss",
+      "title": "Engage Kiss",
+      "matchedTitle": "Engage Kiss",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Engage Kiss",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2022,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-akudama-drive",
+      "title": "Akudama Drive",
+      "matchedTitle": "Akudama Drive",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2020,
+        "year": 2020
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2020,
+        "year": 2020
+      },
+      "chain": [
+        {
+          "title": "Akudama Drive",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2020,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-higehiro-after-being-rejected-i-shaved-and-took-in-a-high-school-runaway",
+      "title": "Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway",
+      "matchedTitle": "Hige wo Soru. Soshite Joshikousei wo Hirou.",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "chain": [
+        {
+          "title": "Hige wo Soru. Soshite Joshikousei wo Hirou.",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2021,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-tenpuru-no-one-can-live-on-loneliness",
+      "title": "TenPuru: No One Can Live on Loneliness",
+      "matchedTitle": "Temple",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Temple",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2023,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-plastic-memories",
+      "title": "Plastic Memories",
+      "matchedTitle": "Plastic Memories",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "chain": [
+        {
+          "title": "Plastic Memories",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2015,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-deadman-wonderland",
+      "title": "Deadman Wonderland",
+      "matchedTitle": "Deadman Wonderland",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2011,
+        "year": 2011
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2011,
+        "year": 2011
+      },
+      "chain": [
+        {
+          "title": "Deadman Wonderland",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2011,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-alderamin-on-the-sky",
+      "title": "Alderamin on the Sky",
+      "matchedTitle": "Nejimaki Seirei Senki: Tenkyou no Alderamin",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "chain": [
+        {
+          "title": "Nejimaki Seirei Senki: Tenkyou no Alderamin",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2016,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-darwin-s-game",
+      "title": "Darwin's Game",
+      "matchedTitle": "Darwin's Game",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 11,
+        "latestEpisodeYear": 2020,
+        "year": 2020
+      },
+      "after": {
+        "episodes": 11,
+        "latestEpisodeYear": 2020,
+        "year": 2020
+      },
+      "chain": [
+        {
+          "title": "Darwin's Game",
+          "type": "TV",
+          "episodes": 11,
+          "year": 2020,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-trinity-seven",
+      "title": "Trinity Seven",
+      "matchedTitle": "Trinity Seven",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2014,
+        "year": 2014
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2014,
+        "year": 2014
+      },
+      "chain": [
+        {
+          "title": "Trinity Seven",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2014,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-my-teen-romantic-comedy-snafu",
+      "title": "My Teen Romantic Comedy SNAFU",
+      "matchedTitle": "Yahari Ore no Seishun Love Comedy wa Machigatteiru.",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 38,
+        "latestEpisodeYear": 2020,
+        "year": 2013
+      },
+      "after": {
+        "episodes": 38,
+        "latestEpisodeYear": 2020,
+        "year": 2013
+      },
+      "chain": [
+        {
+          "title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru.",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2013,
+          "similarity": 1
+        },
+        {
+          "title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2015,
+          "similarity": 0.95
+        },
+        {
+          "title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2020,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-zom-100-bucket-list-of-the-dead",
+      "title": "Zom 100: Bucket List of the Dead",
+      "matchedTitle": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2023,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-high-school-of-the-dead",
+      "title": "High School of the Dead",
+      "matchedTitle": "Highschool of the Dead",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2010,
+        "year": 2010
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2010,
+        "year": 2010
+      },
+      "chain": [
+        {
+          "title": "Highschool of the Dead",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2010,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-akiba-maid-war",
+      "title": "Akiba Maid War",
+      "matchedTitle": "Akiba Meido Sensou",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Akiba Meido Sensou",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2022,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-trillion-game",
+      "title": "Trillion Game",
+      "matchedTitle": "Trillion Game",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 26,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 26,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Trillion Game",
+          "type": "TV",
+          "episodes": 26,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-guilty-crown",
+      "title": "Guilty Crown",
+      "matchedTitle": "Guilty Crown",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 22,
+        "latestEpisodeYear": 2011,
+        "year": 2011
+      },
+      "after": {
+        "episodes": 22,
+        "latestEpisodeYear": 2011,
+        "year": 2011
+      },
+      "chain": [
+        {
+          "title": "Guilty Crown",
+          "type": "TV",
+          "episodes": 22,
+          "year": 2011,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-masamune-kun-s-revenge",
+      "title": "Masamune-kun's Revenge",
+      "matchedTitle": "Masamune-kun no Revenge",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2023,
+        "year": 2017
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2023,
+        "year": 2017
+      },
+      "chain": [
+        {
+          "title": "Masamune-kun no Revenge",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2017,
+          "similarity": 1
+        },
+        {
+          "title": "Masamune-kun no Revenge R",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2023,
+          "similarity": 0.89
+        }
+      ]
+    },
+    {
+      "id": "sheet-bleach",
+      "title": "Bleach",
+      "matchedTitle": "Bleach",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 366,
+        "latestEpisodeYear": 2026,
+        "year": 2004
+      },
+      "after": {
+        "episodes": 366,
+        "latestEpisodeYear": 2026,
+        "year": 2004
+      },
+      "chain": [
+        {
+          "title": "Bleach",
+          "type": "TV",
+          "episodes": 366,
+          "year": 2004,
+          "similarity": 1
+        },
+        {
+          "title": "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2023,
+          "similarity": 1
+        },
+        {
+          "title": "Bleach: Sennen Kessen-hen - Soukoku-tan",
+          "type": "TV",
+          "episodes": 14,
+          "year": 2024,
+          "similarity": 1
+        },
+        {
+          "title": "Bleach: Sennen Kessen-hen - Kashin-tan",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2026,
+          "similarity": 1
+        },
+        {
+          "title": "Bleach: Thousand-Year Blood War - The Calamity",
+          "type": "TV",
+          "episodes": 0,
+          "year": 2026,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-the-testament-of-sister-new-devil",
+      "title": "The Testament of Sister New Devil",
+      "matchedTitle": "Shinmai Maou no Testament",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 22,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "after": {
+        "episodes": 22,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "chain": [
+        {
+          "title": "Shinmai Maou no Testament",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2015,
+          "similarity": 1
+        },
+        {
+          "title": "Shinmai Maou no Testament Burst",
+          "type": "TV",
+          "episodes": 10,
+          "year": 2015,
+          "similarity": 0.92
+        }
+      ]
+    },
+    {
+      "id": "sheet-chaos-head",
+      "title": "Chaos;Head",
+      "matchedTitle": "ChäoS;HEAd",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2008,
+        "year": 2008
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2008,
+        "year": 2008
+      },
+      "chain": [
+        {
+          "title": "ChäoS;HEAd",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2008,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-berserk-of-gluttony",
+      "title": "Berserk of Gluttony",
+      "matchedTitle": "Boushoku no Berserk",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Boushoku no Berserk",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2023,
+          "similarity": 1
+        },
+        {
+          "title": "Mattari Kaisetsu: Boushoku no Berserk",
+          "type": "ONA",
+          "episodes": 6,
+          "year": 2023,
+          "similarity": 0.86
+        },
+        {
+          "title": "Boushoku no Berserk 2",
+          "type": "TV",
+          "episodes": 1,
+          "year": null,
+          "similarity": 0.86
+        },
+        {
+          "title": "Boushoku no Berserk 2nd Season",
+          "type": "TV",
+          "episodes": 0,
+          "year": null,
+          "similarity": 0.75
+        },
+        {
+          "title": "Boushoku no Berserk Dai 2 Ki",
+          "type": "TV",
+          "episodes": 12,
+          "year": null,
+          "similarity": 0.9
+        }
+      ]
+    },
+    {
+      "id": "sheet-tekken-bloodline",
+      "title": "Tekken: Bloodline",
+      "matchedTitle": "Tekken: Bloodline",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 6,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 6,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Tekken: Bloodline",
+          "type": "ONA",
+          "episodes": 6,
+          "year": 2022,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-jujutsu-kaisen",
+      "title": "Jujutsu Kaisen",
+      "matchedTitle": "Jujutsu Kaisen",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 47,
+        "latestEpisodeYear": 2023,
+        "year": 2020
+      },
+      "after": {
+        "episodes": 47,
+        "latestEpisodeYear": 2023,
+        "year": 2020
+      },
+      "chain": [
+        {
+          "title": "Jujutsu Kaisen",
+          "type": "TV",
+          "episodes": 24,
+          "year": 2020,
+          "similarity": 1
+        },
+        {
+          "title": "Jujutsu Kaisen 2nd Season",
+          "type": "TV",
+          "episodes": 23,
+          "year": 2023,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-high-rise-invasion",
+      "title": "High-Rise Invasion",
+      "matchedTitle": "Tenkuu Shinpan",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "chain": [
+        {
+          "title": "Tenkuu Shinpan",
+          "type": "ONA",
+          "episodes": 12,
+          "year": 2021,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-the-lost-village",
+      "title": "The Lost Village",
+      "matchedTitle": "Mayoiga",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "chain": [
+        {
+          "title": "Mayoiga",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2016,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-hokkaido-gals-are-super-adorable",
+      "title": "Hokkaido Gals Are Super Adorable!",
+      "matchedTitle": "Dosanko Gal wa Namara Menkoi",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Dosanko Gal wa Namara Menkoi",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-mieruko-chan",
+      "title": "Mieruko-chan",
+      "matchedTitle": "Mieruko-chan",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "chain": [
+        {
+          "title": "Mieruko-chan",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2021,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-black-lagoon",
+      "title": "Black Lagoon",
+      "matchedTitle": "Black Lagoon",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "chain": [
+        {
+          "title": "Black Lagoon",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2006,
+          "similarity": 1
+        },
+        {
+          "title": "Black Lagoon: The Second Barrage",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2006,
+          "similarity": 0.8
+        }
+      ]
+    },
+    {
+      "id": "sheet-kabaneri-of-the-iron-fortress",
+      "title": "Kabaneri of the Iron Fortress",
+      "matchedTitle": "Kabaneri of the Iron Fortress",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "chain": [
+        {
+          "title": "Kabaneri of the Iron Fortress",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2016,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-grimgar-ashes-and-illusions",
+      "title": "Grimgar: Ashes and Illusions",
+      "matchedTitle": "Hai to Gensou no Grimgar",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "chain": [
+        {
+          "title": "Hai to Gensou no Grimgar",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2016,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-kill-la-kill",
+      "title": "Kill la Kill",
+      "matchedTitle": "Kill la Kill",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2013,
+        "year": 2013
+      },
+      "after": {
+        "episodes": 24,
+        "latestEpisodeYear": 2013,
+        "year": 2013
+      },
+      "chain": [
+        {
+          "title": "Kill la Kill",
+          "type": "TV",
+          "episodes": 24,
+          "year": 2013,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-juni-taisen-zodiac-war",
+      "title": "Juni Taisen: Zodiac War",
+      "matchedTitle": "Juuni Taisen",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2017,
+        "year": 2017
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2017,
+        "year": 2017
+      },
+      "chain": [
+        {
+          "title": "Juuni Taisen",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2017,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-demon-slayer-kimetsu-no-yaiba-infinity-castle",
+      "title": "Demon Slayer: Kimetsu no Yaiba - Infinity Castle",
+      "matchedTitle": "Kimetsu no Yaiba Movie 1: Mugenjou-hen - Akaza Sairai",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2025,
+        "year": 2025
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2025,
+        "year": 2025
+      },
+      "chain": [
+        {
+          "title": "Kimetsu no Yaiba Movie 1: Mugenjou-hen - Akaza Sairai",
+          "type": "MOVIE",
+          "episodes": 1,
+          "year": 2025,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-chainsaw-man-the-movie-reze-arc",
+      "title": "Chainsaw Man – The Movie: Reze Arc",
+      "matchedTitle": "Chainsaw Man Movie: Reze-hen",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2025,
+        "year": 2025
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2025,
+        "year": 2025
+      },
+      "chain": [
+        {
+          "title": "Chainsaw Man Movie: Reze-hen",
+          "type": "MOVIE",
+          "episodes": 1,
+          "year": 2025,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-kiznaiver",
+      "title": "Kiznaiver",
+      "matchedTitle": "Kiznaiver",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "chain": [
+        {
+          "title": "Kiznaiver",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2016,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-undead-murder-farce",
+      "title": "Undead Murder Farce",
+      "matchedTitle": "Undead Girl Murder Farce",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2023,
+        "year": 2023
+      },
+      "chain": [
+        {
+          "title": "Undead Girl Murder Farce",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2023,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-metallic-rouge",
+      "title": "Metallic Rouge",
+      "matchedTitle": "Metallic Rouge",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "chain": [
+        {
+          "title": "Metallic Rouge",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2024,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-domestic-girlfriend",
+      "title": "Domestic Girlfriend",
+      "matchedTitle": "Domestic na Kanojo",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2019,
+        "year": 2019
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2019,
+        "year": 2019
+      },
+      "chain": [
+        {
+          "title": "Domestic na Kanojo",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2019,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-wotakoi-love-is-hard-for-otaku",
+      "title": "Wotakoi: Love Is Hard for Otaku",
+      "matchedTitle": "Wotaku ni Koi wa Muzukashii",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 11,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "after": {
+        "episodes": 11,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "chain": [
+        {
+          "title": "Wotaku ni Koi wa Muzukashii",
+          "type": "TV",
+          "episodes": 11,
+          "year": 2018,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-91-days",
+      "title": "91 Days",
+      "matchedTitle": "91 Days",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "chain": [
+        {
+          "title": "91 Days",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2016,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-suzume",
+      "title": "Suzume",
+      "matchedTitle": "Suzume no Tojimari",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "chain": [
+        {
+          "title": "Suzume no Tojimari",
+          "type": "MOVIE",
+          "episodes": 1,
+          "year": 2022,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-oreshura",
+      "title": "Oreshura",
+      "matchedTitle": "Ore no Kanojo to Osananajimi ga Shuraba Sugiru",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2013,
+        "year": 2013
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2013,
+        "year": 2013
+      },
+      "chain": [
+        {
+          "title": "Ore no Kanojo to Osananajimi ga Shuraba Sugiru",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2013,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-charlotte",
+      "title": "Charlotte",
+      "matchedTitle": "Charlotte",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2015,
+        "year": 2015
+      },
+      "chain": [
+        {
+          "title": "Charlotte",
+          "type": "TV",
+          "episodes": 13,
+          "year": 2015,
+          "similarity": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-saekano-how-to-raise-a-boring-girlfriend",
+      "title": "Saekano: How to Raise a Boring Girlfriend",
+      "matchedTitle": "Saenai Heroine no Sodatekata",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 23,
+        "latestEpisodeYear": 2017,
+        "year": 2015
+      },
+      "after": {
+        "episodes": 23,
+        "latestEpisodeYear": 2017,
+        "year": 2015
+      },
+      "chain": [
+        {
+          "title": "Saenai Heroine no Sodatekata",
+          "type": "TV",
+          "episodes": 12,
+          "year": 2015,
+          "similarity": 1
+        },
+        {
+          "title": "Saenai Heroine no Sodatekata ♭",
+          "type": "TV",
+          "episodes": 11,
+          "year": 2017,
           "similarity": 1
         }
       ]
@@ -7473,14 +7109,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2015,
         "year": 2015
       },
       "after": {
         "episodes": 12,
-        "seasons": 1,
-        "latestSeasonYear": 2015,
+        "latestEpisodeYear": 2015,
         "year": 2015
       },
       "chain": [
@@ -7494,7 +7128,6 @@
       ]
     }
   ],
-  "unchanged": [],
   "unmatched": [],
   "review": [
     {
@@ -7505,14 +7138,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 224,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2000,
         "year": 2000
       },
       "after": {
         "episodes": 224,
-        "seasons": null,
-        "latestSeasonYear": 2000,
+        "latestEpisodeYear": 2000,
         "year": 2000
       },
       "chain": [
@@ -7596,14 +7227,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 159,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2016,
         "year": 2016
       },
       "after": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": 2016,
+        "latestEpisodeYear": 2016,
         "year": 2016
       },
       "chain": [
@@ -7687,14 +7316,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 74,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2015,
         "year": 2015
       },
       "after": {
         "episodes": 13,
-        "seasons": null,
-        "latestSeasonYear": 2015,
+        "latestEpisodeYear": 2015,
         "year": 2015
       },
       "chain": [
@@ -7778,14 +7405,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 100,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2014,
         "year": 2014
       },
       "after": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": 2014,
+        "latestEpisodeYear": 2014,
         "year": 2014
       },
       "chain": [
@@ -7869,14 +7494,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 72,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2018,
         "year": 2018
       },
       "after": {
         "episodes": 24,
-        "seasons": null,
-        "latestSeasonYear": 2018,
+        "latestEpisodeYear": 2018,
         "year": 2018
       },
       "chain": [
@@ -7960,14 +7583,12 @@
       "via": "cover-source",
       "before": {
         "episodes": 36,
-        "seasons": null,
-        "latestSeasonYear": null,
+        "latestEpisodeYear": 2020,
         "year": 2020
       },
       "after": {
         "episodes": 12,
-        "seasons": null,
-        "latestSeasonYear": 2020,
+        "latestEpisodeYear": 2020,
         "year": 2020
       },
       "chain": [

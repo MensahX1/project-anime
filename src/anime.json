@@ -10,9 +10,8 @@
     "year": 2006,
     "synopsis": "A high school genius gains a supernatural notebook that lets him kill by writing names, triggering a cat-and-mouse battle with detectives.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2006,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2006
   },
   {
     "id": "sheet-the-future-diary",
@@ -25,9 +24,8 @@
     "year": 2011,
     "synopsis": "A loner is pulled into a deadly survival game where contestants use future-predicting diaries to fight for godhood.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2011,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2011
   },
   {
     "id": "sheet-akame-ga-kill",
@@ -40,9 +38,8 @@
     "year": 2014,
     "synopsis": "A young fighter joins a rebel assassin group taking on a corrupt empire in a brutal fantasy war.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2014,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2014
   },
   {
     "id": "sheet-go-go-loser-ranger",
@@ -55,9 +52,8 @@
     "year": 2024,
     "synopsis": "A foot soldier from a defeated villain army infiltrates the heroic ranger force to overturn their staged battles.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-classroom-of-the-elite",
@@ -70,9 +66,8 @@
     "year": 2017,
     "synopsis": "Students at an elite school compete through manipulation, strategy, and social games where class rank determines survival.",
     "image": "",
-    "seasons": 8,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-the-eminence-in-shadow",
@@ -85,9 +80,8 @@
     "year": 2022,
     "synopsis": "A boy obsessed with operating from the shadows reincarnates into a fantasy world and accidentally builds a real secret organization.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-dan-da-dan",
@@ -100,9 +94,8 @@
     "year": 2024,
     "synopsis": "Two teens clash over ghosts and aliens, then get dragged into chaotic supernatural battles and bizarre occult mysteries.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2027,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2027
   },
   {
     "id": "sheet-mashle-magic-and-muscles",
@@ -115,9 +108,8 @@
     "year": 2023,
     "synopsis": "A magicless boy with absurd physical strength enrolls in a magic academy and punches his way through every problem.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2027,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2027
   },
   {
     "id": "sheet-wistoria-wand-and-sword",
@@ -130,9 +122,8 @@
     "year": 2024,
     "synopsis": "A sword-wielding student with no magic fights to prove himself in a world where magical talent defines status.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-dragon-ball",
@@ -145,9 +136,8 @@
     "year": 1986,
     "synopsis": "A young Goku journeys for the Dragon Balls while growing into a legendary martial artist.",
     "image": "",
-    "seasons": 5,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-dragon-ball-z",
@@ -160,9 +150,8 @@
     "year": 1989,
     "synopsis": "Goku and allies defend Earth from increasingly powerful enemies across iconic high-stakes battles.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2014,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2014
   },
   {
     "id": "sheet-dragon-ball-gt",
@@ -175,9 +164,8 @@
     "year": 1996,
     "synopsis": "Goku is transformed back into a child and travels across space in a new Dragon Ball adventure.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2009,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2009
   },
   {
     "id": "sheet-dragon-ball-super",
@@ -190,9 +178,8 @@
     "year": 2015,
     "synopsis": "After Majin Buu, Goku faces gods, multiverse tournaments, and new transformations.",
     "image": "",
-    "seasons": 5,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-yu-gi-oh",
@@ -205,9 +192,8 @@
     "year": 2000,
     "synopsis": "Yugi and friends battle through high-stakes card duels tied to ancient Egyptian mysteries.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2000,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2000
   },
   {
     "id": "sheet-yu-gi-oh-gx",
@@ -220,9 +206,8 @@
     "year": 2004,
     "synopsis": "A new generation of duelists trains at Duel Academy while facing increasingly supernatural threats.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2004,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2004
   },
   {
     "id": "sheet-yu-gi-oh-5d-s",
@@ -235,9 +220,8 @@
     "year": 2008,
     "synopsis": "Duelists race on motorcycles in a futuristic city where card battles decide fate and freedom.",
     "image": "",
-    "seasons": 7,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-yu-gi-oh-zexal",
@@ -250,9 +234,8 @@
     "year": 2011,
     "synopsis": "A young duelist partners with a mysterious being to collect Number cards and grow into a stronger competitor.",
     "image": "",
-    "seasons": 9,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-code-geass-lelouch-of-the-rebellion",
@@ -265,9 +248,8 @@
     "year": 2006,
     "synopsis": "An exiled prince gains a power of absolute command and leads a rebellion against a global empire.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2008,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2008
   },
   {
     "id": "sheet-my-first-girlfriend-is-a-gal",
@@ -280,9 +262,8 @@
     "year": 2017,
     "synopsis": "A shy high schooler starts dating a popular gyaru and stumbles through an awkward first relationship.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2017,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2017
   },
   {
     "id": "sheet-more-than-a-married-couple-but-not-lovers",
@@ -295,9 +276,8 @@
     "year": 2022,
     "synopsis": "Students are paired in a marriage-practice program, forcing two mismatched classmates into fake domestic life.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-eden-of-the-east",
@@ -310,9 +290,8 @@
     "year": 2009,
     "synopsis": "A woman meets an amnesiac man tied to a phone, billions of yen, and a secret game to save Japan.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2009,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2009
   },
   {
     "id": "sheet-terror-in-resonance",
@@ -325,9 +304,8 @@
     "year": 2014,
     "synopsis": "Two teenage terrorists leave riddles across Tokyo while police try to uncover their motives and past.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2014,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2014
   },
   {
     "id": "sheet-the-rising-of-the-shield-hero",
@@ -340,9 +318,8 @@
     "year": 2019,
     "synopsis": "A falsely accused hero must rebuild his life and party after being summoned to another world with only a shield.",
     "image": "",
-    "seasons": 7,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-tales-of-wedding-rings",
@@ -355,9 +332,8 @@
     "year": 2024,
     "synopsis": "A boy follows his childhood friend to another world and becomes entangled in a ring-based fantasy marriage quest.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-dragon-ball-daima",
@@ -370,9 +346,8 @@
     "year": 2024,
     "synopsis": "Goku and friends are mysteriously turned small and set out on a new adventure through the Demon Realm.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-psycho-pass",
@@ -385,9 +360,8 @@
     "year": 2012,
     "synopsis": "Inspectors enforce justice in a future society that quantifies mental states and criminal potential.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2019,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2019
   },
   {
     "id": "sheet-date-a-live",
@@ -400,9 +374,8 @@
     "year": 2013,
     "synopsis": "A boy must save powerful spirits by dating them before their powers cause disasters.",
     "image": "",
-    "seasons": 6,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-fire-force",
@@ -415,9 +388,8 @@
     "year": 2019,
     "synopsis": "Fire soldiers battle human combustions and uncover conspiracies around supernatural flames.",
     "image": "",
-    "seasons": 6,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-fate-strange-fake",
@@ -430,9 +402,8 @@
     "year": 2023,
     "synopsis": "A false Holy Grail War erupts in America with unusual masters, servants, and distorted rules.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-fate-zero",
@@ -445,9 +416,8 @@
     "year": 2011,
     "synopsis": "Seven mages and their heroic spirits fight a grim Holy Grail War before the events of Fate/stay night.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2012,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2012
   },
   {
     "id": "sheet-fate-stay-night-unlimited-blade-works",
@@ -460,9 +430,8 @@
     "year": 2014,
     "synopsis": "Shirou Emiya is pulled into the Holy Grail War and confronts ideals of heroism and sacrifice.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   },
   {
     "id": "sheet-fate-apocrypha",
@@ -475,9 +444,8 @@
     "year": 2017,
     "synopsis": "Two factions of masters and servants clash in a large-scale Holy Grail War.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2017,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2017
   },
   {
     "id": "sheet-rosario-vampire",
@@ -490,9 +458,8 @@
     "year": 2008,
     "synopsis": "A human boy accidentally enrolls in a monster school and gets drawn into supernatural harem chaos.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2008,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2008
   },
   {
     "id": "sheet-my-bride-is-a-mermaid",
@@ -505,9 +472,8 @@
     "year": 2007,
     "synopsis": "A boy is forced into marriage with a mermaid after she saves his life, dragging him into absurd yakuza family antics.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2007,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2007
   },
   {
     "id": "sheet-attack-on-titan",
@@ -520,9 +486,8 @@
     "year": 2013,
     "synopsis": "Humanity fights giant man-eating Titans while uncovering the truth behind the walls and the world beyond.",
     "image": "",
-    "seasons": 7,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-solo-leveling",
@@ -535,9 +500,8 @@
     "year": 2024,
     "synopsis": "The weakest hunter gains a mysterious leveling system and begins evolving into an overwhelming force.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-blue-lock",
@@ -550,9 +514,8 @@
     "year": 2022,
     "synopsis": "Elite strikers compete in a ruthless program designed to create Japan’s ultimate egoist forward.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-fairy-tail",
@@ -565,9 +528,8 @@
     "year": 2009,
     "synopsis": "A fire-wielding wizard joins a chaotic guild and takes on magical adventures with found family bonds.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-shangri-la-frontier",
@@ -580,9 +542,8 @@
     "year": 2023,
     "synopsis": "A gamer known for clearing bad games dives into a top-tier VRMMO and chases high-level challenges.",
     "image": "",
-    "seasons": 5,
-    "latestSeasonYear": 2027,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2027
   },
   {
     "id": "sheet-naruto",
@@ -595,9 +556,8 @@
     "year": 2002,
     "synopsis": "An ostracized ninja trains to become Hokage while seeking recognition and protecting his friends.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-naruto-shippuden",
@@ -610,9 +570,8 @@
     "year": 2007,
     "synopsis": "Naruto returns older and stronger as larger conflicts, Akatsuki, and the ninja world’s fate unfold.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-hell-s-paradise",
@@ -625,9 +584,8 @@
     "year": 2023,
     "synopsis": "Condemned criminals and executioners search a deadly island for the elixir of life.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-kaiju-no-8",
@@ -640,9 +598,8 @@
     "year": 2024,
     "synopsis": "A cleanup worker gains kaiju powers and tries to join the defense force he once admired.",
     "image": "",
-    "seasons": 5,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-chained-soldier",
@@ -655,9 +612,8 @@
     "year": 2024,
     "synopsis": "A boy becomes bound to a demon-defense squad captain and fights monsters in a parallel world.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-my-dress-up-darling",
@@ -670,9 +626,8 @@
     "year": 2022,
     "synopsis": "A quiet dollmaker helps a popular classmate create cosplay outfits, sparking a warm creative bond.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-overlord",
@@ -685,9 +640,8 @@
     "year": 2015,
     "synopsis": "A player remains trapped as his undead avatar after a game shuts down and rules a powerful NPC kingdom.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-tokyo-ghoul",
@@ -700,9 +654,8 @@
     "year": 2014,
     "synopsis": "A college student becomes half-ghoul and struggles between human life and a violent hidden society.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-chainsaw-man",
@@ -715,9 +668,8 @@
     "year": 2022,
     "synopsis": "A broke devil hunter fuses with his chainsaw devil companion and joins a dangerous government squad.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-wind-breaker",
@@ -730,9 +682,8 @@
     "year": 2024,
     "synopsis": "A tough loner enters a school of fighters who protect their town and learns what strength means.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-horimiya",
@@ -745,9 +696,8 @@
     "year": 2021,
     "synopsis": "Two classmates discover each other’s hidden sides and grow into a grounded high-school romance.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-assassination-classroom",
@@ -760,9 +710,8 @@
     "year": 2015,
     "synopsis": "Students must assassinate their superpowered alien teacher before he destroys Earth.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2016,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2016
   },
   {
     "id": "sheet-fruits-basket",
@@ -775,9 +724,8 @@
     "year": 2019,
     "synopsis": "A kind girl becomes involved with a family cursed to transform into zodiac animals.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-kaguya-sama-love-is-war",
@@ -790,9 +738,8 @@
     "year": 2019,
     "synopsis": "Two brilliant student council leaders turn romance into a prideful battle of confession mind games.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-my-hero-academia",
@@ -805,9 +752,8 @@
     "year": 2016,
     "synopsis": "A powerless boy inherits a legendary quirk and trains to become a top hero.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2016,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2016
   },
   {
     "id": "sheet-alya-sometimes-hides-her-feelings-in-russian",
@@ -820,9 +766,8 @@
     "year": 2024,
     "synopsis": "A popular girl secretly reveals her affection in Russian, unaware her classmate understands her.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2027,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2027
   },
   {
     "id": "sheet-darling-in-the-franxx",
@@ -835,9 +780,8 @@
     "year": 2018,
     "synopsis": "Teen pilots form emotional bonds while fighting monstrous threats in a controlled dystopian society.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-tokyo-revengers",
@@ -850,9 +794,8 @@
     "year": 2021,
     "synopsis": "A man travels back to his delinquent youth to save someone he lost and change a gang’s future.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-high-school-dxd",
@@ -865,9 +808,8 @@
     "year": 2012,
     "synopsis": "A perverted teen is revived as a devil and joins supernatural battles with his new demonic household.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-a-couple-of-cuckoos",
@@ -880,9 +822,8 @@
     "year": 2022,
     "synopsis": "Two teens switched at birth are pushed into an arranged engagement while navigating school and romance.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-my-love-story-with-yamada-kun-at-lv999",
@@ -895,9 +836,8 @@
     "year": 2023,
     "synopsis": "A heartbroken gamer meets a blunt pro-level player and slowly builds a real connection.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-rascal-does-not-dream-of-bunny-girl-senpai",
@@ -910,9 +850,8 @@
     "year": 2018,
     "synopsis": "A high schooler helps girls affected by supernatural adolescence syndrome while facing emotional mysteries.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-rascal-does-not-dream-of-a-dreaming-girl",
@@ -925,9 +864,8 @@
     "year": 2019,
     "synopsis": "Sakuta faces an emotional time-bending crisis tied to Shoko and Mai.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2019,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2019
   },
   {
     "id": "sheet-rascal-does-not-dream-of-a-sister-venturing-out",
@@ -940,9 +878,8 @@
     "year": 2023,
     "synopsis": "Kaede takes steps toward independence while Sakuta supports her through anxiety and change.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-rascal-does-not-dream-of-a-knapsack-kid",
@@ -955,9 +892,8 @@
     "year": 2023,
     "synopsis": "Sakuta confronts family memories and another adolescence syndrome case as graduation approaches.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-the-quintessential-quintuplets",
@@ -970,9 +906,8 @@
     "year": 2019,
     "synopsis": "A top student tutors five identical sisters and becomes tied to a mystery about his future bride.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-to-be-hero-x",
@@ -985,9 +920,8 @@
     "year": 2025,
     "synopsis": "A stylized superhero story where popularity, identity, and power collide in a competitive hero system.",
     "image": "",
-    "seasons": 7,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
@@ -1000,9 +934,8 @@
     "year": 2024,
     "synopsis": "A reincarnating noblewoman begins her seventh life engaged to the prince who caused her past deaths.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-chivalry-of-a-failed-knight",
@@ -1015,9 +948,8 @@
     "year": 2015,
     "synopsis": "An underestimated magic knight fights to prove himself while bonding with a powerful princess.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   },
   {
     "id": "sheet-dealing-with-mikadono-sisters-is-a-breeze",
@@ -1030,9 +962,8 @@
     "year": 2025,
     "synopsis": "A boy with no standout talents moves in with three famous sisters and slowly changes their guarded lives.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-failure-frame-i-became-the-strongest-and-annihilated-everything-with-low-level-spells",
@@ -1045,9 +976,8 @@
     "year": 2024,
     "synopsis": "A betrayed student survives exile in another world and uses supposedly weak skills for revenge.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-danganronpa-the-animation",
@@ -1060,9 +990,8 @@
     "year": 2013,
     "synopsis": "Students are trapped in a school and forced into murder trials by a sadistic mascot.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2013,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2013
   },
   {
     "id": "sheet-yakuza-fianc-raise-wa-tanin-ga-ii",
@@ -1075,9 +1004,8 @@
     "year": 2024,
     "synopsis": "A yakuza granddaughter enters a dangerous engagement with a charming but unsettling heir.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-the-shiunji-family-children",
@@ -1090,9 +1018,8 @@
     "year": 2025,
     "synopsis": "Siblings in a famous household face romantic tension after a family secret changes how they see each other.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-shikimori-s-not-just-a-cutie",
@@ -1105,9 +1032,8 @@
     "year": 2022,
     "synopsis": "A sweet boyfriend and his cool, protective girlfriend navigate everyday school romance.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-tomodachi-game",
@@ -1120,9 +1046,8 @@
     "year": 2022,
     "synopsis": "Friends are forced into debt-based games that test loyalty, secrets, and manipulation.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-battle-game-in-5-seconds",
@@ -1135,9 +1060,8 @@
     "year": 2021,
     "synopsis": "Kidnapped contestants receive unique powers and must survive strategic battles under harsh rules.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-ghost-stories",
@@ -1150,9 +1074,8 @@
     "year": 2000,
     "synopsis": "A group of kids deal with haunted-school spirits; the English dub turns it into chaotic comedy.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2000,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2000
   },
   {
     "id": "sheet-inuyasha",
@@ -1165,9 +1088,8 @@
     "year": 2000,
     "synopsis": "A modern girl falls into feudal Japan and joins a half-demon on a quest for jewel shards.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2000,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2000
   },
   {
     "id": "sheet-fairy-tail-100-years-quest",
@@ -1180,9 +1102,8 @@
     "year": 2024,
     "synopsis": "Team Natsu tackles a legendary century-old quest involving powerful dragon gods.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-our-dating-story-the-experienced-you-and-the-inexperienced-me",
@@ -1195,9 +1116,8 @@
     "year": 2023,
     "synopsis": "An inexperienced boy starts dating a popular girl and they learn to bridge their emotional gaps.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-platinum-end",
@@ -1210,9 +1130,8 @@
     "year": 2021,
     "synopsis": "A suicidal teen becomes a god candidate and is pulled into a deadly contest with angel-granted powers.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-the-caf-terrace-and-its-goddesses",
@@ -1225,9 +1144,8 @@
     "year": 2023,
     "synopsis": "A man inherits his grandmother’s café and tries to revive it with five women living there.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-tying-the-knot-with-an-amagami-sister",
@@ -1240,9 +1158,8 @@
     "year": 2024,
     "synopsis": "An aspiring doctor lives at a shrine and is expected to marry one of three priestess sisters.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-prison-school",
@@ -1255,9 +1172,8 @@
     "year": 2015,
     "synopsis": "Five boys at a newly coed academy are imprisoned by a strict underground student council.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   },
   {
     "id": "sheet-you-are-ms-servant",
@@ -1270,9 +1186,8 @@
     "year": 2024,
     "synopsis": "A former assassin becomes a maid for a normal student and learns everyday life.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-konosuba-god-s-blessing-on-this-wonderful-world",
@@ -1285,9 +1200,8 @@
     "year": 2016,
     "synopsis": "A useless party of fantasy misfits stumbles through hilarious quests after a boy reincarnates in another world.",
     "image": "",
-    "seasons": 7,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-the-witch-and-the-beast",
@@ -1300,9 +1214,8 @@
     "year": 2024,
     "synopsis": "A cursed fighter and a coffin-carrying mage hunt witches across a dark fantasy world.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-summer-time-rendering",
@@ -1315,9 +1228,8 @@
     "year": 2022,
     "synopsis": "A man returns to his island hometown and gets trapped in a time-loop mystery involving shadow creatures.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-citrus",
@@ -1330,9 +1242,8 @@
     "year": 2018,
     "synopsis": "A fashionable girl gains a strict stepsister and becomes entangled in a messy forbidden romance.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-shinobi-no-ittoki",
@@ -1345,9 +1256,8 @@
     "year": 2022,
     "synopsis": "A normal teen learns he is heir to a ninja clan and is forced into a hidden conflict.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-bottom-tier-character-tomozaki",
@@ -1360,9 +1270,8 @@
     "year": 2021,
     "synopsis": "A top gamer treats real life like a strategy game after a popular classmate coaches his social skills.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-another",
@@ -1375,9 +1284,8 @@
     "year": 2012,
     "synopsis": "A transfer student uncovers a deadly curse surrounding his class and a mysterious girl.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2012,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2012
   },
   {
     "id": "sheet-engage-kiss",
@@ -1390,9 +1298,8 @@
     "year": 2022,
     "synopsis": "A broke demon hunter relies on a possessive demon partner while battling threats in a futuristic city.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-akudama-drive",
@@ -1405,9 +1312,8 @@
     "year": 2020,
     "synopsis": "Criminals are forced into a dangerous heist across a neon dystopian Kansai.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2020,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2020
   },
   {
     "id": "sheet-higehiro-after-being-rejected-i-shaved-and-took-in-a-high-school-runaway",
@@ -1420,9 +1326,8 @@
     "year": 2021,
     "synopsis": "An office worker shelters a runaway high-school girl, leading to a story about healing and boundaries.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-re-zero-starting-life-in-another-world",
@@ -1435,9 +1340,8 @@
     "year": 2016,
     "synopsis": "A boy transported to another world repeatedly revives after death and tries to save those around him.",
     "image": "",
-    "seasons": 9,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-heavenly-delusion",
@@ -1450,9 +1354,8 @@
     "year": 2023,
     "synopsis": "Two stories unfold in a ruined world and a sheltered facility, slowly revealing a larger mystery.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-demon-slayer-kimetsu-no-yaiba",
@@ -1465,9 +1368,8 @@
     "year": 2019,
     "synopsis": "A kind boy becomes a demon slayer to cure his sister and avenge his family.",
     "image": "",
-    "seasons": 7,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-erased",
@@ -1480,9 +1382,8 @@
     "year": 2016,
     "synopsis": "A man is sent back to childhood to prevent a kidnapping case tied to his present.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2016,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2016
   },
   {
     "id": "sheet-tenpuru-no-one-can-live-on-loneliness",
@@ -1495,9 +1396,8 @@
     "year": 2023,
     "synopsis": "A man joins a temple to escape desire but ends up surrounded by women.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-plastic-memories",
@@ -1510,9 +1410,8 @@
     "year": 2015,
     "synopsis": "A worker retrieves androids near the end of their lifespans and forms a bittersweet bond with one.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   },
   {
     "id": "sheet-deadman-wonderland",
@@ -1525,9 +1424,8 @@
     "year": 2011,
     "synopsis": "A falsely convicted teen is sent to a brutal prison theme park where inmates fight using blood powers.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2011,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2011
   },
   {
     "id": "sheet-the-apothecary-diaries",
@@ -1540,9 +1438,8 @@
     "year": 2023,
     "synopsis": "A sharp apothecary in the imperial court solves medical and political mysteries with quiet brilliance.",
     "image": "",
-    "seasons": 6,
-    "latestSeasonYear": 2027,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2027
   },
   {
     "id": "sheet-alderamin-on-the-sky",
@@ -1555,9 +1452,8 @@
     "year": 2016,
     "synopsis": "A lazy but brilliant strategist is pulled into war and military command.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2016,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2016
   },
   {
     "id": "sheet-sword-art-online",
@@ -1570,9 +1466,8 @@
     "year": 2012,
     "synopsis": "Players trapped in VR games fight for survival, freedom, and connection across virtual worlds.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2019,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2019
   },
   {
     "id": "sheet-vivy-fluorite-eye-s-song",
@@ -1585,9 +1480,8 @@
     "year": 2021,
     "synopsis": "An AI singer is sent through time to prevent a future war between humans and machines.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon",
@@ -1600,9 +1494,8 @@
     "year": 2015,
     "synopsis": "An eager adventurer grows stronger in a dungeon city with help from his goddess and allies.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   },
   {
     "id": "sheet-darwin-s-game",
@@ -1615,9 +1508,8 @@
     "year": 2020,
     "synopsis": "A mobile game forces players into deadly battles using unique supernatural abilities.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2020,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2020
   },
   {
     "id": "sheet-trinity-seven",
@@ -1630,9 +1522,8 @@
     "year": 2014,
     "synopsis": "A boy joins a magical academy and teams with seven powerful girls to solve a world-destroying mystery.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2014,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2014
   },
   {
     "id": "sheet-beyblade-metal-fusion",
@@ -1645,9 +1536,8 @@
     "year": 2009,
     "synopsis": "Bladers battle with spinning tops as Gingka pursues rivals and legendary tournaments.",
     "image": "",
-    "seasons": 7,
-    "latestSeasonYear": 2017,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2017
   },
   {
     "id": "sheet-my-teen-romantic-comedy-snafu",
@@ -1660,9 +1550,8 @@
     "year": 2013,
     "synopsis": "A cynical loner joins a service club and confronts relationships through sharp social observation.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2020,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2020
   },
   {
     "id": "sheet-the-seven-deadly-sins",
@@ -1675,9 +1564,8 @@
     "year": 2014,
     "synopsis": "A princess seeks a legendary group of knights to save her kingdom from corruption.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2014,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2014
   },
   {
     "id": "sheet-zom-100-bucket-list-of-the-dead",
@@ -1690,9 +1578,8 @@
     "year": 2023,
     "synopsis": "A burned-out worker finds freedom during a zombie apocalypse and starts chasing a bucket list.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-high-school-of-the-dead",
@@ -1705,9 +1592,8 @@
     "year": 2010,
     "synopsis": "Students fight through a zombie outbreak with intense action and exploitation-style chaos.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2010,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2010
   },
   {
     "id": "sheet-kakegurui",
@@ -1720,9 +1606,8 @@
     "year": 2017,
     "synopsis": "Students at an elite academy gamble for status in twisted high-stakes games.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-akiba-maid-war",
@@ -1735,9 +1620,8 @@
     "year": 2022,
     "synopsis": "Maid cafés operate like violent gangs in an absurd crime-comedy version of Akihabara.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-trillion-game",
@@ -1750,9 +1634,8 @@
     "year": 2024,
     "synopsis": "Two ambitious friends aim to build a trillion-dollar company through charm, strategy, and risk.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-guilty-crown",
@@ -1765,9 +1648,8 @@
     "year": 2011,
     "synopsis": "A student gains the power to draw weapons from people’s hearts amid rebellion and viral disaster.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2011,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2011
   },
   {
     "id": "sheet-the-world-god-only-knows",
@@ -1780,9 +1662,8 @@
     "year": 2010,
     "synopsis": "A dating-sim expert must win real girls’ hearts to capture runaway spirits.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2013,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2013
   },
   {
     "id": "sheet-a-wild-last-boss-appeared",
@@ -1795,9 +1676,8 @@
     "year": 2025,
     "synopsis": "A player awakens as an overpowered final boss in a fantasy world tied to his former game.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-hunter-x-hunter",
@@ -1810,9 +1690,8 @@
     "year": 2011,
     "synopsis": "A boy becomes a Hunter to find his father, meeting friends and deadly challenges along the way.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2011,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2011
   },
   {
     "id": "sheet-spy-x-family",
@@ -1825,9 +1704,8 @@
     "year": 2022,
     "synopsis": "A spy, assassin, and telepath form a fake family while hiding their identities.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-masamune-kun-s-revenge",
@@ -1840,9 +1718,8 @@
     "year": 2017,
     "synopsis": "A boy tries to make the girl who rejected him fall in love so he can reject her back.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-86-eighty-six",
@@ -1855,9 +1732,8 @@
     "year": 2021,
     "synopsis": "Child soldiers fight unmanned wars for a nation that denies their existence.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-bleach",
@@ -1870,9 +1746,8 @@
     "year": 2004,
     "synopsis": "A teen gains Soul Reaper powers and battles spirits, hollows, and rival factions.",
     "image": "",
-    "seasons": 5,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-bleach-thousand-year-blood-war",
@@ -1885,9 +1760,8 @@
     "year": 2022,
     "synopsis": "The final war begins as the Soul Reapers face the Quincy empire.",
     "image": "",
-    "seasons": 5,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-tonikawa-over-the-moon-for-you",
@@ -1900,9 +1774,8 @@
     "year": 2020,
     "synopsis": "A newlywed couple builds an earnest and wholesome married life after a sudden proposal.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-oshi-no-ko",
@@ -1915,9 +1788,8 @@
     "year": 2023,
     "synopsis": "Twins connected to a murdered idol enter entertainment while uncovering the truth behind her death.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-clevatess",
@@ -1930,9 +1802,8 @@
     "year": 2025,
     "synopsis": "A powerful beast lord and unlikely companions become tied to a baby and a fallen hero’s legacy.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-the-testament-of-sister-new-devil",
@@ -1945,9 +1816,8 @@
     "year": 2015,
     "synopsis": "A boy becomes protector of demon sisters while facing supernatural factions and ecchi chaos.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   },
   {
     "id": "sheet-chaos-head",
@@ -1960,9 +1830,8 @@
     "year": 2008,
     "synopsis": "A delusional shut-in becomes tangled in bizarre murders and reality-warping conspiracies.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2008,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2008
   },
   {
     "id": "sheet-black-clover",
@@ -1975,9 +1844,8 @@
     "year": 2017,
     "synopsis": "A magicless orphan aims to become Wizard King through anti-magic power and relentless drive.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-berserk-of-gluttony",
@@ -1990,9 +1858,8 @@
     "year": 2023,
     "synopsis": "A low-status gatekeeper gains a dangerous skill that consumes souls and changes his fate.",
     "image": "",
-    "seasons": 5,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-tekken-bloodline",
@@ -2005,9 +1872,8 @@
     "year": 2022,
     "synopsis": "Jin Kazama trains under Heihachi Mishima after tragedy pulls him into the King of Iron Fist Tournament.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-jujutsu-kaisen",
@@ -2020,9 +1886,8 @@
     "year": 2020,
     "synopsis": "A kind teen swallows a cursed object and joins sorcerers fighting deadly curses.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-darker-than-black",
@@ -2035,9 +1900,8 @@
     "year": 2007,
     "synopsis": "Contractors with supernatural powers operate in a shadowy world shaped by mysterious gates.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2009,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2009
   },
   {
     "id": "sheet-dr-stone",
@@ -2050,9 +1914,8 @@
     "year": 2019,
     "synopsis": "A science prodigy rebuilds civilization after humanity is petrified for thousands of years.",
     "image": "",
-    "seasons": 6,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-high-rise-invasion",
@@ -2065,9 +1928,8 @@
     "year": 2021,
     "synopsis": "A girl is trapped in a skyscraper world where masked killers hunt survivors.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-to-your-eternity",
@@ -2080,9 +1942,8 @@
     "year": 2021,
     "synopsis": "An immortal being takes many forms and learns humanity through love, loss, and survival.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-that-time-i-got-reincarnated-as-a-slime",
@@ -2095,9 +1956,8 @@
     "year": 2018,
     "synopsis": "A man reincarnates as a slime and builds a monster nation through diplomacy and power.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-haikyu",
@@ -2110,9 +1970,8 @@
     "year": 2014,
     "synopsis": "A short but explosive volleyball player joins a team aiming to rise back to national prominence.",
     "image": "",
-    "seasons": 6,
-    "latestSeasonYear": 2020,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2020
   },
   {
     "id": "sheet-gachiakuta",
@@ -2125,9 +1984,8 @@
     "year": 2025,
     "synopsis": "A boy cast into a trash-filled abyss seeks revenge while fighting monsters born from waste.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-mushoku-tensei-jobless-reincarnation",
@@ -2140,9 +1998,8 @@
     "year": 2021,
     "synopsis": "A shut-in reincarnates into a fantasy world and tries to rebuild his life from childhood.",
     "image": "",
-    "seasons": 9,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-fullmetal-alchemist-brotherhood",
@@ -2155,9 +2012,8 @@
     "year": 2009,
     "synopsis": "Two brothers seek the Philosopher’s Stone after a failed alchemy ritual costs them dearly.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2011,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2011
   },
   {
     "id": "sheet-the-lost-village",
@@ -2170,9 +2026,8 @@
     "year": 2016,
     "synopsis": "A group travels to a rumored utopian village and encounters paranoia and strange phenomena.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2016,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2016
   },
   {
     "id": "sheet-medaka-kuroiwa-is-impervious-to-my-charms",
@@ -2185,9 +2040,8 @@
     "year": 2025,
     "synopsis": "A popular girl tries to win over a monk-in-training classmate who refuses romance.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2027,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2027
   },
   {
     "id": "sheet-the-irregular-at-magic-high-school",
@@ -2200,9 +2054,8 @@
     "year": 2014,
     "synopsis": "A technically gifted student attends a magic high school where class hierarchy hides his true power.",
     "image": "",
-    "seasons": 7,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-i-m-in-love-with-the-villainess",
@@ -2215,9 +2068,8 @@
     "year": 2023,
     "synopsis": "A reincarnated office worker pursues her favorite otome-game villainess instead of the male leads.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-yashahime-princess-half-demon",
@@ -2230,9 +2082,8 @@
     "year": 2020,
     "synopsis": "The daughters of Inuyasha and Sesshomaru inherit demon powers and face new feudal-era threats.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-hokkaido-gals-are-super-adorable",
@@ -2245,9 +2096,8 @@
     "year": 2024,
     "synopsis": "A Tokyo transfer student meets a cheerful Hokkaido gyaru and experiences northern school life.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-nier-automata-ver1-1a",
@@ -2260,9 +2110,8 @@
     "year": 2023,
     "synopsis": "Android soldiers fight machine lifeforms while questioning identity and the purpose of their war.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-mieruko-chan",
@@ -2275,9 +2124,8 @@
     "year": 2021,
     "synopsis": "A girl who sees grotesque spirits tries to survive by pretending she cannot see them.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2021,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2021
   },
   {
     "id": "sheet-black-lagoon",
@@ -2290,9 +2138,8 @@
     "year": 2006,
     "synopsis": "A Japanese businessman joins mercenaries in a lawless Southeast Asian underworld.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2006,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2006
   },
   {
     "id": "sheet-kabaneri-of-the-iron-fortress",
@@ -2305,9 +2152,8 @@
     "year": 2016,
     "synopsis": "Survivors travel by armored train through a world overrun by zombie-like Kabane.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2016,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2016
   },
   {
     "id": "sheet-fate-grand-order-absolute-demonic-front-babylonia",
@@ -2320,9 +2166,8 @@
     "year": 2019,
     "synopsis": "Chaldea travels to ancient Mesopotamia to repair a singularity threatening human history.",
     "image": "",
-    "seasons": 6,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-grimgar-ashes-and-illusions",
@@ -2335,9 +2180,8 @@
     "year": 2016,
     "synopsis": "Amnesiac youths struggle realistically to survive as low-level adventurers in a fantasy world.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2016,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2016
   },
   {
     "id": "sheet-kill-la-kill",
@@ -2350,9 +2194,8 @@
     "year": 2013,
     "synopsis": "A transfer student with a living uniform battles a powerful student council while seeking her father’s killer.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2013,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2013
   },
   {
     "id": "sheet-my-stepmom-s-daughter-is-my-ex",
@@ -2365,9 +2208,8 @@
     "year": 2022,
     "synopsis": "Exes become stepsiblings after their parents remarry and struggle to act normal at home.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-steins-gate",
@@ -2380,9 +2222,8 @@
     "year": 2011,
     "synopsis": "A group of friends accidentally discover time messaging and trigger dangerous timeline consequences.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-juni-taisen-zodiac-war",
@@ -2395,9 +2236,8 @@
     "year": 2017,
     "synopsis": "Twelve warriors themed after the zodiac fight in a deadly battle royale.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2017,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2017
   },
   {
     "id": "sheet-k",
@@ -2410,9 +2250,8 @@
     "year": 2012,
     "synopsis": "A student is accused of murder and caught between psychic clans ruled by color-coded kings.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   },
   {
     "id": "sheet-demon-slayer-kimetsu-no-yaiba-infinity-castle",
@@ -2425,9 +2264,8 @@
     "year": 2025,
     "synopsis": "The demon slayers enter Muzan’s fortress for the climactic battle against the strongest demons.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-chainsaw-man-the-movie-reze-arc",
@@ -2440,9 +2278,8 @@
     "year": 2025,
     "synopsis": "Denji meets Reze, a mysterious girl who pulls him into a dangerous and emotional new conflict.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-kiznaiver",
@@ -2455,9 +2292,8 @@
     "year": 2016,
     "synopsis": "Students are linked by shared pain as part of an experiment to force emotional connection.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2016,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2016
   },
   {
     "id": "sheet-undead-murder-farce",
@@ -2470,9 +2306,8 @@
     "year": 2023,
     "synopsis": "A severed immortal detective and her allies solve supernatural mysteries in an alternate 19th century.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2023,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2023
   },
   {
     "id": "sheet-metallic-rouge",
@@ -2485,9 +2320,8 @@
     "year": 2024,
     "synopsis": "An android girl and her partner hunt rogue artificial beings on Mars.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-school-days",
@@ -2500,9 +2334,8 @@
     "year": 2007,
     "synopsis": "A messy school romance spirals into jealousy and emotional consequences.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2007,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2007
   },
   {
     "id": "sheet-my-happy-marriage",
@@ -2515,9 +2348,8 @@
     "year": 2023,
     "synopsis": "A mistreated young woman enters an arranged marriage and slowly finds safety, power, and self-worth.",
     "image": "",
-    "seasons": 3,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-domestic-girlfriend",
@@ -2530,9 +2362,8 @@
     "year": 2019,
     "synopsis": "A teen’s complicated love life becomes messier when two girls become his stepsisters.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2019,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2019
   },
   {
     "id": "sheet-wotakoi-love-is-hard-for-otaku",
@@ -2545,9 +2376,8 @@
     "year": 2018,
     "synopsis": "Adult otaku coworkers navigate romance while balancing hobbies, work, and awkward communication.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2018,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2018
   },
   {
     "id": "sheet-91-days",
@@ -2560,9 +2390,8 @@
     "year": 2016,
     "synopsis": "A man infiltrates the mafia to take revenge for his family’s murder during Prohibition.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2016,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2016
   },
   {
     "id": "sheet-suzume",
@@ -2575,9 +2404,8 @@
     "year": 2022,
     "synopsis": "A girl travels across Japan closing supernatural doors that threaten disaster.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2022,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2022
   },
   {
     "id": "sheet-oreshura",
@@ -2590,9 +2418,8 @@
     "year": 2013,
     "synopsis": "A high schooler who rejects love is blackmailed into a fake relationship.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2013,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2013
   },
   {
     "id": "sheet-rent-a-girlfriend",
@@ -2605,9 +2432,8 @@
     "year": 2020,
     "synopsis": "A college student rents a girlfriend after a breakup and becomes entangled in messy fake-romance complications.",
     "image": "",
-    "seasons": null,
-    "latestSeasonYear": 2020,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2020
   },
   {
     "id": "sheet-the-angel-next-door-spoils-me-rotten",
@@ -2620,9 +2446,8 @@
     "year": 2023,
     "synopsis": "A quiet boy and his perfect neighbor slowly grow closer through everyday acts of care.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "sheet-charlotte",
@@ -2635,9 +2460,8 @@
     "year": 2015,
     "synopsis": "Teenagers with temporary supernatural abilities are gathered by a student council before their powers cause harm.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   },
   {
     "id": "sheet-to-love-ru",
@@ -2650,9 +2474,8 @@
     "year": 2008,
     "synopsis": "A shy boy’s life becomes chaotic after an alien princess suddenly decides to marry him.",
     "image": "",
-    "seasons": 4,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   },
   {
     "id": "sheet-saekano-how-to-raise-a-boring-girlfriend",
@@ -2665,9 +2488,8 @@
     "year": 2015,
     "synopsis": "An otaku recruits talented girls to create a visual novel inspired by a seemingly plain classmate.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2017,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2017
   },
   {
     "id": "sheet-code-geass-roz-of-the-recapture",
@@ -2680,9 +2502,8 @@
     "year": 2024,
     "synopsis": "A new Code Geass story follows mercenary siblings in a resistance conflict after the empire’s fall.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2024,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2024
   },
   {
     "id": "sheet-the-daily-life-of-the-immortal-king",
@@ -2695,9 +2516,8 @@
     "year": 2020,
     "synopsis": "An overpowered cultivation prodigy tries to live a normal school life while hiding his absurd strength.",
     "image": "",
-    "seasons": 5,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-may-i-ask-for-one-final-thing",
@@ -2710,9 +2530,8 @@
     "year": 2025,
     "synopsis": "",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2025,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2025
   },
   {
     "id": "sheet-talentless-nana",
@@ -2725,9 +2544,8 @@
     "year": 2020,
     "synopsis": "A seemingly cheerful transfer student enters an island academy for superpowered youths, hiding a deadly mission that turns the school into a battle of deception and deduction.",
     "image": "",
-    "seasons": 2,
-    "latestSeasonYear": 2020,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2020
   },
   {
     "id": "sheet-liar-game",
@@ -2740,9 +2558,8 @@
     "year": 2026,
     "synopsis": "",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2026,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2026
   },
   {
     "id": "anime-death-parade",
@@ -2755,8 +2572,7 @@
     "year": 2015,
     "synopsis": "Two people who die at the same time are sent to a mysterious bar, where psychological games expose their true nature and determine their fate.",
     "image": "",
-    "seasons": 1,
-    "latestSeasonYear": 2015,
-    "metadataSource": "manami-project/anime-offline-database 2026-27"
+    "metadataSource": "manami-project/anime-offline-database",
+    "latestEpisodeYear": 2015
   }
 ]
