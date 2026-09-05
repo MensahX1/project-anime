@@ -3656,5 +3656,25 @@
       "https://simkl.com/anime/1774537"
     ],
     "dataset": "manami-project/anime-offline-database 2026-27"
+  },
+  "Bakugan Battle Brawlers": {
+    "url": "https://cdn.myanimelist.net/images/anime/7/21568.jpg",
+    "matchedTitle": "Bakugan Battle Brawlers",
+    "type": "TV",
+    "year": 2007,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/5098",
+      "https://anilist.co/anime/2156",
+      "https://anime-planet.com/anime/bakugan-battle-brawlers",
+      "https://animecountdown.com/36544",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=7738",
+      "https://anisearch.com/anime/4162",
+      "https://kitsu.app/anime/1952",
+      "https://livechart.me/anime/4814",
+      "https://myanimelist.net/anime/2156",
+      "https://simkl.com/anime/36544"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
