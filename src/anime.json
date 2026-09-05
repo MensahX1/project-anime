@@ -2844,5 +2844,20 @@
     "latestEpisodeYear": 2016,
     "synopsis": "Yugi and Kaiba face a new threat as Kaiba pursues one final duel with the Pharaoh and a mysterious classmate wields the power of the Millennium Items.",
     "image": ""
+  },
+  {
+    "id": "anime-my-hero-academia-heroes-rising",
+    "title": "My Hero Academia: Heroes Rising",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 2,
+    "genre": "Action, Superhero",
+    "studio": "Bones",
+    "year": 2019,
+    "latestEpisodeYear": 2019,
+    "synopsis": "Class 1-A takes on hero work on Nabu Island and must defend its residents when powerful villains attack.",
+    "image": ""
   }
 ]
