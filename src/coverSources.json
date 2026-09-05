@@ -3836,5 +3836,25 @@
       "https://simkl.com/anime/38764"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Inuyasha: The Final Act": {
+    "url": "https://cdn.myanimelist.net/images/anime/7/75570.jpg",
+    "matchedTitle": "InuYasha: Kanketsu-hen",
+    "type": "TV",
+    "year": 2009,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/6716",
+      "https://anilist.co/anime/6811",
+      "https://anime-planet.com/anime/inuyasha-the-final-act",
+      "https://animecountdown.com/37111",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=10970",
+      "https://anisearch.com/anime/5486",
+      "https://kitsu.app/anime/4726",
+      "https://livechart.me/anime/3952",
+      "https://myanimelist.net/anime/6811",
+      "https://simkl.com/anime/37111"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
