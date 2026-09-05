@@ -1,19 +1,6 @@
-import fs from 'node:fs/promises';
-const titles=JSON.parse(await fs.readFile(new URL('../src/allTitles.json',import.meta.url),'utf8'));
-const out={};
-const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-for(let i=0;i<titles.length;i++){
-  const title=titles[i];
-  try{
-    const u=new URL('https://api.jikan.moe/v4/anime');u.searchParams.set('q',title);u.searchParams.set('limit','5');u.searchParams.set('sfw','true');
-    let r;for(let attempt=0;attempt<4;attempt++){r=await fetch(u);if(r.ok)break;await sleep(1500*(attempt+1))}
-    if(!r?.ok)continue;
-    const j=await r.json();const norm=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();const n=norm(title);
-    const best=(j.data||[]).find(x=>[x.title,x.title_english,...(x.title_synonyms||[])].some(t=>norm(t)===n))||j.data?.[0];
-    const image=best?.images?.jpg?.large_image_url||best?.images?.webp?.large_image_url||best?.images?.jpg?.image_url||'';
-    if(image)out[title]=image;
-  }catch(e){console.warn('cover failed',title,e?.message||e)}
-  console.log(`${i+1}/${titles.length} ${title}`);await sleep(420);
-}
-await fs.writeFile(new URL('../src/generatedCovers.json',import.meta.url),JSON.stringify(out,null,2));
-console.log(`Resolved ${Object.keys(out).length}/${titles.length} covers`);
+import fs from 'node:fs/promises';import path from 'node:path';
+const titles=JSON.parse(await fs.readFile(new URL('../src/allTitles.json',import.meta.url),'utf8'));const seed=JSON.parse(await fs.readFile(new URL('../src/seed.json',import.meta.url),'utf8'));const meta=new Map(seed.map(x=>[x.title,x]));const dir=new URL('../public/covers/',import.meta.url);await fs.mkdir(dir,{recursive:true});const out={};const sleep=ms=>new Promise(r=>setTimeout(r,ms));const norm=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,' ').trim();const slug=s=>norm(s).replace(/ /g,'-');
+async function get(url,tries=5){for(let i=0;i<tries;i++){const r=await fetch(url);if(r.ok)return r;if(r.status===429||r.status>=500){await sleep(1800*(i+1));continue}throw new Error(`${r.status} ${url}`)}throw new Error(`retry exhausted ${url}`)}
+function choose(title,rows){const n=norm(title),year=meta.get(title)?.year;return rows.map(x=>{const names=[x.title,x.title_english,x.title_japanese,...(x.title_synonyms||[])].map(norm);let score=names.includes(n)?100:names.some(v=>v.includes(n)||n.includes(v))?55:0;if(year&&x.year===year)score+=25;if(x.type==='TV')score+=3;return{x,score}}).sort((a,b)=>b.score-a.score)[0]?.x}
+for(let i=0;i<titles.length;i++){const title=titles[i];try{const u=new URL('https://api.jikan.moe/v4/anime');u.searchParams.set('q',title);u.searchParams.set('limit','10');u.searchParams.set('sfw','true');const r=await get(u);const j=await r.json();const best=choose(title,j.data||[]);const image=best?.images?.jpg?.large_image_url||best?.images?.webp?.large_image_url||best?.images?.jpg?.image_url;if(!image)throw new Error('no image');const ir=await get(image);const bytes=Buffer.from(await ir.arrayBuffer());const name=`${slug(title)}.jpg`;await fs.writeFile(new URL(name,dir),bytes);out[title]=`${process.env.BASE_URL||'/project-anime/'}covers/${name}`;console.log(`${i+1}/${titles.length} ✓ ${title} -> ${best.title}`)}catch(e){console.warn(`${i+1}/${titles.length} ✗ ${title}: ${e.message}`)}await sleep(550)}
+await fs.writeFile(new URL('../src/generatedCovers.json',import.meta.url),JSON.stringify(out,null,2));const misses=titles.filter(t=>!out[t]);console.log(`Bundled ${Object.keys(out).length}/${titles.length} covers`);if(misses.length){console.error('Missing:',misses.join(' | '));process.exitCode=1}
