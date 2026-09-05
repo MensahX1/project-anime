@@ -4015,5 +4015,45 @@
       "https://simkl.com/anime/1061945"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "My Hero Academia: World Heroes' Mission": {
+    "url": "https://cdn.myanimelist.net/images/anime/1049/115605.jpg",
+    "matchedTitle": "Boku no Hero Academia the Movie 3: World Heroes' Mission",
+    "type": "MOVIE",
+    "year": 2021,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/15873",
+      "https://anilist.co/anime/126659",
+      "https://anime-planet.com/anime/my-hero-academia-movie-3-world-heroes-mission",
+      "https://animecountdown.com/1486705",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=24199",
+      "https://anisearch.com/anime/15890",
+      "https://kitsu.app/anime/44209",
+      "https://livechart.me/anime/10236",
+      "https://myanimelist.net/anime/44200",
+      "https://simkl.com/anime/1486705"
+    ],
+    "dataset": "manami-project/anime-offline-database"
+  },
+  "Dragon Ball Super: Broly": {
+    "url": "https://cdn.myanimelist.net/images/anime/1575/93498.jpg",
+    "matchedTitle": "Dragon Ball Super: Broly",
+    "type": "MOVIE",
+    "year": 2018,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/13657",
+      "https://anilist.co/anime/101302",
+      "https://anime-planet.com/anime/dragon-ball-super-movie-broly",
+      "https://animecountdown.com/747259",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=20750",
+      "https://anisearch.com/anime/13114",
+      "https://kitsu.app/anime/41046",
+      "https://livechart.me/anime/3016",
+      "https://myanimelist.net/anime/36946",
+      "https://simkl.com/anime/747259"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
