@@ -1,62 +1,81 @@
-name: Export anime covers for iPhone
+name: Sync missing anime covers
 
 on:
   push:
     branches: [main]
     paths:
       - '.github/workflows/export-covers-iphone.yml'
+      - 'scripts/export-covers-bulk.mjs'
+      - 'src/allTitles.json'
+      - 'src/seed1.json'
+      - 'src/seed2.json'
+      - 'src/seed3.json'
+      - 'src/seed4.json'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: cover-sync
   cancel-in-progress: true
 
 jobs:
-  export:
-    name: Build iPhone ZIP
+  sync:
+    name: Add missing covers
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Check whether any covers are missing
+        id: missing
+        shell: bash
+        run: |
+          set +e
+          node scripts/export-covers-bulk.mjs --check-only
+          status=$?
+          set -e
+          if [[ $status -eq 0 ]]; then
+            echo "needed=false" >> "$GITHUB_OUTPUT"
+            echo "All covers already exist; nothing to download."
+          elif [[ $status -eq 10 ]]; then
+            echo "needed=true" >> "$GITHUB_OUTPUT"
+            echo "Missing covers found; continuing."
+          else
+            exit $status
+          fi
+
       - name: Download bulk anime metadata database
+        if: steps.missing.outputs.needed == 'true'
         shell: bash
         run: |
           curl -L --fail --retry 4 --retry-delay 2 \
             'https://github.com/manami-project/anime-offline-database/releases/download/2026-27/anime-offline-database-minified.json' \
             -o /tmp/anime-db.json
           echo "Database size: $(du -h /tmp/anime-db.json | cut -f1)"
-      - name: Match all titles and download covers
+
+      - name: Download only missing covers
+        if: steps.missing.outputs.needed == 'true'
         run: node scripts/export-covers-bulk.mjs /tmp/anime-db.json
-      - name: Prepare iPhone upload folder
+
+      - name: Commit new cover artwork
+        if: steps.missing.outputs.needed == 'true'
         shell: bash
         run: |
-          mkdir -p iphone-upload/public/covers iphone-upload/src
-          cp public/covers/*.jpg iphone-upload/public/covers/
-          cp src/generatedCovers.json src/coverSources.json iphone-upload/src/
-          cat > iphone-upload/UPLOAD-INSTRUCTIONS.txt <<'TXT'
-          LE ANIME COVER PACKAGE
-
-          Copy these paths into the root of MensahX1/project-anime:
-            public/covers/*.jpg
-            src/generatedCovers.json
-            src/coverSources.json
-
-          Commit message suggestion:
-            Store all anime cover artwork
-
-          After that commit, normal Vite Pages deployments do not need to download covers again.
-          TXT
-          test "$(find iphone-upload/public/covers -type f -name '*.jpg' | wc -l)" -eq 183
-      - uses: actions/upload-artifact@v4
-        with:
-          name: le-anime-covers-iphone
-          if-no-files-found: error
-          retention-days: 1
-          compression-level: 6
-          path: iphone-upload/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/covers src/generatedCovers.json src/coverSources.json
+          if git diff --cached --quiet; then
+            echo "No repository changes to commit."
+            exit 0
+          fi
+          count=$(git diff --cached --name-only -- 'public/covers/*.jpg' | wc -l | tr -d ' ')
+          git commit -m "Store ${count} missing anime cover(s)"
+          git push origin HEAD:main
