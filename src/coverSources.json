@@ -3816,5 +3816,25 @@
       "https://simkl.com/anime/39403"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Black Lagoon: The Second Barrage": {
+    "url": "https://cdn.myanimelist.net/images/anime/1701/152849.jpg",
+    "matchedTitle": "Black Lagoon: The Second Barrage",
+    "type": "TV",
+    "year": 2006,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/4597",
+      "https://anilist.co/anime/1519",
+      "https://anime-planet.com/anime/black-lagoon-the-second-barrage",
+      "https://animecountdown.com/38764",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=6832",
+      "https://anisearch.com/anime/3734",
+      "https://kitsu.app/anime/1363",
+      "https://livechart.me/anime/3667",
+      "https://myanimelist.net/anime/1519",
+      "https://simkl.com/anime/38764"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
