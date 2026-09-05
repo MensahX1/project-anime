@@ -64,9 +64,6 @@ async function migrate(){
   return all;
 }
 
-async function save(a:Anime){await(await dbp).put("anime",a)}
-async function del(id:string){await(await dbp).delete("anime",id)}
-
 function App(){
   const[items,setItems]=useState<Anime[]>([]);
   const[q,setQ]=useState("");
@@ -76,7 +73,6 @@ function App(){
   const[scoreFilter,setScoreFilter]=useState("All");
   const[sort,setSort]=useState<SortKey>("score-desc");
   const[selected,setSelected]=useState<Anime|null>(null);
-  const[edit,setEdit]=useState<Anime|null>(null);
 
   useEffect(()=>{migrate().then(setItems)},[]);
 
@@ -105,13 +101,11 @@ function App(){
 
   const hasFilters=q||filter!=="All"||genreFilter!=="All"||studioFilter!=="All"||scoreFilter!=="All"||sort!=="score-desc";
   const resetFilters=()=>{setQ("");setFilter("All");setGenreFilter("All");setStudioFilter("All");setScoreFilter("All");setSort("score-desc")};
-  const commit=async(a:Anime)=>{await save(a);setItems(await migrate());setEdit(null);setSelected(a)};
-  const remove=async(a:Anime)=>{await del(a.id);setItems(await migrate());setSelected(null)};
   const backup=()=>{const b=new Blob([JSON.stringify(items,null,2)],{type:"application/json"});const u=URL.createObjectURL(b),x=document.createElement("a");x.href=u;x.download="le-anime-backup.json";x.click();URL.revokeObjectURL(u)};
   const restore=(f:File)=>{const r=new FileReader();r.onload=async()=>{try{const data=JSON.parse(String(r.result)),db=await dbp,tx=db.transaction(["anime","meta"],"readwrite");await tx.objectStore("anime").clear();for(const a of data)await tx.objectStore("anime").put(a);await tx.objectStore("meta").put(0,"coverVersion");await tx.done;setItems(await migrate())}catch{alert("Invalid backup")}};r.readAsText(f)};
 
   return <main>
-    <header><div><div className="eyebrow">MY LIBRARY</div><h1>Lè Anime</h1><p>{items.length} titles · stored on this iPhone</p></div><button className="add" onClick={()=>setEdit({id:crypto.randomUUID(),title:"",status:"Planned",episodes:null,score:null,genre:"",studio:"",year:new Date().getFullYear(),synopsis:"",image:""})}>＋</button></header>
+    <header><div><div className="eyebrow">MY LIBRARY</div><h1>Lè Anime</h1><p>{items.length} titles · stored on this iPhone</p></div></header>
     <div className="search"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search anime, genre, studio…"/></div>
     <nav>{["All","Completed","Paused","Planned"].map(x=><button key={x} className={filter===x?"active":""} onClick={()=>setFilter(x)}>{x}</button>)}</nav>
 
@@ -128,9 +122,7 @@ function App(){
     <section className="grid">{shown.map(a=><article key={a.id} onClick={()=>setSelected(a)}><div className="poster">{a.image?<img loading="lazy" src={a.image} alt={`${a.title} cover`}/>:<div className="fallback"><b>{a.title.slice(0,1)}</b><span>{a.title}</span></div>}<span className="badge">{a.status||"Uncategorized"}</span></div><h3>{a.title}</h3><div className="rating">{stars(a.score)}</div><small>{a.year||""}{a.episodes?` · ${a.episodes} eps`:""}</small></article>)}</section>
     <footer><button onClick={backup}>Export backup</button><label>Import backup<input hidden type="file" accept=".json" onChange={e=>e.target.files?.[0]&&restore(e.target.files[0])}/></label></footer>
 
-    {selected&&!edit&&<div className="sheet" onClick={()=>setSelected(null)}><div className="panel" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setSelected(null)}>×</button><div className="hero">{selected.image?<img src={selected.image} alt={`${selected.title} cover`}/>:<div className="heroFallback">{selected.title}</div>}</div><h2>{selected.title}</h2><div className="rating big">{stars(selected.score)}</div><p className="meta">{selected.status||"Uncategorized"} · {selected.year||"—"} · {selected.episodes||"—"} episodes</p><p>{selected.synopsis||"No synopsis yet."}</p><p className="muted">{selected.genre}<br/>{selected.studio}</p><div className="actions"><button onClick={()=>setEdit(selected)}>Edit</button><button className="danger" onClick={()=>remove(selected)}>Delete</button></div></div></div>}
-
-    {edit&&<div className="sheet"><form className="panel form" onSubmit={e=>{e.preventDefault();commit(edit)}}><button type="button" className="close" onClick={()=>setEdit(null)}>×</button><h2>{edit.title?"Edit anime":"Add anime"}</h2>{["title","image","genre","studio","synopsis"].map(k=><label key={k}>{k[0].toUpperCase()+k.slice(1)}{k==="synopsis"?<textarea value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>:<input required={k==="title"} value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>}</label>)}<div className="row"><label>Status<select value={edit.status} onChange={e=>setEdit({...edit,status:e.target.value})}><option value="">Uncategorized</option>{["Completed","Paused","Planned"].map(x=><option key={x}>{x}</option>)}</select></label><label>Score<select value={edit.score??""} onChange={e=>setEdit({...edit,score:e.target.value?+e.target.value:null})}><option value="">—</option>{[1,2,3,4,5].map(x=><option key={x} value={x}>{x} ★</option>)}</select></label></div><div className="row"><label>Episodes<input type="number" value={edit.episodes??""} onChange={e=>setEdit({...edit,episodes:e.target.value?+e.target.value:null})}/></label><label>Year<input type="number" value={edit.year??""} onChange={e=>setEdit({...edit,year:e.target.value?+e.target.value:null})}/></label></div><button className="save">Save</button></form></div>}
+    {selected&&<div className="sheet" onClick={()=>setSelected(null)}><div className="panel" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setSelected(null)}>×</button><div className="hero">{selected.image?<img src={selected.image} alt={`${selected.title} cover`}/>:<div className="heroFallback">{selected.title}</div>}</div><h2>{selected.title}</h2><div className="rating big">{stars(selected.score)}</div><p className="meta">{selected.status||"Uncategorized"} · {selected.year||"—"} · {selected.episodes||"—"} episodes</p><p>{selected.synopsis||"No synopsis yet."}</p><p className="muted">{selected.genre}<br/>{selected.studio}</p></div></div>}
   </main>
 }
 
