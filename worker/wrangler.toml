@@ -1,0 +1,8 @@
+name = "le-anime-admin"
+main = "src/index.js"
+compatibility_date = "2026-09-05"
+
+[vars]
+APP_ORIGIN = "https://mensahx1.github.io"
+GITHUB_REPO = "MensahX1/project-anime"
+ADMIN_GITHUB_USER_ID = "115842080"
