@@ -2664,5 +2664,20 @@
     "latestEpisodeYear": 2006,
     "synopsis": "Ash and friends join a Pokémon Ranger to protect Manaphy and find the mysterious Sea Temple.",
     "image": ""
+  },
+  {
+    "id": "anime-giratina-and-the-sky-warrior",
+    "title": "Giratina & the Sky Warrior",
+    "status": "Completed",
+    "episodes": 1,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": 2,
+    "genre": "Adventure, Fantasy",
+    "studio": "OLM",
+    "year": 2008,
+    "latestEpisodeYear": 2008,
+    "synopsis": "Ash and friends become involved with Giratina and Shaymin in a conflict spanning the Reverse World.",
+    "image": ""
   }
 ]
