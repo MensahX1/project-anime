@@ -3936,5 +3936,25 @@
       "https://simkl.com/anime/1436707"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Sword Art Online Progressive: Scherzo of Deep Night": {
+    "url": "https://cdn.myanimelist.net/images/anime/1656/126446.jpg",
+    "matchedTitle": "Sword Art Online: Progressive Movie - Kuraki Yuuyami no Scherzo",
+    "type": "MOVIE",
+    "year": 2022,
+    "matchScore": 1200,
+    "providers": [
+      "https://anidb.net/anime/16951",
+      "https://anilist.co/anime/140999",
+      "https://anime-planet.com/anime/sword-art-online-progressive-movie-2-scherzo-of-deep-night",
+      "https://animecountdown.com/1767731",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=24922",
+      "https://anisearch.com/anime/16727",
+      "https://kitsu.app/anime/45400",
+      "https://livechart.me/anime/10864",
+      "https://myanimelist.net/anime/50275",
+      "https://simkl.com/anime/1767731"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
