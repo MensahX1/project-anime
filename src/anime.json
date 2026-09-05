@@ -2709,5 +2709,20 @@
     "latestEpisodeYear": 2010,
     "synopsis": "Ash travels through Sinnoh with Dawn and Brock, competing in Gym battles while Dawn pursues Pokémon Contests.",
     "image": ""
+  },
+  {
+    "id": "anime-black-lagoon-the-second-barrage",
+    "title": "Black Lagoon: The Second Barrage",
+    "status": "Planned",
+    "episodes": 12,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": null,
+    "genre": "Action, Crime, Seinen",
+    "studio": "Madhouse",
+    "year": 2006,
+    "latestEpisodeYear": 2006,
+    "synopsis": "The Lagoon Company returns for another run of violent criminal jobs and conflicts in Roanapur.",
+    "image": ""
   }
 ]
