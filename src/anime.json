@@ -2574,5 +2574,20 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "latestEpisodeYear": 2015
+  },
+  {
+    "id": "anime-kakegurui-twin",
+    "title": "Kakegurui Twin",
+    "status": "Completed",
+    "episodes": 6,
+    "watchedEpisodes": null,
+    "newEpisodes": 0,
+    "score": null,
+    "genre": "Psychological, Drama, Gambling, School",
+    "studio": "MAPPA",
+    "year": 2022,
+    "latestEpisodeYear": 2022,
+    "synopsis": "One year before Yumeko Jabami arrives at Hyakkao Private Academy, Mary Saotome enters the school's ruthless gambling hierarchy and fights to climb to the top.",
+    "image": ""
   }
 ]
