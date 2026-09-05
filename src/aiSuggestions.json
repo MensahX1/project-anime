@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ai-kaiji-ultimate-survivor",
+    "title": "Kaiji: Ultimate Survivor",
+    "status": "AI Suggested",
+    "episodes": 26,
+    "score": null,
+    "genre": "Psychological, Thriller, Gambling",
+    "studio": "Madhouse",
+    "year": 2007,
+    "latestEpisodeYear": 2008,
+    "synopsis": "A debt-ridden young man is dragged into brutal high-stakes games where reading people, bluffing, and surviving psychological pressure matter more than strength.",
+    "image": ""
+  },
+  {
+    "id": "ai-one-outs",
+    "title": "One Outs",
+    "status": "AI Suggested",
+    "episodes": 25,
+    "score": null,
+    "genre": "Psychological, Sports, Strategy",
+    "studio": "Madhouse",
+    "year": 2008,
+    "latestEpisodeYear": 2009,
+    "synopsis": "A genius pitcher turns baseball into a battle of manipulation, probability, contracts, and mind games against opponents and his own team owner.",
+    "image": ""
+  },
+  {
+    "id": "ai-id-invaded",
+    "title": "ID: INVADED",
+    "status": "AI Suggested",
+    "episodes": 13,
+    "score": null,
+    "genre": "Psychological, Mystery, Sci-Fi, Thriller",
+    "studio": "NAZ",
+    "year": 2020,
+    "latestEpisodeYear": 2020,
+    "synopsis": "A brilliant detective dives into killers' fractured subconscious worlds to solve murders while confronting a dark mystery tied to his own past.",
+    "image": ""
+  },
+  {
+    "id": "ai-babylon",
+    "title": "Babylon",
+    "status": "AI Suggested",
+    "episodes": 12,
+    "score": null,
+    "genre": "Psychological, Thriller, Mystery, Crime",
+    "studio": "Revoroot",
+    "year": 2019,
+    "latestEpisodeYear": 2020,
+    "synopsis": "A prosecutor investigating political corruption encounters a disturbing conspiracy built around persuasion, morality, and a dangerously charismatic woman.",
+    "image": ""
+  },
+  {
+    "id": "ai-the-perfect-insider",
+    "title": "The Perfect Insider",
+    "status": "AI Suggested",
+    "episodes": 11,
+    "score": null,
+    "genre": "Psychological, Mystery, Thriller",
+    "studio": "A-1 Pictures",
+    "year": 2015,
+    "latestEpisodeYear": 2015,
+    "synopsis": "A professor and student confront an impossible locked-room murder surrounding an isolated genius programmer and unravel the logic behind the crime.",
+    "image": ""
+  }
+]
