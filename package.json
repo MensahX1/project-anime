@@ -6,6 +6,7 @@
   "scripts":{
     "dev":"vite --host 0.0.0.0",
     "covers:check":"node scripts/sync-covers.mjs --check-only",
+    "index:check":"node scripts/check-anime-index.mjs",
     "test":"vitest run",
     "build":"vite build",
     "preview":"vite preview --host 0.0.0.0"

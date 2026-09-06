@@ -5,9 +5,11 @@ on:
     paths:
       - 'src/**'
       - 'public/**'
+      - 'scripts/**'
       - 'package.json'
+      - 'package-lock.json'
       - 'vite.config.ts'
-      - '.github/workflows/validate-pr.yml'
+      - '.github/workflows/**'
 
 permissions:
   contents: read
@@ -21,10 +23,12 @@ jobs:
         with:
           node-version: 24
       - name: Install dependencies
-        run: npm install --legacy-peer-deps --no-audit --no-fund
+        run: npm ci --legacy-peer-deps --no-audit --no-fund
       - name: Run unit tests
         run: npm test
       - name: Verify bundled covers
         run: npm run covers:check
+      - name: Verify anime search index
+        run: npm run index:check
       - name: Build app
         run: npm run build

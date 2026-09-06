@@ -1,14 +1,15 @@
-import {useEffect,useId} from "react";
+import {useId} from "react";
 import {repoAnime} from "../appData";
+import {useDialogFocus} from "../hooks/useDialogFocus";
 import type {Anime} from "../types";
 
 type Props={anime:Anime;onChange:(anime:Anime)=>void;onClose:()=>void;onSubmit:(anime:Anime)=>void};
 
 export default function AnimeForm({anime,onChange,onClose,onSubmit}:Props){
  const titleId=useId();
- useEffect(()=>{const onKeyDown=(event:KeyboardEvent)=>{if(event.key==="Escape")onClose()};window.addEventListener("keydown",onKeyDown);return()=>window.removeEventListener("keydown",onKeyDown)},[onClose]);
+ const dialogRef=useDialogFocus<HTMLFormElement>(onClose,"input");
  const heading=repoAnime.some(x=>x.id===anime.id)?"Edit anime":"Add anime";
- return <div className="sheet"><form className="panel form" role="dialog" aria-modal="true" aria-labelledby={titleId} onSubmit={e=>{e.preventDefault();onSubmit(anime)}}>
+ return <div className="sheet"><form ref={dialogRef} className="panel form" role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} onSubmit={e=>{e.preventDefault();onSubmit(anime)}}>
   <button type="button" className="close" onClick={onClose} aria-label="Close anime form">×</button>
   <h2 id={titleId}>{heading}</h2>
   {(["title","genre","studio","synopsis"] as const).map(k=><label key={k}>{k[0].toUpperCase()+k.slice(1)}{k==="synopsis"?<textarea value={anime[k]} onChange={e=>onChange({...anime,[k]:e.target.value})}/>:<input required={k==="title"} value={anime[k]} onChange={e=>onChange({...anime,[k]:e.target.value})}/>}</label>)}

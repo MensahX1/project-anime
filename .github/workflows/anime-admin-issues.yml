@@ -7,7 +7,6 @@ on:
 permissions:
   contents: write
   issues: write
-  actions: write
 
 concurrency:
   group: anime-admin-writes
@@ -55,6 +54,7 @@ jobs:
           const request=JSON.parse(match[1]);
           const path='src/anime.json';
           const anime=JSON.parse(await fs.readFile(path,'utf8'));
+          const strings=value=>Array.from(new Set((Array.isArray(value)?value:[]).map(x=>String(x||'').trim()).filter(Boolean)));
 
           if(request.action==='upsert'){
             const a=request.anime;
@@ -62,6 +62,10 @@ jobs:
             const i=anime.findIndex(x=>x.id===a.id);
             const existing=i>=0?anime[i]:{};
             const episodes=a.episodes==null?null:Number(a.episodes);
+            const genres=strings(a.genres);
+            const studios=strings(a.studios);
+            const mediaType=['Series','Movie','OVA / Special'].includes(a.mediaType)?a.mediaType:existing.mediaType;
+            const metadataSource=typeof a.metadataSource==='string'&&a.metadataSource.trim()?a.metadataSource.trim():existing.metadataSource;
             const clean={
               id:a.id,
               title:a.title.trim(),
@@ -74,8 +78,12 @@ jobs:
               latestEpisodeYear:a.latestEpisodeYear==null?(existing.latestEpisodeYear??existing.latestSeasonYear??null):Number(a.latestEpisodeYear),
               synopsis:String(a.synopsis||''),
               image:'',
-              ...(existing.metadataSource?{metadataSource:existing.metadataSource}:{}),
-              ...(existing.metadataUpdatedAt?{metadataUpdatedAt:existing.metadataUpdatedAt}:{})
+              ...(genres.length?{genres}:existing.genres?.length?{genres:existing.genres}:{}),
+              ...(studios.length?{studios}:existing.studios?.length?{studios:existing.studios}:{}),
+              ...(mediaType?{mediaType}:{}),
+              ...(typeof a.franchiseName==='string'&&a.franchiseName.trim()?{franchiseName:a.franchiseName.trim()}:existing.franchiseName?{franchiseName:existing.franchiseName}:{}),
+              ...(metadataSource?{metadataSource}:{}),
+              ...(existing.metadataUpdatedAt?{metadataUpdatedAt:existing.metadataUpdatedAt}:metadataSource?{metadataUpdatedAt:new Date().toISOString()}:{})
             };
             if(clean.score!=null&&(!Number.isInteger(clean.score)||clean.score<1||clean.score>5)) throw new Error('Score must be 1-5 or null');
             if(clean.episodes!=null&&(!Number.isFinite(clean.episodes)||clean.episodes<0)) throw new Error('Episodes must be non-negative or null');
@@ -114,18 +122,10 @@ jobs:
             git push origin HEAD:main
           fi
 
-      - name: Start cover sync and deploy
-        if: github.event.issue.user.id == 115842080
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh workflow run sync-covers.yml --repo "$GITHUB_REPOSITORY" --ref main
-          gh workflow run deploy-pages.yml --repo "$GITHUB_REPOSITORY" --ref main
-
       - name: Close completed request
         if: github.event.issue.user.id == 115842080
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE: ${{ github.event.issue.number }}
         run: |
-          gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --comment "Applied to src/anime.json. Cover sync and Pages deployment have been started."
+          gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --comment "Applied to src/anime.json. The main push will trigger cover sync and Pages deployment automatically."
