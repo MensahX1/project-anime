@@ -17,9 +17,9 @@ export default function App(){
  const toggleEdit=()=>{const next=!editMode;setEditMode(next);localStorage.setItem(EDIT_KEY,next?"1":"0");setEdit(null);setNotice(next?"Edit mode enabled · GitHub will verify you when you submit":"Edit mode disabled")};
  const commit=(anime:Anime)=>{window.open(issueUrl(`upsert ${anime.title||"anime"}`,{action:"upsert",anime:{...anime,image:""}}),"_blank","noopener,noreferrer");setEdit(null);setNotice("GitHub opened. Submit the prefilled issue to publish this change.")};
  const remove=(anime:Anime)=>{if(!confirm(`Create a GitHub request to delete ${anime.title}?`))return;window.open(issueUrl(`delete ${anime.title}`,{action:"delete",id:anime.id,title:anime.title}),"_blank","noopener,noreferrer");setSelected(null)};
- const related=selected?items.filter(a=>a.id!==selected.id&&franchiseOf(a.title)===franchiseOf(selected.title)&&a.status!=="AI Suggested"):[];
+ const related=selected?items.filter(a=>a.id!==selected.id&&franchiseOf(a.title)===franchiseOf(selected.title)):[];
  return <main>
-  <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>The Watchlist</h1><p>{repoAnime.length} titles · 5 weekly AI picks</p></div><div className="headerActions"><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setEdit(newAnime())} aria-label="Add anime">＋</button>}</div></header>
+  <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>The Watchlist</h1><p>{repoAnime.length} titles</p></div><div className="headerActions"><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setEdit(newAnime())} aria-label="Add anime">＋</button>}</div></header>
   {notice&&<div className="notice">{notice}</div>}
   <div className="search"><span aria-hidden="true">⌕</span><input value={filters.q} onChange={e=>filters.setQ(e.target.value)} placeholder="Search titles, aliases, franchises…" aria-label="Search anime"/></div>
   <nav aria-label="Library status">{statusTabs.map(x=><button key={x.value} className={filters.filter===x.value?"active":""} onClick={()=>filters.setFilter(x.value)}>{x.label}</button>)}</nav>
