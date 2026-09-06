@@ -24,6 +24,7 @@ export default defineConfig({
     },
     workbox:{
       globPatterns:["**/*.{js,css,html,json,jpg,jpeg,png,webp,svg}"],
+      globIgnores:["anime-index.json"],
       cleanupOutdatedCaches:true,
       skipWaiting:true,
       clientsClaim:true,
