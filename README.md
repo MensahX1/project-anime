@@ -1,15 +1,16 @@
-# The Watchlist
+# AniVault
 
 A personal anime library and discovery PWA built with React, Vite, TypeScript, and GitHub Pages.
 
 ## What it does
 
-The Watchlist is a title-level anime catalog, not an episode-by-episode tracker. It supports:
+AniVault is a title-level anime catalog, not an episode-by-episode tracker. It supports:
 
 - library statuses and 1–5 star ratings
 - fast title, alias, franchise, genre, and studio search
 - multi-genre, rating, decade, media-type, franchise, studio, recent-update, and unrated filters
 - sorting by score, title, year, and studio
+- a Random picker that chooses from the full personal catalog, including completed titles
 - a compact library stats modal
 - franchise grouping and related-title browsing
 - installable PWA behavior with automatic service-worker updates
@@ -41,7 +42,7 @@ The public app is read-only by default. Admin mode creates prefilled `[anime-adm
 ## Frontend structure
 
 - `src/main.tsx` — PWA registration and React bootstrap
-- `src/App.tsx` — page-level orchestration and modal state
+- `src/App.tsx` — page-level orchestration, random selection, and modal state
 - `src/components/` — cards, details, filters, stats, forms, and catalog search
 - `src/hooks/useCatalogFilters.ts` — catalog filtering and sorting state
 - `src/hooks/useDialogFocus.ts` — reusable modal focus trapping/restoration
@@ -80,4 +81,4 @@ npm run build
 
 ## Release
 
-The deployed app displays its build-time **Last deployed** timestamp in the footer, making stale PWA sessions easy to identify. v1 is intended to remain a small, low-maintenance personal library rather than grow into a general-purpose tracking service.
+The deployed app displays its build-time **Last deployed** timestamp in the footer, making stale PWA sessions easy to identify. AniVault is intended to remain a small, low-maintenance personal library rather than grow into a general-purpose tracking service.
