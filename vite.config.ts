@@ -13,7 +13,7 @@ export default defineConfig({
     manifest:{
       name:"The Watchlist",
       short_name:"Watchlist",
-      description:"Richie’s personal anime library and weekly AI picks",
+      description:"Richie’s personal anime library",
       theme_color:"#09090b",
       background_color:"#09090b",
       display:"standalone",

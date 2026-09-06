@@ -22,12 +22,3 @@ const aliases:Record<string,string[]>={
   "Fullmetal Alchemist: Brotherhood":["fmab"],"That Time I Got Reincarnated as a Slime":["slime","tensura"]
 };
 export const searchableText=(a:CatalogAnime)=>`${a.title} ${a.genre} ${a.studio} ${franchiseOf(a.title)} ${(aliases[a.title]||[]).join(" ")}`.toLowerCase();
-
-export const whyPick=(pick:CatalogAnime,library:CatalogAnime[])=>{
-  const favorites=library.filter(a=>a.status==="Completed"&&a.score===5);
-  const tags=(s:string)=>s.toLowerCase().split(/[,/;|]+/).map(x=>x.trim()).filter(Boolean);
-  const p=new Set(tags(pick.genre));
-  const ranked=favorites.map(a=>({a,n:tags(a.genre).filter(x=>p.has(x)).length})).filter(x=>x.n>0).sort((x,y)=>y.n-x.n).slice(0,3).map(x=>x.a.title);
-  if(ranked.length) return `Because you gave ${ranked.join(ranked.length>1?" and ":"")} 5★ and this shares some of the same genre DNA.`;
-  return "Picked from patterns across your highest-rated anime.";
-};

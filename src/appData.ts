@@ -1,5 +1,4 @@
 import animeData from "./anime.json";
-import suggestionsData from "./aiSuggestions.json";
 import covers from "./generatedCovers.json";
 import type {Anime} from "./types";
 
@@ -7,13 +6,11 @@ const NEW_WINDOW_MS=14*24*60*60*1000;
 const coverMap=covers as Record<string,string>;
 
 export const repoAnime=animeData as Anime[];
-export const aiSuggestions=suggestionsData as Anime[];
 export const statusTabs=[
   {label:"All",value:"All"},
   {label:"Done",value:"Completed"},
   {label:"Paused",value:"Paused"},
-  {label:"Plan",value:"Planned"},
-  {label:"AI Picks",value:"AI Suggested"}
+  {label:"Plan",value:"Planned"}
 ];
 
 export const splitTags=(value:string)=>String(value||"").split(/[,/;|]+/).map(x=>x.trim()).filter(Boolean);
@@ -25,7 +22,7 @@ const withCover=(anime:Anime):Anime=>({
   image:coverMap[anime.title]||anime.image||""
 });
 
-export const initialAnime=()=>[...repoAnime,...aiSuggestions].map(withCover);
+export const initialAnime=()=>repoAnime.map(withCover);
 
 export const isRecentlyUpdated=(anime:Anime)=>{
   if(!anime.metadataUpdatedAt)return false;
