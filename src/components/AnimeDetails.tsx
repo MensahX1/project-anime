@@ -1,3 +1,4 @@
+import {useEffect,useId} from "react";
 import {franchiseOf,mediaTypeOf,whyPick} from "../catalog";
 import {isRecentlyUpdated,repoAnime,stars} from "../appData";
 import type {Anime} from "../types";
@@ -5,10 +6,12 @@ import type {Anime} from "../types";
 type Props={anime:Anime;related:Anime[];editMode:boolean;onClose:()=>void;onSelect:(anime:Anime)=>void;onEdit:(anime:Anime)=>void;onDelete:(anime:Anime)=>void};
 
 export default function AnimeDetails({anime,related,editMode,onClose,onSelect,onEdit,onDelete}:Props){
- return <div className="sheet" onClick={onClose}><div className="panel" onClick={e=>e.stopPropagation()}>
-  <button className="close" onClick={onClose}>×</button>
+ const titleId=useId();
+ useEffect(()=>{const onKeyDown=(event:KeyboardEvent)=>{if(event.key==="Escape")onClose()};window.addEventListener("keydown",onKeyDown);return()=>window.removeEventListener("keydown",onKeyDown)},[onClose]);
+ return <div className="sheet" onClick={onClose}><div className="panel" role="dialog" aria-modal="true" aria-labelledby={titleId} onClick={e=>e.stopPropagation()}>
+  <button className="close" onClick={onClose} aria-label="Close anime details">×</button>
   <div className="hero">{anime.image?<img src={anime.image} alt={`${anime.title} cover`}/>:<div className="heroFallback">{anime.title}</div>}</div>
-  <h2>{anime.title}</h2>
+  <h2 id={titleId}>{anime.title}</h2>
   {isRecentlyUpdated(anime)&&anime.status!=="AI Suggested"&&<div className="newNotice">NEW · metadata updated recently</div>}
   <div className="rating big">{stars(anime.score)}</div>
   <p className="meta">{anime.status==="AI Suggested"?"AI Pick":anime.status||"Uncategorized"} · {mediaTypeOf(anime)} · {anime.episodes||"—"} episodes · latest {anime.latestEpisodeYear||anime.year||"—"}</p>
