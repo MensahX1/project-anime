@@ -1,9 +1,222 @@
 {
-  "generatedAt": "2026-09-05T21:20:53.008Z",
+  "generatedAt": "2026-09-06T16:17:39.915Z",
   "datasetLastUpdate": "2026-07-04",
   "source": "manami-project/anime-offline-database",
   "currentSeason": "SUMMER 2026",
-  "updated": [],
+  "updated": [
+    {
+      "id": "sheet-black-lagoon",
+      "title": "Black Lagoon",
+      "matchedTitle": "Black Lagoon",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 24,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.544Z",
+      "chain": [
+        {
+          "title": "Black Lagoon",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2006,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "anime-bakugan-battle-brawlers",
+      "title": "Bakugan Battle Brawlers",
+      "matchedTitle": "Bakugan Battle Brawlers",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 52,
+        "latestEpisodeYear": 2008,
+        "year": 2007
+      },
+      "after": {
+        "episodes": 78,
+        "latestEpisodeYear": 2023,
+        "year": 2007
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.688Z",
+      "chain": [
+        {
+          "title": "Bakugan Battle Brawlers",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 52,
+          "year": 2007,
+          "season": "SPRING"
+        },
+        {
+          "title": "Bakugan",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 26,
+          "year": 2023,
+          "season": "FALL"
+        },
+        {
+          "title": "Bakugan",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 0,
+          "year": 2023,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "anime-bakugan-new-vestroia",
+      "title": "Bakugan Battle Brawlers: New Vestroia",
+      "matchedTitle": "Bakugan Battle Brawlers: New Vestroia",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 52,
+        "latestEpisodeYear": 2011,
+        "year": 2009
+      },
+      "after": {
+        "episodes": 52,
+        "latestEpisodeYear": 2010,
+        "year": 2009
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.692Z",
+      "chain": [
+        {
+          "title": "Bakugan Battle Brawlers: New Vestroia",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 52,
+          "year": 2010,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "anime-pokemon",
+      "title": "Pokémon",
+      "matchedTitle": "Pokemon",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 276,
+        "latestEpisodeYear": 2002,
+        "year": 1997
+      },
+      "after": {
+        "episodes": 276,
+        "latestEpisodeYear": 1997,
+        "year": 1997
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.851Z",
+      "chain": [
+        {
+          "title": "Pokemon",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 276,
+          "year": 1997,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "anime-pokemon-advanced-generation",
+      "title": "Pokémon: Advanced Generation",
+      "matchedTitle": "Pokemon Advanced Generation",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 192,
+        "latestEpisodeYear": 2006,
+        "year": 2002
+      },
+      "after": {
+        "episodes": 192,
+        "latestEpisodeYear": 2002,
+        "year": 2002
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.935Z",
+      "chain": [
+        {
+          "title": "Pokemon Advanced Generation",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 192,
+          "year": 2002,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "anime-pokemon-diamond-and-pearl",
+      "title": "Pokémon: Diamond & Pearl",
+      "matchedTitle": "Pokemon Diamond & Pearl",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 191,
+        "latestEpisodeYear": 2010,
+        "year": 2006
+      },
+      "after": {
+        "episodes": 191,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:42.087Z",
+      "chain": [
+        {
+          "title": "Pokemon Diamond & Pearl",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 191,
+          "year": 2006,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "anime-inuyasha-the-final-act",
+      "title": "Inuyasha: The Final Act",
+      "matchedTitle": "InuYasha: Kanketsu-hen",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 26,
+        "latestEpisodeYear": 2010,
+        "year": 2009
+      },
+      "after": {
+        "episodes": 26,
+        "latestEpisodeYear": 2009,
+        "year": 2009
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:42.089Z",
+      "chain": [
+        {
+          "title": "InuYasha: Kanketsu-hen",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 26,
+          "year": 2009,
+          "season": "FALL"
+        }
+      ]
+    }
+  ],
   "unchanged": [
     {
       "id": "sheet-death-note",
@@ -5461,42 +5674,6 @@
       ]
     },
     {
-      "id": "sheet-black-lagoon",
-      "title": "Black Lagoon",
-      "matchedTitle": "Black Lagoon",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2006,
-        "year": 2006
-      },
-      "after": {
-        "episodes": 24,
-        "latestEpisodeYear": 2006,
-        "year": 2006
-      },
-      "metadataUpdatedAt": null,
-      "chain": [
-        {
-          "title": "Black Lagoon",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2006,
-          "season": "SPRING"
-        },
-        {
-          "title": "Black Lagoon: The Second Barrage",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2006,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
       "id": "sheet-kabaneri-of-the-iron-fortress",
       "title": "Kabaneri of the Iron Fortress",
       "matchedTitle": "Kabaneri of the Iron Fortress",
@@ -6528,6 +6705,454 @@
           "status": "FINISHED",
           "episodes": 12,
           "year": 2015,
+          "season": "WINTER"
+        }
+      ]
+    },
+    {
+      "id": "anime-kakegurui-twin",
+      "title": "Kakegurui Twin",
+      "matchedTitle": "Kakegurui Twin",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 6,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 6,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Kakegurui Twin",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 6,
+          "year": 2022,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "anime-pokemon-ranger-temple-of-the-sea",
+      "title": "Pokémon Ranger and the Temple of the Sea",
+      "matchedTitle": "Pokemon Movie 09: Pokemon Ranger to Umi no Ouji Manaphy",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Pokemon Movie 09: Pokemon Ranger to Umi no Ouji Manaphy",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2006,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "anime-giratina-and-the-sky-warrior",
+      "title": "Giratina & the Sky Warrior",
+      "matchedTitle": "Pokemon Movie 11: Giratina to Sora no Hanataba Sheimi",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2008,
+        "year": 2008
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2008,
+        "year": 2008
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Pokemon Movie 11: Giratina to Sora no Hanataba Sheimi",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2008,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "anime-arceus-and-the-jewel-of-life",
+      "title": "Arceus and the Jewel of Life",
+      "matchedTitle": "Pokemon Movie 12: Arceus Choukoku no Jikuu e",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2009,
+        "year": 2009
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2009,
+        "year": 2009
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Pokemon Movie 12: Arceus Choukoku no Jikuu e",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2009,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "anime-black-lagoon-the-second-barrage",
+      "title": "Black Lagoon: The Second Barrage",
+      "matchedTitle": "Black Lagoon: The Second Barrage",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Black Lagoon: The Second Barrage",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2006,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "anime-blue-lock-episode-nagi",
+      "title": "Blue Lock: Episode Nagi",
+      "matchedTitle": "Blue Lock: Episode Nagi",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2024,
+        "year": 2024
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Blue Lock: Episode Nagi",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2024,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "anime-jujutsu-kaisen-0",
+      "title": "Jujutsu Kaisen 0",
+      "matchedTitle": "Jujutsu Kaisen 0 Movie",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Jujutsu Kaisen 0 Movie",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2021,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "anime-sword-art-online-the-movie-ordinal-scale",
+      "title": "Sword Art Online the Movie: Ordinal Scale",
+      "matchedTitle": "Sword Art Online Movie: Ordinal Scale",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2017,
+        "year": 2017
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2017,
+        "year": 2017
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Sword Art Online Movie: Ordinal Scale",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2017,
+          "season": "WINTER"
+        }
+      ]
+    },
+    {
+      "id": "anime-sword-art-online-progressive-aria-of-a-starless-night",
+      "title": "Sword Art Online Progressive: Aria of a Starless Night",
+      "matchedTitle": "Sword Art Online: Progressive Movie - Hoshi Naki Yoru no Aria",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Sword Art Online: Progressive Movie - Hoshi Naki Yoru no Aria",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2021,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "anime-sword-art-online-progressive-scherzo-of-deep-night",
+      "title": "Sword Art Online Progressive: Scherzo of Deep Night",
+      "matchedTitle": "Sword Art Online: Progressive Movie - Kuraki Yuuyami no Scherzo",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Sword Art Online: Progressive Movie - Kuraki Yuuyami no Scherzo",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2022,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "anime-the-quintessential-quintuplets-movie",
+      "title": "The Quintessential Quintuplets Movie",
+      "matchedTitle": "5-toubun no Hanayome Movie",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2022,
+        "year": 2022
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "5-toubun no Hanayome Movie",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2022,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "anime-yu-gi-oh-the-dark-side-of-dimensions",
+      "title": "Yu-Gi-Oh!: The Dark Side of Dimensions",
+      "matchedTitle": "Yu☆Gi☆Oh! The Dark Side of Dimensions",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2016,
+        "year": 2016
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Yu☆Gi☆Oh! The Dark Side of Dimensions",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2016,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "anime-my-hero-academia-heroes-rising",
+      "title": "My Hero Academia: Heroes Rising",
+      "matchedTitle": "Boku no Hero Academia the Movie 2: Heroes:Rising",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2019,
+        "year": 2019
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2019,
+        "year": 2019
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Boku no Hero Academia the Movie 2: Heroes:Rising",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2019,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "anime-my-hero-academia-world-heroes-mission",
+      "title": "My Hero Academia: World Heroes' Mission",
+      "matchedTitle": "Boku no Hero Academia the Movie 3: World Heroes' Mission",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2021,
+        "year": 2021
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Boku no Hero Academia the Movie 3: World Heroes' Mission",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2021,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "anime-dragon-ball-super-broly",
+      "title": "Dragon Ball Super: Broly",
+      "matchedTitle": "Dragon Ball Super: Broly",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Dragon Ball Super: Broly",
+          "type": "MOVIE",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2018,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "anime-aec5e51b-9025-41b0-887d-e37ff4c7bb8d",
+      "title": "Violet Evergarden",
+      "matchedTitle": "Violet Evergarden",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2018,
+        "year": 2018
+      },
+      "metadataUpdatedAt": null,
+      "chain": [
+        {
+          "title": "Violet Evergarden",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2018,
           "season": "WINTER"
         }
       ]
