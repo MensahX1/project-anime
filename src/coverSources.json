@@ -4055,5 +4055,25 @@
       "https://simkl.com/anime/747259"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Violet Evergarden": {
+    "url": "https://cdn.myanimelist.net/images/anime/1795/95088.jpg",
+    "matchedTitle": "Violet Evergarden",
+    "type": "TV",
+    "year": 2018,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/12138",
+      "https://anilist.co/anime/21827",
+      "https://anime-planet.com/anime/violet-evergarden",
+      "https://animecountdown.com/588357",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=19665",
+      "https://anisearch.com/anime/11480",
+      "https://kitsu.app/anime/12230",
+      "https://livechart.me/anime/2197",
+      "https://myanimelist.net/anime/33352",
+      "https://simkl.com/anime/588357"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
