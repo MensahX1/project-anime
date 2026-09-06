@@ -3,101 +3,53 @@ import {createRoot} from "react-dom/client";
 import animeData from "./anime.json";
 import suggestionsData from "./aiSuggestions.json";
 import covers from "./generatedCovers.json";
+import {franchiseOf,mediaTypeOf,searchableText,whyPick} from "./catalog";
 import "./style.css";
 import {registerSW} from "virtual:pwa-register";
-
 registerSW({immediate:true});
 
 type Anime={id:string,title:string,status:string,episodes:number|null,score:number|null,genre:string,studio:string,year:number|null,latestEpisodeYear:number|null,synopsis:string,image:string,metadataSource?:string,metadataUpdatedAt?:string};
 type SortKey="score-desc"|"score-asc"|"title-asc"|"year-desc"|"year-asc"|"studio-asc";
-
-const repoAnime=animeData as Anime[];
-const aiSuggestions=suggestionsData as Anime[];
-const coverMap=covers as Record<string,string>;
-const REPO="MensahX1/project-anime";
-const EDIT_KEY="le-anime-edit-mode";
-const NEW_WINDOW_MS=14*24*60*60*1000;
-const statusTabs=[
-  {label:"All",value:"All"},
-  {label:"Done",value:"Completed"},
-  {label:"Paused",value:"Paused"},
-  {label:"Plan",value:"Planned"},
-  {label:"AI Picks",value:"AI Suggested"}
-];
-
-const splitTags=(value:string)=>String(value||"").split(/[,/;|]+/).map(x=>x.trim()).filter(Boolean);
-const stars=(n:number|null)=>n?"★".repeat(n):"—";
+const repoAnime=animeData as Anime[],aiSuggestions=suggestionsData as Anime[],coverMap=covers as Record<string,string>;
+const REPO="MensahX1/project-anime",EDIT_KEY="le-anime-edit-mode",NEW_WINDOW_MS=14*24*60*60*1000;
+const statusTabs=[{label:"All",value:"All"},{label:"Done",value:"Completed"},{label:"Paused",value:"Paused"},{label:"Plan",value:"Planned"},{label:"AI Picks",value:"AI Suggested"}];
+const splitTags=(v:string)=>String(v||"").split(/[,/;|]+/).map(x=>x.trim()).filter(Boolean),stars=(n:number|null)=>n?"★".repeat(n):"—";
 const withCover=(a:Anime):Anime=>({...a,latestEpisodeYear:(a as any).latestEpisodeYear??(a as any).latestSeasonYear??null,image:coverMap[a.title]||a.image||""});
 const initialAnime=()=>[...repoAnime,...aiSuggestions].map(withCover);
-const isRecentlyUpdated=(a:Anime)=>{if(!a.metadataUpdatedAt)return false;const t=Date.parse(a.metadataUpdatedAt);return Number.isFinite(t)&&Date.now()-t>=0&&Date.now()-t<=NEW_WINDOW_MS};
-
-function issueUrl(title:string,payload:unknown){
-  const body=`<!-- LE_ANIME_ADMIN_V1 -->\nThis request was created by The Watchlist. Only the authorized GitHub account can apply it.\n\n\`\`\`json\n${JSON.stringify(payload,null,2)}\n\`\`\``;
-  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`[anime-admin] ${title}`)}&body=${encodeURIComponent(body)}`;
-}
+const recent=(a:Anime)=>{if(!a.metadataUpdatedAt)return false;const t=Date.parse(a.metadataUpdatedAt);return Number.isFinite(t)&&Date.now()-t>=0&&Date.now()-t<=NEW_WINDOW_MS};
+function issueUrl(title:string,payload:unknown){const body=`<!-- LE_ANIME_ADMIN_V1 -->\nThis request was created by The Watchlist. Only the authorized GitHub account can apply it.\n\n\`\`\`json\n${JSON.stringify(payload,null,2)}\n\`\`\``;return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`[anime-admin] ${title}`)}&body=${encodeURIComponent(body)}`}
 
 function App(){
-  const[items]=useState<Anime[]>(initialAnime);
-  const[q,setQ]=useState("");
-  const[filter,setFilter]=useState("All");
-  const[genreFilter,setGenreFilter]=useState("All");
-  const[studioFilter,setStudioFilter]=useState("All");
-  const[scoreFilter,setScoreFilter]=useState("All");
-  const[sort,setSort]=useState<SortKey>("score-desc");
-  const[selected,setSelected]=useState<Anime|null>(null);
-  const[edit,setEdit]=useState<Anime|null>(null);
-  const[editMode,setEditMode]=useState(()=>localStorage.getItem(EDIT_KEY)==="1");
-  const[notice,setNotice]=useState("");
-
-  const genres=useMemo(()=>Array.from(new Set(items.flatMap(a=>splitTags(a.genre)))).sort((a,b)=>a.localeCompare(b)),[items]);
-  const studios=useMemo(()=>Array.from(new Set(items.flatMap(a=>splitTags(a.studio)))).sort((a,b)=>a.localeCompare(b)),[items]);
-
-  const shown=useMemo(()=>{
-    const result=items.filter(a=>{
-      const matchesStatus=filter==="All"||a.status===filter;
-      const matchesSearch=`${a.title} ${a.genre} ${a.studio}`.toLowerCase().includes(q.toLowerCase());
-      const matchesGenre=genreFilter==="All"||splitTags(a.genre).includes(genreFilter);
-      const matchesStudio=studioFilter==="All"||splitTags(a.studio).includes(studioFilter);
-      const matchesScore=scoreFilter==="All"||(scoreFilter==="Unrated"?a.score==null:a.score===Number(scoreFilter));
-      return matchesStatus&&matchesSearch&&matchesGenre&&matchesStudio&&matchesScore;
-    });
-    return result.sort((a,b)=>{
-      if(sort==="score-desc") return (b.score??-1)-(a.score??-1)||a.title.localeCompare(b.title);
-      if(sort==="score-asc") return (a.score??99)-(b.score??99)||a.title.localeCompare(b.title);
-      if(sort==="title-asc") return a.title.localeCompare(b.title);
-      if(sort==="year-desc") return (b.latestEpisodeYear??b.year??0)-(a.latestEpisodeYear??a.year??0)||a.title.localeCompare(b.title);
-      if(sort==="year-asc") return (a.year??9999)-(b.year??9999)||a.title.localeCompare(b.title);
-      return (a.studio||"zzz").localeCompare(b.studio||"zzz")||a.title.localeCompare(b.title);
-    });
-  },[items,q,filter,genreFilter,studioFilter,scoreFilter,sort]);
-
-  const hasFilters=q||filter!=="All"||genreFilter!=="All"||studioFilter!=="All"||scoreFilter!=="All"||sort!=="score-desc";
-  const resetFilters=()=>{setQ("");setFilter("All");setGenreFilter("All");setStudioFilter("All");setScoreFilter("All");setSort("score-desc")};
-  const toggleEdit=()=>{const next=!editMode;setEditMode(next);localStorage.setItem(EDIT_KEY,next?"1":"0");setEdit(null);setNotice(next?"Edit mode enabled · GitHub will verify you when you submit":"Edit mode disabled")};
-  const newAnime=():Anime=>({id:`anime-${crypto.randomUUID()}`,title:"",status:"Planned",episodes:null,score:null,genre:"",studio:"",year:new Date().getFullYear(),latestEpisodeYear:new Date().getFullYear(),synopsis:"",image:""});
-  const commit=(a:Anime)=>{const clean={...a,image:""};window.open(issueUrl(`upsert ${a.title||"anime"}`,{action:"upsert",anime:clean}),"_blank","noopener,noreferrer");setEdit(null);setNotice("GitHub opened. Submit the prefilled issue to publish this change.");};
-  const remove=(a:Anime)=>{if(!confirm(`Create a GitHub request to delete ${a.title}?`))return;window.open(issueUrl(`delete ${a.title}`,{action:"delete",id:a.id,title:a.title}),"_blank","noopener,noreferrer");setSelected(null);setNotice("GitHub opened. Submit the prefilled issue to publish this deletion.");};
-  const backup=()=>{const b=new Blob([JSON.stringify(repoAnime.map(a=>({...a,image:""})),null,2)],{type:"application/json"});const u=URL.createObjectURL(b),x=document.createElement("a");x.href=u;x.download="the-watchlist-backup.json";x.click();URL.revokeObjectURL(u)};
-
-  return <main>
-    <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>The Watchlist</h1><p>{repoAnime.length} titles · 5 weekly AI picks</p></div><div className="headerActions"><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setEdit(newAnime())}>＋</button>}</div></header>
-    {notice&&<div className="notice">{notice}</div>}
-    <div className="search"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search anime, genre, studio…"/></div>
-    <nav>{statusTabs.map(x=><button key={x.value} className={filter===x.value?"active":""} onClick={()=>setFilter(x.value)}>{x.label}</button>)}</nav>
-    <section className="filterPanel"><div className="filterGrid">
-      <label><span>Genre</span><select value={genreFilter} onChange={e=>setGenreFilter(e.target.value)}><option value="All">All genres</option>{genres.map(x=><option key={x}>{x}</option>)}</select></label>
-      <label><span>Studio</span><select value={studioFilter} onChange={e=>setStudioFilter(e.target.value)}><option value="All">All studios</option>{studios.map(x=><option key={x}>{x}</option>)}</select></label>
-      <label><span>Stars</span><select value={scoreFilter} onChange={e=>setScoreFilter(e.target.value)}><option value="All">All ratings</option>{[5,4,3,2,1].map(x=><option key={x} value={x}>{x} ★</option>)}<option value="Unrated">Unrated</option></select></label>
-      <label><span>Sort</span><select value={sort} onChange={e=>setSort(e.target.value as SortKey)}><option value="score-desc">Rating: high to low</option><option value="score-asc">Rating: low to high</option><option value="title-asc">Title: A to Z</option><option value="year-desc">Latest episode: newest</option><option value="year-asc">Original year: oldest</option><option value="studio-asc">Studio: A to Z</option></select></label>
-    </div><div className="filterSummary"><span>{shown.length} of {items.length} titles</span>{hasFilters&&<button onClick={resetFilters}>Reset</button>}</div></section>
-
-    <section className="grid">{shown.map(a=><article key={a.id} onClick={()=>setSelected(a)}><div className="poster">{a.image?<img loading="lazy" src={a.image} alt={`${a.title} cover`}/>:<div className="fallback"><b>{a.title.slice(0,1)}</b><span>{a.title}</span></div>}<span className="badge">{a.status==="AI Suggested"?"AI Pick":a.status||"Uncategorized"}</span>{isRecentlyUpdated(a)&&a.status!=="AI Suggested"&&<span className="newBadge">NEW</span>}</div><h3>{a.title}</h3><div className="rating">{stars(a.score)}</div><small>{a.episodes?`${a.episodes} eps`:""}{a.latestEpisodeYear?` · latest ${a.latestEpisodeYear}`:""}</small>{a.studio&&<small className="studioLine">{a.studio}</small>}</article>)}</section>
-    <footer><button onClick={backup}>Export repo data</button></footer>
-
-    {selected&&!edit&&<div className="sheet" onClick={()=>setSelected(null)}><div className="panel" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setSelected(null)}>×</button><div className="hero">{selected.image?<img src={selected.image} alt={`${selected.title} cover`}/>:<div className="heroFallback">{selected.title}</div>}</div><h2>{selected.title}</h2>{isRecentlyUpdated(selected)&&selected.status!=="AI Suggested"&&<div className="newNotice">NEW · metadata updated recently</div>}<div className="rating big">{stars(selected.score)}</div><p className="meta">{selected.status==="AI Suggested"?"AI Pick":selected.status||"Uncategorized"} · {selected.episodes||"—"} episodes · latest {selected.latestEpisodeYear||selected.year||"—"}</p>{selected.year&&selected.latestEpisodeYear&&selected.latestEpisodeYear!==selected.year&&<p className="meta">Started: {selected.year}</p>}<p>{selected.synopsis||"Suggested from the patterns in your 5-star anime."}</p><p className="muted">{selected.genre}<br/>{selected.studio}</p>{editMode&&selected.status!=="AI Suggested"&&<div className="actions"><button onClick={()=>setEdit(selected)}>Edit</button><button className="danger" onClick={()=>remove(selected)}>Delete</button></div>}</div></div>}
-
-    {edit&&editMode&&<div className="sheet"><form className="panel form" onSubmit={e=>{e.preventDefault();commit(edit)}}><button type="button" className="close" onClick={()=>setEdit(null)}>×</button><h2>{repoAnime.some(x=>x.id===edit.id)?"Edit anime":"Add anime"}</h2>{["title","genre","studio","synopsis"].map(k=><label key={k}>{k[0].toUpperCase()+k.slice(1)}{k==="synopsis"?<textarea value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>:<input required={k==="title"} value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>}</label>)}<div className="row"><label>Status<select value={edit.status} onChange={e=>setEdit({...edit,status:e.target.value})}><option value="">Uncategorized</option>{["Completed","Paused","Planned"].map(x=><option key={x}>{x}</option>)}</select></label><label>Score<select value={edit.score??""} onChange={e=>setEdit({...edit,score:e.target.value?+e.target.value:null})}><option value="">—</option>{[1,2,3,4,5].map(x=><option key={x} value={x}>{x} ★</option>)}</select></label></div><div className="row"><label>Total episodes<input type="number" min="0" value={edit.episodes??""} onChange={e=>setEdit({...edit,episodes:e.target.value?+e.target.value:null})}/></label><label>Latest episode year<input type="number" min="1900" max="2100" value={edit.latestEpisodeYear??""} onChange={e=>setEdit({...edit,latestEpisodeYear:e.target.value?+e.target.value:null})}/></label></div><label>Original year<input type="number" min="1900" max="2100" value={edit.year??""} onChange={e=>setEdit({...edit,year:e.target.value?+e.target.value:null})}/></label><button className="save">Continue in GitHub</button></form></div>}
-  </main>
+ const[items]=useState<Anime[]>(initialAnime),[q,setQ]=useState(""),[filter,setFilter]=useState("All"),[genreFilter,setGenreFilter]=useState("All"),[studioFilter,setStudioFilter]=useState("All"),[scoreFilter,setScoreFilter]=useState("All"),[typeFilter,setTypeFilter]=useState("All"),[franchiseFilter,setFranchiseFilter]=useState("All"),[sort,setSort]=useState<SortKey>("score-desc"),[selected,setSelected]=useState<Anime|null>(null),[edit,setEdit]=useState<Anime|null>(null),[editMode,setEditMode]=useState(()=>localStorage.getItem(EDIT_KEY)==="1"),[notice,setNotice]=useState("");
+ const genres=useMemo(()=>Array.from(new Set(items.flatMap(a=>splitTags(a.genre)))).sort(),[items]);
+ const studios=useMemo(()=>Array.from(new Set(items.flatMap(a=>splitTags(a.studio)))).sort(),[items]);
+ const franchises=useMemo(()=>Array.from(new Set(items.map(a=>franchiseOf(a.title)))).filter(f=>items.filter(a=>franchiseOf(a.title)===f).length>1).sort(),[items]);
+ const shown=useMemo(()=>items.filter(a=>{const query=q.trim().toLowerCase();return (filter==="All"||a.status===filter)&&(!query||searchableText(a).includes(query))&&(genreFilter==="All"||splitTags(a.genre).includes(genreFilter))&&(studioFilter==="All"||splitTags(a.studio).includes(studioFilter))&&(scoreFilter==="All"||(scoreFilter==="Unrated"?a.score==null:a.score===+scoreFilter))&&(typeFilter==="All"||mediaTypeOf(a)===typeFilter)&&(franchiseFilter==="All"||franchiseOf(a.title)===franchiseFilter)}).sort((a,b)=>sort==="score-desc"?(b.score??-1)-(a.score??-1)||a.title.localeCompare(b.title):sort==="score-asc"?(a.score??99)-(b.score??99)||a.title.localeCompare(b.title):sort==="title-asc"?a.title.localeCompare(b.title):sort==="year-desc"?(b.latestEpisodeYear??b.year??0)-(a.latestEpisodeYear??a.year??0)||a.title.localeCompare(b.title):sort==="year-asc"?(a.year??9999)-(b.year??9999)||a.title.localeCompare(b.title):(a.studio||"zzz").localeCompare(b.studio||"zzz")||a.title.localeCompare(b.title)),[items,q,filter,genreFilter,studioFilter,scoreFilter,typeFilter,franchiseFilter,sort]);
+ const hasFilters=q||filter!=="All"||genreFilter!=="All"||studioFilter!=="All"||scoreFilter!=="All"||typeFilter!=="All"||franchiseFilter!=="All"||sort!=="score-desc";
+ const reset=()=>{setQ("");setFilter("All");setGenreFilter("All");setStudioFilter("All");setScoreFilter("All");setTypeFilter("All");setFranchiseFilter("All");setSort("score-desc")};
+ const toggleEdit=()=>{const n=!editMode;setEditMode(n);localStorage.setItem(EDIT_KEY,n?"1":"0");setEdit(null);setNotice(n?"Edit mode enabled · GitHub will verify you when you submit":"Edit mode disabled")};
+ const newAnime=():Anime=>({id:`anime-${crypto.randomUUID()}`,title:"",status:"Planned",episodes:null,score:null,genre:"",studio:"",year:new Date().getFullYear(),latestEpisodeYear:new Date().getFullYear(),synopsis:"",image:""});
+ const commit=(a:Anime)=>{window.open(issueUrl(`upsert ${a.title||"anime"}`,{action:"upsert",anime:{...a,image:""}}),"_blank","noopener,noreferrer");setEdit(null);setNotice("GitHub opened. Submit the prefilled issue to publish this change.")};
+ const remove=(a:Anime)=>{if(!confirm(`Create a GitHub request to delete ${a.title}?`))return;window.open(issueUrl(`delete ${a.title}`,{action:"delete",id:a.id,title:a.title}),"_blank","noopener,noreferrer");setSelected(null)};
+ const backup=()=>{const b=new Blob([JSON.stringify(repoAnime.map(a=>({...a,image:""})),null,2)],{type:"application/json"}),u=URL.createObjectURL(b),x=document.createElement("a");x.href=u;x.download="the-watchlist-backup.json";x.click();URL.revokeObjectURL(u)};
+ const related=selected?items.filter(a=>a.id!==selected.id&&franchiseOf(a.title)===franchiseOf(selected.title)&&a.status!=="AI Suggested"):[];
+ return <main>
+  <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>The Watchlist</h1><p>{repoAnime.length} titles · 5 weekly AI picks</p></div><div className="headerActions"><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setEdit(newAnime())}>＋</button>}</div></header>
+  {notice&&<div className="notice">{notice}</div>}
+  <div className="search"><span>⌕</span><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search titles, aliases, franchises…"/></div>
+  <nav>{statusTabs.map(x=><button key={x.value} className={filter===x.value?"active":""} onClick={()=>setFilter(x.value)}>{x.label}</button>)}</nav>
+  <section className="filterPanel"><div className="filterGrid">
+   <label><span>Type</span><select value={typeFilter} onChange={e=>setTypeFilter(e.target.value)}><option>All</option><option>Series</option><option>Movie</option><option>OVA / Special</option></select></label>
+   <label><span>Franchise</span><select value={franchiseFilter} onChange={e=>setFranchiseFilter(e.target.value)}><option>All</option>{franchises.map(x=><option key={x}>{x}</option>)}</select></label>
+   <label><span>Genre</span><select value={genreFilter} onChange={e=>setGenreFilter(e.target.value)}><option value="All">All genres</option>{genres.map(x=><option key={x}>{x}</option>)}</select></label>
+   <label><span>Studio</span><select value={studioFilter} onChange={e=>setStudioFilter(e.target.value)}><option value="All">All studios</option>{studios.map(x=><option key={x}>{x}</option>)}</select></label>
+   <label><span>Stars</span><select value={scoreFilter} onChange={e=>setScoreFilter(e.target.value)}><option value="All">All ratings</option>{[5,4,3,2,1].map(x=><option key={x} value={x}>{x} ★</option>)}<option value="Unrated">Unrated</option></select></label>
+   <label><span>Sort</span><select value={sort} onChange={e=>setSort(e.target.value as SortKey)}><option value="score-desc">Rating: high to low</option><option value="score-asc">Rating: low to high</option><option value="title-asc">Title: A to Z</option><option value="year-desc">Latest episode: newest</option><option value="year-asc">Original year: oldest</option><option value="studio-asc">Studio: A to Z</option></select></label>
+  </div><div className="filterSummary"><span>{shown.length} of {items.length} titles</span>{hasFilters&&<button onClick={reset}>Reset</button>}</div></section>
+  <section className="grid">{shown.map(a=><article key={a.id} onClick={()=>setSelected(a)}><div className="poster">{a.image?<img loading="lazy" src={a.image} alt={`${a.title} cover`}/>:<div className="fallback"><b>{a.title.slice(0,1)}</b><span>{a.title}</span></div>}<span className="badge">{a.status==="AI Suggested"?"AI Pick":a.status||"Uncategorized"}</span>{recent(a)&&a.status!=="AI Suggested"&&<span className="newBadge">NEW</span>}</div><h3>{a.title}</h3><div className="rating">{stars(a.score)}</div><small>{mediaTypeOf(a)}{a.episodes?` · ${a.episodes} eps`:""}{a.latestEpisodeYear?` · ${a.latestEpisodeYear}`:""}</small>{a.studio&&<small className="studioLine">{a.studio}</small>}</article>)}</section>
+  <footer><button onClick={backup}>Export repo data</button></footer>
+  {selected&&!edit&&<div className="sheet" onClick={()=>setSelected(null)}><div className="panel" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setSelected(null)}>×</button><div className="hero">{selected.image?<img src={selected.image} alt={`${selected.title} cover`}/>:<div className="heroFallback">{selected.title}</div>}</div><h2>{selected.title}</h2>{recent(selected)&&selected.status!=="AI Suggested"&&<div className="newNotice">NEW · metadata updated recently</div>}<div className="rating big">{stars(selected.score)}</div><p className="meta">{selected.status==="AI Suggested"?"AI Pick":selected.status||"Uncategorized"} · {mediaTypeOf(selected)} · {selected.episodes||"—"} episodes · latest {selected.latestEpisodeYear||selected.year||"—"}</p><p className="franchiseLabel">{franchiseOf(selected.title)}</p><p>{selected.synopsis||"Suggested from the patterns in your 5-star anime."}</p><p className="muted">{selected.genre}<br/>{selected.studio}</p>{selected.status==="AI Suggested"&&<div className="whyPick"><b>Why this pick?</b><span>{whyPick(selected,repoAnime)}</span></div>}{related.length>0&&<section className="franchiseSection"><h3>More in {franchiseOf(selected.title)}</h3><div className="relatedRow">{related.map(a=><button key={a.id} onClick={()=>setSelected(a)}>{a.image&&<img src={a.image} alt=""/>}<span>{a.title}</span><small>{stars(a.score)} · {mediaTypeOf(a)}</small></button>)}</div></section>}{editMode&&selected.status!=="AI Suggested"&&<div className="actions"><button onClick={()=>setEdit(selected)}>Edit</button><button className="danger" onClick={()=>remove(selected)}>Delete</button></div>}</div></div>}
+  {edit&&editMode&&<div className="sheet"><form className="panel form" onSubmit={e=>{e.preventDefault();commit(edit)}}><button type="button" className="close" onClick={()=>setEdit(null)}>×</button><h2>{repoAnime.some(x=>x.id===edit.id)?"Edit anime":"Add anime"}</h2>{["title","genre","studio","synopsis"].map(k=><label key={k}>{k[0].toUpperCase()+k.slice(1)}{k==="synopsis"?<textarea value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>:<input required={k==="title"} value={(edit as any)[k]} onChange={e=>setEdit({...edit,[k]:e.target.value})}/>}</label>)}<div className="row"><label>Status<select value={edit.status} onChange={e=>setEdit({...edit,status:e.target.value})}><option value="">Uncategorized</option>{["Completed","Paused","Planned"].map(x=><option key={x}>{x}</option>)}</select></label><label>Score<select value={edit.score??""} onChange={e=>setEdit({...edit,score:e.target.value?+e.target.value:null})}><option value="">—</option>{[1,2,3,4,5].map(x=><option key={x} value={x}>{x} ★</option>)}</select></label></div><div className="row"><label>Total episodes<input type="number" min="0" value={edit.episodes??""} onChange={e=>setEdit({...edit,episodes:e.target.value?+e.target.value:null})}/></label><label>Latest episode year<input type="number" min="1900" max="2100" value={edit.latestEpisodeYear??""} onChange={e=>setEdit({...edit,latestEpisodeYear:e.target.value?+e.target.value:null})}/></label></div><label>Original year<input type="number" min="1900" max="2100" value={edit.year??""} onChange={e=>setEdit({...edit,year:e.target.value?+e.target.value:null})}/></label><button className="save">Continue in GitHub</button></form></div>}
+ </main>
 }
-
 createRoot(document.getElementById("root")!).render(<App/>);
