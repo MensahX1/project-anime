@@ -1,5 +1,7 @@
 import fs from 'node:fs/promises';
 
+// This file is intentionally touched when bootstrapping the search index so the
+// refresh workflow runs on the next main-branch push.
 const dbPath=process.argv[2];
 if(!dbPath) throw new Error('Usage: node scripts/build-anime-index.mjs <anime-offline-database.json>');
 
