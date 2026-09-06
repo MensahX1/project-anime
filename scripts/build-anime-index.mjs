@@ -28,5 +28,5 @@ const index=entries
   }))
   .sort((a,b)=>a.title.localeCompare(b.title));
 
-await fs.writeFile('src/animeIndex.json',JSON.stringify(index)+'\n');
-console.log(`Wrote ${index.length} anime to src/animeIndex.json`);
+await fs.writeFile('public/anime-index.json',JSON.stringify(index)+'\n');
+console.log(`Wrote ${index.length} anime to public/anime-index.json`);
