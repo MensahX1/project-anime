@@ -2,8 +2,8 @@ import {useEffect,useRef} from "react";
 
 const selector='button:not([disabled]),[href],input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])';
 
-export function useDialogFocus(onClose:()=>void,initialSelector?:string){
- const ref=useRef<HTMLElement|null>(null);
+export function useDialogFocus<T extends HTMLElement>(onClose:()=>void,initialSelector?:string){
+ const ref=useRef<T|null>(null);
  useEffect(()=>{
   const dialog=ref.current;
   if(!dialog)return;
