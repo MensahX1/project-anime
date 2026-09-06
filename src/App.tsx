@@ -9,6 +9,8 @@ import FilterPanel from "./components/FilterPanel";
 import {useCatalogFilters} from "./hooks/useCatalogFilters";
 import type {Anime} from "./types";
 
+const deployedAt=new Date(__DEPLOYED_AT__).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});
+
 export default function App(){
  const[items]=useState<Anime[]>(initialAnime),[selected,setSelected]=useState<Anime|null>(null),[edit,setEdit]=useState<Anime|null>(null),[editMode,setEditMode]=useState(()=>localStorage.getItem(EDIT_KEY)==="1"),[notice,setNotice]=useState("");
  const filters=useCatalogFilters(items);
@@ -23,7 +25,7 @@ export default function App(){
   <nav aria-label="Library status">{statusTabs.map(x=><button key={x.value} className={filters.filter===x.value?"active":""} onClick={()=>filters.setFilter(x.value)}>{x.label}</button>)}</nav>
   <FilterPanel typeFilter={filters.typeFilter} setTypeFilter={filters.setTypeFilter} franchiseFilter={filters.franchiseFilter} setFranchiseFilter={filters.setFranchiseFilter} franchises={filters.franchises} genreFilter={filters.genreFilter} setGenreFilter={filters.setGenreFilter} genres={filters.genres} studioFilter={filters.studioFilter} setStudioFilter={filters.setStudioFilter} studios={filters.studios} scoreFilter={filters.scoreFilter} setScoreFilter={filters.setScoreFilter} sort={filters.sort} setSort={filters.setSort} shownCount={filters.shown.length} totalCount={items.length} hasFilters={filters.hasFilters} onReset={filters.reset}/>
   <section className="grid">{filters.shown.map(anime=><AnimeCard key={anime.id} anime={anime} onSelect={setSelected}/>)}</section>
-  <footer><button onClick={()=>exportLibrary(repoAnime)}>Export repo data</button></footer>
+  <footer><button onClick={()=>exportLibrary(repoAnime)}>Export repo data</button><small>Last deployed {deployedAt}</small></footer>
   {selected&&!edit&&<AnimeDetails anime={selected} related={related} editMode={editMode} onClose={()=>setSelected(null)} onSelect={setSelected} onEdit={setEdit} onDelete={remove}/>} 
   {edit&&editMode&&<AnimeForm anime={edit} onChange={setEdit} onClose={()=>setEdit(null)} onSubmit={commit}/>} 
  </main>

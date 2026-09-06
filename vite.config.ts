@@ -4,6 +4,9 @@ import {VitePWA} from "vite-plugin-pwa";
 
 export default defineConfig({
   base:"/project-anime/",
+  define:{
+    __DEPLOYED_AT__:JSON.stringify(new Date().toISOString())
+  },
   plugins:[react(),VitePWA({
     registerType:"autoUpdate",
     includeAssets:["covers/*.{jpg,jpeg,png,webp}"],
