@@ -1,5 +1,6 @@
 import animeData from "./anime.json";
 import covers from "./generatedCovers.json";
+import {franchiseOf,mediaTypeOf} from "./catalog";
 import type {Anime} from "./types";
 
 const NEW_WINDOW_MS=14*24*60*60*1000;
@@ -16,13 +17,17 @@ export const statusTabs=[
 export const splitTags=(value:string)=>String(value||"").split(/[,/;|]+/).map(x=>x.trim()).filter(Boolean);
 export const stars=(score:number|null)=>score?"★".repeat(score):"—";
 
-const withCover=(anime:Anime):Anime=>({
+const normalizeAnime=(anime:Anime):Anime=>({
   ...anime,
+  genres:anime.genres?.length?anime.genres:splitTags(anime.genre),
+  studios:anime.studios?.length?anime.studios:splitTags(anime.studio),
+  mediaType:anime.mediaType||mediaTypeOf(anime),
+  franchiseName:anime.franchiseName||franchiseOf(anime.title),
   latestEpisodeYear:(anime as Anime & {latestSeasonYear?:number|null}).latestEpisodeYear??(anime as Anime & {latestSeasonYear?:number|null}).latestSeasonYear??null,
   image:coverMap[anime.title]||anime.image||""
 });
 
-export const initialAnime=()=>repoAnime.map(withCover);
+export const initialAnime=()=>repoAnime.map(normalizeAnime);
 
 export const isRecentlyUpdated=(anime:Anime)=>{
   if(!anime.metadataUpdatedAt)return false;
