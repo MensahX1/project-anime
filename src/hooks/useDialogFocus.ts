@@ -2,14 +2,15 @@ import {useEffect,useRef} from "react";
 
 const selector='button:not([disabled]),[href],input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])';
 
-export function useDialogFocus(onClose:()=>void){
+export function useDialogFocus(onClose:()=>void,initialSelector?:string){
  const ref=useRef<HTMLElement|null>(null);
  useEffect(()=>{
   const dialog=ref.current;
   if(!dialog)return;
   const previous=document.activeElement instanceof HTMLElement?document.activeElement:null;
   const focusables=()=>Array.from(dialog.querySelectorAll<HTMLElement>(selector)).filter(el=>!el.hasAttribute("disabled")&&el.getAttribute("aria-hidden")!=="true");
-  (focusables()[0]||dialog).focus();
+  const initial=(initialSelector?dialog.querySelector<HTMLElement>(initialSelector):null)||focusables()[0]||dialog;
+  initial.focus();
   const onKeyDown=(event:KeyboardEvent)=>{
    if(event.key==="Escape"){event.preventDefault();onClose();return;}
    if(event.key!=="Tab")return;
@@ -21,6 +22,6 @@ export function useDialogFocus(onClose:()=>void){
   };
   window.addEventListener("keydown",onKeyDown);
   return()=>{window.removeEventListener("keydown",onKeyDown);previous?.focus();};
- },[onClose]);
+ },[initialSelector,onClose]);
  return ref;
 }
