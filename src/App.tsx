@@ -9,6 +9,7 @@ import FilterPanel from "./components/FilterPanel";
 import LibraryStats from "./components/LibraryStats";
 import {useCatalogFilters} from "./hooks/useCatalogFilters";
 import type {Anime} from "./types";
+import "./insights.css";
 
 const deployedAt=new Date(__DEPLOYED_AT__).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});
 
