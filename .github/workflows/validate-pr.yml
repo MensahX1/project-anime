@@ -21,6 +21,8 @@ jobs:
         with:
           node-version: 20
       - run: npm install
+      - name: Run unit tests
+        run: npm test
       - name: Verify bundled covers
         run: npm run covers:check
       - name: Build app
