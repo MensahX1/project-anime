@@ -2566,14 +2566,14 @@
     "title": "Death Parade",
     "status": "Planned",
     "episodes": 12,
-    "score": 3,
+    "score": null,
     "genre": "Psychological, Mystery, Drama, Supernatural, Thriller",
     "studio": "Madhouse",
     "year": 2015,
+    "latestEpisodeYear": 2015,
     "synopsis": "Two people who die at the same time are sent to a mysterious bar, where psychological games expose their true nature and determine their fate.",
     "image": "",
-    "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2015
+    "metadataSource": "manami-project/anime-offline-database"
   },
   {
     "id": "anime-kakegurui-twin",
