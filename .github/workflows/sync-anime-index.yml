@@ -8,11 +8,11 @@ on:
     branches: [main]
     paths:
       - 'scripts/build-anime-index.mjs'
+      - 'scripts/check-anime-index.mjs'
       - '.github/workflows/sync-anime-index.yml'
 
 permissions:
   contents: write
-  actions: write
 
 concurrency:
   group: anime-search-index
@@ -36,6 +36,8 @@ jobs:
           curl -L --fail --retry 4 --retry-delay 2 "$url" -o /tmp/anime-db.json
       - name: Build compact search index
         run: node scripts/build-anime-index.mjs /tmp/anime-db.json
+      - name: Verify search index
+        run: node scripts/check-anime-index.mjs
       - name: Commit refreshed index
         shell: bash
         run: |
@@ -49,7 +51,3 @@ jobs:
           git commit -m "Refresh anime search index"
           git pull --rebase origin main
           git push origin HEAD:main
-      - name: Deploy refreshed index
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run deploy-pages.yml --repo "$GITHUB_REPOSITORY" --ref main
