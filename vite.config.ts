@@ -25,6 +25,8 @@ export default defineConfig({
     workbox:{
       globPatterns:["**/*.{js,css,html,json,jpg,jpeg,png,webp,svg}"],
       cleanupOutdatedCaches:true,
+      skipWaiting:true,
+      clientsClaim:true,
       navigateFallback:"/project-anime/index.html",
       runtimeCaching:[{
         urlPattern:({request})=>request.destination==="image",
