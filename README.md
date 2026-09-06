@@ -4,7 +4,9 @@ Personal anime library PWA built with React, Vite, TypeScript, and GitHub Pages.
 
 ## Product scope
 
-The Watchlist is a personal anime library and discovery app, not an episode-by-episode tracker. It stores title-level metadata, library status, ratings, franchises, and recommendations. Total episode counts may be synced as catalog metadata, but personal watched-episode progress is intentionally not part of the design.
+The Watchlist is a personal anime library and discovery app, not an episode-by-episode tracker. It stores title-level metadata, library status, ratings, and franchise groupings. Total episode counts may be synced as catalog metadata, but personal watched-episode progress is intentionally not part of the design.
+
+The previous weekly AI-picks generator is currently disabled and removed while a replacement recommendation system is designed.
 
 ## Source of truth
 
@@ -16,7 +18,7 @@ Edit mode can create prefilled `[anime-admin]` GitHub issues for add, edit, and 
 
 `src/main.tsx` only boots the PWA and renders the app. `src/App.tsx` owns page-level state and orchestration, while focused components live under `src/components/`. Shared catalog data helpers, admin helpers, and TypeScript models live in dedicated modules.
 
-Catalog heuristics such as franchise grouping, media type detection, search aliases, and recommendation explanations live in `src/catalog.ts` and have unit coverage in `src/catalog.test.ts`.
+Catalog heuristics such as franchise grouping, media type detection, and search aliases live in `src/catalog.ts` and have unit coverage in `src/catalog.test.ts`.
 
 ## Deployment
 
