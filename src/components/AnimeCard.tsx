@@ -9,8 +9,8 @@ export default function AnimeCard({anime,onSelect}:Props){
   return <article role="button" tabIndex={0} aria-label={`Open ${anime.title}`} onClick={open} onKeyDown={e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open()}}}>
     <div className="poster">
       {anime.image?<img loading="lazy" src={anime.image} alt={`${anime.title} cover`}/>:<div className="fallback"><b>{anime.title.slice(0,1)}</b><span>{anime.title}</span></div>}
-      <span className="badge">{anime.status==="AI Suggested"?"AI Pick":anime.status||"Uncategorized"}</span>
-      {isRecentlyUpdated(anime)&&anime.status!=="AI Suggested"&&<span className="newBadge">NEW</span>}
+      <span className="badge">{anime.status||"Uncategorized"}</span>
+      {isRecentlyUpdated(anime)&&<span className="newBadge">NEW</span>}
     </div>
     <h3>{anime.title}</h3>
     <div className="rating">{stars(anime.score)}</div>
