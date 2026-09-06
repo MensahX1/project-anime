@@ -11,8 +11,8 @@ export default defineConfig({
     registerType:"autoUpdate",
     includeAssets:["covers/*.{jpg,jpeg,png,webp}"],
     manifest:{
-      name:"The Watchlist",
-      short_name:"Watchlist",
+      name:"AniVault",
+      short_name:"AniVault",
       description:"Richie’s personal anime library",
       theme_color:"#09090b",
       background_color:"#09090b",
@@ -32,7 +32,7 @@ export default defineConfig({
       runtimeCaching:[{
         urlPattern:({request})=>request.destination==="image",
         handler:"CacheFirst",
-        options:{cacheName:"watchlist-covers",expiration:{maxEntries:500,maxAgeSeconds:60*60*24*90}}
+        options:{cacheName:"anivault-covers",expiration:{maxEntries:500,maxAgeSeconds:60*60*24*90}}
       }]
     }
   })]
