@@ -25,13 +25,14 @@ type Props={onSelect:(anime:Anime)=>void;onManual:()=>void;onClose:()=>void};
 
 export default function AnimeSearch({onSelect,onManual,onClose}:Props){
  const titleId=useId();
- const dialogRef=useDialogFocus<HTMLElement>(onClose,"input");
+ const dialogRef=useDialogFocus<HTMLElement>(onClose);
  const[q,setQ]=useState("");
  const[index,setIndex]=useState<AnimeCatalogEntry[]>([]);
  const[loading,setLoading]=useState(true);
  const[loadError,setLoadError]=useState(false);
  const existing=useMemo(()=>new Set(repoAnime.map(a=>norm(a.title))),[]);
  useEffect(()=>{let active=true;fetch(`${import.meta.env.BASE_URL}anime-index.json`).then(r=>{if(!r.ok)throw new Error(String(r.status));return r.json()}).then(data=>{if(active)setIndex(Array.isArray(data)?data:[])}).catch(()=>{if(active)setLoadError(true)}).finally(()=>{if(active)setLoading(false)});return()=>{active=false}},[]);
+ useEffect(()=>{if(!loading&&!loadError)dialogRef.current?.querySelector<HTMLInputElement>("input")?.focus()},[dialogRef,loading,loadError]);
  const results=useMemo(()=>{
   const query=norm(q);
   if(query.length<2)return [];
