@@ -23,8 +23,9 @@ export default function App(){
  const related=selected?items.filter(a=>a.id!==selected.id&&(a.franchiseName||franchiseOf(a.title))===(selected.franchiseName||franchiseOf(selected.title))):[];
  const chooseCatalogAnime=(anime:Anime)=>{setShowAddSearch(false);setEdit(anime)};
  const addManual=()=>{setShowAddSearch(false);setEdit(newAnime())};
+ const pickRandom=()=>{if(!items.length)return;const anime=items[Math.floor(Math.random()*items.length)];setEdit(null);setShowAddSearch(false);setSelected(anime);setNotice(`Random pick · ${anime.title}`)};
  return <main>
-  <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>The Watchlist</h1><p>{repoAnime.length} titles</p></div><div className="headerActions"><button className="adminPill" onClick={()=>setShowStats(true)}>Stats</button><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setShowAddSearch(true)} aria-label="Add anime">＋</button>}</div></header>
+  <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>AniVault</h1><p>{repoAnime.length} titles</p></div><div className="headerActions"><button className="adminPill" onClick={pickRandom} aria-label="Pick a random anime from the full library">Random</button><button className="adminPill" onClick={()=>setShowStats(true)}>Stats</button><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setShowAddSearch(true)} aria-label="Add anime">＋</button>}</div></header>
   {notice&&<div className="notice">{notice}</div>}
   <div className="search"><span aria-hidden="true">⌕</span><input value={filters.q} onChange={e=>filters.setQ(e.target.value)} placeholder="Search titles, aliases, franchises, genres, studios…" aria-label="Search anime"/></div>
   <nav aria-label="Library status">{statusTabs.map(x=><button key={x.value} className={filters.filter===x.value?"active":""} onClick={()=>filters.setFilter(x.value)}>{x.label}</button>)}</nav>
