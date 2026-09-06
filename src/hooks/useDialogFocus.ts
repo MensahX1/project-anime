@@ -4,6 +4,8 @@ const selector='button:not([disabled]),[href],input:not([disabled]),select:not([
 
 export function useDialogFocus<T extends HTMLElement>(onClose:()=>void,initialSelector?:string){
  const ref=useRef<T|null>(null);
+ const closeRef=useRef(onClose);
+ closeRef.current=onClose;
  useEffect(()=>{
   const dialog=ref.current;
   if(!dialog)return;
@@ -12,7 +14,7 @@ export function useDialogFocus<T extends HTMLElement>(onClose:()=>void,initialSe
   const initial=(initialSelector?dialog.querySelector<HTMLElement>(initialSelector):null)||focusables()[0]||dialog;
   initial.focus();
   const onKeyDown=(event:KeyboardEvent)=>{
-   if(event.key==="Escape"){event.preventDefault();onClose();return;}
+   if(event.key==="Escape"){event.preventDefault();closeRef.current();return;}
    if(event.key!=="Tab")return;
    const items=focusables();
    if(!items.length){event.preventDefault();dialog.focus();return;}
@@ -22,6 +24,6 @@ export function useDialogFocus<T extends HTMLElement>(onClose:()=>void,initialSe
   };
   window.addEventListener("keydown",onKeyDown);
   return()=>{window.removeEventListener("keydown",onKeyDown);previous?.focus();};
- },[initialSelector,onClose]);
+ },[initialSelector]);
  return ref;
 }
