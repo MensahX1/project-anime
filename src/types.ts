@@ -18,4 +18,15 @@ export type Anime={
   metadataUpdatedAt?:string;
 };
 
+export type AnimeCatalogEntry={
+  title:string;
+  synonyms:string[];
+  mediaType:"Series"|"Movie"|"OVA / Special";
+  episodes:number|null;
+  year:number|null;
+  genres:string[];
+  studios:string[];
+  picture:string;
+};
+
 export type SortKey="score-desc"|"score-asc"|"title-asc"|"year-desc"|"year-asc"|"studio-asc";
