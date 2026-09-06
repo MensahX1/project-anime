@@ -8,8 +8,8 @@ type Props={anime:Anime;related:Anime[];editMode:boolean;onClose:()=>void;onSele
 
 export default function AnimeDetails({anime,related,editMode,onClose,onSelect,onEdit,onDelete}:Props){
  const titleId=useId();
- const dialogRef=useDialogFocus(onClose);
- return <div className="sheet" onClick={onClose}><div ref={dialogRef as React.RefObject<HTMLDivElement>} className="panel" role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} onClick={e=>e.stopPropagation()}>
+ const dialogRef=useDialogFocus<HTMLDivElement>(onClose);
+ return <div className="sheet" onClick={onClose}><div ref={dialogRef} className="panel" role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} onClick={e=>e.stopPropagation()}>
   <button className="close" onClick={onClose} aria-label="Close anime details">×</button>
   <div className="hero">{anime.image?<img src={anime.image} alt={`${anime.title} cover`}/>:<div className="heroFallback">{anime.title}</div>}</div>
   <h2 id={titleId}>{anime.title}</h2>
