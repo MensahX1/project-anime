@@ -1,222 +1,9 @@
 {
-  "generatedAt": "2026-09-06T16:17:39.915Z",
+  "generatedAt": "2026-09-13T16:58:06.653Z",
   "datasetLastUpdate": "2026-07-04",
   "source": "manami-project/anime-offline-database",
   "currentSeason": "SUMMER 2026",
-  "updated": [
-    {
-      "id": "sheet-black-lagoon",
-      "title": "Black Lagoon",
-      "matchedTitle": "Black Lagoon",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 24,
-        "latestEpisodeYear": 2006,
-        "year": 2006
-      },
-      "after": {
-        "episodes": 12,
-        "latestEpisodeYear": 2006,
-        "year": 2006
-      },
-      "metadataUpdatedAt": "2026-09-06T16:17:41.544Z",
-      "chain": [
-        {
-          "title": "Black Lagoon",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 12,
-          "year": 2006,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
-      "id": "anime-bakugan-battle-brawlers",
-      "title": "Bakugan Battle Brawlers",
-      "matchedTitle": "Bakugan Battle Brawlers",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 52,
-        "latestEpisodeYear": 2008,
-        "year": 2007
-      },
-      "after": {
-        "episodes": 78,
-        "latestEpisodeYear": 2023,
-        "year": 2007
-      },
-      "metadataUpdatedAt": "2026-09-06T16:17:41.688Z",
-      "chain": [
-        {
-          "title": "Bakugan Battle Brawlers",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 52,
-          "year": 2007,
-          "season": "SPRING"
-        },
-        {
-          "title": "Bakugan",
-          "type": "ONA",
-          "status": "FINISHED",
-          "episodes": 26,
-          "year": 2023,
-          "season": "FALL"
-        },
-        {
-          "title": "Bakugan",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 0,
-          "year": 2023,
-          "season": "SUMMER"
-        }
-      ]
-    },
-    {
-      "id": "anime-bakugan-new-vestroia",
-      "title": "Bakugan Battle Brawlers: New Vestroia",
-      "matchedTitle": "Bakugan Battle Brawlers: New Vestroia",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 52,
-        "latestEpisodeYear": 2011,
-        "year": 2009
-      },
-      "after": {
-        "episodes": 52,
-        "latestEpisodeYear": 2010,
-        "year": 2009
-      },
-      "metadataUpdatedAt": "2026-09-06T16:17:41.692Z",
-      "chain": [
-        {
-          "title": "Bakugan Battle Brawlers: New Vestroia",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 52,
-          "year": 2010,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
-      "id": "anime-pokemon",
-      "title": "Pokémon",
-      "matchedTitle": "Pokemon",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 276,
-        "latestEpisodeYear": 2002,
-        "year": 1997
-      },
-      "after": {
-        "episodes": 276,
-        "latestEpisodeYear": 1997,
-        "year": 1997
-      },
-      "metadataUpdatedAt": "2026-09-06T16:17:41.851Z",
-      "chain": [
-        {
-          "title": "Pokemon",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 276,
-          "year": 1997,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
-      "id": "anime-pokemon-advanced-generation",
-      "title": "Pokémon: Advanced Generation",
-      "matchedTitle": "Pokemon Advanced Generation",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 192,
-        "latestEpisodeYear": 2006,
-        "year": 2002
-      },
-      "after": {
-        "episodes": 192,
-        "latestEpisodeYear": 2002,
-        "year": 2002
-      },
-      "metadataUpdatedAt": "2026-09-06T16:17:41.935Z",
-      "chain": [
-        {
-          "title": "Pokemon Advanced Generation",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 192,
-          "year": 2002,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "anime-pokemon-diamond-and-pearl",
-      "title": "Pokémon: Diamond & Pearl",
-      "matchedTitle": "Pokemon Diamond & Pearl",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 191,
-        "latestEpisodeYear": 2010,
-        "year": 2006
-      },
-      "after": {
-        "episodes": 191,
-        "latestEpisodeYear": 2006,
-        "year": 2006
-      },
-      "metadataUpdatedAt": "2026-09-06T16:17:42.087Z",
-      "chain": [
-        {
-          "title": "Pokemon Diamond & Pearl",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 191,
-          "year": 2006,
-          "season": "FALL"
-        }
-      ]
-    },
-    {
-      "id": "anime-inuyasha-the-final-act",
-      "title": "Inuyasha: The Final Act",
-      "matchedTitle": "InuYasha: Kanketsu-hen",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 26,
-        "latestEpisodeYear": 2010,
-        "year": 2009
-      },
-      "after": {
-        "episodes": 26,
-        "latestEpisodeYear": 2009,
-        "year": 2009
-      },
-      "metadataUpdatedAt": "2026-09-06T16:17:42.089Z",
-      "chain": [
-        {
-          "title": "InuYasha: Kanketsu-hen",
-          "type": "TV",
-          "status": "FINISHED",
-          "episodes": 26,
-          "year": 2009,
-          "season": "FALL"
-        }
-      ]
-    }
-  ],
+  "updated": [],
   "unchanged": [
     {
       "id": "sheet-death-note",
@@ -5674,6 +5461,34 @@
       ]
     },
     {
+      "id": "sheet-black-lagoon",
+      "title": "Black Lagoon",
+      "matchedTitle": "Black Lagoon",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 12,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "after": {
+        "episodes": 12,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.544Z",
+      "chain": [
+        {
+          "title": "Black Lagoon",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 12,
+          "year": 2006,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
       "id": "sheet-kabaneri-of-the-iron-fortress",
       "title": "Kabaneri of the Iron Fortress",
       "matchedTitle": "Kabaneri of the Iron Fortress",
@@ -6738,6 +6553,134 @@
       ]
     },
     {
+      "id": "anime-bakugan-battle-brawlers",
+      "title": "Bakugan Battle Brawlers",
+      "matchedTitle": "Bakugan Battle Brawlers",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 78,
+        "latestEpisodeYear": 2023,
+        "year": 2007
+      },
+      "after": {
+        "episodes": 78,
+        "latestEpisodeYear": 2023,
+        "year": 2007
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.688Z",
+      "chain": [
+        {
+          "title": "Bakugan Battle Brawlers",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 52,
+          "year": 2007,
+          "season": "SPRING"
+        },
+        {
+          "title": "Bakugan",
+          "type": "ONA",
+          "status": "FINISHED",
+          "episodes": 26,
+          "year": 2023,
+          "season": "FALL"
+        },
+        {
+          "title": "Bakugan",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 0,
+          "year": 2023,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "anime-bakugan-new-vestroia",
+      "title": "Bakugan Battle Brawlers: New Vestroia",
+      "matchedTitle": "Bakugan Battle Brawlers: New Vestroia",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 52,
+        "latestEpisodeYear": 2010,
+        "year": 2009
+      },
+      "after": {
+        "episodes": 52,
+        "latestEpisodeYear": 2010,
+        "year": 2009
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.692Z",
+      "chain": [
+        {
+          "title": "Bakugan Battle Brawlers: New Vestroia",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 52,
+          "year": 2010,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "anime-pokemon",
+      "title": "Pokémon",
+      "matchedTitle": "Pokemon",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 276,
+        "latestEpisodeYear": 1997,
+        "year": 1997
+      },
+      "after": {
+        "episodes": 276,
+        "latestEpisodeYear": 1997,
+        "year": 1997
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.851Z",
+      "chain": [
+        {
+          "title": "Pokemon",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 276,
+          "year": 1997,
+          "season": "SPRING"
+        }
+      ]
+    },
+    {
+      "id": "anime-pokemon-advanced-generation",
+      "title": "Pokémon: Advanced Generation",
+      "matchedTitle": "Pokemon Advanced Generation",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 192,
+        "latestEpisodeYear": 2002,
+        "year": 2002
+      },
+      "after": {
+        "episodes": 192,
+        "latestEpisodeYear": 2002,
+        "year": 2002
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:41.935Z",
+      "chain": [
+        {
+          "title": "Pokemon Advanced Generation",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 192,
+          "year": 2002,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
       "id": "anime-pokemon-ranger-temple-of-the-sea",
       "title": "Pokémon Ranger and the Temple of the Sea",
       "matchedTitle": "Pokemon Movie 09: Pokemon Ranger to Umi no Ouji Manaphy",
@@ -6822,6 +6765,34 @@
       ]
     },
     {
+      "id": "anime-pokemon-diamond-and-pearl",
+      "title": "Pokémon: Diamond & Pearl",
+      "matchedTitle": "Pokemon Diamond & Pearl",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 191,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "after": {
+        "episodes": 191,
+        "latestEpisodeYear": 2006,
+        "year": 2006
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:42.087Z",
+      "chain": [
+        {
+          "title": "Pokemon Diamond & Pearl",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 191,
+          "year": 2006,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
       "id": "anime-black-lagoon-the-second-barrage",
       "title": "Black Lagoon: The Second Barrage",
       "matchedTitle": "Black Lagoon: The Second Barrage",
@@ -6845,6 +6816,34 @@
           "status": "FINISHED",
           "episodes": 12,
           "year": 2006,
+          "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "anime-inuyasha-the-final-act",
+      "title": "Inuyasha: The Final Act",
+      "matchedTitle": "InuYasha: Kanketsu-hen",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 26,
+        "latestEpisodeYear": 2009,
+        "year": 2009
+      },
+      "after": {
+        "episodes": 26,
+        "latestEpisodeYear": 2009,
+        "year": 2009
+      },
+      "metadataUpdatedAt": "2026-09-06T16:17:42.089Z",
+      "chain": [
+        {
+          "title": "InuYasha: Kanketsu-hen",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 26,
+          "year": 2009,
           "season": "FALL"
         }
       ]
