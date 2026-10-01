@@ -1332,16 +1332,27 @@
   {
     "id": "sheet-re-zero-starting-life-in-another-world",
     "title": "Re:ZERO -Starting Life in Another World-",
-    "status": "Paused",
+    "status": "Completed",
     "episodes": 109,
     "score": 5,
     "genre": "Drama, Fantasy, Isekai",
     "studio": "White Fox",
     "year": 2016,
+    "latestEpisodeYear": 2026,
     "synopsis": "A boy transported to another world repeatedly revives after death and tries to save those around him.",
     "image": "",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Isekai"
+    ],
+    "studios": [
+      "White Fox"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Re:ZERO -Starting Life in Another World-",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2026
+    "metadataUpdatedAt": "2026-10-01T03:24:49.741Z"
   },
   {
     "id": "sheet-heavenly-delusion",
