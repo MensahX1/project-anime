@@ -10,6 +10,7 @@ export type Anime={
   latestEpisodeYear:number|null;
   synopsis:string;
   image:string;
+  lastUpdated?:string;
   genres?:string[];
   studios?:string[];
   mediaType?:"Series"|"Movie"|"OVA / Special";
