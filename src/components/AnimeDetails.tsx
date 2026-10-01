@@ -6,9 +6,15 @@ import type {Anime} from "../types";
 
 type Props={anime:Anime;related:Anime[];editMode:boolean;onClose:()=>void;onSelect:(anime:Anime)=>void;onEdit:(anime:Anime)=>void;onDelete:(anime:Anime)=>void};
 
+const formatUpdated=(value?:string)=>{
+ const date=value?new Date(value):null;
+ return date&&!Number.isNaN(date.getTime())?date.toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"}):null;
+};
+
 export default function AnimeDetails({anime,related,editMode,onClose,onSelect,onEdit,onDelete}:Props){
  const titleId=useId();
  const dialogRef=useDialogFocus<HTMLDivElement>(onClose);
+ const updated=formatUpdated(anime.lastUpdated);
  return <div className="sheet" onClick={onClose}><div ref={dialogRef} className="panel" role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} onClick={e=>e.stopPropagation()}>
   <button className="close" onClick={onClose} aria-label="Close anime details">×</button>
   <div className="hero">{anime.image?<img src={anime.image} alt={`${anime.title} cover`}/>:<div className="heroFallback">{anime.title}</div>}</div>
@@ -16,6 +22,7 @@ export default function AnimeDetails({anime,related,editMode,onClose,onSelect,on
   {isRecentlyUpdated(anime)&&<div className="newNotice">NEW · metadata updated recently</div>}
   <div className="rating big">{stars(anime.score)}</div>
   <p className="meta">{anime.status||"Uncategorized"} · {mediaTypeOf(anime)} · {anime.episodes||"—"} episodes · latest {anime.latestEpisodeYear||anime.year||"—"}</p>
+  {updated&&<p className="muted">Last updated {updated}</p>}
   <p className="franchiseLabel">{franchiseOf(anime.title)}</p>
   <p>{anime.synopsis||"No synopsis available."}</p>
   <p className="muted">{anime.genre}<br/>{anime.studio}</p>
