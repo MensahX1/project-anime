@@ -56,7 +56,10 @@ jobs:
           const anime=JSON.parse(await fs.readFile(path,'utf8'));
           const strings=value=>Array.from(new Set((Array.isArray(value)?value:[]).map(x=>String(x||'').trim()).filter(Boolean)));
 
-          if(request.action==='upsert'){
+          if(request.action==='initialize-last-updated'){
+            const timestamp=new Date().toISOString();
+            for(const item of anime)item.lastUpdated=timestamp;
+          }else if(request.action==='upsert'){
             const a=request.anime;
             if(!a||typeof a.id!=='string'||typeof a.title!=='string'||!a.title.trim()) throw new Error('Invalid anime payload');
             const i=anime.findIndex(x=>x.id===a.id);
@@ -66,10 +69,13 @@ jobs:
             const studios=strings(a.studios);
             const mediaType=['Series','Movie','OVA / Special'].includes(a.mediaType)?a.mediaType:existing.mediaType;
             const metadataSource=typeof a.metadataSource==='string'&&a.metadataSource.trim()?a.metadataSource.trim():existing.metadataSource;
+            const nextStatus=String(a.status||'');
+            const transitionedToCompleted=nextStatus==='Completed'&&String(existing.status||'')!=='Completed';
+            const lastUpdated=transitionedToCompleted?new Date().toISOString():existing.lastUpdated;
             const clean={
               id:a.id,
               title:a.title.trim(),
-              status:String(a.status||''),
+              status:nextStatus,
               episodes,
               score:a.score==null?null:Number(a.score),
               genre:String(a.genre||''),
@@ -78,6 +84,7 @@ jobs:
               latestEpisodeYear:a.latestEpisodeYear==null?(existing.latestEpisodeYear??existing.latestSeasonYear??null):Number(a.latestEpisodeYear),
               synopsis:String(a.synopsis||''),
               image:'',
+              ...(lastUpdated?{lastUpdated}:{}),
               ...(genres.length?{genres}:existing.genres?.length?{genres:existing.genres}:{}),
               ...(studios.length?{studios}:existing.studios?.length?{studios:existing.studios}:{}),
               ...(mediaType?{mediaType}:{}),
