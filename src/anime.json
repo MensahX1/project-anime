@@ -958,15 +958,26 @@
     "title": "Rascal Does Not Dream of Bunny Girl Senpai",
     "status": "Completed",
     "episodes": 26,
-    "score": 5,
+    "score": 6,
     "genre": "Romance, Supernatural, Drama",
     "studio": "CloverWorks",
     "year": 2018,
+    "latestEpisodeYear": 2025,
     "synopsis": "A high schooler helps girls affected by supernatural adolescence syndrome while facing emotional mysteries.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Romance",
+      "Supernatural",
+      "Drama"
+    ],
+    "studios": [
+      "CloverWorks"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Rascal Does Not Dream of Bunny Girl Senpai",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2025,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:39:51.823Z"
   },
   {
     "id": "sheet-rascal-does-not-dream-of-a-dreaming-girl",
