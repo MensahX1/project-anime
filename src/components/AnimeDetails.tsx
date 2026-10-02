@@ -1,6 +1,6 @@
 import {useId} from "react";
 import {franchiseOf,mediaTypeOf} from "../catalog";
-import {isRecentlyUpdated,stars} from "../appData";
+import {stars} from "../appData";
 import {useDialogFocus} from "../hooks/useDialogFocus";
 import type {Anime} from "../types";
 
@@ -19,10 +19,9 @@ export default function AnimeDetails({anime,related,editMode,onClose,onSelect,on
   <button className="close" onClick={onClose} aria-label="Close anime details">×</button>
   <div className="hero">{anime.image?<img src={anime.image} alt={`${anime.title} cover`}/>:<div className="heroFallback">{anime.title}</div>}</div>
   <h2 id={titleId}>{anime.title}</h2>
-  {isRecentlyUpdated(anime)&&<div className="newNotice">NEW · metadata updated recently</div>}
   <div className="rating big">{stars(anime.score)}</div>
   <p className="meta">{anime.status||"Uncategorized"} · {mediaTypeOf(anime)} · {anime.episodes||"—"} episodes · latest {anime.latestEpisodeYear||anime.year||"—"}</p>
-  {updated&&<p className="muted">Last updated {updated}</p>}
+  {updated&&<p className="muted updatedDetail">Last updated {updated}</p>}
   <p className="franchiseLabel">{franchiseOf(anime.title)}</p>
   <p>{anime.synopsis||"No synopsis available."}</p>
   <p className="muted">{anime.genre}<br/>{anime.studio}</p>

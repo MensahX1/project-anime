@@ -3,12 +3,12 @@ import covers from "./generatedCovers.json";
 import {franchiseOf,mediaTypeOf} from "./catalog";
 import type {Anime} from "./types";
 
-const NEW_WINDOW_MS=14*24*60*60*1000;
 const coverMap=covers as Record<string,string>;
 
 export const repoAnime=animeData as Anime[];
 export const statusTabs=[
   {label:"All",value:"All"},
+  {label:"Watching",value:"Watching"},
   {label:"Done",value:"Completed"},
   {label:"Paused",value:"Paused"},
   {label:"Plan",value:"Planned"}
@@ -29,8 +29,3 @@ const normalizeAnime=(anime:Anime):Anime=>({
 
 export const initialAnime=()=>repoAnime.map(normalizeAnime);
 
-export const isRecentlyUpdated=(anime:Anime)=>{
-  if(!anime.metadataUpdatedAt)return false;
-  const timestamp=Date.parse(anime.metadataUpdatedAt);
-  return Number.isFinite(timestamp)&&Date.now()-timestamp>=0&&Date.now()-timestamp<=NEW_WINDOW_MS;
-};

@@ -15,7 +15,7 @@ type Props={
 export default function FilterPanel(p:Props){
   return <section className="filterPanel">
     <div className="quickFilters" aria-label="Quick filters">
-      {["All","Unrated","Recent"].map(x=><button key={x} className={p.quickFilter===x?"active":""} onClick={()=>p.setQuickFilter(x)}>{x}</button>)}
+      {["All","Unrated"].map(x=><button key={x} className={p.quickFilter===x?"active":""} onClick={()=>p.setQuickFilter(x)}>{x}</button>)}
     </div>
     <div className="filterGrid">
       <label><span>Type</span><select value={p.typeFilter} onChange={e=>p.setTypeFilter(e.target.value)}><option>All</option><option>Series</option><option>Movie</option><option>OVA / Special</option></select></label>

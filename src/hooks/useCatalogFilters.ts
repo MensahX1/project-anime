@@ -1,6 +1,6 @@
 import {useMemo,useState} from "react";
 import {franchiseOf,mediaTypeOf,searchableText} from "../catalog";
-import {isRecentlyUpdated,splitTags} from "../appData";
+import {splitTags} from "../appData";
 import type {Anime,SortKey} from "../types";
 
 const tagsOf=(anime:Anime)=>anime.genres?.length?anime.genres:splitTags(anime.genre);
@@ -35,7 +35,7 @@ export function useCatalogFilters(items:Anime[]){
    &&(typeFilter==="All"||(a.mediaType||mediaTypeOf(a))===typeFilter)
    &&(franchiseFilter==="All"||(a.franchiseName||franchiseOf(a.title))===franchiseFilter)
    &&(decadeFilter==="All"||(year!=null&&Math.floor(year/10)*10===+decadeFilter))
-   &&(quickFilter==="All"||(quickFilter==="Unrated"?a.score==null:quickFilter==="Recent"?isRecentlyUpdated(a):true));
+   &&(quickFilter==="All"||(quickFilter==="Unrated"?a.score==null:true));
  }).sort((a,b)=>sort==="score-desc"?(b.score??-1)-(a.score??-1)||a.title.localeCompare(b.title)
   :sort==="score-asc"?(a.score??99)-(b.score??99)||a.title.localeCompare(b.title)
   :sort==="title-asc"?a.title.localeCompare(b.title)
