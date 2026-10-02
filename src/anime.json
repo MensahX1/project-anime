@@ -111,15 +111,26 @@
     "title": "The Eminence in Shadow",
     "status": "Completed",
     "episodes": 32,
-    "score": 5,
+    "score": 6,
     "genre": "Action, Isekai, Comedy",
     "studio": "Nexus",
     "year": 2022,
+    "latestEpisodeYear": 2023,
     "synopsis": "A boy obsessed with operating from the shadows reincarnates into a fantasy world and accidentally builds a real secret organization.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Isekai",
+      "Comedy"
+    ],
+    "studios": [
+      "Nexus"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "The Eminence in Shadow",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2023,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:46:31.942Z"
   },
   {
     "id": "sheet-dan-da-dan",
@@ -1029,15 +1040,27 @@
     "title": "The Quintessential Quintuplets",
     "status": "Completed",
     "episodes": 25,
-    "score": 5,
+    "score": 6,
     "genre": "Romance, Comedy, Harem",
     "studio": "Tezuka Productions, Bibury Animation Studios",
     "year": 2019,
+    "latestEpisodeYear": 2021,
     "synopsis": "A top student tutors five identical sisters and becomes tied to a mystery about his future bride.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Harem"
+    ],
+    "studios": [
+      "Tezuka Productions",
+      "Bibury Animation Studios"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "The Quintessential Quintuplets",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2021,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:46:31.943Z"
   },
   {
     "id": "sheet-to-be-hero-x",
@@ -1374,15 +1397,26 @@
     "title": "Summer Time Rendering",
     "status": "Completed",
     "episodes": 25,
-    "score": 5,
+    "score": 6,
     "genre": "Mystery, Supernatural, Thriller",
     "studio": "OLM",
     "year": 2022,
+    "latestEpisodeYear": 2022,
     "synopsis": "A man returns to his island hometown and gets trapped in a time-loop mystery involving shadow creatures.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Mystery",
+      "Supernatural",
+      "Thriller"
+    ],
+    "studios": [
+      "OLM"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Summer Time Rendering",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2022,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:46:31.943Z"
   },
   {
     "id": "sheet-citrus",
