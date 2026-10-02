@@ -9,7 +9,7 @@ export default function LibraryStats({items,onClose}:{items:Anime[];onClose:()=>
  const titleId=useId();
  const dialogRef=useDialogFocus<HTMLElement>(onClose);
  const completed=items.filter(a=>a.status==="Completed").length;
- const planned=items.filter(a=>a.status==="Planned").length;
+ const backlog=items.filter(a=>a.status==="Backlog").length;
  const rated=items.filter(a=>a.score!=null);
  const average=rated.length?(rated.reduce((sum,a)=>sum+(a.score||0),0)/rated.length).toFixed(1):"—";
  const genres=top(items.flatMap(a=>a.genres?.length?a.genres:splitTags(a.genre)));
@@ -21,7 +21,7 @@ export default function LibraryStats({items,onClose}:{items:Anime[];onClose:()=>
   <div className="statsPanel" aria-label="Library stats">
    <div className="stat"><b>{items.length}</b><span>Titles</span></div>
    <div className="stat"><b>{completed}</b><span>Completed</span></div>
-   <div className="stat"><b>{planned}</b><span>Planned</span></div>
+   <div className="stat"><b>{backlog}</b><span>Backlog</span></div>
    <div className="stat"><b>{average}</b><span>Avg rating</span></div>
    <div className="statWide"><span>Top genres</span><b>{genres.map(([name,count])=>`${name} ${count}`).join(" · ")||"—"}</b></div>
    <div className="statWide"><span>Top studios</span><b>{studios.map(([name,count])=>`${name} ${count}`).join(" · ")||"—"}</b></div>

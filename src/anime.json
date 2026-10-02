@@ -362,7 +362,7 @@
   {
     "id": "sheet-dragon-ball-daima",
     "title": "Dragon Ball Daima",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 20,
     "score": null,
     "genre": "Action, Adventure, Fantasy",
@@ -377,7 +377,7 @@
   {
     "id": "sheet-psycho-pass",
     "title": "Psycho-Pass",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 41,
     "score": 5,
     "genre": "Sci-Fi, Crime, Psychological",
@@ -617,7 +617,7 @@
   {
     "id": "sheet-hell-s-paradise",
     "title": "Hell's Paradise",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 25,
     "score": 5,
     "genre": "Action, Dark Fantasy, Historical",
@@ -767,7 +767,7 @@
   {
     "id": "sheet-fruits-basket",
     "title": "Fruits Basket",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 63,
     "score": 4,
     "genre": "Drama, Romance, Supernatural",
@@ -977,7 +977,7 @@
   {
     "id": "sheet-to-be-hero-x",
     "title": "To Be Hero X",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 24,
     "score": 4,
     "genre": "Action, Superhero, Drama",
@@ -1142,7 +1142,7 @@
   {
     "id": "sheet-ghost-stories",
     "title": "Ghost Stories",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 19,
     "score": 4,
     "genre": "Horror, Comedy, Supernatural",
@@ -1277,7 +1277,7 @@
   {
     "id": "sheet-konosuba-god-s-blessing-on-this-wonderful-world",
     "title": "KonoSuba: God's Blessing on This Wonderful World!",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 31,
     "score": 4,
     "genre": "Comedy, Fantasy, Isekai",
@@ -1528,7 +1528,7 @@
   {
     "id": "sheet-deadman-wonderland",
     "title": "Deadman Wonderland",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 12,
     "score": 3,
     "genre": "Action, Horror, Survival",
@@ -1543,7 +1543,7 @@
   {
     "id": "sheet-the-apothecary-diaries",
     "title": "The Apothecary Diaries",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 48,
     "score": 4,
     "genre": "Mystery, Drama, Historical",
@@ -1633,7 +1633,7 @@
   {
     "id": "sheet-trinity-seven",
     "title": "Trinity Seven",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 12,
     "score": null,
     "genre": "Action, Fantasy, Harem",
@@ -1738,7 +1738,7 @@
   {
     "id": "sheet-akiba-maid-war",
     "title": "Akiba Maid War",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 12,
     "score": 3,
     "genre": "Action, Comedy, Crime",
@@ -1753,7 +1753,7 @@
   {
     "id": "sheet-trillion-game",
     "title": "Trillion Game",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 26,
     "score": 3,
     "genre": "Business, Drama",
@@ -1768,7 +1768,7 @@
   {
     "id": "sheet-guilty-crown",
     "title": "Guilty Crown",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 22,
     "score": 4,
     "genre": "Action, Sci-Fi, Drama",
@@ -1783,7 +1783,7 @@
   {
     "id": "sheet-the-world-god-only-knows",
     "title": "The World God Only Knows",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 48,
     "score": 3,
     "genre": "Comedy, Romance, Supernatural",
@@ -1813,7 +1813,7 @@
   {
     "id": "sheet-hunter-x-hunter",
     "title": "Hunter x Hunter",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 148,
     "score": 4,
     "genre": "Action, Adventure, Shounen",
@@ -1828,7 +1828,7 @@
   {
     "id": "sheet-spy-x-family",
     "title": "SPY x FAMILY",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 50,
     "score": null,
     "genre": "Action, Comedy, Slice of Life",
@@ -1903,7 +1903,7 @@
   {
     "id": "sheet-tonikawa-over-the-moon-for-you",
     "title": "TONIKAWA: Over the Moon for You",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 24,
     "score": 3,
     "genre": "Romance, Comedy, Slice of Life",
@@ -1948,7 +1948,7 @@
   {
     "id": "sheet-the-testament-of-sister-new-devil",
     "title": "The Testament of Sister New Devil",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 22,
     "score": 2,
     "genre": "Action, Ecchi, Harem",
@@ -2038,7 +2038,7 @@
   {
     "id": "sheet-darker-than-black",
     "title": "Darker than Black",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 37,
     "score": null,
     "genre": "Action, Sci-Fi, Mystery",
@@ -2053,7 +2053,7 @@
   {
     "id": "sheet-dr-stone",
     "title": "Dr. Stone",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 82,
     "score": null,
     "genre": "Adventure, Sci-Fi, Shounen",
@@ -2068,7 +2068,7 @@
   {
     "id": "sheet-high-rise-invasion",
     "title": "High-Rise Invasion",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 12,
     "score": null,
     "genre": "Action, Horror, Survival",
@@ -2083,7 +2083,7 @@
   {
     "id": "sheet-to-your-eternity",
     "title": "To Your Eternity",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 62,
     "score": null,
     "genre": "Adventure, Drama, Supernatural",
@@ -2098,7 +2098,7 @@
   {
     "id": "sheet-that-time-i-got-reincarnated-as-a-slime",
     "title": "That Time I Got Reincarnated as a Slime",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 85,
     "score": null,
     "genre": "Fantasy, Isekai, Adventure",
@@ -2113,7 +2113,7 @@
   {
     "id": "sheet-haikyu",
     "title": "Haikyu!!",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 85,
     "score": null,
     "genre": "Sports, Comedy, Drama",
@@ -2128,7 +2128,7 @@
   {
     "id": "sheet-gachiakuta",
     "title": "Gachiakuta",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 24,
     "score": null,
     "genre": "Action, Dark Fantasy",
@@ -2143,7 +2143,7 @@
   {
     "id": "sheet-mushoku-tensei-jobless-reincarnation",
     "title": "Mushoku Tensei: Jobless Reincarnation",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 48,
     "score": 3,
     "genre": "Fantasy, Isekai, Drama",
@@ -2158,7 +2158,7 @@
   {
     "id": "sheet-fullmetal-alchemist-brotherhood",
     "title": "Fullmetal Alchemist: Brotherhood",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 64,
     "score": null,
     "genre": "Action, Adventure, Fantasy",
@@ -2173,7 +2173,7 @@
   {
     "id": "sheet-the-lost-village",
     "title": "The Lost Village",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 12,
     "score": 2,
     "genre": "Mystery, Psychological, Horror",
@@ -2203,7 +2203,7 @@
   {
     "id": "sheet-the-irregular-at-magic-high-school",
     "title": "The Irregular at Magic High School",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 53,
     "score": null,
     "genre": "Action, Sci-Fi, School",
@@ -2233,7 +2233,7 @@
   {
     "id": "sheet-yashahime-princess-half-demon",
     "title": "Yashahime: Princess Half-Demon",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 48,
     "score": 2,
     "genre": "Action, Adventure, Fantasy",
@@ -2263,7 +2263,7 @@
   {
     "id": "sheet-nier-automata-ver1-1a",
     "title": "NieR:Automata Ver1.1a",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 24,
     "score": null,
     "genre": "Action, Sci-Fi, Drama",
@@ -2309,7 +2309,7 @@
   {
     "id": "sheet-kabaneri-of-the-iron-fortress",
     "title": "Kabaneri of the Iron Fortress",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 12,
     "score": null,
     "genre": "Action, Steampunk, Horror",
@@ -2324,7 +2324,7 @@
   {
     "id": "sheet-fate-grand-order-absolute-demonic-front-babylonia",
     "title": "Fate/Grand Order: Absolute Demonic Front - Babylonia",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 71,
     "score": null,
     "genre": "Action, Fantasy, Adventure",
@@ -2339,7 +2339,7 @@
   {
     "id": "sheet-grimgar-ashes-and-illusions",
     "title": "Grimgar: Ashes and Illusions",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 12,
     "score": null,
     "genre": "Fantasy, Isekai, Drama",
@@ -2369,7 +2369,7 @@
   {
     "id": "sheet-my-stepmom-s-daughter-is-my-ex",
     "title": "My Stepmom's Daughter Is My Ex",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 12,
     "score": 3,
     "genre": "Romance, Comedy, School",
@@ -2384,7 +2384,7 @@
   {
     "id": "sheet-steins-gate",
     "title": "Steins;Gate",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 24,
     "score": null,
     "genre": "Sci-Fi, Thriller, Drama",
@@ -2399,7 +2399,7 @@
   {
     "id": "sheet-juni-taisen-zodiac-war",
     "title": "Juni Taisen: Zodiac War",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 12,
     "score": null,
     "genre": "Action, Survival, Supernatural",
@@ -2414,7 +2414,7 @@
   {
     "id": "sheet-k",
     "title": "K",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 26,
     "score": 4,
     "genre": "Action, Supernatural, Mystery",
@@ -2459,7 +2459,7 @@
   {
     "id": "sheet-kiznaiver",
     "title": "Kiznaiver",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 12,
     "score": null,
     "genre": "Drama, Sci-Fi, Psychological",
@@ -2489,7 +2489,7 @@
   {
     "id": "sheet-metallic-rouge",
     "title": "Metallic Rouge",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 13,
     "score": null,
     "genre": "Action, Sci-Fi, Androids",
@@ -2504,7 +2504,7 @@
   {
     "id": "sheet-school-days",
     "title": "School Days",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 12,
     "score": null,
     "genre": "Drama, Romance, Psychological",
@@ -2519,7 +2519,7 @@
   {
     "id": "sheet-my-happy-marriage",
     "title": "My Happy Marriage",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 25,
     "score": 2,
     "genre": "Romance, Drama, Supernatural",
@@ -2564,7 +2564,7 @@
   {
     "id": "sheet-91-days",
     "title": "91 Days",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 12,
     "score": 3,
     "genre": "Crime, Drama, Revenge",
@@ -2594,7 +2594,7 @@
   {
     "id": "sheet-oreshura",
     "title": "Oreshura",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 13,
     "score": null,
     "genre": "Romance, Comedy, Harem",
@@ -2624,7 +2624,7 @@
   {
     "id": "sheet-the-angel-next-door-spoils-me-rotten",
     "title": "The Angel Next Door Spoils Me Rotten",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 24,
     "score": 2,
     "genre": "Romance, Slice of Life",
@@ -2665,7 +2665,7 @@
   {
     "id": "sheet-to-love-ru",
     "title": "To LOVE-Ru",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 62,
     "score": null,
     "genre": "Comedy, Romance, Ecchi",
@@ -2680,7 +2680,7 @@
   {
     "id": "sheet-saekano-how-to-raise-a-boring-girlfriend",
     "title": "Saekano: How to Raise a Boring Girlfriend",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 23,
     "score": null,
     "genre": "Romance, Comedy, Harem",
@@ -2710,7 +2710,7 @@
   {
     "id": "sheet-the-daily-life-of-the-immortal-king",
     "title": "The Daily Life of the Immortal King",
-    "status": "Paused",
+    "status": "Backlog",
     "episodes": 63,
     "score": 2,
     "genre": "Action, Comedy, Fantasy",
@@ -2770,7 +2770,7 @@
   {
     "id": "anime-death-parade",
     "title": "Death Parade",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 12,
     "score": null,
     "genre": "Psychological, Mystery, Drama, Supernatural, Thriller",
@@ -2925,7 +2925,7 @@
   {
     "id": "anime-black-lagoon-the-second-barrage",
     "title": "Black Lagoon: The Second Barrage",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 12,
     "score": null,
     "genre": "Action, Crime, Seinen",
@@ -3106,7 +3106,7 @@
   {
     "id": "anime-aec5e51b-9025-41b0-887d-e37ff4c7bb8d",
     "title": "Violet Evergarden",
-    "status": "Planned",
+    "status": "Backlog",
     "episodes": 13,
     "score": null,
     "genre": "adventure, age gap, android, assassins, awards, based on a light novel, character driven, child soldier, coming of age, coming-of-age, contemplation, crunchyroll anime awards",

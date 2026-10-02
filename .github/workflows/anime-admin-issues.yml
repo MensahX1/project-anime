@@ -69,7 +69,8 @@ jobs:
             const studios=strings(a.studios);
             const mediaType=['Series','Movie','OVA / Special'].includes(a.mediaType)?a.mediaType:existing.mediaType;
             const metadataSource=typeof a.metadataSource==='string'&&a.metadataSource.trim()?a.metadataSource.trim():existing.metadataSource;
-            const nextStatus=String(a.status||'');
+            const requestedStatus=String(a.status||'');
+            const nextStatus=['Planned','Paused'].includes(requestedStatus)?'Backlog':requestedStatus;
             const transitionedToCompleted=nextStatus==='Completed'&&String(existing.status||'')!=='Completed';
             const lastUpdated=transitionedToCompleted?new Date().toISOString():existing.lastUpdated;
             const clean={

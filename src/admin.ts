@@ -10,7 +10,7 @@ export function issueUrl(title:string,payload:unknown){
 
 export function newAnime():Anime{
   const year=new Date().getFullYear();
-  return {id:`anime-${crypto.randomUUID()}`,title:"",status:"Planned",episodes:null,score:null,genre:"",studio:"",year,latestEpisodeYear:year,synopsis:"",image:""};
+  return {id:`anime-${crypto.randomUUID()}`,title:"",status:"Backlog",episodes:null,score:null,genre:"",studio:"",year,latestEpisodeYear:year,synopsis:"",image:""};
 }
 
 export function exportLibrary(items:Anime[]){

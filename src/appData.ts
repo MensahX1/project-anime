@@ -9,9 +9,8 @@ export const repoAnime=animeData as Anime[];
 export const statusTabs=[
   {label:"All",value:"All"},
   {label:"Watching",value:"Watching"},
-  {label:"Done",value:"Completed"},
-  {label:"Paused",value:"Paused"},
-  {label:"Plan",value:"Planned"}
+  {label:"Completed",value:"Completed"},
+  {label:"Backlog",value:"Backlog"}
 ];
 
 export const splitTags=(value:string)=>String(value||"").split(/[,/;|]+/).map(x=>x.trim()).filter(Boolean);
@@ -19,6 +18,7 @@ export const stars=(score:number|null)=>score?"★".repeat(score):"—";
 
 const normalizeAnime=(anime:Anime):Anime=>({
   ...anime,
+  status:["Planned","Paused"].includes(anime.status)?"Backlog":anime.status,
   genres:anime.genres?.length?anime.genres:splitTags(anime.genre),
   studios:anime.studios?.length?anime.studios:splitTags(anime.studio),
   mediaType:anime.mediaType||mediaTypeOf(anime),
@@ -28,4 +28,3 @@ const normalizeAnime=(anime:Anime):Anime=>({
 });
 
 export const initialAnime=()=>repoAnime.map(normalizeAnime);
-
