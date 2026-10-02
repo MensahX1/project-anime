@@ -2,6 +2,7 @@ import {useMemo,useState} from "react";
 import {franchiseOf} from "./catalog";
 import {EDIT_KEY,exportLibrary,issueBody,issueUrl,newAnime} from "./admin";
 import {initialAnime,repoAnime,statusTabs} from "./appData";
+import CoverIntro from "./components/CoverIntro";
 import AnimeCard from "./components/AnimeCard";
 import AnimeDetails from "./components/AnimeDetails";
 import AnimeForm from "./components/AnimeForm";
@@ -44,7 +45,7 @@ export default function App(){
  const chooseCatalogAnime=(anime:Anime)=>{setShowAddSearch(false);setEdit(anime)};
  const addManual=()=>{setShowAddSearch(false);setEdit(newAnime())};
  const pickRandom=()=>{if(!items.length)return;const anime=items[Math.floor(Math.random()*items.length)];setEdit(null);setShowAddSearch(false);setSelected(anime);setNotice(`Random pick · ${anime.title}`)};
- return <main>
+ return <><CoverIntro items={items}/><main>
   <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>AniVault</h1><p>{items.length} titles</p></div><div className="headerActions"><button className="adminPill" onClick={pickRandom} aria-label="Pick a random anime from the full library">Random</button><button className="adminPill" onClick={()=>setShowStats(true)}>Stats</button><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setShowAddSearch(true)} aria-label="Add anime">＋</button>}</div></header>
   {pending.length>0&&<section className="pendingBar" aria-label="Pending changes"><span>{pending.length} pending {pending.length===1?"change":"changes"}</span><button onClick={saveAll}>Save all changes</button><button className="discard" onClick={discard}>Discard</button></section>}
   {batchLink&&<div className="batchHelp">{batchText&&<textarea aria-label="Batch to copy" readOnly value={batchText} onFocus={e=>e.currentTarget.select()}/>}<a href={batchLink} target="_blank" rel="noreferrer">Open GitHub to submit batch</a></div>}
