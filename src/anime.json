@@ -403,15 +403,26 @@
     "title": "Tales of Wedding Rings",
     "status": "Completed",
     "episodes": 25,
-    "score": 4,
+    "score": 3,
     "genre": "Fantasy, Romance, Harem",
     "studio": "Staple Entertainment",
     "year": 2024,
+    "latestEpisodeYear": 2025,
     "synopsis": "A boy follows his childhood friend to another world and becomes entangled in a ring-based fantasy marriage quest.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Fantasy",
+      "Romance",
+      "Harem"
+    ],
+    "studios": [
+      "Staple Entertainment"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Tales of Wedding Rings",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2025,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.379Z"
   },
   {
     "id": "sheet-dragon-ball-daima",
@@ -493,30 +504,52 @@
     "title": "Fate/Zero",
     "status": "Completed",
     "episodes": 25,
-    "score": 5,
+    "score": 6,
     "genre": "Action, Fantasy, Drama",
     "studio": "ufotable",
     "year": 2011,
+    "latestEpisodeYear": 2012,
     "synopsis": "Seven mages and their heroic spirits fight a grim Holy Grail War before the events of Fate/stay night.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Drama"
+    ],
+    "studios": [
+      "ufotable"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Fate/Zero",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2012,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.378Z"
   },
   {
     "id": "sheet-fate-stay-night-unlimited-blade-works",
     "title": "Fate/stay night: Unlimited Blade Works",
     "status": "Completed",
     "episodes": 25,
-    "score": 5,
+    "score": 6,
     "genre": "Action, Fantasy, Supernatural",
     "studio": "ufotable",
     "year": 2014,
+    "latestEpisodeYear": 2015,
     "synopsis": "Shirou Emiya is pulled into the Holy Grail War and confronts ideals of heroism and sacrifice.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Supernatural"
+    ],
+    "studios": [
+      "ufotable"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Fate/stay night: Unlimited Blade Works",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2015,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.378Z"
   },
   {
     "id": "sheet-fate-apocrypha",
@@ -538,15 +571,26 @@
     "title": "Rosario + Vampire",
     "status": "Completed",
     "episodes": 26,
-    "score": 5,
+    "score": 4,
     "genre": "Comedy, Romance, Supernatural",
     "studio": "Gonzo",
     "year": 2008,
+    "latestEpisodeYear": 2008,
     "synopsis": "A human boy accidentally enrolls in a monster school and gets drawn into supernatural harem chaos.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Supernatural"
+    ],
+    "studios": [
+      "Gonzo"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Rosario + Vampire",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2008,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.379Z"
   },
   {
     "id": "sheet-my-bride-is-a-mermaid",
@@ -643,15 +687,26 @@
     "title": "Naruto",
     "status": "Completed",
     "episodes": 220,
-    "score": 5,
+    "score": 6,
     "genre": "Action, Adventure, Shounen",
     "studio": "Pierrot",
     "year": 2002,
+    "latestEpisodeYear": 2002,
     "synopsis": "An ostracized ninja trains to become Hokage while seeking recognition and protecting his friends.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Shounen"
+    ],
+    "studios": [
+      "Pierrot"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Naruto",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2002,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.379Z"
   },
   {
     "id": "sheet-naruto-shippuden",
@@ -1067,15 +1122,26 @@
     "title": "To Be Hero X",
     "status": "Backlog",
     "episodes": 24,
-    "score": 4,
+    "score": 3,
     "genre": "Action, Superhero, Drama",
     "studio": "BeDream",
     "year": 2025,
+    "latestEpisodeYear": 2025,
     "synopsis": "A stylized superhero story where popularity, identity, and power collide in a competitive hero system.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Superhero",
+      "Drama"
+    ],
+    "studios": [
+      "BeDream"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "To Be Hero X",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2025,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.379Z"
   },
   {
     "id": "sheet-7th-time-loop-the-villainess-enjoys-a-carefree-life-married-to-her-worst-enemy",
@@ -1277,15 +1343,26 @@
     "title": "Our Dating Story: The Experienced You and the Inexperienced Me",
     "status": "Completed",
     "episodes": 12,
-    "score": 3,
+    "score": 2,
     "genre": "Romance, School, Drama",
     "studio": "ENGI",
     "year": 2023,
+    "latestEpisodeYear": 2023,
     "synopsis": "An inexperienced boy starts dating a popular girl and they learn to bridge their emotional gaps.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Romance",
+      "School",
+      "Drama"
+    ],
+    "studios": [
+      "ENGI"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Our Dating Story: The Experienced You and the Inexperienced Me",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2023,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.379Z"
   },
   {
     "id": "sheet-platinum-end",
@@ -1438,15 +1515,26 @@
     "title": "Shinobi no Ittoki",
     "status": "Completed",
     "episodes": 12,
-    "score": 3,
+    "score": 2,
     "genre": "Action, Ninja, Drama",
     "studio": "Troyca",
     "year": 2022,
+    "latestEpisodeYear": 2022,
     "synopsis": "A normal teen learns he is heir to a ninja clan and is forced into a hidden conflict.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Ninja",
+      "Drama"
+    ],
+    "studios": [
+      "Troyca"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Shinobi no Ittoki",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2022,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.379Z"
   },
   {
     "id": "sheet-bottom-tier-character-tomozaki",
@@ -1817,15 +1905,26 @@
     "title": "Zom 100: Bucket List of the Dead",
     "status": "Completed",
     "episodes": 12,
-    "score": 4,
+    "score": 3,
     "genre": "Comedy, Horror, Survival",
     "studio": "Bug Films",
     "year": 2023,
+    "latestEpisodeYear": 2023,
     "synopsis": "A burned-out worker finds freedom during a zombie apocalypse and starts chasing a bucket list.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Survival"
+    ],
+    "studios": [
+      "Bug Films"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Zom 100: Bucket List of the Dead",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2023,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.379Z"
   },
   {
     "id": "sheet-high-school-of-the-dead",
@@ -2367,15 +2466,26 @@
     "title": "Medaka Kuroiwa Is Impervious to My Charms",
     "status": "Completed",
     "episodes": 12,
-    "score": 3,
+    "score": 2,
     "genre": "Romance, Comedy, School",
     "studio": "SynergySP",
     "year": 2025,
+    "latestEpisodeYear": 2025,
     "synopsis": "A popular girl tries to win over a monk-in-training classmate who refuses romance.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "School"
+    ],
+    "studios": [
+      "SynergySP"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Medaka Kuroiwa Is Impervious to My Charms",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2025,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.379Z"
   },
   {
     "id": "sheet-the-irregular-at-magic-high-school",
@@ -2548,15 +2658,26 @@
     "title": "My Stepmom's Daughter Is My Ex",
     "status": "Backlog",
     "episodes": 12,
-    "score": 3,
+    "score": 2,
     "genre": "Romance, Comedy, School",
     "studio": "Project No.9",
     "year": 2022,
+    "latestEpisodeYear": 2022,
     "synopsis": "Exes become stepsiblings after their parents remarry and struggle to act normal at home.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "School"
+    ],
+    "studios": [
+      "Project No.9"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "My Stepmom's Daughter Is My Ex",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2022,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.379Z"
   },
   {
     "id": "sheet-steins-gate",
@@ -2608,30 +2729,52 @@
     "title": "Demon Slayer: Kimetsu no Yaiba - Infinity Castle",
     "status": "Completed",
     "episodes": 1,
-    "score": 5,
+    "score": 6,
     "genre": "Action, Supernatural, Historical",
     "studio": "ufotable",
     "year": 2025,
+    "latestEpisodeYear": 2025,
     "synopsis": "The demon slayers enter Muzan’s fortress for the climactic battle against the strongest demons.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Supernatural",
+      "Historical"
+    ],
+    "studios": [
+      "ufotable"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Demon Slayer: Kimetsu no Yaiba - Infinity Castle",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2025,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.378Z"
   },
   {
     "id": "sheet-chainsaw-man-the-movie-reze-arc",
     "title": "Chainsaw Man – The Movie: Reze Arc",
     "status": "Completed",
     "episodes": 1,
-    "score": 5,
+    "score": 4,
     "genre": "Action, Supernatural, Romance",
     "studio": "MAPPA",
     "year": 2025,
+    "latestEpisodeYear": 2025,
     "synopsis": "Denji meets Reze, a mysterious girl who pulls him into a dangerous and emotional new conflict.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Supernatural",
+      "Romance"
+    ],
+    "studios": [
+      "MAPPA"
+    ],
+    "mediaType": "Movie",
+    "franchiseName": "Chainsaw Man – The Movie: Reze Arc",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2025,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T23:14:40.378Z"
   },
   {
     "id": "sheet-kiznaiver",
