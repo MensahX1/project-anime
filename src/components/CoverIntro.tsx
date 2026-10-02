@@ -44,7 +44,7 @@ export default function CoverIntro({items}:{items:Anime[]}){
    const style={"--x":`${x}vw`, "--y":`${y}svh`, "--sx":`${-x*.85}vw`, "--sy":`${-y*.8}svh`, "--spin":`${angle}deg`, "--delay":`${i%8*25}ms`, "--layer":i%7} as CSSProperties;
    return <div className="introCover" key={anime.id} style={style}><img src={anime.image} alt="" draggable={false} decoding="async"/></div>;
   })}</div>
-  <div className={`introSpotlights${held?" introHeld":""}`} aria-hidden="true" onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);setHeld(true)}} onPointerUp={()=>setHeld(false)} onPointerCancel={()=>setHeld(false)} onLostPointerCapture={()=>setHeld(false)}>{index>=0&&Array.from({length:Math.min(index+1,5)},(_,offset)=>index-offset).reverse().map(sequence=>{
+  <div className={`introSpotlights${held?" introHeld":""}`} aria-hidden="true" onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);setHeld(true)}} onPointerUp={()=>setHeld(false)} onPointerCancel={()=>setHeld(false)} onLostPointerCapture={()=>setHeld(false)}>{index>=0&&Array.from({length:Math.min(index+1,10)},(_,offset)=>index-offset).reverse().map(sequence=>{
    const anime=covers[sequence%covers.length];
    return <div className="introSpotlight" key={sequence}><img src={anime.image} alt="" draggable={false} decoding="async"/><div className="spotlightCaption"><span>{"★".repeat(anime.score||0)}</span><strong>{anime.title}</strong></div></div>;
   })}</div>
