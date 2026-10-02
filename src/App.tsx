@@ -11,7 +11,7 @@ import FilterPanel from "./components/FilterPanel";
 import LibraryStats from "./components/LibraryStats";
 import {useCatalogFilters} from "./hooks/useCatalogFilters";
 import type {Anime} from "./types";
-import {applyPending,DRAFT_KEY,readPending,stageChange} from "./pendingChanges";
+import {applyPending,DRAFT_KEY,SENT_KEY,mergeChanges,readPending,stageChange} from "./pendingChanges";
 import type {PendingChange} from "./pendingChanges";
 import "./insights.css";
 
@@ -19,25 +19,35 @@ const deployedAt=new Date(__DEPLOYED_AT__).toLocaleString(undefined,{dateStyle:"
 
 export default function App(){
  const[baseline]=useState<Anime[]>(initialAnime);
- const[pending,setPending]=useState<PendingChange[]>(()=>readPending(baseline));
- const items=useMemo(()=>applyPending(baseline,pending),[baseline,pending]);
+ const[handedOff,setHandedOff]=useState<PendingChange[]>(()=>readPending(baseline,SENT_KEY));
+ const workingBaseline=useMemo(()=>applyPending(baseline,handedOff),[baseline,handedOff]);
+ const[pending,setPending]=useState<PendingChange[]>(()=>readPending(workingBaseline));
+ const items=useMemo(()=>applyPending(workingBaseline,pending),[workingBaseline,pending]);
  const[selected,setSelected]=useState<Anime|null>(null),[edit,setEdit]=useState<Anime|null>(null),[showAddSearch,setShowAddSearch]=useState(false),[showStats,setShowStats]=useState(false),[editMode,setEditMode]=useState(()=>localStorage.getItem(EDIT_KEY)==="1"),[notice,setNotice]=useState("");
  const filters=useCatalogFilters(items);
  const toggleEdit=()=>{const next=!editMode;setEditMode(next);localStorage.setItem(EDIT_KEY,next?"1":"0");setEdit(null);setShowAddSearch(false);setNotice(next?"Edit mode enabled · edits stay here until you save all changes":"Edit mode disabled")};
  const persist=(next:PendingChange[])=>{try{localStorage.setItem(DRAFT_KEY,JSON.stringify(next));setPending(next);setBatchLink("");setBatchText("");return true}catch{setNotice("Could not save drafts on this device. Free up browser storage and try again.");return false}};
  const commit=(anime:Anime)=>{
   if(items.some(a=>a.id!==anime.id&&a.title.trim().toLowerCase()===anime.title.trim().toLowerCase())){setNotice("That title is already in your library.");return}
-  const next=stageChange(pending,{action:"upsert",anime:{...anime,title:anime.title.trim()}},baseline);
+  const next=stageChange(pending,{action:"upsert",anime:{...anime,title:anime.title.trim()}},workingBaseline);
   if(!persist(next))return;
   setEdit(null);setSelected(null);setNotice("Change queued. Keep editing, then save all changes.");
  };
- const remove=(anime:Anime)=>{if(!confirm(`Queue deletion of ${anime.title}?`))return;if(persist(stageChange(pending,{action:"delete",id:anime.id,title:anime.title},baseline))){setSelected(null);setNotice("Deletion queued. Save all changes when you are ready.")}};
+ const remove=(anime:Anime)=>{if(!confirm(`Queue deletion of ${anime.title}?`))return;if(persist(stageChange(pending,{action:"delete",id:anime.id,title:anime.title},workingBaseline))){setSelected(null);setNotice("Deletion queued. Save all changes when you are ready.")}};
  const discard=()=>{if(confirm("Discard all pending changes?")){if(persist([])){setEdit(null);setSelected(null);setNotice("Pending changes discarded.")}}};
+ const handOff=()=>{
+  const sent=mergeChanges(handedOff,pending);
+  try{localStorage.setItem(SENT_KEY,JSON.stringify(sent));localStorage.setItem(DRAFT_KEY,"[]");setHandedOff(sent);setPending([]);setBatchLink("");setBatchText("");setNotice("Pending changes cleared. Submit the GitHub issue to publish. If you cancel, restore the handed-off batch below.");return true}catch{setNotice("Could not clear pending changes. Your drafts are still available.");return false}
+ };
+ const restore=()=>{
+  const next=mergeChanges(handedOff,pending);
+  if(persist(next)){localStorage.removeItem(SENT_KEY);setHandedOff([]);setNotice("Handed-off changes restored to your pending list.")}
+ };
  const saveAll=async()=>{
   const payload={action:"batch",changes:pending.map(c=>c.action==="upsert"?{...c,anime:{...c.anime,image:""}}:c)};
   if(issueBody(payload).length>65000){setNotice("This batch exceeds GitHub’s size limit. Remove some pending edits before submitting.");return}
   const title=`save ${pending.length} anime changes`,url=issueUrl(title,payload);
-  if(url.length<=7000){window.open(url,"_blank","noopener,noreferrer");setNotice("Submit the prefilled GitHub issue to publish all changes together. Your drafts stay here until the published update loads.")}
+  if(url.length<=7000){const tab=window.open("about:blank","_blank");if(!tab){setNotice("Allow pop-ups to open GitHub. Your pending changes have been kept.");return}tab.opener=null;if(handOff())tab.location.href=url;else tab.close()}
   else{try{await navigator.clipboard.writeText(issueBody(payload));setNotice("Batch copied. Open GitHub, paste into the issue body, and submit to publish all changes together.");setBatchLink(issueUrl(title))}catch{setBatchText(issueBody(payload));setBatchLink(issueUrl(title));setNotice("Copy the batch below, open GitHub, paste into the issue body, and submit.")}}
  };
  const[batchLink,setBatchLink]=useState(""),[batchText,setBatchText]=useState("");
@@ -48,7 +58,8 @@ export default function App(){
  return <><CoverIntro items={items}/><main>
   <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>AniVault</h1><p>{items.length} titles</p></div><div className="headerActions"><button className="adminPill" onClick={pickRandom} aria-label="Pick a random anime from the full library">Random</button><button className="adminPill" onClick={()=>setShowStats(true)}>Stats</button><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setShowAddSearch(true)} aria-label="Add anime">＋</button>}</div></header>
   {pending.length>0&&<section className="pendingBar" aria-label="Pending changes"><span>{pending.length} pending {pending.length===1?"change":"changes"}</span><button onClick={saveAll}>Save all changes</button><button className="discard" onClick={discard}>Discard</button></section>}
-  {batchLink&&<div className="batchHelp">{batchText&&<textarea aria-label="Batch to copy" readOnly value={batchText} onFocus={e=>e.currentTarget.select()}/>}<a href={batchLink} target="_blank" rel="noreferrer">Open GitHub to submit batch</a></div>}
+  {batchLink&&<div className="batchHelp">{batchText&&<textarea aria-label="Batch to copy" readOnly value={batchText} onFocus={e=>e.currentTarget.select()}/>}<a href={batchLink} onClick={e=>{if(!handOff())e.preventDefault()}} target="_blank" rel="noreferrer">Open GitHub to submit batch</a></div>}
+  {handedOff.length>0&&<div className="handoffStatus"><span>{handedOff.length} changes handed off to GitHub</span><button onClick={restore}>Restore batch</button></div>}
   {notice&&<div className="notice">{notice}</div>}
   <div className="search"><span aria-hidden="true">⌕</span><input value={filters.q} onChange={e=>filters.setQ(e.target.value)} placeholder="Search titles, aliases, franchises, genres, studios…" aria-label="Search anime"/></div>
   <nav aria-label="Library status">{statusTabs.map(x=><button key={x.value} className={filters.filter===x.value?"active":""} onClick={()=>filters.setFilter(x.value)}>{x.label}</button>)}</nav>

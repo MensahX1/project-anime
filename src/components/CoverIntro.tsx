@@ -6,12 +6,13 @@ import "../coverIntro.css";
 export default function CoverIntro({items}:{items:Anime[]}){
  const[covers]=useState(()=>{
   if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return [];
-  const favorites=items.filter(a=>a.score===5&&a.image);
+  const favorites=items.filter(a=>(a.score===5||a.score===4)&&a.image);
   for(let i=favorites.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[favorites[i],favorites[j]]=[favorites[j],favorites[i]]}
   return favorites;
  });
  const[visible,setVisible]=useState(covers.length>0);
  const[index,setIndex]=useState(-1);
+ const[held,setHeld]=useState(false);
  const continueRef=useRef<HTMLButtonElement>(null);
  useEffect(()=>{
   if(!visible)return;
@@ -30,9 +31,9 @@ export default function CoverIntro({items}:{items:Anime[]}){
   motion.addEventListener("change",stop);
   return()=>{window.clearTimeout(start);motion.removeEventListener("change",stop);window.removeEventListener("keydown",keydown);if(main)main.inert=previousInert||false;document.body.style.overflow=previousOverflow;previousFocus?.focus()};
  },[visible]);
- useEffect(()=>{if(!visible||index<0)return;const timer=window.setTimeout(()=>setIndex(index+1),800);return()=>window.clearTimeout(timer)},[visible,index,covers.length]);
+ useEffect(()=>{if(!visible||index<0||held)return;const timer=window.setTimeout(()=>setIndex(index+1),800);return()=>window.clearTimeout(timer)},[visible,index,covers.length,held]);
  if(!visible)return null;
- return <div className="coverIntro" role="dialog" aria-modal="true" aria-label="Five-star anime collection">
+ return <div className="coverIntro" role="dialog" aria-modal="true" aria-label="Top-rated anime collection">
   <div className="introGlow" aria-hidden="true"/>
   <div className="introCards" aria-hidden="true">{covers.map((anime,i)=>{
    const columns=window.innerWidth<600?5:8;
@@ -43,12 +44,12 @@ export default function CoverIntro({items}:{items:Anime[]}){
    const style={"--x":`${x}vw`, "--y":`${y}svh`, "--sx":`${-x*.85}vw`, "--sy":`${-y*.8}svh`, "--spin":`${angle}deg`, "--delay":`${i%8*25}ms`, "--layer":i%7} as CSSProperties;
    return <div className="introCover" key={anime.id} style={style}><img src={anime.image} alt="" decoding="async"/></div>;
   })}</div>
-  <div className="introSpotlights" aria-hidden="true">{index>=0&&Array.from({length:Math.min(index+1,5)},(_,offset)=>index-offset).reverse().map(sequence=>{
+  <div className={`introSpotlights${held?" introHeld":""}`} aria-hidden="true" onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);setHeld(true)}} onPointerUp={()=>setHeld(false)} onPointerCancel={()=>setHeld(false)} onLostPointerCapture={()=>setHeld(false)}>{index>=0&&Array.from({length:Math.min(index+1,5)},(_,offset)=>index-offset).reverse().map(sequence=>{
    const anime=covers[sequence%covers.length];
-   return <div className="introSpotlight" key={sequence}><img src={anime.image} alt="" decoding="async"/><div className="spotlightCaption"><span>★★★★★</span><strong>{anime.title}</strong></div></div>;
+   return <div className="introSpotlight" key={sequence}><img src={anime.image} alt="" decoding="async"/><div className="spotlightCaption"><span>{"★".repeat(anime.score||0)}</span><strong>{anime.title}</strong></div></div>;
   })}</div>
-  <div className="introHeading"><span>FIVE-STAR COLLECTION</span><h2>Richie’s AniVault</h2></div>
-  <div className="introMark" aria-hidden="true"><span>RICHIE’S FIVE-STAR COLLECTION</span><strong>AniVault</strong><div>★★★★★</div></div>
-  <div className="introContinue"><button ref={continueRef} onClick={()=>setVisible(false)}>Continue <span aria-hidden="true">→</span></button><small>Your five-star collection</small></div>
+  <div className="introHeading"><span>TOP-RATED COLLECTION</span><h2>Richie’s AniVault</h2></div>
+  <div className="introMark" aria-hidden="true"><span>RICHIE’S TOP-RATED COLLECTION</span><strong>AniVault</strong><div>★★★★★</div></div>
+  <div className="introContinue"><button ref={continueRef} onClick={()=>setVisible(false)}>Continue <span aria-hidden="true">→</span></button><small>Press and hold the covers to pause</small></div>
  </div>;
 }
