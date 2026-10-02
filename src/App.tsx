@@ -59,5 +59,5 @@ export default function App(){
   {showAddSearch&&editMode&&<AnimeSearch items={items} onSelect={chooseCatalogAnime} onManual={addManual} onClose={()=>setShowAddSearch(false)}/>}
   {selected&&!edit&&!showAddSearch&&<AnimeDetails anime={selected} related={related} editMode={editMode} onClose={()=>setSelected(null)} onSelect={setSelected} onEdit={setEdit} onDelete={remove}/>}
   {edit&&editMode&&<AnimeForm anime={edit} onChange={setEdit} onClose={()=>setEdit(null)} onSubmit={commit}/>}
- </main>
+ </main></>
 }
