@@ -30,7 +30,7 @@ export default function CoverIntro({items}:{items:Anime[]}){
   motion.addEventListener("change",stop);
   return()=>{window.clearTimeout(start);motion.removeEventListener("change",stop);window.removeEventListener("keydown",keydown);if(main)main.inert=previousInert||false;document.body.style.overflow=previousOverflow;previousFocus?.focus()};
  },[visible]);
- useEffect(()=>{if(!visible||index<0)return;const timer=window.setTimeout(()=>setIndex((index+1)%covers.length),3000);return()=>window.clearTimeout(timer)},[visible,index,covers.length]);
+ useEffect(()=>{if(!visible||index<0)return;const timer=window.setTimeout(()=>setIndex(index+1),800);return()=>window.clearTimeout(timer)},[visible,index,covers.length]);
  if(!visible)return null;
  return <div className="coverIntro" role="dialog" aria-modal="true" aria-label="Five-star anime collection">
   <div className="introGlow" aria-hidden="true"/>
@@ -43,7 +43,11 @@ export default function CoverIntro({items}:{items:Anime[]}){
    const style={"--x":`${x}vw`, "--y":`${y}svh`, "--sx":`${-x*.85}vw`, "--sy":`${-y*.8}svh`, "--spin":`${angle}deg`, "--delay":`${i%8*25}ms`, "--layer":i%7} as CSSProperties;
    return <div className="introCover" key={anime.id} style={style}><img src={anime.image} alt="" decoding="async"/></div>;
   })}</div>
-  <div className="introSpotlights" aria-hidden="true">{index>=0&&<div className="introSpotlight" key={index}><img src={covers[index].image} alt="" decoding="async"/><div className="spotlightCaption"><span>★★★★★</span><strong>{covers[index].title}</strong></div></div>}</div>
+  <div className="introSpotlights" aria-hidden="true">{index>=0&&Array.from({length:Math.min(index+1,5)},(_,offset)=>index-offset).reverse().map(sequence=>{
+   const anime=covers[sequence%covers.length];
+   return <div className="introSpotlight" key={sequence}><img src={anime.image} alt="" decoding="async"/><div className="spotlightCaption"><span>★★★★★</span><strong>{anime.title}</strong></div></div>;
+  })}</div>
+  <div className="introHeading"><span>FIVE-STAR COLLECTION</span><h2>Richie’s AniVault</h2></div>
   <div className="introMark" aria-hidden="true"><span>RICHIE’S FIVE-STAR COLLECTION</span><strong>AniVault</strong><div>★★★★★</div></div>
   <div className="introContinue"><button ref={continueRef} onClick={()=>setVisible(false)}>Continue <span aria-hidden="true">→</span></button><small>Your five-star collection</small></div>
  </div>;
