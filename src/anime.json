@@ -3161,5 +3161,24 @@
     "image": "",
     "metadataSource": "manami-project/anime-offline-database",
     "lastUpdated": "2026-10-01T03:30:16.802Z"
+  },
+  {
+    "id": "anime-feab1881-d6d6-4152-9988-3505521418eb",
+    "title": "Banished from the Hero's Party",
+    "status": "Backlog",
+    "episodes": 0,
+    "score": null,
+    "genre": "",
+    "studio": "studio flad",
+    "year": 2024,
+    "latestEpisodeYear": 2024,
+    "synopsis": "",
+    "image": "",
+    "studios": [
+      "studio flad"
+    ],
+    "mediaType": "Series",
+    "metadataSource": "manami-project/anime-offline-database",
+    "metadataUpdatedAt": "2026-10-02T02:47:29.480Z"
   }
 ]
