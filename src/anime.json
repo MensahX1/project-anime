@@ -1948,17 +1948,28 @@
   {
     "id": "sheet-the-testament-of-sister-new-devil",
     "title": "The Testament of Sister New Devil",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 22,
     "score": 2,
     "genre": "Action, Ecchi, Harem",
     "studio": "Production IMS",
     "year": 2015,
+    "latestEpisodeYear": 2015,
     "synopsis": "A boy becomes protector of demon sisters while facing supernatural factions and ecchi chaos.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Ecchi",
+      "Harem"
+    ],
+    "studios": [
+      "Production IMS"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "The Testament of Sister New Devil",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2015,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T02:16:11.427Z"
   },
   {
     "id": "sheet-chaos-head",
@@ -2068,17 +2079,28 @@
   {
     "id": "sheet-high-rise-invasion",
     "title": "High-Rise Invasion",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 12,
     "score": null,
     "genre": "Action, Horror, Survival",
     "studio": "Zero-G",
     "year": 2021,
+    "latestEpisodeYear": 2021,
     "synopsis": "A girl is trapped in a skyscraper world where masked killers hunt survivors.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Horror",
+      "Survival"
+    ],
+    "studios": [
+      "Zero-G"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "High-Rise Invasion",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2021,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T02:16:11.427Z"
   },
   {
     "id": "sheet-to-your-eternity",
