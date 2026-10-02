@@ -21,6 +21,7 @@ export default function AnimeCard({anime,onSelect}:Props){
     </div>
     <h3>{anime.title}</h3>
     <div className="rating"><RatingStars score={anime.score}/></div>
+    {anime.score===6&&<small className="ultraLabel">Ultra</small>}
     <small>{mediaTypeOf(anime)}{anime.episodes?` · ${anime.episodes} eps`:""}{anime.latestEpisodeYear?` · ${anime.latestEpisodeYear}`:""}</small>
     {anime.studio&&<small className="studioLine">{anime.studio}</small>}
     {updated&&<small className="updatedLine">Updated {updated}</small>}

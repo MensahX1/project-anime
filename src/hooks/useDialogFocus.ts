@@ -9,10 +9,11 @@ export function useDialogFocus<T extends HTMLElement>(onClose:()=>void,initialSe
  useEffect(()=>{
   const dialog=ref.current;
   if(!dialog)return;
+  const pageX=window.scrollX,pageY=window.scrollY;
   const previous=document.activeElement instanceof HTMLElement?document.activeElement:null;
   const focusables=()=>Array.from(dialog.querySelectorAll<HTMLElement>(selector)).filter(el=>!el.hasAttribute("disabled")&&el.getAttribute("aria-hidden")!=="true");
   const initial=(initialSelector?dialog.querySelector<HTMLElement>(initialSelector):null)||focusables()[0]||dialog;
-  initial.focus();
+  initial.focus({preventScroll:true});
   const onKeyDown=(event:KeyboardEvent)=>{
    if(event.key==="Escape"){event.preventDefault();closeRef.current();return;}
    if(event.key!=="Tab")return;
@@ -23,7 +24,7 @@ export function useDialogFocus<T extends HTMLElement>(onClose:()=>void,initialSe
    else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
   };
   window.addEventListener("keydown",onKeyDown);
-  return()=>{window.removeEventListener("keydown",onKeyDown);previous?.focus();};
+  return()=>{window.removeEventListener("keydown",onKeyDown);previous?.focus({preventScroll:true});window.requestAnimationFrame(()=>window.scrollTo({left:pageX,top:pageY,behavior:"instant"}));};
  },[initialSelector]);
  return ref;
 }
