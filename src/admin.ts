@@ -3,9 +3,13 @@ import type {Anime} from "./types";
 const REPO="MensahX1/project-anime";
 export const EDIT_KEY="le-anime-edit-mode";
 
-export function issueUrl(title:string,payload:unknown){
+export function issueBody(payload:unknown){
   const body=`<!-- LE_ANIME_ADMIN_V1 -->\nThis request was created by The Watchlist. Only the authorized GitHub account can apply it.\n\n\`\`\`json\n${JSON.stringify(payload,null,2)}\n\`\`\``;
-  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`[anime-admin] ${title}`)}&body=${encodeURIComponent(body)}`;
+  return body;
+}
+
+export function issueUrl(title:string,payload?:unknown){
+  return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`[anime-admin] ${title}`)}${payload===undefined?"":`&body=${encodeURIComponent(issueBody(payload))}`}`;
 }
 
 export function newAnime():Anime{

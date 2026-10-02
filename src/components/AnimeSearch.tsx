@@ -1,5 +1,4 @@
 import {useEffect,useId,useMemo,useState} from "react";
-import {repoAnime} from "../appData";
 import {newAnime} from "../admin";
 import {useDialogFocus} from "../hooks/useDialogFocus";
 import type {Anime,AnimeCatalogEntry} from "../types";
@@ -21,16 +20,16 @@ const toAnime=(entry:AnimeCatalogEntry):Anime=>({
   metadataSource:"manami-project/anime-offline-database"
 });
 
-type Props={onSelect:(anime:Anime)=>void;onManual:()=>void;onClose:()=>void};
+type Props={items:Anime[];onSelect:(anime:Anime)=>void;onManual:()=>void;onClose:()=>void};
 
-export default function AnimeSearch({onSelect,onManual,onClose}:Props){
+export default function AnimeSearch({items,onSelect,onManual,onClose}:Props){
  const titleId=useId();
  const dialogRef=useDialogFocus<HTMLElement>(onClose);
  const[q,setQ]=useState("");
  const[index,setIndex]=useState<AnimeCatalogEntry[]>([]);
  const[loading,setLoading]=useState(true);
  const[loadError,setLoadError]=useState(false);
- const existing=useMemo(()=>new Set(repoAnime.map(a=>norm(a.title))),[]);
+ const existing=useMemo(()=>new Set(items.map(a=>norm(a.title))),[items]);
  useEffect(()=>{let active=true;fetch(`${import.meta.env.BASE_URL}anime-index.json`).then(r=>{if(!r.ok)throw new Error(String(r.status));return r.json()}).then(data=>{if(active)setIndex(Array.isArray(data)?data:[])}).catch(()=>{if(active)setLoadError(true)}).finally(()=>{if(active)setLoading(false)});return()=>{active=false}},[]);
  useEffect(()=>{if(!loading&&!loadError)dialogRef.current?.querySelector<HTMLInputElement>("input")?.focus()},[dialogRef,loading,loadError]);
  const results=useMemo(()=>{

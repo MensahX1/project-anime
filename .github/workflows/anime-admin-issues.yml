@@ -7,6 +7,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 
 concurrency:
   group: anime-admin-writes
@@ -56,11 +57,15 @@ jobs:
           const anime=JSON.parse(await fs.readFile(path,'utf8'));
           const strings=value=>Array.from(new Set((Array.isArray(value)?value:[]).map(x=>String(x||'').trim()).filter(Boolean)));
 
-          if(request.action==='initialize-last-updated'){
+          const changes=request.action==='batch'?request.changes:[request];
+          if(!Array.isArray(changes)||!changes.length||changes.length>500) throw new Error('Invalid change batch');
+          for(const change of changes){
+            if(!change||!['upsert','delete','initialize-last-updated'].includes(change.action)||(request.action==='batch'&&change.action==='initialize-last-updated')) throw new Error('Invalid batch action');
+            if(change.action==='initialize-last-updated'){
             const timestamp=new Date().toISOString();
             for(const item of anime)item.lastUpdated=timestamp;
-          }else if(request.action==='upsert'){
-            const a=request.anime;
+          }else if(change.action==='upsert'){
+            const a=change.anime;
             if(!a||typeof a.id!=='string'||typeof a.title!=='string'||!a.title.trim()) throw new Error('Invalid anime payload');
             const i=anime.findIndex(x=>x.id===a.id);
             const existing=i>=0?anime[i]:{};
@@ -100,13 +105,15 @@ jobs:
             const duplicate=anime.find(x=>x.id!==clean.id&&x.title.toLowerCase()===clean.title.toLowerCase());
             if(duplicate) throw new Error(`Duplicate title: ${clean.title}`);
             if(i>=0) anime[i]=clean; else anime.push(clean);
-          }else if(request.action==='delete'){
-            if(typeof request.id!=='string') throw new Error('Missing anime id');
-            const i=anime.findIndex(x=>x.id===request.id);
-            if(i<0) throw new Error(`Anime not found: ${request.id}`);
+          }else if(change.action==='delete'){
+            if(typeof change.id!=='string') throw new Error('Missing anime id');
+            const i=anime.findIndex(x=>x.id===change.id);
+            if(i<0) throw new Error(`Anime not found: ${change.id}`);
             anime.splice(i,1);
           }else{
             throw new Error('Unknown admin action');
+          }
+
           }
 
           const ids=new Set(anime.map(x=>x.id));
@@ -130,10 +137,16 @@ jobs:
             git push origin HEAD:main
           fi
 
+      - name: Publish the saved batch
+        if: github.event.issue.user.id == 115842080
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run sync-covers.yml --repo "$GITHUB_REPOSITORY" --ref main
+
       - name: Close completed request
         if: github.event.issue.user.id == 115842080
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE: ${{ github.event.issue.number }}
         run: |
-          gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --comment "Applied to src/anime.json. The main push will trigger cover sync and Pages deployment automatically."
+          gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --comment "Applied to src/anime.json. Cover sync and Pages deployment have been requested."
