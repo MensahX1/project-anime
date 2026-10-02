@@ -1633,17 +1633,28 @@
   {
     "id": "sheet-trinity-seven",
     "title": "Trinity Seven",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 12,
     "score": null,
     "genre": "Action, Fantasy, Harem",
     "studio": "Seven Arcs Pictures",
     "year": 2014,
+    "latestEpisodeYear": 2014,
     "synopsis": "A boy joins a magical academy and teams with seven powerful girls to solve a world-destroying mystery.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Harem"
+    ],
+    "studios": [
+      "Seven Arcs Pictures"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Trinity Seven",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2014,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T02:36:41.382Z"
   },
   {
     "id": "sheet-beyblade-metal-fusion",
@@ -1768,17 +1779,28 @@
   {
     "id": "sheet-guilty-crown",
     "title": "Guilty Crown",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 22,
     "score": 4,
     "genre": "Action, Sci-Fi, Drama",
     "studio": "Production I.G",
     "year": 2011,
+    "latestEpisodeYear": 2011,
     "synopsis": "A student gains the power to draw weapons from people’s hearts amid rebellion and viral disaster.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "studios": [
+      "Production I.G"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Guilty Crown",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2011,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T02:36:41.382Z"
   },
   {
     "id": "sheet-the-world-god-only-knows",
@@ -2661,9 +2683,9 @@
   {
     "id": "sheet-charlotte",
     "title": "Charlotte",
-    "status": "Completed",
+    "status": "Watching",
     "episodes": 13,
-    "score": 3,
+    "score": 4,
     "genre": "Supernatural, Drama, School",
     "studio": "P.A. Works",
     "year": 2015,
