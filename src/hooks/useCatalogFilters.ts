@@ -11,7 +11,7 @@ export function useCatalogFilters(items:Anime[]){
  const[filter,setFilter]=useState("All");
  const[genreFilters,setGenreFilters]=useState<string[]>([]);
  const[studioFilter,setStudioFilter]=useState("All");
- const[scoreFilter,setScoreFilter]=useState("All");
+ const[scoreFilters,setScoreFilters]=useState<string[]>([]);
  const[typeFilter,setTypeFilter]=useState("All");
  const[franchiseFilter,setFranchiseFilter]=useState("All");
  const[decadeFilter,setDecadeFilter]=useState("All");
@@ -30,7 +30,7 @@ export function useCatalogFilters(items:Anime[]){
    &&(!query||searchableText(a).includes(query))
    &&(!genreFilters.length||genreFilters.every(g=>animeGenres.includes(g)))
    &&(studioFilter==="All"||studiosOf(a).includes(studioFilter))
-   &&(scoreFilter==="All"||(scoreFilter==="Unrated"?a.score==null:scoreFilter==="4+"?(a.score??0)>=4:scoreFilter==="3+"?(a.score??0)>=3:a.score===+scoreFilter))
+   &&(!scoreFilters.length||scoreFilters.includes(a.score==null?"Unrated":String(a.score)))
    &&(typeFilter==="All"||(a.mediaType||mediaTypeOf(a))===typeFilter)
    &&(franchiseFilter==="All"||(a.franchiseName||franchiseOf(a.title))===franchiseFilter)
    &&(decadeFilter==="All"||(year!=null&&Math.floor(year/10)*10===+decadeFilter));
@@ -39,11 +39,12 @@ export function useCatalogFilters(items:Anime[]){
   :sort==="title-asc"?a.title.localeCompare(b.title)
   :sort==="year-desc"?(b.latestEpisodeYear??b.year??0)-(a.latestEpisodeYear??a.year??0)||a.title.localeCompare(b.title)
   :sort==="year-asc"?(a.year??9999)-(b.year??9999)||a.title.localeCompare(b.title)
-  :(a.studios?.[0]||a.studio||"zzz").localeCompare(b.studios?.[0]||b.studio||"zzz")||a.title.localeCompare(b.title)),[items,q,filter,genreFilters,studioFilter,scoreFilter,typeFilter,franchiseFilter,decadeFilter,sort]);
+  :(a.studios?.[0]||a.studio||"zzz").localeCompare(b.studios?.[0]||b.studio||"zzz")||a.title.localeCompare(b.title)),[items,q,filter,genreFilters,studioFilter,scoreFilters,typeFilter,franchiseFilter,decadeFilter,sort]);
 
+ const toggleScore=(score:string)=>setScoreFilters(current=>score==="All"?[]:current.includes(score)?current.filter(x=>x!==score):[...current,score]);
  const toggleGenre=(genre:string)=>setGenreFilters(current=>current.includes(genre)?current.filter(x=>x!==genre):[...current,genre]);
- const hasFilters=Boolean(q||filter!=="All"||genreFilters.length||studioFilter!=="All"||scoreFilter!=="All"||typeFilter!=="All"||franchiseFilter!=="All"||decadeFilter!=="All"||sort!=="score-desc");
- const reset=()=>{setQ("");setFilter("All");setGenreFilters([]);setStudioFilter("All");setScoreFilter("All");setTypeFilter("All");setFranchiseFilter("All");setDecadeFilter("All");setSort("score-desc")};
+ const hasFilters=Boolean(q||filter!=="All"||genreFilters.length||studioFilter!=="All"||scoreFilters.length||typeFilter!=="All"||franchiseFilter!=="All"||decadeFilter!=="All"||sort!=="score-desc");
+ const reset=()=>{setQ("");setFilter("All");setGenreFilters([]);setStudioFilter("All");setScoreFilters([]);setTypeFilter("All");setFranchiseFilter("All");setDecadeFilter("All");setSort("score-desc")};
 
- return {q,setQ,filter,setFilter,genreFilters,toggleGenre,studioFilter,setStudioFilter,scoreFilter,setScoreFilter,typeFilter,setTypeFilter,franchiseFilter,setFranchiseFilter,decadeFilter,setDecadeFilter,sort,setSort,genres,studios,franchises,decades,shown,hasFilters,reset};
+ return {q,setQ,filter,setFilter,genreFilters,toggleGenre,studioFilter,setStudioFilter,scoreFilters,toggleScore,typeFilter,setTypeFilter,franchiseFilter,setFranchiseFilter,decadeFilter,setDecadeFilter,sort,setSort,genres,studios,franchises,decades,shown,hasFilters,reset};
 }

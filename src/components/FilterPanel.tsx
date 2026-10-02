@@ -5,7 +5,7 @@ type Props={
   franchiseFilter:string;setFranchiseFilter:(v:string)=>void;franchises:string[];
   genreFilters:string[];toggleGenre:(v:string)=>void;genres:string[];
   studioFilter:string;setStudioFilter:(v:string)=>void;studios:string[];
-  scoreFilter:string;setScoreFilter:(v:string)=>void;
+  scoreFilters:string[];toggleScore:(v:string)=>void;
   decadeFilter:string;setDecadeFilter:(v:string)=>void;decades:number[];
   sort:SortKey;setSort:(v:SortKey)=>void;
   shownCount:number;totalCount:number;hasFilters:boolean;onReset:()=>void;
@@ -14,7 +14,7 @@ type Props={
 export default function FilterPanel(p:Props){
   return <section className="filterPanel">
     <div className="quickFilters" aria-label="Rating filters">
-      {["All","Unrated","5","4","3","2","1","4+","3+"].map(x=><button key={x} aria-pressed={p.scoreFilter===x} aria-label={x==="All"?"All ratings":x==="Unrated"?"Unrated":x.endsWith("+")?`${x[0]} stars and up`:`Exactly ${x} stars`} className={p.scoreFilter===x?"active":""} onClick={()=>p.setScoreFilter(x)}>{x==="All"||x==="Unrated"?x:x.endsWith("+")?`${x[0]}★+`:`${x}★`}</button>)}
+      {["All","Unrated","5","4","3","2","1"].map(x=><button key={x} aria-pressed={(x==="All"?!p.scoreFilters.length:p.scoreFilters.includes(x))} aria-label={x==="All"?"All ratings":x==="Unrated"?"Unrated":`Exactly ${x} stars`} className={(x==="All"?!p.scoreFilters.length:p.scoreFilters.includes(x))?"active":""} onClick={()=>p.toggleScore(x)}>{x==="All"||x==="Unrated"?x:`${x}★`}</button>)}
     </div>
     <div className="filterGrid">
       <label><span>Type</span><select value={p.typeFilter} onChange={e=>p.setTypeFilter(e.target.value)}><option>All</option><option>Series</option><option>Movie</option><option>OVA / Special</option></select></label>
