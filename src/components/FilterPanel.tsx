@@ -7,21 +7,19 @@ type Props={
   studioFilter:string;setStudioFilter:(v:string)=>void;studios:string[];
   scoreFilter:string;setScoreFilter:(v:string)=>void;
   decadeFilter:string;setDecadeFilter:(v:string)=>void;decades:number[];
-  quickFilter:string;setQuickFilter:(v:string)=>void;
   sort:SortKey;setSort:(v:SortKey)=>void;
   shownCount:number;totalCount:number;hasFilters:boolean;onReset:()=>void;
 };
 
 export default function FilterPanel(p:Props){
   return <section className="filterPanel">
-    <div className="quickFilters" aria-label="Quick filters">
-      {["All","Unrated"].map(x=><button key={x} className={p.quickFilter===x?"active":""} onClick={()=>p.setQuickFilter(x)}>{x}</button>)}
+    <div className="quickFilters" aria-label="Rating filters">
+      {["All","Unrated","5","4","3","2","1","4+","3+"].map(x=><button key={x} aria-pressed={p.scoreFilter===x} aria-label={x==="All"?"All ratings":x==="Unrated"?"Unrated":x.endsWith("+")?`${x[0]} stars and up`:`Exactly ${x} stars`} className={p.scoreFilter===x?"active":""} onClick={()=>p.setScoreFilter(x)}>{x==="All"||x==="Unrated"?x:x.endsWith("+")?`${x[0]}★+`:`${x}★`}</button>)}
     </div>
     <div className="filterGrid">
       <label><span>Type</span><select value={p.typeFilter} onChange={e=>p.setTypeFilter(e.target.value)}><option>All</option><option>Series</option><option>Movie</option><option>OVA / Special</option></select></label>
       <label><span>Franchise</span><select value={p.franchiseFilter} onChange={e=>p.setFranchiseFilter(e.target.value)}><option>All</option>{p.franchises.map(x=><option key={x}>{x}</option>)}</select></label>
       <label><span>Studio</span><select value={p.studioFilter} onChange={e=>p.setStudioFilter(e.target.value)}><option value="All">All studios</option>{p.studios.map(x=><option key={x}>{x}</option>)}</select></label>
-      <label><span>Rating</span><select value={p.scoreFilter} onChange={e=>p.setScoreFilter(e.target.value)}><option value="All">All ratings</option><option value="4+">4★ and up</option><option value="3+">3★ and up</option>{[5,4,3,2,1].map(x=><option key={x} value={x}>Exactly {x} ★</option>)}<option value="Unrated">Unrated</option></select></label>
       <label><span>Decade</span><select value={p.decadeFilter} onChange={e=>p.setDecadeFilter(e.target.value)}><option value="All">All years</option>{p.decades.map(x=><option key={x} value={x}>{x}s</option>)}</select></label>
       <label><span>Sort</span><select value={p.sort} onChange={e=>p.setSort(e.target.value as SortKey)}><option value="score-desc">Rating: high to low</option><option value="score-asc">Rating: low to high</option><option value="title-asc">Title: A to Z</option><option value="year-desc">Latest episode: newest</option><option value="year-asc">Original year: oldest</option><option value="studio-asc">Studio: A to Z</option></select></label>
     </div>
