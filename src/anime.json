@@ -2639,17 +2639,28 @@
   {
     "id": "sheet-charlotte",
     "title": "Charlotte",
-    "status": "Paused",
+    "status": "Completed",
     "episodes": 13,
     "score": 3,
     "genre": "Supernatural, Drama, School",
     "studio": "P.A. Works",
     "year": 2015,
+    "latestEpisodeYear": 2015,
     "synopsis": "Teenagers with temporary supernatural abilities are gathered by a student council before their powers cause harm.",
     "image": "",
+    "lastUpdated": "2026-10-02T01:24:22.698Z",
+    "genres": [
+      "Supernatural",
+      "Drama",
+      "School"
+    ],
+    "studios": [
+      "P.A. Works"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Charlotte",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2015,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T01:24:22.698Z"
   },
   {
     "id": "sheet-to-love-ru",
