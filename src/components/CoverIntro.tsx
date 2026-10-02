@@ -13,7 +13,7 @@ export default function CoverIntro({items}:{items:Anime[]}){
  const[visible,setVisible]=useState(covers.length>0);
  useEffect(()=>{
   if(!visible)return;
-  const timer=window.setTimeout(()=>setVisible(false),2800);
+  const timer=window.setTimeout(()=>setVisible(false),8200);
   const motion=window.matchMedia("(prefers-reduced-motion: reduce)");
   const stop=()=>{if(motion.matches)setVisible(false)};
   motion.addEventListener("change",stop);
@@ -31,6 +31,7 @@ export default function CoverIntro({items}:{items:Anime[]}){
    const style={"--x":`${x}vw`, "--y":`${y}svh`, "--sx":`${-x*.85}vw`, "--sy":`${-y*.8}svh`, "--spin":`${angle}deg`, "--delay":`${i%8*25}ms`, "--layer":i%7} as CSSProperties;
    return <div className="introCover" key={anime.id} style={style}><img src={anime.image} alt="" decoding="async"/></div>;
   })}</div>
+  <div className="introSpotlights">{covers.map((anime,i)=><div className="introSpotlight" key={anime.id} style={{"--spot-delay":`${4000+i*(3100/Math.max(1,covers.length-1))}ms`,zIndex:i} as CSSProperties}><img src={anime.image} alt="" decoding="async"/><div className="spotlightCaption"><span>★★★★★</span><strong>{anime.title}</strong></div></div>)}</div>
   <div className="introMark"><span>RICHIE’S FIVE-STAR COLLECTION</span><strong>AniVault</strong><div>★★★★★</div></div>
  </div>;
 }

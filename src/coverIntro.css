@@ -1,12 +1,18 @@
-.coverIntro{position:fixed;inset:0;z-index:20;overflow:hidden;pointer-events:none;background:#09090bee;animation:introReveal 2.8s both;contain:layout paint}
-.introGlow{position:absolute;inset:-30%;background:radial-gradient(ellipse at center,#e509142e,transparent 55%);animation:introPulse 2.6s both}
+.coverIntro{position:fixed;inset:0;z-index:20;overflow:hidden;pointer-events:none;background:#09090bee;animation:introReveal 8.2s both;contain:layout paint}
+.introGlow{position:absolute;inset:-30%;background:radial-gradient(ellipse at center,#e509142e,transparent 55%);animation:introPulse 8.2s both}
 .introCards{position:absolute;inset:0;perspective:900px}
-.introCover{position:absolute;left:50%;top:50%;width:clamp(48px,12vw,125px);aspect-ratio:2/3;margin-left:calc(clamp(48px,12vw,125px)/-2);margin-top:calc(clamp(48px,12vw,125px)*-.75);border-radius:9px;overflow:hidden;background:#18181d;border:1px solid #ffffff24;box-shadow:0 12px 30px #0009;z-index:var(--layer);animation:coverShuffle 2.55s cubic-bezier(.22,.72,.2,1) var(--delay) both}
+.introCover{position:absolute;left:50%;top:50%;width:clamp(48px,12vw,125px);aspect-ratio:2/3;margin-left:calc(clamp(48px,12vw,125px)/-2);margin-top:calc(clamp(48px,12vw,125px)*-.75);border-radius:9px;overflow:hidden;background:#18181d;border:1px solid #ffffff24;box-shadow:0 12px 30px #0009;z-index:var(--layer);animation:coverShuffle 3.7s cubic-bezier(.22,.72,.2,1) var(--delay) both}
 .introCover img{width:100%;height:100%;object-fit:cover}
-.introMark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;white-space:nowrap;text-shadow:0 4px 24px #000;background:radial-gradient(ellipse,#09090bf5 25%,#09090b00 72%);padding:45px 55px;animation:introTitle 2.6s both;z-index:10}
+.introMark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;white-space:nowrap;text-shadow:0 4px 24px #000;background:radial-gradient(ellipse,#09090bf5 25%,#09090b00 72%);padding:45px 55px;animation:introTitle 3.9s both;z-index:10}
 .introMark span{font-size:9px;font-weight:800;letter-spacing:2px;color:#ddd}.introMark strong{display:block;font-size:clamp(42px,10vw,76px);letter-spacing:-3px;line-height:1.25}.introMark div{color:#e50914;font-size:17px;letter-spacing:6px}
 @keyframes coverShuffle{0%{opacity:0;transform:translate(0,70svh) rotate(calc(var(--spin)*-2)) scale(.45)}18%{opacity:1;transform:translate(0,0) rotate(var(--spin)) scale(.85)}48%{opacity:1;transform:translate(var(--sx),var(--sy)) rotate(calc(var(--spin)*-1)) scale(.95)}72%{opacity:.85;transform:translate(var(--x),var(--y)) rotate(var(--spin)) scale(1)}88%{opacity:.65;transform:translate(var(--x),var(--y)) rotate(0deg) scale(.9)}100%{opacity:0;transform:translate(var(--x),calc(var(--y) - 12svh)) rotate(0deg) scale(.85)}}
-@keyframes introReveal{0%,72%{opacity:1}100%{opacity:0}}
+@keyframes introReveal{0%,94%{opacity:1}100%{opacity:0}}
 @keyframes introTitle{0%,28%{opacity:0;transform:translate(-50%,-40%) scale(.9)}52%,76%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-55%) scale(1.05)}}
 @keyframes introPulse{0%{opacity:0;transform:scale(.5)}50%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.3)}}
 @media(prefers-reduced-motion:reduce){.coverIntro{display:none}.coverIntro *{animation:none!important}}
+
+.introSpotlights{position:absolute;inset:0;perspective:1000px;z-index:12}
+.introSpotlight{position:absolute;left:50%;top:50%;width:min(58vw,280px,48svh);aspect-ratio:2/3;border-radius:18px;overflow:hidden;background:#18181d;border:1px solid #ffffff40;box-shadow:0 20px 65px #000c,0 0 35px #e5091418;animation:coverSpotlight .9s cubic-bezier(.25,.6,.25,1) var(--spot-delay) both}
+.introSpotlight img{width:100%;height:100%;object-fit:cover}
+.spotlightCaption{position:absolute;inset:auto 0 0;padding:35px 14px 16px;background:linear-gradient(transparent,#000e 55%);text-shadow:0 2px 8px #000}.spotlightCaption span{display:block;color:#ff3340;font-size:14px;letter-spacing:3px;margin-bottom:5px}.spotlightCaption strong{display:block;font-size:clamp(14px,4vw,22px);line-height:1.15;color:white}
+@keyframes coverSpotlight{0%{opacity:0;transform:translate(calc(-50% + 90vw),-50%) translateZ(-350px) rotateY(-35deg) scale(.45)}25%{opacity:1;transform:translate(calc(-50% + 35vw),-50%) translateZ(-80px) rotateY(-15deg) scale(.8)}48%{opacity:1;transform:translate(-50%,-50%) translateZ(65px) rotateY(0deg) scale(1)}72%{opacity:1;transform:translate(calc(-50% - 40vw),-50%) translateZ(-60px) rotateY(15deg) scale(.8)}100%{opacity:0;transform:translate(calc(-50% - 115vw),-50%) translateZ(-200px) rotateY(30deg) scale(.6)}}
