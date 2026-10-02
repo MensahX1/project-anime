@@ -1,6 +1,6 @@
 import {useMemo,useState} from "react";
 import {franchiseOf} from "./catalog";
-import {EDIT_KEY,exportLibrary,issueBody,issueUrl,newAnime} from "./admin";
+import {exportLibrary,issueBody,issueUrl,newAnime} from "./admin";
 import {initialAnime,repoAnime,statusTabs} from "./appData";
 import CoverIntro from "./components/CoverIntro";
 import AnimeCard from "./components/AnimeCard";
@@ -23,11 +23,11 @@ export default function App(){
  const workingBaseline=useMemo(()=>applyPending(baseline,handedOff),[baseline,handedOff]);
  const[pending,setPending]=useState<PendingChange[]>(()=>readPending(workingBaseline));
  const items=useMemo(()=>applyPending(workingBaseline,pending),[workingBaseline,pending]);
- const[selected,setSelected]=useState<Anime|null>(null),[edit,setEdit]=useState<Anime|null>(null),[showAddSearch,setShowAddSearch]=useState(false),[showStats,setShowStats]=useState(false),[editMode,setEditMode]=useState(()=>localStorage.getItem(EDIT_KEY)==="1"),[notice,setNotice]=useState("");
+ const[selected,setSelected]=useState<Anime|null>(null),[edit,setEdit]=useState<Anime|null>(null),[showAddSearch,setShowAddSearch]=useState(false),[showStats,setShowStats]=useState(false),[notice,setNotice]=useState("");
  const filters=useCatalogFilters(items);
- const toggleEdit=()=>{const next=!editMode;setEditMode(next);localStorage.setItem(EDIT_KEY,next?"1":"0");setEdit(null);setShowAddSearch(false);setNotice(next?"Edit mode enabled · edits stay here until you save all changes":"Edit mode disabled")};
  const persist=(next:PendingChange[])=>{try{localStorage.setItem(DRAFT_KEY,JSON.stringify(next));setPending(next);setBatchLink("");setBatchText("");return true}catch{setNotice("Could not save drafts on this device. Free up browser storage and try again.");return false}};
  const commit=(anime:Anime)=>{
+  if(!anime.title.trim()){setNotice("Enter a title before queuing this change.");return}
   if(items.some(a=>a.id!==anime.id&&a.title.trim().toLowerCase()===anime.title.trim().toLowerCase())){setNotice("That title is already in your library.");return}
   const next=stageChange(pending,{action:"upsert",anime:{...anime,title:anime.title.trim()}},workingBaseline);
   if(!persist(next))return;
@@ -56,7 +56,7 @@ export default function App(){
  const addManual=()=>{setShowAddSearch(false);setEdit(newAnime())};
  const pickRandom=()=>{if(!items.length)return;const anime=items[Math.floor(Math.random()*items.length)];setEdit(null);setShowAddSearch(false);setSelected(anime);setNotice(`Random pick · ${anime.title}`)};
  return <><CoverIntro items={items}/><main>
-  <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>AniVault</h1><p>{items.length} titles</p></div><div className="headerActions"><button className="adminPill" onClick={pickRandom} aria-label="Pick a random anime from the full library">Random</button><button className="adminPill" onClick={()=>setShowStats(true)}>Stats</button><button className="adminPill" onClick={toggleEdit}>{editMode?"Editing":"Admin"}</button>{editMode&&<button className="add" onClick={()=>setShowAddSearch(true)} aria-label="Add anime">＋</button>}</div></header>
+  <header><div><div className="eyebrow">RICHIE’S LIBRARY</div><h1>AniVault</h1><p>{items.length} titles</p></div><div className="headerActions"><button className="adminPill" onClick={pickRandom} aria-label="Pick a random anime from the full library">Random</button><button className="adminPill" onClick={()=>setShowStats(true)}>Stats</button><button className="add" onClick={()=>setShowAddSearch(true)} aria-label="Add anime">＋</button></div></header>
   {pending.length>0&&<section className="pendingBar" aria-label="Pending changes"><span>{pending.length} pending {pending.length===1?"change":"changes"}</span><button onClick={saveAll}>Save all changes</button><button className="discard" onClick={discard}>Discard</button></section>}
   {batchLink&&<div className="batchHelp">{batchText&&<textarea aria-label="Batch to copy" readOnly value={batchText} onFocus={e=>e.currentTarget.select()}/>}<a href={batchLink} onClick={e=>{if(!handOff())e.preventDefault()}} target="_blank" rel="noreferrer">Open GitHub to submit batch</a></div>}
   {handedOff.length>0&&<div className="handoffStatus"><span>{handedOff.length} changes handed off to GitHub</span><button onClick={restore}>Restore batch</button></div>}
@@ -67,8 +67,8 @@ export default function App(){
   <section className="grid">{filters.shown.map(anime=><AnimeCard key={anime.id} anime={anime} onSelect={setSelected}/>)}</section>
   <footer><button onClick={()=>exportLibrary(repoAnime)}>Export repo data</button><small>Last deployed {deployedAt}</small></footer>
   {showStats&&<LibraryStats items={items} onClose={()=>setShowStats(false)}/>}
-  {showAddSearch&&editMode&&<AnimeSearch items={items} onSelect={chooseCatalogAnime} onManual={addManual} onClose={()=>setShowAddSearch(false)}/>}
-  {selected&&!edit&&!showAddSearch&&<AnimeDetails anime={selected} related={related} editMode={editMode} onClose={()=>setSelected(null)} onSelect={setSelected} onEdit={setEdit} onDelete={remove}/>}
-  {edit&&editMode&&<AnimeForm anime={edit} onChange={setEdit} onClose={()=>setEdit(null)} onSubmit={commit}/>}
+  {showAddSearch&&<AnimeSearch items={items} onSelect={chooseCatalogAnime} onManual={addManual} onClose={()=>setShowAddSearch(false)}/>}
+  {selected&&!edit&&!showAddSearch&&<AnimeDetails key={selected.id} anime={selected} related={related} onClose={()=>setSelected(null)} onSelect={setSelected} onQueue={commit} onDelete={remove}/>}
+  {edit&&<AnimeForm anime={edit} onChange={setEdit} onClose={()=>setEdit(null)} onSubmit={commit}/>}
  </main></>
 }
