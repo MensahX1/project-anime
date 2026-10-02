@@ -1,3 +1,4 @@
+import {stars} from "../appData";
 import {useEffect,useRef,useState} from "react";
 import type {CSSProperties} from "react";
 import type {Anime} from "../types";
@@ -6,7 +7,7 @@ import "../coverIntro.css";
 export default function CoverIntro({items}:{items:Anime[]}){
  const[covers]=useState(()=>{
   if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return [];
-  const favorites=items.filter(a=>(a.score===5||a.score===4)&&a.image);
+  const favorites=items.filter(a=>(a.score===6||a.score===5||a.score===4)&&a.image);
   for(let i=favorites.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[favorites[i],favorites[j]]=[favorites[j],favorites[i]]}
   return favorites;
  });
@@ -46,7 +47,7 @@ export default function CoverIntro({items}:{items:Anime[]}){
   })}</div>
   <div className={`introSpotlights${held?" introHeld":""}`} aria-hidden="true" onPointerDown={e=>{e.preventDefault();e.currentTarget.setPointerCapture(e.pointerId);setHeld(true)}} onPointerUp={()=>setHeld(false)} onPointerCancel={()=>setHeld(false)} onLostPointerCapture={()=>setHeld(false)}>{index>=0&&Array.from({length:Math.min(index+1,10)},(_,offset)=>index-offset).reverse().map(sequence=>{
    const anime=covers[sequence%covers.length];
-   return <div className="introSpotlight" key={sequence}><img src={anime.image} alt="" draggable={false} decoding="async"/><div className="spotlightCaption"><span>{"★".repeat(anime.score||0)}</span><strong>{anime.title}</strong></div></div>;
+   return <div className="introSpotlight" key={sequence}><img src={anime.image} alt="" draggable={false} decoding="async"/><div className="spotlightCaption"><span className={anime.score===6?"ultraStars":undefined}>{stars(anime.score)}{anime.score===6?" Ultra":""}</span><strong>{anime.title}</strong></div></div>;
   })}</div>
   <div className="introHeading"><span>TOP-RATED COLLECTION</span><h2>Richie’s AniVault</h2></div>
   <div className="introMark" aria-hidden="true"><span>RICHIE’S TOP-RATED COLLECTION</span><strong>AniVault</strong><div>★★★★★</div></div>

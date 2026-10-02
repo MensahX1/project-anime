@@ -1,7 +1,8 @@
 import {describe,expect,it} from "vitest";
-import {initialAnime,repoAnime,statusTabs} from "./appData";
+import {initialAnime,repoAnime,statusTabs,stars} from "./appData";
 
 describe("app data",()=>{
+ it("renders Ultra as five stars above the normal rating tier",()=>{expect(stars(6)).toBe("★★★★★");expect(stars(5)).toBe("★★★★★")});
   it("loads only canonical library titles",()=>{
     const items=initialAnime();
     expect(items).toHaveLength(repoAnime.length);

@@ -1,5 +1,5 @@
 import {mediaTypeOf} from "../catalog";
-import {stars} from "../appData";
+import RatingStars from "./RatingStars";
 import type {Anime} from "../types";
 
 type Props={anime:Anime;onSelect:(anime:Anime)=>void};
@@ -20,7 +20,7 @@ export default function AnimeCard({anime,onSelect}:Props){
       <span className="badge">{anime.status||"Uncategorized"}</span>
     </div>
     <h3>{anime.title}</h3>
-    <div className="rating">{stars(anime.score)}</div>
+    <div className="rating"><RatingStars score={anime.score}/></div>
     <small>{mediaTypeOf(anime)}{anime.episodes?` · ${anime.episodes} eps`:""}{anime.latestEpisodeYear?` · ${anime.latestEpisodeYear}`:""}</small>
     {anime.studio&&<small className="studioLine">{anime.studio}</small>}
     {updated&&<small className="updatedLine">Updated {updated}</small>}

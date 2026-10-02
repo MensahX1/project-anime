@@ -14,7 +14,7 @@ export const statusTabs=[
 ];
 
 export const splitTags=(value:string)=>String(value||"").split(/[,/;|]+/).map(x=>x.trim()).filter(Boolean);
-export const stars=(score:number|null)=>score?"★".repeat(score):"—";
+export const stars=(score:number|null)=>score?"★".repeat(score===6?5:score):"—";
 
 const normalizeAnime=(anime:Anime):Anime=>({
   ...anime,

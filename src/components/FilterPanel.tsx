@@ -14,7 +14,7 @@ type Props={
 export default function FilterPanel(p:Props){
   return <section className="filterPanel">
     <div className="quickFilters" aria-label="Rating filters">
-      {["All","Unrated","5","4","3","2","1"].map(x=><button key={x} aria-pressed={(x==="All"?!p.scoreFilters.length:p.scoreFilters.includes(x))} aria-label={x==="All"?"All ratings":x==="Unrated"?"Unrated":`Exactly ${x} stars`} className={(x==="All"?!p.scoreFilters.length:p.scoreFilters.includes(x))?"active":""} onClick={()=>p.toggleScore(x)}>{x==="All"||x==="Unrated"?x:`${x}★`}</button>)}
+      {["All","Unrated","6","5","4","3","2","1"].map(x=><button key={x} aria-pressed={(x==="All"?!p.scoreFilters.length:p.scoreFilters.includes(x))} aria-label={x==="All"?"All ratings":x==="Unrated"?"Unrated":x==="6"?"5 star Ultra":`Exactly ${x} stars`} className={(x==="All"?!p.scoreFilters.length:p.scoreFilters.includes(x))?"active":""} onClick={()=>p.toggleScore(x)}>{x==="All"||x==="Unrated"?x:x==="6"?<span className="ultraStars">5★ Ultra</span>:`${x}★`}</button>)}
     </div>
     <div className="filterGrid">
       <label><span>Type</span><select value={p.typeFilter} onChange={e=>p.setTypeFilter(e.target.value)}><option>All</option><option>Series</option><option>Movie</option><option>OVA / Special</option></select></label>
