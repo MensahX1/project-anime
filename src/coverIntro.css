@@ -21,3 +21,5 @@
 .introContinue{position:absolute;bottom:calc(env(safe-area-inset-bottom) + 32px);left:50%;transform:translateX(-50%);z-index:30;display:flex;flex-direction:column;align-items:center;gap:10px}.introContinue button{min-width:180px;border:1px solid #ffffff40;background:#f5f5f7;color:#111;border-radius:999px;padding:14px 28px;font-size:15px;font-weight:800;box-shadow:0 8px 35px #0008}.introContinue button span{margin-left:12px}.introContinue small{font-size:10px;color:#999;letter-spacing:1px;white-space:nowrap}.introContinue button:focus-visible{outline:2px solid #e50914;outline-offset:5px}
 
 .introSpotlights{touch-action:none;user-select:none;-webkit-user-select:none}.introHeld .introSpotlight{animation-play-state:paused}.introSpotlights img{-webkit-user-drag:none}
+
+.coverIntro,.coverIntro img,.spotlightCaption{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}.coverIntro img{pointer-events:none;-webkit-user-drag:none}
