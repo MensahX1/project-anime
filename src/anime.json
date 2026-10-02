@@ -4,15 +4,26 @@
     "title": "Death Note",
     "status": "Completed",
     "episodes": 37,
-    "score": 5,
+    "score": 6,
     "genre": "Psychological, Thriller, Supernatural",
     "studio": "Madhouse",
     "year": 2006,
+    "latestEpisodeYear": 2006,
     "synopsis": "A high school genius gains a supernatural notebook that lets him kill by writing names, triggering a cat-and-mouse battle with detectives.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Psychological",
+      "Thriller",
+      "Supernatural"
+    ],
+    "studios": [
+      "Madhouse"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Death Note",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2006,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:34:35.348Z"
   },
   {
     "id": "sheet-the-future-diary",
@@ -34,15 +45,25 @@
     "title": "Akame ga Kill!",
     "status": "Completed",
     "episodes": 24,
-    "score": 5,
+    "score": 6,
     "genre": "Action, Dark Fantasy",
     "studio": "White Fox",
     "year": 2014,
+    "latestEpisodeYear": 2014,
     "synopsis": "A young fighter joins a rebel assassin group taking on a corrupt empire in a brutal fantasy war.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Dark Fantasy"
+    ],
+    "studios": [
+      "White Fox"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Akame ga Kill!",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2014,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:34:35.347Z"
   },
   {
     "id": "sheet-go-go-loser-ranger",
@@ -64,15 +85,26 @@
     "title": "Classroom of the Elite",
     "status": "Completed",
     "episodes": 54,
-    "score": 5,
+    "score": 6,
     "genre": "Psychological, School, Drama",
     "studio": "Lerche",
     "year": 2017,
+    "latestEpisodeYear": 2026,
     "synopsis": "Students at an elite school compete through manipulation, strategy, and social games where class rank determines survival.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Psychological",
+      "School",
+      "Drama"
+    ],
+    "studios": [
+      "Lerche"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Classroom of the Elite",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2026,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:34:35.348Z"
   },
   {
     "id": "sheet-the-eminence-in-shadow",
@@ -259,15 +291,26 @@
     "title": "Code Geass: Lelouch of the Rebellion",
     "status": "Completed",
     "episodes": 50,
-    "score": 5,
+    "score": 6,
     "genre": "Action, Mecha, Psychological",
     "studio": "Sunrise",
     "year": 2006,
+    "latestEpisodeYear": 2008,
     "synopsis": "An exiled prince gains a power of absolute command and leads a rebellion against a global empire.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Mecha",
+      "Psychological"
+    ],
+    "studios": [
+      "Sunrise"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Code Geass: Lelouch of the Rebellion",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2008,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:34:35.348Z"
   },
   {
     "id": "sheet-my-first-girlfriend-is-a-gal",
@@ -784,15 +827,26 @@
     "title": "Kaguya-sama: Love Is War",
     "status": "Completed",
     "episodes": 37,
-    "score": 5,
+    "score": 6,
     "genre": "Romance, Comedy, Psychological",
     "studio": "A-1 Pictures",
     "year": 2019,
+    "latestEpisodeYear": 2022,
     "synopsis": "Two brilliant student council leaders turn romance into a prideful battle of confession mind games.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Psychological"
+    ],
+    "studios": [
+      "A-1 Pictures"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Kaguya-sama: Love Is War",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2022,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:34:35.348Z"
   },
   {
     "id": "sheet-my-hero-academia",
@@ -1676,15 +1730,27 @@
     "title": "My Teen Romantic Comedy SNAFU",
     "status": "Completed",
     "episodes": 38,
-    "score": 5,
+    "score": 6,
     "genre": "Romance, Comedy, School",
     "studio": "Brain's Base, feel.",
     "year": 2013,
+    "latestEpisodeYear": 2020,
     "synopsis": "A cynical loner joins a service club and confronts relationships through sharp social observation.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "School"
+    ],
+    "studios": [
+      "Brain's Base",
+      "feel."
+    ],
+    "mediaType": "Series",
+    "franchiseName": "My Teen Romantic Comedy SNAFU",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2020,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:34:35.348Z"
   },
   {
     "id": "sheet-the-seven-deadly-sins",
@@ -1736,15 +1802,26 @@
     "title": "Kakegurui",
     "status": "Completed",
     "episodes": 24,
-    "score": 5,
+    "score": 6,
     "genre": "Psychological, Gambling, School",
     "studio": "MAPPA",
     "year": 2017,
+    "latestEpisodeYear": 2019,
     "synopsis": "Students at an elite academy gamble for status in twisted high-stakes games.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Psychological",
+      "Gambling",
+      "School"
+    ],
+    "studios": [
+      "MAPPA"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Kakegurui",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2019,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:34:35.348Z"
   },
   {
     "id": "sheet-akiba-maid-war",
@@ -1882,15 +1959,26 @@
     "title": "86 EIGHTY-SIX",
     "status": "Completed",
     "episodes": 23,
-    "score": 5,
+    "score": 6,
     "genre": "Mecha, War, Drama",
     "studio": "A-1 Pictures",
     "year": 2021,
+    "latestEpisodeYear": 2021,
     "synopsis": "Child soldiers fight unmanned wars for a nation that denies their existence.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Mecha",
+      "War",
+      "Drama"
+    ],
+    "studios": [
+      "A-1 Pictures"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "86 EIGHTY-SIX",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2021,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-02T03:34:35.348Z"
   },
   {
     "id": "sheet-bleach",
