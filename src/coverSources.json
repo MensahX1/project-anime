@@ -4086,5 +4086,84 @@
       "https://animenewsnetwork.com/encyclopedia/anime.php?id=26524"
     ],
     "dataset": "manami-project/anime-offline-database"
+  },
+  "Tasuuketsu": {
+    "url": "https://cdn.myanimelist.net/images/anime/1482/143629.jpg",
+    "matchedTitle": "Tasuuketsu",
+    "type": "TV",
+    "year": 2024,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/18453",
+      "https://anilist.co/anime/174070",
+      "https://anime-planet.com/anime/tasuketsu-fate-of-the-majority",
+      "https://animecountdown.com/2359374",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=31814",
+      "https://anisearch.com/anime/19042",
+      "https://kitsu.app/anime/48466",
+      "https://livechart.me/anime/12515",
+      "https://myanimelist.net/anime/57945",
+      "https://simkl.com/anime/2359374"
+    ],
+    "dataset": "manami-project/anime-offline-database"
+  },
+  "Yamada-kun and the Seven Witches": {
+    "url": "https://cdn.myanimelist.net/images/anime/8/58865.jpg",
+    "matchedTitle": "Yamada-kun to 7-nin no Majo PV",
+    "type": "SPECIAL",
+    "year": 2013,
+    "matchScore": 1120,
+    "providers": [
+      "https://anilist.co/anime/20359",
+      "https://anime-planet.com/anime/yamada-kun-and-the-seven-witches-pv",
+      "https://anisearch.com/anime/8938",
+      "https://kitsu.app/anime/8062",
+      "https://myanimelist.net/anime/20359"
+    ],
+    "dataset": "manami-project/anime-offline-database"
+  },
+  "Witch Hat Atelier": {
+    "url": "https://cdn.myanimelist.net/images/anime/1726/155542.jpg",
+    "matchedTitle": "Tongari Boushi no Atelier",
+    "type": "TV",
+    "year": 2026,
+    "matchScore": 1180,
+    "providers": [
+      "https://anidb.net/anime/17305",
+      "https://anilist.co/anime/147105",
+      "https://anime-planet.com/anime/witch-hat-atelier",
+      "https://animecountdown.com/1885096",
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=25496",
+      "https://anisearch.com/anime/17281",
+      "https://kitsu.app/anime/46043",
+      "https://livechart.me/anime/11157",
+      "https://myanimelist.net/anime/51553",
+      "https://simkl.com/anime/1885096"
+    ],
+    "dataset": "manami-project/anime-offline-database"
+  },
+  "Cosmic Princess Kaguya!": {
+    "url": "https://cdn.animenewsnetwork.com/thumbnails/max500x600/encyc/A37969-3320885639.1764701893.jpg",
+    "matchedTitle": "Cosmic Princess Kaguya!",
+    "type": "MOVIE",
+    "year": 2026,
+    "matchScore": 1200,
+    "providers": [
+      "https://animenewsnetwork.com/encyclopedia/anime.php?id=37969"
+    ],
+    "dataset": "manami-project/anime-offline-database"
+  },
+  "Smoking Behind The Supermarket With You": {
+    "url": "https://cdn.anisearch.com/images/anime/cover/20/20774_600.webp",
+    "matchedTitle": "Super no Ura de Yani Suu Futari",
+    "type": "ONA",
+    "year": 2026,
+    "matchScore": 1155,
+    "providers": [
+      "https://animecountdown.com/2838478",
+      "https://anisearch.com/anime/20774",
+      "https://simkl.com/anime/2838478"
+    ],
+    "dataset": "manami-project/anime-offline-database"
   }
 }
