@@ -3552,7 +3552,7 @@
     "id": "anime-b14ad530-3a62-410e-bb5c-1720ac0f8924",
     "title": "Witch Hat Atelier",
     "status": "Backlog",
-    "episodes": 13,
+    "episodes": 14,
     "score": null,
     "genre": "achromatic, adventure, alternative world, apprenticeship, based on a manga, body horror, comedy, coming of age, conspiracy, countryside, crunchyroll co-production, disability",
     "studio": "bug films",
@@ -3579,7 +3579,7 @@
     ],
     "mediaType": "Series",
     "metadataSource": "manami-project/anime-offline-database",
-    "metadataUpdatedAt": "2026-10-04T02:53:10.805Z"
+    "metadataUpdatedAt": "2026-10-04T17:34:54.872Z"
   },
   {
     "id": "anime-f4ed2a58-c7fd-4115-9b56-3deb7aefdf2c",
@@ -3651,7 +3651,7 @@
     "id": "anime-f36ac1e9-1fd6-4db8-96c6-b95604d7464c",
     "title": "Yamada-kun and the Seven Witches",
     "status": "Backlog",
-    "episodes": 12,
+    "episodes": 1,
     "score": null,
     "genre": "based on a manga, body swapping, comedy, ecchi, gender bender, male protagonist, present, promotional, romance, school, school clubs, school life",
     "studio": "liden films inc., lidenfilms",
@@ -3679,6 +3679,6 @@
     ],
     "mediaType": "OVA / Special",
     "metadataSource": "manami-project/anime-offline-database",
-    "metadataUpdatedAt": "2026-10-04T02:53:10.806Z"
+    "metadataUpdatedAt": "2026-10-04T17:34:54.872Z"
   }
 ]
