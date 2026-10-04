@@ -2064,17 +2064,28 @@
   {
     "id": "sheet-a-wild-last-boss-appeared",
     "title": "A Wild Last Boss Appeared!",
-    "status": "Completed",
+    "status": "Backlog",
     "episodes": 12,
     "score": 3,
     "genre": "Action, Fantasy, Isekai",
     "studio": "Wao World",
     "year": 2025,
+    "latestEpisodeYear": 2025,
     "synopsis": "A player awakens as an overpowered final boss in a fantasy world tied to his former game.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Isekai"
+    ],
+    "studios": [
+      "Wao World"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "A Wild Last Boss Appeared!",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2025,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-04T02:54:54.014Z"
   },
   {
     "id": "sheet-hunter-x-hunter",
