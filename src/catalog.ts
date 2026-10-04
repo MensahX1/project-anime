@@ -1,3 +1,4 @@
+import {normalizeSearch} from "./search";
 export type CatalogAnime={id:string;title:string;status:string;score:number|null;genre:string;studio:string;year:number|null;genres?:string[];studios?:string[];mediaType?:"Series"|"Movie"|"OVA / Special";franchiseName?:string};
 
 const rules:[RegExp,string][]=[
@@ -15,6 +16,13 @@ export const mediaTypeOf=(a:CatalogAnime)=>{
 
 const aliases:Record<string,string[]>={
   "Attack on Titan":["aot","shingeki no kyojin"],
+  "Demon Slayer":["kimetsu no yaiba"],"Death Note":["desu noto"],
+  "The Rising of the Shield Hero":["tate no yuusha no nariagari"],
+  "Assassination Classroom":["ansatsu kyoushitsu"],"One Punch Man":["opm"],
+  "Re:ZERO":["re zero","rezero"],"Frieren":["sousou no frieren"],
+  "Mushoku Tensei":["jobless reincarnation"],"Oshi no Ko":["my star"],
+  "Is It Wrong to Try to Pick Up Girls in a Dungeon?":["danmachi","dungeon ni deai"],
+  "Kaguya-sama":["love is war"],"The Quintessential Quintuplets":["gotoubun no hanayome"],
   "Classroom of the Elite":["cote","youkoso jitsuryoku"],
   "Dragon Ball Z":["dbz"],"Dragon Ball Super":["dbs"],"Dragon Ball GT":["dbgt"],
   "Sword Art Online":["sao"],"My Hero Academia":["mha","bnha","boku no hero academia"],
@@ -22,4 +30,5 @@ const aliases:Record<string,string[]>={
   "DAN DA DAN":["dandadan"],"Hunter × Hunter":["hxh","hunter x hunter"],
   "Fullmetal Alchemist: Brotherhood":["fmab"],"That Time I Got Reincarnated as a Slime":["slime","tensura"]
 };
-export const searchableText=(a:CatalogAnime)=>`${a.title} ${(a.genres||[]).join(" ")} ${a.genre} ${(a.studios||[]).join(" ")} ${a.studio} ${a.franchiseName||franchiseOf(a.title)} ${(aliases[a.title]||[]).join(" ")}`.toLowerCase();
+export const aliasesFor=(...titles:string[])=>Object.entries(aliases).filter(([title,alternatives])=>[title,...alternatives].some(name=>titles.some(value=>{const candidate=normalizeSearch(value),base=normalizeSearch(name);return candidate===base||candidate.startsWith(base+" ")}))).flatMap(([title,alternatives])=>[title,...alternatives]);
+export const searchableText=(a:CatalogAnime)=>`${a.title} ${(a.genres||[]).join(" ")} ${a.genre} ${(a.studios||[]).join(" ")} ${a.studio} ${a.franchiseName||franchiseOf(a.title)} ${aliasesFor(a.title).join(" ")}`.toLowerCase();
