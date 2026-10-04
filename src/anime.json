@@ -1442,17 +1442,29 @@
   {
     "id": "sheet-konosuba-god-s-blessing-on-this-wonderful-world",
     "title": "KonoSuba: God's Blessing on This Wonderful World!",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 31,
     "score": 4,
     "genre": "Comedy, Fantasy, Isekai",
     "studio": "Studio Deen, Drive",
     "year": 2016,
+    "latestEpisodeYear": 2024,
     "synopsis": "A useless party of fantasy misfits stumbles through hilarious quests after a boy reincarnates in another world.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Isekai"
+    ],
+    "studios": [
+      "Studio Deen",
+      "Drive"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "KonoSuba: God's Blessing on This Wonderful World!",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2024,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-04T02:53:10.804Z"
   },
   {
     "id": "sheet-the-witch-and-the-beast",
@@ -1970,17 +1982,28 @@
   {
     "id": "sheet-akiba-maid-war",
     "title": "Akiba Maid War",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 12,
     "score": 3,
     "genre": "Action, Comedy, Crime",
     "studio": "P.A. Works",
     "year": 2022,
+    "latestEpisodeYear": 2022,
     "synopsis": "Maid cafés operate like violent gangs in an absurd crime-comedy version of Akihabara.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "studios": [
+      "P.A. Works"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Akiba Maid War",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2022,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-04T02:53:10.805Z"
   },
   {
     "id": "sheet-trillion-game",
@@ -2419,17 +2442,28 @@
   {
     "id": "sheet-mushoku-tensei-jobless-reincarnation",
     "title": "Mushoku Tensei: Jobless Reincarnation",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 48,
     "score": 3,
     "genre": "Fantasy, Isekai, Drama",
     "studio": "Studio Bind",
     "year": 2021,
+    "latestEpisodeYear": 2024,
     "synopsis": "A shut-in reincarnates into a fantasy world and tries to rebuild his life from childhood.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Fantasy",
+      "Isekai",
+      "Drama"
+    ],
+    "studios": [
+      "Studio Bind"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Mushoku Tensei: Jobless Reincarnation",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2024,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-04T02:53:10.805Z"
   },
   {
     "id": "sheet-fullmetal-alchemist-brotherhood",
@@ -2682,17 +2716,28 @@
   {
     "id": "sheet-steins-gate",
     "title": "Steins;Gate",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 24,
     "score": null,
     "genre": "Sci-Fi, Thriller, Drama",
     "studio": "White Fox",
     "year": 2011,
+    "latestEpisodeYear": 2011,
     "synopsis": "A group of friends accidentally discover time messaging and trigger dangerous timeline consequences.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Sci-Fi",
+      "Thriller",
+      "Drama"
+    ],
+    "studios": [
+      "White Fox"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Steins;Gate",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2011,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-04T02:53:10.805Z"
   },
   {
     "id": "sheet-juni-taisen-zodiac-war",
@@ -2914,17 +2959,28 @@
   {
     "id": "sheet-oreshura",
     "title": "Oreshura",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 13,
     "score": null,
     "genre": "Romance, Comedy, Harem",
     "studio": "A-1 Pictures",
     "year": 2013,
+    "latestEpisodeYear": 2013,
     "synopsis": "A high schooler who rejects love is blackmailed into a fake relationship.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Harem"
+    ],
+    "studios": [
+      "A-1 Pictures"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Oreshura",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2013,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-04T02:53:10.805Z"
   },
   {
     "id": "sheet-rent-a-girlfriend",
@@ -3075,17 +3131,20 @@
   {
     "id": "sheet-liar-game",
     "title": "Liar Game",
-    "status": "",
+    "status": "Watching",
     "episodes": 13,
-    "score": null,
+    "score": 3,
     "genre": "",
     "studio": "",
     "year": 2026,
+    "latestEpisodeYear": 2026,
     "synopsis": "",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "mediaType": "Series",
+    "franchiseName": "Liar Game",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2026,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-04T02:53:10.805Z"
   },
   {
     "id": "anime-death-parade",
@@ -3441,7 +3500,7 @@
   {
     "id": "anime-feab1881-d6d6-4152-9988-3505521418eb",
     "title": "Banished from the Hero's Party",
-    "status": "Backlog",
+    "status": "Watching",
     "episodes": 0,
     "score": null,
     "genre": "",
@@ -3454,7 +3513,161 @@
       "studio flad"
     ],
     "mediaType": "Series",
+    "franchiseName": "Banished from the Hero's Party",
     "metadataSource": "manami-project/anime-offline-database",
     "metadataUpdatedAt": "2026-10-02T02:47:29.480Z"
+  },
+  {
+    "id": "anime-9f501566-740c-45ff-a880-b9fa176502a3",
+    "title": "Cosmic Princess Kaguya!",
+    "status": "Backlog",
+    "episodes": 1,
+    "score": null,
+    "genre": "",
+    "studio": "studio chromato, studio colorido",
+    "year": 2026,
+    "latestEpisodeYear": 2026,
+    "synopsis": "",
+    "image": "",
+    "studios": [
+      "studio chromato",
+      "studio colorido"
+    ],
+    "mediaType": "Movie",
+    "metadataSource": "manami-project/anime-offline-database",
+    "metadataUpdatedAt": "2026-10-04T02:53:10.805Z"
+  },
+  {
+    "id": "anime-b14ad530-3a62-410e-bb5c-1720ac0f8924",
+    "title": "Witch Hat Atelier",
+    "status": "Backlog",
+    "episodes": 13,
+    "score": null,
+    "genre": "achromatic, adventure, alternative world, apprenticeship, based on a manga, body horror, comedy, coming of age, conspiracy, countryside, crunchyroll co-production, disability",
+    "studio": "bug films",
+    "year": 2026,
+    "latestEpisodeYear": 2026,
+    "synopsis": "",
+    "image": "",
+    "genres": [
+      "achromatic",
+      "adventure",
+      "alternative world",
+      "apprenticeship",
+      "based on a manga",
+      "body horror",
+      "comedy",
+      "coming of age",
+      "conspiracy",
+      "countryside",
+      "crunchyroll co-production",
+      "disability"
+    ],
+    "studios": [
+      "bug films"
+    ],
+    "mediaType": "Series",
+    "metadataSource": "manami-project/anime-offline-database",
+    "metadataUpdatedAt": "2026-10-04T02:53:10.805Z"
+  },
+  {
+    "id": "anime-f4ed2a58-c7fd-4115-9b56-3deb7aefdf2c",
+    "title": "Smoking Behind The Supermarket With You",
+    "status": "Watching",
+    "episodes": 12,
+    "score": 4,
+    "genre": "adult cast, adult couples, age gap, based on a manga, comedy, half-length episodes, heterosexual, iyashikei, konbini, love status quo, mature romance, office",
+    "studio": "asahi production",
+    "year": 2026,
+    "latestEpisodeYear": 2026,
+    "synopsis": "",
+    "image": "",
+    "genres": [
+      "adult cast",
+      "adult couples",
+      "age gap",
+      "based on a manga",
+      "comedy",
+      "half-length episodes",
+      "heterosexual",
+      "iyashikei",
+      "konbini",
+      "love status quo",
+      "mature romance",
+      "office"
+    ],
+    "studios": [
+      "asahi production"
+    ],
+    "mediaType": "Series",
+    "metadataSource": "manami-project/anime-offline-database",
+    "metadataUpdatedAt": "2026-10-04T02:53:10.806Z"
+  },
+  {
+    "id": "anime-4157f882-e47d-41f8-84b5-f6b6a8073b42",
+    "title": "Tasuuketsu",
+    "status": "Backlog",
+    "episodes": 24,
+    "score": null,
+    "genre": "action, asia, based on a manga, battle royale, contemporary fantasy, death, death game, dialogue driven, drama, drastic change of life, earth, ensemble cast",
+    "studio": "satelight inc.",
+    "year": 2024,
+    "latestEpisodeYear": 2024,
+    "synopsis": "",
+    "image": "",
+    "genres": [
+      "action",
+      "asia",
+      "based on a manga",
+      "battle royale",
+      "contemporary fantasy",
+      "death",
+      "death game",
+      "dialogue driven",
+      "drama",
+      "drastic change of life",
+      "earth",
+      "ensemble cast"
+    ],
+    "studios": [
+      "satelight inc."
+    ],
+    "mediaType": "Series",
+    "metadataSource": "manami-project/anime-offline-database",
+    "metadataUpdatedAt": "2026-10-04T02:53:10.806Z"
+  },
+  {
+    "id": "anime-f36ac1e9-1fd6-4db8-96c6-b95604d7464c",
+    "title": "Yamada-kun and the Seven Witches",
+    "status": "Backlog",
+    "episodes": 12,
+    "score": null,
+    "genre": "based on a manga, body swapping, comedy, ecchi, gender bender, male protagonist, present, promotional, romance, school, school clubs, school life",
+    "studio": "liden films inc., lidenfilms",
+    "year": 2013,
+    "latestEpisodeYear": 2013,
+    "synopsis": "",
+    "image": "",
+    "genres": [
+      "based on a manga",
+      "body swapping",
+      "comedy",
+      "ecchi",
+      "gender bender",
+      "male protagonist",
+      "present",
+      "promotional",
+      "romance",
+      "school",
+      "school clubs",
+      "school life"
+    ],
+    "studios": [
+      "liden films inc.",
+      "lidenfilms"
+    ],
+    "mediaType": "OVA / Special",
+    "metadataSource": "manami-project/anime-offline-database",
+    "metadataUpdatedAt": "2026-10-04T02:53:10.806Z"
   }
 ]
