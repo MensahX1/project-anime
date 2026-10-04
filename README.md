@@ -7,7 +7,7 @@ A personal anime library and discovery PWA built with React, Vite, TypeScript, a
 AniVault is a title-level anime catalog, not an episode-by-episode tracker. It supports:
 
 - library statuses and 1–5 star ratings
-- fast title, alias, franchise, genre, and studio search
+- relevance-ranked title, alias, franchise, genre, and studio search with flexible word matching and small title-typo tolerance
 - multi-genre, rating, decade, media-type, franchise, studio, recent-update, and unrated filters
 - sorting by score, title, year, and studio
 - a Random picker that chooses from the full personal catalog, including completed titles

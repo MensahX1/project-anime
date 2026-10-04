@@ -1,5 +1,6 @@
 import {useMemo,useState} from "react";
-import {franchiseOf,mediaTypeOf,searchableText} from "../catalog";
+import {aliasesFor,franchiseOf,mediaTypeOf} from "../catalog";
+import {createSearchDocument,prepareSearchQuery,searchScore} from "../search";
 import {splitTags} from "../appData";
 import type {Anime,SortKey} from "../types";
 
@@ -22,24 +23,26 @@ export function useCatalogFilters(items:Anime[]){
  const franchises=useMemo(()=>Array.from(new Set(items.map(a=>a.franchiseName||franchiseOf(a.title)))).filter(name=>items.filter(a=>(a.franchiseName||franchiseOf(a.title))===name).length>1).sort(),[items]);
  const decades=useMemo(()=>Array.from(new Set(items.map(a=>a.year?Math.floor(a.year/10)*10:null).filter((x):x is number=>x!=null))).sort((a,b)=>b-a),[items]);
 
+ const documents=useMemo(()=>new Map(items.map(a=>[a,createSearchDocument(a.title,aliasesFor(a.title),[...(a.genres||[]),a.genre,...(a.studios||[]),a.studio,a.franchiseName||franchiseOf(a.title)])])),[items]);
+ const query=useMemo(()=>prepareSearchQuery(q),[q]);
+ const relevance=useMemo(()=>new Map(items.map(a=>[a,searchScore(documents.get(a)!,query)])),[items,documents,query]);
  const shown=useMemo(()=>items.filter(a=>{
-  const query=q.trim().toLowerCase();
   const animeGenres=tagsOf(a);
   const year=a.year||a.latestEpisodeYear;
   return (filter==="All"||a.status===filter)
-   &&(!query||searchableText(a).includes(query))
+   &&(!query.text||(relevance.get(a)||0)>0)
    &&(!genreFilters.length||genreFilters.every(g=>animeGenres.includes(g)))
    &&(studioFilter==="All"||studiosOf(a).includes(studioFilter))
    &&(!scoreFilters.length||scoreFilters.includes(a.score==null?"Unrated":String(a.score)))
    &&(typeFilter==="All"||(a.mediaType||mediaTypeOf(a))===typeFilter)
    &&(franchiseFilter==="All"||(a.franchiseName||franchiseOf(a.title))===franchiseFilter)
    &&(decadeFilter==="All"||(year!=null&&Math.floor(year/10)*10===+decadeFilter));
- }).sort((a,b)=>sort==="score-desc"?(b.score??-1)-(a.score??-1)||a.title.localeCompare(b.title)
+ }).sort((a,b)=>(query.text?(relevance.get(b)||0)-(relevance.get(a)||0):0)||(sort==="score-desc"?(b.score??-1)-(a.score??-1)||a.title.localeCompare(b.title)
   :sort==="score-asc"?(a.score??99)-(b.score??99)||a.title.localeCompare(b.title)
   :sort==="title-asc"?a.title.localeCompare(b.title)
   :sort==="year-desc"?(b.latestEpisodeYear??b.year??0)-(a.latestEpisodeYear??a.year??0)||a.title.localeCompare(b.title)
   :sort==="year-asc"?(a.year??9999)-(b.year??9999)||a.title.localeCompare(b.title)
-  :(a.studios?.[0]||a.studio||"zzz").localeCompare(b.studios?.[0]||b.studio||"zzz")||a.title.localeCompare(b.title)),[items,q,filter,genreFilters,studioFilter,scoreFilters,typeFilter,franchiseFilter,decadeFilter,sort]);
+  :(a.studios?.[0]||a.studio||"zzz").localeCompare(b.studios?.[0]||b.studio||"zzz")||a.title.localeCompare(b.title))),[items,query,relevance,filter,genreFilters,studioFilter,scoreFilters,typeFilter,franchiseFilter,decadeFilter,sort]);
 
  const toggleScore=(score:string)=>setScoreFilters(current=>score==="All"?[]:current.includes(score)?current.filter(x=>x!==score):[...current,score]);
  const toggleGenre=(genre:string)=>setGenreFilters(current=>current.includes(genre)?current.filter(x=>x!==genre):[...current,genre]);
