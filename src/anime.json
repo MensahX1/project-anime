@@ -2238,7 +2238,7 @@
     "title": "The Testament of Sister New Devil",
     "status": "Watching",
     "episodes": 22,
-    "score": 2,
+    "score": 1,
     "genre": "Action, Ecchi, Harem",
     "studio": "Production IMS",
     "year": 2015,
@@ -3511,15 +3511,16 @@
   {
     "id": "anime-feab1881-d6d6-4152-9988-3505521418eb",
     "title": "Banished from the Hero's Party",
-    "status": "Watching",
+    "status": "Completed",
     "episodes": 0,
-    "score": null,
+    "score": 2,
     "genre": "",
     "studio": "studio flad",
     "year": 2024,
     "latestEpisodeYear": 2024,
     "synopsis": "",
     "image": "",
+    "lastUpdated": "2026-10-10T16:04:39.319Z",
     "studios": [
       "studio flad"
     ],
