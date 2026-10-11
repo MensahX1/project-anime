@@ -1,70 +1,34 @@
 {
-  "generatedAt": "2026-10-04T17:34:52.631Z",
+  "generatedAt": "2026-10-11T18:05:01.104Z",
   "datasetLastUpdate": "2026-07-04",
   "source": "manami-project/anime-offline-database",
   "currentSeason": "FALL 2026",
   "updated": [
     {
-      "id": "anime-b14ad530-3a62-410e-bb5c-1720ac0f8924",
-      "title": "Witch Hat Atelier",
-      "matchedTitle": "Tongari Boushi no Atelier",
+      "id": "sheet-liar-game",
+      "title": "Liar Game",
+      "matchedTitle": "Liar Game",
       "matchScore": 2000,
       "via": "cover-source",
       "before": {
+        "episodes": 26,
+        "latestEpisodeYear": 2026,
+        "year": 2026
+      },
+      "after": {
         "episodes": 13,
         "latestEpisodeYear": 2026,
         "year": 2026
       },
-      "after": {
-        "episodes": 14,
-        "latestEpisodeYear": 2026,
-        "year": 2026
-      },
-      "metadataUpdatedAt": "2026-10-04T17:34:54.872Z",
+      "metadataUpdatedAt": "2026-10-11T18:05:02.950Z",
       "chain": [
         {
-          "title": "Tongari Boushi no Atelier",
+          "title": "Liar Game",
           "type": "TV",
-          "status": "FINISHED",
+          "status": "ONGOING",
           "episodes": 13,
           "year": 2026,
           "season": "SPRING"
-        },
-        {
-          "title": "Tongari Boushi no Atelier 2",
-          "type": "TV",
-          "status": "UNKNOWN",
-          "episodes": 1,
-          "year": null,
-          "season": "UNDEFINED"
-        }
-      ]
-    },
-    {
-      "id": "anime-f36ac1e9-1fd6-4db8-96c6-b95604d7464c",
-      "title": "Yamada-kun and the Seven Witches",
-      "matchedTitle": "Yamada-kun to 7-nin no Majo PV",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 12,
-        "latestEpisodeYear": 2013,
-        "year": 2013
-      },
-      "after": {
-        "episodes": 1,
-        "latestEpisodeYear": 2013,
-        "year": 2013
-      },
-      "metadataUpdatedAt": "2026-10-04T17:34:54.872Z",
-      "chain": [
-        {
-          "title": "Yamada-kun to 7-nin no Majo PV",
-          "type": "SPECIAL",
-          "status": "FINISHED",
-          "episodes": 1,
-          "year": 2013,
-          "season": "SUMMER"
         }
       ]
     }
@@ -558,7 +522,7 @@
         "latestEpisodeYear": 2004,
         "year": 2004
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.487Z",
       "chain": [
         {
           "title": "Yu-Gi-Oh! GX",
@@ -586,7 +550,7 @@
         "latestEpisodeYear": 2008,
         "year": 2008
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.488Z",
       "chain": [
         {
           "title": "Yu☆Gi☆Oh! 5D's",
@@ -798,7 +762,7 @@
         "latestEpisodeYear": 2025,
         "year": 2019
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.487Z",
       "chain": [
         {
           "title": "Tate no Yuusha no Nariagari",
@@ -2645,7 +2609,7 @@
         "latestEpisodeYear": 2025,
         "year": 2025
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.487Z",
       "chain": [
         {
           "title": "Shiunji-ke no Kodomotachi",
@@ -3685,7 +3649,7 @@
         "latestEpisodeYear": 2019,
         "year": 2012
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.488Z",
       "chain": [
         {
           "title": "Sword Art Online",
@@ -3737,7 +3701,7 @@
         "latestEpisodeYear": 2021,
         "year": 2021
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.487Z",
       "chain": [
         {
           "title": "Vivy: Fluorite Eye's Song",
@@ -3905,7 +3869,7 @@
         "latestEpisodeYear": 2011,
         "year": 2009
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.488Z",
       "chain": [
         {
           "title": "Metal Fight Beyblade",
@@ -4505,7 +4469,7 @@
         "latestEpisodeYear": 2024,
         "year": 2022
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.487Z",
       "chain": [
         {
           "title": "Bleach: Sennen Kessen-hen",
@@ -4629,7 +4593,7 @@
         "latestEpisodeYear": 2025,
         "year": 2025
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.488Z",
       "chain": [
         {
           "title": "Clevatess: Majuu no Ou to Akago to Shikabane no Yuusha",
@@ -4721,7 +4685,7 @@
         "latestEpisodeYear": 2017,
         "year": 2017
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-10T17:12:09.487Z",
       "chain": [
         {
           "title": "Black Clover",
@@ -6534,34 +6498,6 @@
       ]
     },
     {
-      "id": "sheet-liar-game",
-      "title": "Liar Game",
-      "matchedTitle": "Liar Game",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 13,
-        "latestEpisodeYear": 2026,
-        "year": 2026
-      },
-      "after": {
-        "episodes": 13,
-        "latestEpisodeYear": 2026,
-        "year": 2026
-      },
-      "metadataUpdatedAt": "2026-10-04T02:53:10.805Z",
-      "chain": [
-        {
-          "title": "Liar Game",
-          "type": "TV",
-          "status": "ONGOING",
-          "episodes": 13,
-          "year": 2026,
-          "season": "SPRING"
-        }
-      ]
-    },
-    {
       "id": "anime-death-parade",
       "title": "Death Parade",
       "matchedTitle": "Death Parade",
@@ -7278,6 +7214,42 @@
       ]
     },
     {
+      "id": "anime-b14ad530-3a62-410e-bb5c-1720ac0f8924",
+      "title": "Witch Hat Atelier",
+      "matchedTitle": "Tongari Boushi no Atelier",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 14,
+        "latestEpisodeYear": 2026,
+        "year": 2026
+      },
+      "after": {
+        "episodes": 14,
+        "latestEpisodeYear": 2026,
+        "year": 2026
+      },
+      "metadataUpdatedAt": "2026-10-04T17:34:54.872Z",
+      "chain": [
+        {
+          "title": "Tongari Boushi no Atelier",
+          "type": "TV",
+          "status": "FINISHED",
+          "episodes": 13,
+          "year": 2026,
+          "season": "SPRING"
+        },
+        {
+          "title": "Tongari Boushi no Atelier 2",
+          "type": "TV",
+          "status": "UNKNOWN",
+          "episodes": 1,
+          "year": null,
+          "season": "UNDEFINED"
+        }
+      ]
+    },
+    {
       "id": "anime-f4ed2a58-c7fd-4115-9b56-3deb7aefdf2c",
       "title": "Smoking Behind The Supermarket With You",
       "matchedTitle": "Super no Ura de Yani Suu Futari",
@@ -7329,6 +7301,34 @@
           "status": "FINISHED",
           "episodes": 24,
           "year": 2024,
+          "season": "SUMMER"
+        }
+      ]
+    },
+    {
+      "id": "anime-f36ac1e9-1fd6-4db8-96c6-b95604d7464c",
+      "title": "Yamada-kun and the Seven Witches",
+      "matchedTitle": "Yamada-kun to 7-nin no Majo PV",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 1,
+        "latestEpisodeYear": 2013,
+        "year": 2013
+      },
+      "after": {
+        "episodes": 1,
+        "latestEpisodeYear": 2013,
+        "year": 2013
+      },
+      "metadataUpdatedAt": "2026-10-04T17:34:54.872Z",
+      "chain": [
+        {
+          "title": "Yamada-kun to 7-nin no Majo PV",
+          "type": "SPECIAL",
+          "status": "FINISHED",
+          "episodes": 1,
+          "year": 2013,
           "season": "SUMMER"
         }
       ]
