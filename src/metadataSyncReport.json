@@ -1,38 +1,9 @@
 {
-  "generatedAt": "2026-10-11T18:05:01.104Z",
+  "generatedAt": "2026-10-18T16:32:56.696Z",
   "datasetLastUpdate": "2026-07-04",
   "source": "manami-project/anime-offline-database",
   "currentSeason": "FALL 2026",
-  "updated": [
-    {
-      "id": "sheet-liar-game",
-      "title": "Liar Game",
-      "matchedTitle": "Liar Game",
-      "matchScore": 2000,
-      "via": "cover-source",
-      "before": {
-        "episodes": 26,
-        "latestEpisodeYear": 2026,
-        "year": 2026
-      },
-      "after": {
-        "episodes": 13,
-        "latestEpisodeYear": 2026,
-        "year": 2026
-      },
-      "metadataUpdatedAt": "2026-10-11T18:05:02.950Z",
-      "chain": [
-        {
-          "title": "Liar Game",
-          "type": "TV",
-          "status": "ONGOING",
-          "episodes": 13,
-          "year": 2026,
-          "season": "SPRING"
-        }
-      ]
-    }
-  ],
+  "updated": [],
   "unchanged": [
     {
       "id": "sheet-death-note",
@@ -6494,6 +6465,34 @@
           "episodes": 13,
           "year": 2020,
           "season": "FALL"
+        }
+      ]
+    },
+    {
+      "id": "sheet-liar-game",
+      "title": "Liar Game",
+      "matchedTitle": "Liar Game",
+      "matchScore": 2000,
+      "via": "cover-source",
+      "before": {
+        "episodes": 13,
+        "latestEpisodeYear": 2026,
+        "year": 2026
+      },
+      "after": {
+        "episodes": 13,
+        "latestEpisodeYear": 2026,
+        "year": 2026
+      },
+      "metadataUpdatedAt": "2026-10-11T18:05:02.950Z",
+      "chain": [
+        {
+          "title": "Liar Game",
+          "type": "TV",
+          "status": "ONGOING",
+          "episodes": 13,
+          "year": 2026,
+          "season": "SPRING"
         }
       ]
     },
