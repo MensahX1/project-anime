@@ -998,15 +998,26 @@
     "title": "Tokyo Revengers",
     "status": "Completed",
     "episodes": 37,
-    "score": 5,
+    "score": 6,
     "genre": "Action, Delinquents, Time Travel",
     "studio": "Liden Films",
     "year": 2021,
+    "latestEpisodeYear": 2023,
     "synopsis": "A man travels back to his delinquent youth to save someone he lost and change a gang’s future.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Action",
+      "Delinquents",
+      "Time Travel"
+    ],
+    "studios": [
+      "Liden Films"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Tokyo Revengers",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2023,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-22T04:38:45.888Z"
   },
   {
     "id": "sheet-high-school-dxd",
@@ -2298,15 +2309,26 @@
     "title": "Oshi no Ko",
     "status": "Completed",
     "episodes": 35,
-    "score": 5,
+    "score": 6,
     "genre": "Drama, Mystery, Idol",
     "studio": "Doga Kobo",
     "year": 2023,
+    "latestEpisodeYear": 2026,
     "synopsis": "Twins connected to a murdered idol enter entertainment while uncovering the truth behind her death.",
     "image": "",
+    "lastUpdated": "2026-10-01T03:30:16.802Z",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Idol"
+    ],
+    "studios": [
+      "Doga Kobo"
+    ],
+    "mediaType": "Series",
+    "franchiseName": "Oshi no Ko",
     "metadataSource": "manami-project/anime-offline-database",
-    "latestEpisodeYear": 2026,
-    "lastUpdated": "2026-10-01T03:30:16.802Z"
+    "metadataUpdatedAt": "2026-10-22T04:38:45.888Z"
   },
   {
     "id": "sheet-clevatess",
