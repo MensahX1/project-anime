@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:32:56.696Z",
+  "generatedAt": "2026-10-25T17:03:40.943Z",
   "datasetLastUpdate": "2026-07-04",
   "source": "manami-project/anime-offline-database",
   "currentSeason": "FALL 2026",
@@ -2068,7 +2068,7 @@
         "latestEpisodeYear": 2023,
         "year": 2021
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-22T04:38:45.888Z",
       "chain": [
         {
           "title": "Tokyo Revengers",
@@ -4520,7 +4520,7 @@
         "latestEpisodeYear": 2026,
         "year": 2023
       },
-      "metadataUpdatedAt": null,
+      "metadataUpdatedAt": "2026-10-22T04:38:45.888Z",
       "chain": [
         {
           "title": "[Oshi no Ko]",
